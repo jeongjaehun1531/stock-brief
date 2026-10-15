@@ -77,13 +77,17 @@
   .tonight li { font-size: 14px; }
 
   /* ─ watchlist ─ */
-  table.wl { width: 100%; border-collapse: collapse; }
-  table.wl th { font-size: 12px; color: var(--muted); font-weight: 600; text-align: right; padding: 0 0 8px; }
-  table.wl th:first-child { text-align: left; }
-  table.wl td { padding: 11px 0; border-top: 1px solid var(--line); text-align: right; font-size: 15px; vertical-align: middle; }
-  table.wl td:first-child { text-align: left; }
+  /* 열 폭 고정 + 헤더와 값을 같은 기준선으로 정렬 */
+  table.wl { width: 100%; border-collapse: collapse; table-layout: fixed; }
+  table.wl th { font-size: 12px; color: var(--muted); font-weight: 600; padding: 0 0 8px; white-space: nowrap; }
+  table.wl td { padding: 11px 0; border-top: 1px solid var(--line); font-size: 15px; vertical-align: middle; }
+  table.wl .c-sym { width: 25%; text-align: left; }
+  table.wl .c-px  { width: 19%; text-align: right; padding-right: 10px; }
+  table.wl .c-chg { width: 23%; text-align: center; }
+  table.wl .c-wk  { width: 15%; text-align: right; }
+  table.wl .c-up  { width: 18%; text-align: right; }
   .sym { font-weight: 800; font-size: 16px; } .nm { font-size: 12px; color: var(--muted); display: block; }
-  .pctbox { display: inline-block; min-width: 76px; padding: 3px 8px; border-radius: 8px; font-weight: 800; text-align: center; }
+  .pctbox { display: block; width: 100%; padding: 3px 8px; border-radius: 8px; font-weight: 800; text-align: center; }
   .pctbox.up { background: var(--up-bg); } .pctbox.down { background: var(--down-bg); } .pctbox.flat { background: var(--flat-bg); }
   .small { font-size: 13px; }
 
@@ -199,14 +203,14 @@
   <div class="eyebrow">WATCHLIST</div>
   <h2>관심종목 한눈에{% if loop.length > 1 %} ({{ loop.index }}/{{ loop.length }}){% endif %}</h2>
   <table class="wl num">
-    <tr><th>종목</th><th>종가($)</th><th>전일비</th><th>5일</th><th>목표가 괴리</th></tr>
+    <tr><th class="c-sym">종목</th><th class="c-px">종가($)</th><th class="c-chg">전일비</th><th class="c-wk">5일</th><th class="c-up">목표가 괴리</th></tr>
     {% for s in chunk %}
     <tr>
-      <td><span class="sym">{{ s.t.symbol }}</span><span class="nm">{{ s.t.name }}</span></td>
-      <td>{{ s.q.close|price }}</td>
-      <td><span class="pctbox {{ s.q.change_pct|tone }}">{{ s.q.change_pct|pct }}</span></td>
-      <td class="small {{ s.q.week_pct|tone }}">{{ s.q.week_pct|pct(1) }}</td>
-      <td class="small {{ s.upside|tone }}">{{ s.upside|pct(1) if s.upside is not none else '–' }}</td>
+      <td class="c-sym"><span class="sym">{{ s.t.symbol }}</span><span class="nm">{{ s.t.name }}</span></td>
+      <td class="c-px">{{ s.q.close|price }}</td>
+      <td class="c-chg"><span class="pctbox {{ s.q.change_pct|tone }}">{{ s.q.change_pct|pct }}</span></td>
+      <td class="c-wk small {{ s.q.week_pct|tone }}">{{ s.q.week_pct|pct(1) }}</td>
+      <td class="c-up small {{ s.upside|tone }}">{{ s.upside|pct(1) if s.upside is not none else '–' }}</td>
     </tr>
     {% endfor %}
   </table>
