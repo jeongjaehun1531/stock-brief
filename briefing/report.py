@@ -82,7 +82,8 @@ def target_bar(price: float | None, av: AnalystView) -> dict | None:
 
 def build_context(*, session_info, report_dt: datetime, tickers: list[Ticker],
                   quotes: dict[str, Quote], indices: dict[str, Quote], futures: dict[str, Quote],
-                  views: dict[str, AnalystView], ai_tickers: dict[str, dict], news: dict) -> dict:
+                  views: dict[str, AnalystView], ai_tickers: dict[str, dict], news: dict,
+                  weekly: bool = False, week_ahead: dict | None = None) -> dict:
     stocks = []
     for t in tickers:
         q = quotes[t.symbol]
@@ -111,7 +112,10 @@ def build_context(*, session_info, report_dt: datetime, tickers: list[Ticker],
     return {
         "report_date": f"{report_dt:%Y.%m.%d} ({WEEKDAY_KO[report_dt.weekday()]})",
         "session": session_info.session,
-        "session_label": f"미국 {kdate(session_info.session)} 종가 기준",
+        "session_label": f"미국 {kdate(session_info.session)} 종가 기준" + (" · 지난주 결산" if weekly else ""),
+        "weekly": weekly,
+        "week_ahead": week_ahead or {},
+        "my_symbols": [t.symbol for t in tickers],
         "session_note": session_info.note,
         "indices": list(indices.values()),
         "futures": list(futures.values()),

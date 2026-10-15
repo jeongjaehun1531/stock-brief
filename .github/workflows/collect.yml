@@ -1,9 +1,10 @@
 name: 1) Collect market data
 
-# 한국시간 월~금 07:10 — yfinance 로 시세·목표가 수집 → data/<날짜>/market.json 커밋
+# 한국시간 월~토 07:10 — yfinance 로 시세·목표가 수집 → data/<날짜>/market.json 커밋
+#   화~토: 전일 종가 브리핑용 / 월: 주간 프리뷰용(금요일 종가·주간 수익률)
 on:
   schedule:
-    - cron: "10 22 * * 0-4"     # UTC 일~목 22:10 = KST 월~금 07:10
+    - cron: "10 22 * * 0-5"     # UTC 일~금 22:10 = KST 월~토 07:10
   workflow_dispatch:
 
 permissions:

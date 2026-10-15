@@ -115,3 +115,20 @@ def mock_news() -> dict:
         ],
         "tonight": ["21:30 미국 9월 소매판매", "23:00 파월 의장 연설", "장 마감 후 넷플릭스 실적"],
     }
+
+
+def mock_week_ahead() -> dict:
+    return {
+        "themes": ["[예시] 빅테크 실적 시즌 본격화", "[예시] CPI 이후 금리 경로 재평가", "[예시] AI 인프라 투자 지속성 점검"],
+        "calendar": [
+            {"date": "10/20(화)", "time": "21:30", "event": "[예시] 미국 9월 CPI", "importance": "상"},
+            {"date": "10/21(수)", "time": "23:00", "event": "[예시] 파월 의장 연설", "importance": "상"},
+            {"date": "10/22(목)", "time": "21:30", "event": "[예시] 신규 실업수당 청구건수", "importance": "중"},
+            {"date": "10/23(금)", "time": "22:45", "event": "[예시] S&P 글로벌 PMI", "importance": "중"},
+        ],
+        "earnings": [
+            {"date": "10/21(수)", "ticker": "TSLA", "note": "장 마감 후"},
+            {"date": "10/22(목)", "ticker": "IBM", "note": "장 마감 후"},
+            {"date": "10/23(금)", "ticker": "INTC", "note": "장 마감 후"},
+        ],
+    }

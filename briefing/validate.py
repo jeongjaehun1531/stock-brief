@@ -58,6 +58,24 @@ def validate(analysis_path: Path, market_path: Path | None = None) -> list[str]:
                     errs.append(f"news.top_news[{i}].impact 는 {IMPACTS} 중 하나")
         if not n.get("market_wrap"):
             errs.append("news.market_wrap 비어있음")
+
+    meta = a.get("meta") or {}
+    if meta.get("mode") not in (None, "daily", "weekly"):
+        errs.append("meta.mode 는 daily 또는 weekly")
+    if meta.get("mode") == "weekly":
+        wa = a.get("week_ahead")
+        if not isinstance(wa, dict):
+            errs.append("주간 모드: 'week_ahead' 객체가 없음")
+        else:
+            cal = wa.get("calendar")
+            if not isinstance(cal, list) or not cal:
+                errs.append("week_ahead.calendar 는 1개 이상")
+            for i, e in enumerate(cal or []):
+                if not e.get("date") or not e.get("event"):
+                    errs.append(f"week_ahead.calendar[{i}] date/event 비어있음")
+            for i, e in enumerate(wa.get("earnings") or []):
+                if not e.get("date") or not e.get("ticker"):
+                    errs.append(f"week_ahead.earnings[{i}] date/ticker 비어있음")
     return errs
 
 

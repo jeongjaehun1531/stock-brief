@@ -13,14 +13,22 @@
 | market.json 대기 | 최대 **25분** (2분 간격 `git pull`) |
 | push 마감 | **08:45 KST** (이후엔 완성된 부분까지라도 즉시 push) |
 
+## 요일별 모드
+
+| 한국시간 요일 | 모드 | 내용 |
+|---|---|---|
+| 화~토 | **daily** | 전일 미국장 종가 브리핑 (아래 기본 지침) |
+| `config.yaml` 의 `schedule.weekly_preview_day` (기본: 월) | **weekly** | 주말 이슈 + 이번 주 일정 + 지난주 성적표 (아래 '주간 프리뷰 추가 지침'까지 적용) |
+
 ## 작업 절차
 
-1. **날짜 폴더 확인**: 한국시간 오늘 날짜 `YYYY-MM-DD` → `data/<날짜>/`
+1. **날짜 폴더·모드 확인**: 한국시간 오늘 날짜 `YYYY-MM-DD` → `data/<날짜>/`, 요일로 위 모드 결정
 2. **시세 파일 대기**: `data/<날짜>/market.json` 이 있을 때까지 `git pull` 반복 (위 대기 시간까지).
    - 끝내 없으면 **비상 모드**: Yahoo Finance 종목 페이지(`https://finance.yahoo.com/quote/<티커>/`)를 WebFetch 로 읽어
      `data/<날짜>/market_web.json` 을 작성하고 (형식은 `briefing/web_market.py` 상단 설명)
      `python main.py build-web-market` 실행 → market.json 생성. 지수는 S&P 500(^GSPC)·NASDAQ(^IXIC)만이라도 채움.
-3. **분석**: Agent 도구로 `model: sonnet` 서브에이전트를 1개 띄워 아래 **분석 지침 전체**와 market.json 경로를 넘긴다.
+3. **분석**: Agent 도구로 `model: sonnet` 서브에이전트를 1개 띄워 아래 **분석 지침 전체**(weekly 면 '주간 프리뷰 추가 지침'도)와
+   market.json 경로, 오늘의 모드를 넘긴다.
    서브에이전트가 `data/<날짜>/analysis.json` 을 작성한다.
 4. **검사**: `python -m briefing.validate data/<날짜>` → ❌ 이면 지적된 부분만 고쳐 다시 검사 (최대 2회).
 5. **업로드**: `git add data/<날짜>/` → `git commit -m "analysis: <날짜>"` → `git push`
@@ -91,5 +99,36 @@
   }
 }
 ```
+- `meta.mode` 는 `daily` 또는 `weekly`
 - `stance`, `impact`, `mood` 는 위에 적힌 값 중 하나만 사용
 - `sources` 는 종목당 최대 4개, 실제로 근거로 쓴 기사 URL 만
+
+---
+
+## 주간 프리뷰 추가 지침 (weekly 모드에서만)
+
+market.json 은 직전 금요일 종가 기준이다. `quotes.<티커>.week_pct` = 지난주 5거래일 수익률, `month_pct` = 1개월.
+화~토 브리핑과 겹치지 않게, **지난주 결산과 이번 주 준비**에 초점을 맞춘다.
+
+**필드별 의미 (스키마는 같고 내용만 다름)**
+- `meta.mode`: `"weekly"`
+- `tickers.<티커>.headline` / `move_reasons`: **지난주 한 주간** 주가 흐름과 그 이유 (금요일 하루가 아님)
+- `tickers.<티커>.weekly_outlook`: **이번 주** 전망, `key_events` 에 이번 주 해당 종목 일정
+- `news.market_wrap`: 지난주 미국장 한 주 요약 (주간 지수 흐름과 주도 테마)
+- `news.top_news`: **금요일 장 마감 후 ~ 월요일 아침** 사이 나온 뉴스 중 이번 주 지수에 영향 줄 Top 5
+- `news.tonight`: 오늘(월) 밤 미국장 일정
+
+**추가 필드: `week_ahead`**
+```json
+"week_ahead": {
+  "themes": ["이번 주 시장 핵심 테마 2~3개, 각 30자 이내"],
+  "calendar": [
+    {"date": "10/20(화)", "time": "21:30", "event": "미국 9월 CPI", "importance": "상 | 중 | 하"}
+  ],
+  "earnings": [
+    {"date": "10/21(수)", "ticker": "TSLA", "note": "장 마감 후"}
+  ]
+}
+```
+- `calendar`: 이번 주 미국 경제지표·연준 일정 중 중요한 것 6~10개, 날짜순, 시각은 한국시간
+- `earnings`: 이번 주 실적 발표 중 **관심종목은 전부** + 시장 영향 큰 대형주 5~8개, 날짜순

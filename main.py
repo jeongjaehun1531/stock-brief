@@ -71,18 +71,34 @@ def _send_time(cfg, tz) -> datetime:
     return datetime.now(tz).replace(hour=hh, minute=mm, second=0, microsecond=0)
 
 
+WEEKDAYS = "월화수목금토일"
+
+
+def is_weekly_day(cfg, day: str, analysis: dict | None = None) -> bool:
+    """주간 프리뷰 여부: analysis.json 의 meta.mode 우선, 없으면 config 의 요일 설정."""
+    mode = ((analysis or {}).get("meta") or {}).get("mode")
+    if mode:
+        return mode == "weekly"
+    want = str(cfg.get("schedule", {}).get("weekly_preview_day", "월"))
+    try:
+        return WEEKDAYS[datetime.strptime(day, "%Y-%m-%d").weekday()] == want
+    except ValueError:
+        return False
+
+
 def render_day(cfg, day: str, now: datetime) -> tuple[dict, list[Path], Path, Path | None]:
     d = day_dir(day)
     m = load_market(d / "market.json")
     a = load_analysis(d / "analysis.json") or {}
     ai_tickers = a.get("tickers", {})
     news = a.get("news") or {}
+    weekly = is_weekly_day(cfg, day, a)
     if not a:
         m["session"].note = (m["session"].note + " · " if m["session"].note else "") + \
             "AI 분석이 준비되지 않아 시세·목표가만 전송"
     ctx = build_context(session_info=m["session"], report_dt=now, tickers=m["tickers"], quotes=m["quotes"],
                         indices=m["indices"], futures=m["futures"], views=m["views"],
-                        ai_tickers=ai_tickers, news=news)
+                        ai_tickers=ai_tickers, news=news, weekly=weekly, week_ahead=a.get("week_ahead"))
     ocfg = cfg.get("output", {})
     out = ROOT / ocfg.get("dir", "output") / day
     html_path = save_html(render_html(ctx, mode="page"), out, f"briefing_{day}.html")
@@ -102,8 +118,12 @@ def deliver(cfg, ctx, cards, html_path, pptx_path):
     idx = " · ".join(f"{q.name} {q.change_pct:+.2f}%" for q in ctx["indices"][:2] if q.change_pct is not None)
     movers = sorted(ctx["stocks"], key=lambda s: abs(s["q"].change_pct or 0), reverse=True)[:3]
     mv = " / ".join(f"{s['t'].symbol} {s['q'].change_pct:+.1f}%" for s in movers if s["q"].change_pct is not None)
-    caption = (f"<b>🇺🇸 미국증시 모닝 브리핑 {ctx['report_date']}</b>\n{ctx['session_label']}\n{idx}\n"
-               f"관심종목 큰 변동: {mv}")
+    title = "미국증시 주간 프리뷰" if ctx.get("weekly") else "미국증시 모닝 브리핑"
+    if ctx.get("weekly"):
+        movers = sorted(ctx["stocks"], key=lambda s: abs(s["q"].week_pct or 0), reverse=True)[:3]
+        mv = " / ".join(f"{s['t'].symbol} {s['q'].week_pct:+.1f}%" for s in movers if s["q"].week_pct is not None)
+    caption = (f"<b>🇺🇸 {title} {ctx['report_date']}</b>\n{ctx['session_label']}\n{idx}\n"
+               f"{'지난주' if ctx.get('weekly') else '관심종목'} 큰 변동: {mv}")
     if ctx.get("session_note"):
         caption += f"\n※ {ctx['session_note']}"
     attachments = [p for p in ((html_path if ocfg.get("html", True) else None), pptx_path) if p]
@@ -176,8 +196,11 @@ def cmd_mock(cfg, args):
           indices=mock.mock_indices(mcfg.get("indicators", {})), futures=mock.mock_indices(mcfg.get("futures", {})),
           views=mock.mock_views(tickers, quotes))
     import json
-    (day_dir(day) / "analysis.json").write_text(json.dumps(
-        {"tickers": mock.mock_ai_tickers(tickers, quotes), "news": mock.mock_news()}, ensure_ascii=False), "utf-8")
+    analysis = {"meta": {"mode": "weekly" if args.weekly else "daily"},
+                "tickers": mock.mock_ai_tickers(tickers, quotes), "news": mock.mock_news()}
+    if args.weekly:
+        analysis["week_ahead"] = mock.mock_week_ahead()
+    (day_dir(day) / "analysis.json").write_text(json.dumps(analysis, ensure_ascii=False), "utf-8")
     ctx, cards, html_path, pptx = render_day(cfg, day, datetime.now(tz))
     if args.send:
         deliver(cfg, ctx, cards, html_path, pptx)
@@ -209,6 +232,7 @@ def main(argv=None) -> int:
     ap.add_argument("--dry-run", action="store_true", help="전송하지 않음")
     ap.add_argument("--force", action="store_true", help="이미 전송했어도 다시 전송")
     ap.add_argument("--send", action="store_true", help="mock 결과도 전송")
+    ap.add_argument("--weekly", action="store_true", help="mock 을 주간 프리뷰 형식으로")
     args = ap.parse_args(argv)
 
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s", datefmt="%H:%M:%S")

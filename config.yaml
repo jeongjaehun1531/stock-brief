@@ -5,6 +5,11 @@
 
 timezone: Asia/Seoul
 send_at: "08:50"            # 이 시각까지 기다렸다가 전송 (이미 지났으면 즉시 전송)
+
+schedule:
+  # 받는 요일: 화~토 = 전일 미국장 종가 브리핑, 아래 요일 = 주간 프리뷰
+  # (실행 요일 자체는 .github/workflows 의 cron 과 Claude 예약 작업에서 정해짐)
+  weekly_preview_day: 월     # 주말 이슈 + 이번 주 일정 + 지난주 성적표
 tickers_file: tickers.md
 
 claude:

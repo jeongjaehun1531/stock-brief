@@ -1,9 +1,10 @@
 name: 2) Render & send briefing
 
-# 한국시간 월~금 08:25 시작 — Claude 분석(analysis.json) 대기 → 카드 렌더 → 08:50 텔레그램 전송
+# 한국시간 월~토 08:25 시작 — Claude 분석(analysis.json) 대기 → 카드 렌더 → 08:50 텔레그램 전송
+#   화~토: 전일 종가 브리핑 / 월: 주간 프리뷰
 on:
   schedule:
-    - cron: "25 23 * * 0-4"     # UTC 일~목 23:25 = KST 월~금 08:25
+    - cron: "25 23 * * 0-5"     # UTC 일~금 23:25 = KST 월~토 08:25
   workflow_dispatch:
     inputs:
       mode:

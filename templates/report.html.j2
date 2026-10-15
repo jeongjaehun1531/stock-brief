@@ -75,6 +75,11 @@
   .news .src { font-size: 11.5px; color: var(--muted); margin: 4px 0 0 36px; }
   .tonight { background: var(--card2); border-radius: 12px; padding: 10px 14px; margin-top: 6px; }
   .tonight li { font-size: 14px; }
+  .wk-row { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--line); font-size: 14.5px; }
+  .wk-row .wk-d { flex: none; width: 112px; color: var(--sub); font-size: 13.5px; }
+  .wk-row .wk-d b { color: var(--text); font-weight: 700; }
+  .wk-row .wk-e { flex: 1; }
+  .wk-row.mine .wk-e b { color: var(--accent); }
 
   /* ─ watchlist ─ */
   /* 열 폭 고정 + 헤더와 값을 같은 기준선으로 정렬 */
@@ -136,8 +141,8 @@
 
 {# ═════════ 1. 커버: 시장 요약 ═════════ #}
 <section class="card" data-card="01_market">
-  <div class="eyebrow">US MARKET MORNING BRIEF</div>
-  <h1>미국증시 모닝 브리핑</h1>
+  <div class="eyebrow">{{ 'US MARKET WEEKLY PREVIEW' if weekly else 'US MARKET MORNING BRIEF' }}</div>
+  <h1>{{ '미국증시 주간 프리뷰' if weekly else '미국증시 모닝 브리핑' }}</h1>
   <div class="meta">{{ report_date }} · {{ session_label }}</div>
 
   {% set main = indices[:2] %}
@@ -161,7 +166,7 @@
   </div>
 
   {% if news.market_wrap %}
-  <h3>전일 장 마감</h3>
+  <h3>{{ '지난주 미국장' if weekly else '전일 장 마감' }}</h3>
   <p class="lead">{{ news.market_wrap }}</p>
   {% endif %}
   <div class="mood">
@@ -175,7 +180,7 @@
 {# ═════════ 2. Top 5 뉴스 ═════════ #}
 <section class="card" data-card="02_news">
   <div class="eyebrow">TOP 5 GLOBAL ISSUES</div>
-  <h2>오늘 S&amp;P500·나스닥을 움직일 뉴스</h2>
+  <h2>{{ '주말 이슈 & 이번 주 S&P500·나스닥 변수' if weekly else '오늘 S&P500·나스닥을 움직일 뉴스' }}</h2>
   {% for n in news.top_news %}
   <div class="news">
     <div class="top">
@@ -191,25 +196,59 @@
   <p class="lead">뉴스 분석을 가져오지 못했습니다.</p>
   {% endfor %}
   {% if news.tonight %}
-  <h3>오늘 밤 체크 일정 (KST)</h3>
+  <h3>{{ '오늘 밤 체크 (KST)' }}</h3>
   <div class="tonight"><ul class="bul">{% for e in news.tonight %}<li>{{ e }}</li>{% endfor %}</ul></div>
   {% endif %}
   <div class="foot"><span>2 / 뉴스</span><span>출처는 HTML 리포트에서 링크 확인</span></div>
 </section>
 
+{# ═════════ 2-1. (월) 이번 주 일정 ═════════ #}
+{% if weekly and week_ahead %}
+<section class="card" data-card="02b_week_ahead">
+  <div class="eyebrow">THIS WEEK</div>
+  <h2>이번 주 일정</h2>
+  {% if week_ahead.themes %}
+  <h3>핵심 테마</h3>
+  <ul class="bul">{% for t in week_ahead.themes %}<li>{{ t }}</li>{% endfor %}</ul>
+  {% endif %}
+  {% if week_ahead.calendar %}
+  <h3>경제지표·이벤트 (KST)</h3>
+  {% for e in week_ahead.calendar %}
+  <div class="wk-row">
+    <span class="wk-d num">{{ e.date }}{% if e.time %} <b>{{ e.time }}</b>{% endif %}</span>
+    <span class="wk-e">{{ e.event }}</span>
+    {% if e.importance %}<span class="chip {{ 'up' if e.importance == '상' else 'neutral' }}">{{ e.importance }}</span>{% endif %}
+  </div>
+  {% endfor %}
+  {% endif %}
+  {% if week_ahead.earnings %}
+  <h3>주요 실적 발표</h3>
+  {% for e in week_ahead.earnings %}
+  <div class="wk-row{{ ' mine' if e.ticker in my_symbols else '' }}">
+    <span class="wk-d num">{{ e.date }}</span>
+    <span class="wk-e"><b>{{ e.ticker }}</b> {{ e.note or '' }}</span>
+    {% if e.ticker in my_symbols %}<span class="chip up">관심</span>{% endif %}
+  </div>
+  {% endfor %}
+  {% endif %}
+  <div class="foot"><span>이번 주 일정</span><span>시각은 한국시간</span></div>
+</section>
+{% endif %}
+
 {# ═════════ 3. 관심종목 한눈에 ═════════ #}
 {% for chunk in stocks|batch(10) %}
 <section class="card" data-card="03_watchlist_{{ loop.index }}">
   <div class="eyebrow">WATCHLIST</div>
-  <h2>관심종목 한눈에{% if loop.length > 1 %} ({{ loop.index }}/{{ loop.length }}){% endif %}</h2>
+  <h2>{{ '지난주 성적표' if weekly else '관심종목 한눈에' }}{% if loop.length > 1 %} ({{ loop.index }}/{{ loop.length }}){% endif %}</h2>
   <table class="wl num">
-    <tr><th class="c-sym">종목</th><th class="c-px">종가($)</th><th class="c-chg">전일비</th><th class="c-wk">5일</th><th class="c-up">목표가 괴리</th></tr>
+    <tr><th class="c-sym">종목</th><th class="c-px">종가($)</th><th class="c-chg">{{ '주간' if weekly else '전일비' }}</th><th class="c-wk">{{ '1개월' if weekly else '5일' }}</th><th class="c-up">목표가 괴리</th></tr>
     {% for s in chunk %}
     <tr>
       <td class="c-sym"><span class="sym">{{ s.t.symbol }}</span><span class="nm">{{ s.t.name }}</span></td>
       <td class="c-px">{{ s.q.close|price }}</td>
-      <td class="c-chg"><span class="pctbox {{ s.q.change_pct|tone }}">{{ s.q.change_pct|pct }}</span></td>
-      <td class="c-wk small {{ s.q.week_pct|tone }}">{{ s.q.week_pct|pct(1) }}</td>
+      {% set main_pct = s.q.week_pct if weekly else s.q.change_pct %}{% set sub_pct = s.q.month_pct if weekly else s.q.week_pct %}
+      <td class="c-chg"><span class="pctbox {{ main_pct|tone }}">{{ main_pct|pct }}</span></td>
+      <td class="c-wk small {{ sub_pct|tone }}">{{ sub_pct|pct(1) }}</td>
       <td class="c-up small {{ s.upside|tone }}">{{ s.upside|pct(1) if s.upside is not none else '–' }}</td>
     </tr>
     {% endfor %}
@@ -229,7 +268,8 @@
     </div>
     <div class="s-price num">
       <div class="v">${{ q.close|price }}</div>
-      <div class="c {{ q.change_pct|tone }}">{{ q.change_pct|pct }} ({{ q.change|signed }})</div>
+      {% if weekly %}<div class="c {{ q.week_pct|tone }}">주간 {{ q.week_pct|pct }}</div>
+      {% else %}<div class="c {{ q.change_pct|tone }}">{{ q.change_pct|pct }} ({{ q.change|signed }})</div>{% endif %}
     </div>
   </div>
 
@@ -252,7 +292,7 @@
 
   {% if ai.headline %}<div class="headline">{{ ai.headline }}</div>{% endif %}
 
-  <h3>오늘 {{ '상승' if (q.change_pct or 0) >= 0 else '하락' }} 이유{% if ai.driver_type %} <span class="chip neutral">{{ ai.driver_type }}</span>{% endif %}</h3>
+  <h3>{% if weekly %}지난주 흐름{% else %}오늘 {{ '상승' if (q.change_pct or 0) >= 0 else '하락' }} 이유{% endif %}{% if ai.driver_type %} <span class="chip neutral">{{ ai.driver_type }}</span>{% endif %}</h3>
   {% if ai.move_reasons %}
   <ul class="bul">{% for r in ai.move_reasons %}<li>{{ r }}</li>{% endfor %}</ul>
   {% else %}
@@ -261,7 +301,7 @@
 
   {% set wo = ai.weekly_outlook or {} %}
   {% if wo %}
-  <h3>주간 전망</h3>
+  <h3>{{ '이번 주 전망' if weekly else '주간 전망' }}</h3>
   <div class="outlook">
     <div class="row"><span class="chip {{ 'up' if wo.stance == '긍정' else ('down' if wo.stance == '부정' else 'neutral') }}">{{ wo.stance or '중립' }}</span></div>
     <div class="small" style="font-size:14.5px">{{ wo.summary }}</div>
