@@ -1,0 +1,71 @@
+name: 2) Render & send briefing
+
+# 한국시간 월~금 08:25 시작 — Claude 분석(analysis.json) 대기 → 카드 렌더 → 08:50 텔레그램 전송
+on:
+  schedule:
+    - cron: "25 23 * * 0-4"     # UTC 일~목 23:25 = KST 월~금 08:25
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "now = 기다리지 않고 바로 전송 / mock = 샘플 데이터로 수신 테스트"
+        type: choice
+        options: [now, mock]
+        default: now
+
+permissions:
+  contents: write
+
+concurrency:
+  group: deliver
+  cancel-in-progress: false
+
+jobs:
+  deliver:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    env:
+      TZ: Asia/Seoul
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      SMTP_USER: ${{ secrets.SMTP_USER }}
+      SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+      MAIL_TO: ${{ secrets.MAIL_TO }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq fonts-noto-cjk
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
+      - name: Run
+        run: |
+          git config user.name  "stock-brief-bot"
+          git config user.email "stock-brief-bot@users.noreply.github.com"
+          case "${{ github.event.inputs.mode }}" in
+            now)  python main.py deliver --no-wait --force ;;
+            mock) python main.py mock --send ;;
+            *)    python main.py deliver ;;
+          esac
+      - name: Record sent
+        if: success() && github.event.inputs.mode != 'mock'
+        run: |
+          git add data/ || true
+          git diff --cached --quiet && exit 0
+          git commit -m "sent: $(date +%F)"
+          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: briefing-${{ github.run_id }}
+          path: output/
+          retention-days: 7
+      - name: Notify failure
+        if: failure()
+        run: |
+          curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            -d chat_id="${TELEGRAM_CHAT_ID}" \
+            -d text="⚠️ 미국증시 브리핑 전송 실패: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"

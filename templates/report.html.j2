@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>미국증시 모닝 브리핑 {{ report_date }}</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  :root {
+    --bg: #0A0D14; --card: #121722; --card2: #182031; --line: #232C3F;
+    --text: #EEF1F7; --sub: #A3ADC2; --muted: #6E7890;
+    --up: #FF5468; --up-bg: rgba(255,84,104,.13);
+    --down: #4C8DFF; --down-bg: rgba(76,141,255,.14);
+    --flat: #A3ADC2; --flat-bg: rgba(163,173,194,.12);
+    --accent: #F5C451;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg); color: var(--text);
+    font-family: "Pretendard", "Noto Sans CJK KR", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
+    font-size: 16px; line-height: 1.5; letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
+  }
+  .num { font-variant-numeric: tabular-nums; letter-spacing: -0.02em; }
+  .wrap { width: 480px; margin: 0 auto; padding: 0; }
+  body.page .wrap { max-width: 480px; width: 100%; padding: 12px 0 40px; }
+  .card {
+    background: var(--card); padding: 26px 24px 20px; position: relative;
+    border-top: 4px solid var(--accent);
+  }
+  body.page .card { border-radius: 18px; margin: 0 12px 14px; }
+  body.cards .card { margin: 0; }
+  .eyebrow { font-size: 13px; color: var(--accent); font-weight: 700; letter-spacing: .02em; }
+  h1 { font-size: 27px; font-weight: 800; line-height: 1.25; margin: 4px 0 2px; }
+  h2 { font-size: 22px; font-weight: 800; line-height: 1.3; margin: 4px 0 14px; }
+  h3 { font-size: 14px; font-weight: 700; color: var(--sub); margin: 18px 0 8px;
+       display: flex; align-items: center; gap: 6px; }
+  h3::before { content: ""; width: 3px; height: 13px; background: var(--accent); border-radius: 2px; }
+  .meta { font-size: 13px; color: var(--muted); }
+  .up { color: var(--up); } .down { color: var(--down); } .flat { color: var(--flat); }
+  .chip { display: inline-block; font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 999px; white-space: nowrap; }
+  .chip.up { background: var(--up-bg); } .chip.down { background: var(--down-bg); } .chip.flat { background: var(--flat-bg); }
+  .chip.neutral { background: var(--card2); color: var(--sub); }
+  .foot { margin-top: 18px; padding-top: 10px; border-top: 1px solid var(--line);
+          font-size: 11px; color: var(--muted); display: flex; justify-content: space-between; }
+  p.lead { font-size: 15.5px; color: var(--text); }
+  ul.bul { list-style: none; }
+  ul.bul li { position: relative; padding-left: 14px; margin: 5px 0; font-size: 15.5px; }
+  ul.bul li::before { content: ""; position: absolute; left: 2px; top: .62em; width: 5px; height: 5px; border-radius: 50%; background: var(--sub); }
+  a { color: inherit; }
+
+  /* ─ cover ─ */
+  .idx-main { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 16px 0 10px; }
+  .idx-big { background: var(--card2); border-radius: 14px; padding: 14px; }
+  .idx-big .n { font-size: 13px; color: var(--sub); font-weight: 600; }
+  .idx-big .v { font-size: 24px; font-weight: 800; margin-top: 2px; }
+  .idx-big .c { font-size: 15px; font-weight: 700; }
+  .idx-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 18px; }
+  .idx-row { display: flex; justify-content: space-between; align-items: baseline; padding: 7px 0; border-bottom: 1px solid var(--line); font-size: 14px; }
+  .idx-row .n { color: var(--sub); }
+  .idx-row .r { text-align: right; } .idx-row .r b { font-weight: 700; margin-right: 6px; }
+  .mood { display: flex; gap: 8px; align-items: center; margin-top: 12px; flex-wrap: wrap; }
+  .note { margin-top: 10px; font-size: 13px; color: var(--accent); }
+
+  /* ─ news ─ */
+  .news { padding: 13px 0; border-bottom: 1px solid var(--line); }
+  .news:last-of-type { border-bottom: none; }
+  .news .top { display: flex; gap: 10px; align-items: flex-start; }
+  .rank { flex: none; width: 26px; height: 26px; border-radius: 8px; background: var(--accent); color: #111;
+          font-weight: 800; font-size: 14px; display: grid; place-items: center; margin-top: 1px; }
+  .news .t { font-size: 17px; font-weight: 700; line-height: 1.35; flex: 1; }
+  .news .s { font-size: 14.5px; color: var(--sub); margin: 6px 0 0 36px; }
+  .news .w { font-size: 13.5px; margin: 5px 0 0 36px; color: var(--text); }
+  .news .w b { color: var(--accent); font-weight: 700; }
+  .news .src { font-size: 11.5px; color: var(--muted); margin: 4px 0 0 36px; }
+  .tonight { background: var(--card2); border-radius: 12px; padding: 10px 14px; margin-top: 6px; }
+  .tonight li { font-size: 14px; }
+
+  /* ─ watchlist ─ */
+  table.wl { width: 100%; border-collapse: collapse; }
+  table.wl th { font-size: 12px; color: var(--muted); font-weight: 600; text-align: right; padding: 0 0 8px; }
+  table.wl th:first-child { text-align: left; }
+  table.wl td { padding: 11px 0; border-top: 1px solid var(--line); text-align: right; font-size: 15px; vertical-align: middle; }
+  table.wl td:first-child { text-align: left; }
+  .sym { font-weight: 800; font-size: 16px; } .nm { font-size: 12px; color: var(--muted); display: block; }
+  .pctbox { display: inline-block; min-width: 76px; padding: 3px 8px; border-radius: 8px; font-weight: 800; text-align: center; }
+  .pctbox.up { background: var(--up-bg); } .pctbox.down { background: var(--down-bg); } .pctbox.flat { background: var(--flat-bg); }
+  .small { font-size: 13px; }
+
+  /* ─ stock ─ */
+  .s-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 10px; }
+  .s-head .sym { font-size: 30px; line-height: 1.1; }
+  .s-head .nm { font-size: 14px; margin-top: 2px; }
+  .s-price { text-align: right; }
+  .s-price .v { font-size: 28px; font-weight: 800; line-height: 1.1; }
+  .s-price .c { font-size: 16px; font-weight: 800; margin-top: 2px; }
+  .s-stats { display: flex; gap: 6px; flex-wrap: wrap; margin: 12px 0 2px; }
+  .stat { background: var(--card2); border-radius: 8px; padding: 4px 9px; font-size: 12.5px; color: var(--sub); }
+  .stat b { color: var(--text); font-weight: 700; margin-left: 3px; }
+  .spark { margin-top: 10px; display: block; }
+  .headline { margin-top: 14px; font-size: 19px; font-weight: 800; line-height: 1.35; }
+  .outlook { background: var(--card2); border-radius: 12px; padding: 12px 14px; }
+  .outlook .row { display: flex; gap: 8px; align-items: center; margin-bottom: 6px; }
+  .events { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  .events span { font-size: 12.5px; border: 1px solid var(--line); border-radius: 6px; padding: 2px 7px; color: var(--sub); }
+  .tbar { position: relative; height: 54px; margin: 6px 6px 4px; }
+  .tbar .track { position: absolute; top: 24px; left: 0; right: 0; height: 6px; background: var(--line); border-radius: 3px; }
+  .tbar .range { position: absolute; top: 24px; height: 6px; background: linear-gradient(90deg, #3a4560, var(--accent)); border-radius: 3px; }
+  .tbar .mk { position: absolute; top: 0; transform: translateX(-50%); text-align: center; font-size: 11.5px; white-space: nowrap; }
+  .tbar .mk i { display: block; width: 2px; height: 18px; margin: 2px auto 0; }
+  .tbar .mk.mean { color: var(--accent); } .tbar .mk.mean i { background: var(--accent); height: 22px; }
+  .tbar .mk.px { top: 22px; color: var(--text); } .tbar .mk.px i { width: 10px; height: 10px; border-radius: 50%; background: var(--text); margin: 0 auto 2px; border: 2px solid var(--card); }
+  .tbar-lbl { display: flex; justify-content: space-between; font-size: 11.5px; color: var(--muted); margin: 0 2px; }
+  .cons { display: flex; height: 8px; border-radius: 4px; overflow: hidden; margin: 10px 0 4px; }
+  .cons .b { background: var(--up); } .cons .h { background: #6E7890; } .cons .s { background: var(--down); }
+  .cons-lbl { font-size: 12px; color: var(--sub); display: flex; gap: 12px; }
+  .acts { margin-top: 10px; }
+  .act { display: flex; justify-content: space-between; gap: 8px; padding: 7px 0; border-top: 1px solid var(--line); font-size: 13.5px; }
+  .act .f { font-weight: 700; } .act .d { color: var(--muted); font-size: 12px; margin-right: 6px; font-weight: 400; }
+  .act .r { color: var(--sub); font-size: 12.5px; }
+  .act .tp { text-align: right; white-space: nowrap; font-weight: 700; }
+  .act .note { display: block; font-size: 12px; color: var(--muted); font-weight: 400; }
+  .take { font-size: 14.5px; color: var(--text); margin-top: 10px; }
+  .srcs { margin-top: 12px; font-size: 11.5px; color: var(--muted); }
+  .srcs a { text-decoration: none; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  body.page .srcs a { text-decoration: underline; color: var(--sub); }
+  .disclaimer { font-size: 11px; color: var(--muted); text-align: center; padding: 14px 20px 6px; }
+</style>
+</head>
+<body class="{{ mode }}">
+<div class="wrap">
+
+{# ═════════ 1. 커버: 시장 요약 ═════════ #}
+<section class="card" data-card="01_market">
+  <div class="eyebrow">US MARKET MORNING BRIEF</div>
+  <h1>미국증시 모닝 브리핑</h1>
+  <div class="meta">{{ report_date }} · {{ session_label }}</div>
+
+  {% set main = indices[:2] %}
+  <div class="idx-main">
+    {% for q in main %}
+    <div class="idx-big">
+      <div class="n">{{ q.name }}</div>
+      <div class="v num">{{ q.close|price }}</div>
+      <div class="c num {{ q.change_pct|tone }}">{{ q.change_pct|pct }} <span class="small">({{ q.change|signed }})</span></div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="idx-grid">
+    {% for q in indices[2:] + futures %}
+    <div class="idx-row">
+      <span class="n">{{ q.name }}</span>
+      <span class="r num"><b>{{ q.close|price }}</b><span class="{{ q.change_pct|tone }}">{{ q.change_pct|pct }}</span></span>
+    </div>
+    {% endfor %}
+  </div>
+
+  {% if news.market_wrap %}
+  <h3>전일 장 마감</h3>
+  <p class="lead">{{ news.market_wrap }}</p>
+  {% endif %}
+  <div class="mood">
+    {% if news.mood %}<span class="chip {{ 'up' if news.mood == '위험선호' else ('down' if news.mood == '위험회피' else 'neutral') }}">시장 분위기 · {{ news.mood }}</span>{% endif %}
+    <span class="chip neutral">관심종목 상승 {{ breadth.up }} · 하락 {{ breadth.down }}</span>
+  </div>
+  {% if session_note %}<div class="note">※ {{ session_note }}</div>{% endif %}
+  <div class="foot"><span>1 / 시장</span><span>{{ generated_at }} 생성</span></div>
+</section>
+
+{# ═════════ 2. Top 5 뉴스 ═════════ #}
+<section class="card" data-card="02_news">
+  <div class="eyebrow">TOP 5 GLOBAL ISSUES</div>
+  <h2>오늘 S&amp;P500·나스닥을 움직일 뉴스</h2>
+  {% for n in news.top_news %}
+  <div class="news">
+    <div class="top">
+      <div class="rank">{{ loop.index }}</div>
+      <div class="t">{{ n.title }}</div>
+      <span class="chip {{ 'up' if n.impact == '상승' else ('down' if n.impact == '하락' else 'flat') }}">{{ n.impact }}{% if n.affects %} · {{ n.affects }}{% endif %}</span>
+    </div>
+    <div class="s">{{ n.summary }}</div>
+    {% if n.why %}<div class="w"><b>왜 중요?</b> {{ n.why }}</div>{% endif %}
+    {% if n.source %}<div class="src">{% if n.url %}<a href="{{ n.url }}">{{ n.source }}</a>{% else %}{{ n.source }}{% endif %}</div>{% endif %}
+  </div>
+  {% else %}
+  <p class="lead">뉴스 분석을 가져오지 못했습니다.</p>
+  {% endfor %}
+  {% if news.tonight %}
+  <h3>오늘 밤 체크 일정 (KST)</h3>
+  <div class="tonight"><ul class="bul">{% for e in news.tonight %}<li>{{ e }}</li>{% endfor %}</ul></div>
+  {% endif %}
+  <div class="foot"><span>2 / 뉴스</span><span>출처는 HTML 리포트에서 링크 확인</span></div>
+</section>
+
+{# ═════════ 3. 관심종목 한눈에 ═════════ #}
+{% for chunk in stocks|batch(10) %}
+<section class="card" data-card="03_watchlist_{{ loop.index }}">
+  <div class="eyebrow">WATCHLIST</div>
+  <h2>관심종목 한눈에{% if loop.length > 1 %} ({{ loop.index }}/{{ loop.length }}){% endif %}</h2>
+  <table class="wl num">
+    <tr><th>종목</th><th>종가($)</th><th>전일비</th><th>5일</th><th>목표가 괴리</th></tr>
+    {% for s in chunk %}
+    <tr>
+      <td><span class="sym">{{ s.t.symbol }}</span><span class="nm">{{ s.t.name }}</span></td>
+      <td>{{ s.q.close|price }}</td>
+      <td><span class="pctbox {{ s.q.change_pct|tone }}">{{ s.q.change_pct|pct }}</span></td>
+      <td class="small {{ s.q.week_pct|tone }}">{{ s.q.week_pct|pct(1) }}</td>
+      <td class="small {{ s.upside|tone }}">{{ s.upside|pct(1) if s.upside is not none else '–' }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  <div class="foot"><span>3 / 관심종목</span><span>목표가 괴리 = 평균 목표가 대비 상승여력</span></div>
+</section>
+{% endfor %}
+
+{# ═════════ 4. 종목별 상세 ═════════ #}
+{% for s in stocks %}
+{% set q = s.q %}{% set ai = s.ai %}{% set av = s.av %}
+<section class="card" data-card="10_{{ '%02d'|format(loop.index) }}_{{ s.t.symbol }}">
+  <div class="s-head">
+    <div>
+      <div class="sym">{{ s.t.symbol }}</div>
+      <div class="nm">{{ s.t.name }}{% if s.t.memo %} · {{ s.t.memo }}{% endif %}</div>
+    </div>
+    <div class="s-price num">
+      <div class="v">${{ q.close|price }}</div>
+      <div class="c {{ q.change_pct|tone }}">{{ q.change_pct|pct }} ({{ q.change|signed }})</div>
+    </div>
+  </div>
+
+  {% if s.spark %}
+  <svg class="spark" width="100%" viewBox="0 0 {{ s.spark.w }} {{ s.spark.h }}" preserveAspectRatio="none" height="52">
+    <defs><linearGradient id="g{{ loop.index }}" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--{{ s.spark.tone if s.spark.tone != 'flat' else 'flat' }})" stop-opacity=".28"/>
+      <stop offset="1" stop-color="var(--{{ s.spark.tone }})" stop-opacity="0"/></linearGradient></defs>
+    <path d="{{ s.spark.area }}" fill="url(#g{{ loop.index }})"/>
+    <path d="{{ s.spark.line }}" fill="none" stroke="var(--{{ s.spark.tone }})" stroke-width="2" vector-effect="non-scaling-stroke"/>
+  </svg>
+  {% endif %}
+  <div class="s-stats num">
+    <span class="stat">5일<b class="{{ q.week_pct|tone }}">{{ q.week_pct|pct(1) }}</b></span>
+    <span class="stat">1개월<b class="{{ q.month_pct|tone }}">{{ q.month_pct|pct(1) }}</b></span>
+    <span class="stat">YTD<b class="{{ q.ytd_pct|tone }}">{{ q.ytd_pct|pct(1) }}</b></span>
+    {% if q.volume_ratio %}<span class="stat">거래량<b>{{ '%.1f'|format(q.volume_ratio) }}배</b></span>{% endif %}
+    {% if q.next_earnings %}<span class="stat">실적<b>{{ q.next_earnings[5:]|replace('-', '/') }}</b></span>{% endif %}
+  </div>
+
+  {% if ai.headline %}<div class="headline">{{ ai.headline }}</div>{% endif %}
+
+  <h3>오늘 {{ '상승' if (q.change_pct or 0) >= 0 else '하락' }} 이유{% if ai.driver_type %} <span class="chip neutral">{{ ai.driver_type }}</span>{% endif %}</h3>
+  {% if ai.move_reasons %}
+  <ul class="bul">{% for r in ai.move_reasons %}<li>{{ r }}</li>{% endfor %}</ul>
+  {% else %}
+  <div class="meta">AI 분석이 준비되지 않았습니다.</div>
+  {% endif %}
+
+  {% set wo = ai.weekly_outlook or {} %}
+  {% if wo %}
+  <h3>주간 전망</h3>
+  <div class="outlook">
+    <div class="row"><span class="chip {{ 'up' if wo.stance == '긍정' else ('down' if wo.stance == '부정' else 'neutral') }}">{{ wo.stance or '중립' }}</span></div>
+    <div class="small" style="font-size:14.5px">{{ wo.summary }}</div>
+    {% if wo.key_events %}<div class="events">{% for e in wo.key_events %}<span>📅 {{ e }}</span>{% endfor %}</div>{% endif %}
+    {% if wo.watch_points %}<ul class="bul" style="margin-top:6px">{% for w in wo.watch_points %}<li style="font-size:13.5px;color:var(--sub)">{{ w }}</li>{% endfor %}</ul>{% endif %}
+  </div>
+  {% endif %}
+
+  <h3>증권사 목표가{% if av.n_analysts %} <span class="meta">· {{ av.n_analysts }}명</span>{% endif %}</h3>
+  {% if s.bar %}{% set b = s.bar %}
+  <div class="tbar num">
+    <div class="track"></div>
+    <div class="range" style="left:{{ b.p_low }}%; width:{{ b.p_high - b.p_low }}%"></div>
+    <div class="mk mean" style="left:{{ b.p_mean }}%">평균 ${{ b.mean|price(0) }}<i></i></div>
+    <div class="mk px" style="left:{{ b.p_price }}%"><i></i>현재</div>
+  </div>
+  <div class="tbar-lbl num"><span>최저 ${{ b.low|price(0) }}</span><span class="{{ b.upside|tone }}" style="font-weight:700">상승여력 {{ b.upside|pct(1) }}</span><span>최고 ${{ b.high|price(0) }}</span></div>
+  {% else %}
+  <div class="meta">목표가 컨센서스 데이터 없음</div>
+  {% endif %}
+  {% if s.consensus_total %}
+  <div class="cons">
+    <div class="b" style="flex:{{ av.buy }}"></div><div class="h" style="flex:{{ av.hold }}"></div><div class="s" style="flex:{{ av.sell }}"></div>
+  </div>
+  <div class="cons-lbl num"><span class="up">매수 {{ av.buy }}</span><span>보유 {{ av.hold }}</span><span class="down">매도 {{ av.sell }}</span></div>
+  {% endif %}
+
+  {% if s.actions %}
+  <div class="acts num">
+    {% for a in s.actions %}
+    <div class="act">
+      <div><span class="d">{{ a.date }}</span><span class="f">{{ a.firm }}</span>
+        <span class="r"> {% if a.from_rating and a.from_rating != a.rating %}{{ a.from_rating }}→{% endif %}{{ a.rating }}</span>
+        {% if a.note %}<span class="note">{{ a.note }}</span>{% endif %}
+      </div>
+      <div class="tp {{ 'up' if a.prior_target and a.target and a.target > a.prior_target else ('down' if a.prior_target and a.target and a.target < a.prior_target else '') }}">
+        {% if a.target %}{% if a.prior_target and a.prior_target != a.target %}<span class="meta">${{ a.prior_target|price(0) }}→</span>{% endif %}${{ a.target|price(0) }}{% else %}–{% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+  {% if ai.analyst_take %}<p class="take">💬 {{ ai.analyst_take }}</p>{% endif %}
+
+  {% if ai.sources %}
+  <div class="srcs">출처 · {% for src in ai.sources %}<a href="{{ src.url }}">{{ loop.index }}. {{ src.title }}</a>{% endfor %}</div>
+  {% endif %}
+  <div class="foot"><span>{{ s.t.symbol }}{% if q.market_cap %} · 시총 {{ q.market_cap|cap }}{% endif %}</span><span>{{ session_label }}</span></div>
+</section>
+{% endfor %}
+
+<div class="disclaimer">본 자료는 정보 제공 목적이며 투자 권유가 아닙니다. 시세: Yahoo Finance · 분석: Claude(웹검색 기반)</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+# ───────────────────────────────────────────────
+#  미국주식 데일리 브리핑 설정
+#  비밀값(API 키, 토큰)은 여기에 쓰지 말고 .env / GitHub Secrets 에 넣으세요.
+# ───────────────────────────────────────────────
+
+timezone: Asia/Seoul
+send_at: "08:50"            # 이 시각까지 기다렸다가 전송 (이미 지났으면 즉시 전송)
+tickers_file: tickers.md
+
+claude:
+  model: claude-sonnet-5-5   # 비용↓: claude-haiku-5-5 / 품질↑: claude-opus-5-5
+  web_search_tool: web_search_20260318   # 동적 필터링(토큰 절약). 문제 시 web_search_20250305
+  max_searches_per_ticker: 4
+  max_searches_news: 6
+  parallel_workers: 3        # 동시 호출 수 (레이트 리밋 걸리면 낮추기)
+  max_retries: 2
+
+market:
+  # 커버 카드에 표시할 지표 (Yahoo 심볼: 표시명)
+  indicators:
+    "^GSPC": "S&P 500"
+    "^IXIC": "NASDAQ"
+    "^DJI": "다우"
+    "^SOX": "반도체(SOX)"
+    "^VIX": "VIX"
+    "^TNX": "미 10년물 금리"
+    "DX-Y.NYB": "달러 인덱스"
+    "KRW=X": "원/달러"
+    "CL=F": "WTI 유가"
+  futures:
+    "ES=F": "S&P 선물"
+    "NQ=F": "나스닥 선물"
+
+analyst:
+  lookback_days: 30          # 최근 N일 내 목표가 변경만 표시
+  max_actions_per_ticker: 5
+  # '세계 영향력 있는 증권사' 필터 (Yahoo upgrades_downgrades 의 Firm 이름과 부분일치)
+  major_firms:
+    - Goldman Sachs
+    - Morgan Stanley
+    - JP Morgan
+    - JPMorgan
+    - Bank of America
+    - BofA
+    - Citigroup
+    - Citi
+    - Wells Fargo
+    - UBS
+    - Barclays
+    - Deutsche Bank
+    - Jefferies
+    - Bernstein
+    - Evercore
+    - Mizuho
+    - BMO Capital
+    - RBC Capital
+    - HSBC
+    - Wedbush
+    - KeyBanc
+    - Piper Sandler
+    - TD Cowen
+    - Truist
+
+output:
+  cards_png: true            # 모바일용 세로 카드 이미지 (권장)
+  html: true                 # 링크 포함 전체 리포트 (출처 확인용)
+  pptx: false                # PPT 도 받고 싶으면 true
+  card_width: 1080           # px (2x 렌더링으로 선명하게)
+  dir: output
+
+delivery:
+  telegram: true             # TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID 필요
+  email: false               # SMTP_* 환경변수 필요 (Gmail 앱 비밀번호)

@@ -1,0 +1,296 @@
+{
+  "meta": {
+    "model": "sonnet",
+    "session_date": "2026-10-14",
+    "notes": "비상 모드(market_web.json) 사용. AAPL 10/14 등락률은 확인 불가(종가 342.96만 확보, 10/13 마지막 체결가 341.27 대비 약 +0.5%로 추정). 매수/보유/매도 건수, 52주 고저, 주간·월간 수익률은 확인 못해 null. 지수 종가·등락률은 Tapeboard 마감 요약 기준(VIX·10년물·달러·WTI 포함), S&P=Yahoo 직전종가와 일치. 웹검색 결과에 본문 요약이 거의 없어 개별 종목 이유는 CPI·AI 인프라 매도 등 시장 전반 재료 위주로 작성하고 불확실한 부분은 명시함."
+  },
+  "tickers": {
+    "NVDA": {
+      "headline": "CPI·AI 인프라 매도에 3% 하락",
+      "move_reasons": [
+        "9월 CPI 예상 상회로 고밸류 기술주 매도",
+        "CoreWeave 등 AI 인프라주 급락 여파",
+        "기술 섹터 -3%, 자금은 헬스케어·필수소비재로"
+      ],
+      "driver_type": "혼합",
+      "weekly_outlook": {
+        "stance": "중립",
+        "summary": "금리·AI 투자 심리에 따라 변동성이 큰 주간이 될 전망. TSMC 실적과 AI 인프라주 낙폭 되돌림 여부가 방향을 가를 것.",
+        "key_events": [
+          "10/15(목) TSMC 실적, 미 PPI·소매판매",
+          "10/16(금) 연준 의장 발언",
+          "11/17(화) 엔비디아 실적(Yahoo 기준)"
+        ],
+        "watch_points": [
+          "AI 인프라주 추가 매도 또는 반등 여부",
+          "미 10년물 금리 5% 안팎 유지 여부",
+          "TSMC의 설비투자·AI 칩 수요 코멘트"
+        ]
+      },
+      "analyst_take": "캔터 피츠제럴드가 10/1 비중확대 의견과 목표가 350달러를 유지함. 컨센서스 평균 목표가 328.72달러로 현재가보다 높고, 범위는 180~515달러로 넓음.",
+      "extra_actions": [
+        {
+          "date": "10/01",
+          "firm": "Cantor Fitzgerald",
+          "rating": "Overweight",
+          "target": 350,
+          "prior_target": 350,
+          "note": "AI 수요 논리 유지"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Yahoo Finance NVDA 종목 페이지",
+          "url": "https://finance.yahoo.com/quote/NVDA/"
+        },
+        {
+          "title": "Market close, October 14, 2026 (Tapeboard)",
+          "url": "https://tapeboard.com/blog/market-pulse-2026-10-14"
+        },
+        {
+          "title": "Stock Market Today: Hot CPI Hits AI Trade — Oct 14 (Meta Trading Club)",
+          "url": "https://www.metatradingclub.com/2026/10/14/"
+        }
+      ]
+    },
+    "MSFT": {
+      "headline": "기술주 약세 동참, 1%대 하락",
+      "move_reasons": [
+        "CPI 쇼크로 기술 섹터 전반 약세",
+        "AI 설비투자 수익성 논란 지속",
+        "뚜렷한 개별 악재는 확인되지 않음"
+      ],
+      "driver_type": "섹터",
+      "weekly_outlook": {
+        "stance": "중립",
+        "summary": "낙폭은 나스닥보다 작아 방어력은 확인됨. 실적 전까지는 금리와 AI 투자 심리에 연동될 전망.",
+        "key_events": [
+          "10/15(목) 미 PPI·소매판매",
+          "10/28(수) 마이크로소프트 실적(Yahoo 기준)"
+        ],
+        "watch_points": [
+          "AI 인프라 매도 확산 여부",
+          "자체 AI 칩(마이아) 관련 설비투자 부담 논의"
+        ]
+      },
+      "analyst_take": "바클레이즈가 10/13 비중확대 유지하며 목표가를 512에서 600달러로 상향함. 컨센서스 평균 590.28달러, 범위 440~870달러.",
+      "extra_actions": [
+        {
+          "date": "10/13",
+          "firm": "Barclays",
+          "rating": "Overweight",
+          "target": 600,
+          "prior_target": 512,
+          "note": "목표가 상향, 비중확대 유지"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Yahoo Finance MSFT 종목 페이지",
+          "url": "https://finance.yahoo.com/quote/MSFT/"
+        },
+        {
+          "title": "Market close, October 14, 2026 (Tapeboard)",
+          "url": "https://tapeboard.com/blog/market-pulse-2026-10-14"
+        }
+      ]
+    },
+    "AAPL": {
+      "headline": "기술주 약세 속 340달러대 유지",
+      "move_reasons": [
+        "종가 342.96달러, 등락률 미확인(소폭 상승 추정)",
+        "나스닥 -1.9% 장에서 낙폭 제한 추정",
+        "뚜렷한 개별 이슈 없음(시장 흐름 연동)"
+      ],
+      "driver_type": "섹터",
+      "weekly_outlook": {
+        "stance": "중립",
+        "summary": "현재가가 컨센서스 평균 목표가보다 높아 밸류에이션 논쟁이 이어질 전망. 중국 AI 기능 출시와 서비스 성장이 주요 변수.",
+        "key_events": [
+          "10/15(목) 미 PPI·소매판매",
+          "11/02(월) 애플 실적(Yahoo 추정일, 확정 여부 미확인)"
+        ],
+        "watch_points": [
+          "애플 인텔리전스 중국 확산 속도",
+          "프리미엄 밸류에이션 vs 교체주기 기대"
+        ]
+      },
+      "analyst_take": "JP모건이 10/12 비중확대 유지하며 목표가를 340에서 360달러로 올림. 컨센서스 평균 329.38달러는 현재가보다 낮고 범위는 215~405달러.",
+      "extra_actions": [
+        {
+          "date": "10/12",
+          "firm": "JP Morgan",
+          "rating": "Overweight",
+          "target": 360,
+          "prior_target": 340,
+          "note": "목표가 상향"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Yahoo Finance AAPL 종목 페이지",
+          "url": "https://finance.yahoo.com/quote/AAPL/"
+        },
+        {
+          "title": "AAPL historical prices (FinancialContent)",
+          "url": "https://www.financialcontent.com/quote/NQ%3AAAPL/historical"
+        },
+        {
+          "title": "Market close, October 14, 2026 (Tapeboard)",
+          "url": "https://tapeboard.com/blog/market-pulse-2026-10-14"
+        }
+      ]
+    },
+    "TSLA": {
+      "headline": "성장주 약세와 실적 앞둔 경계",
+      "move_reasons": [
+        "CPI 쇼크·고금리 부담에 성장주 약세",
+        "10/21 3분기 실적 앞두고 관망 심리",
+        "거래량은 평균 이하, 투매 신호는 약함"
+      ],
+      "driver_type": "혼합",
+      "weekly_outlook": {
+        "stance": "중립",
+        "summary": "로드스터 공개 행사와 3분기 실적(10/21 전후)이 주간 핵심 이벤트. 로보택시 규제 이슈와 실적 기대가 엇갈릴 전망.",
+        "key_events": [
+          "10/15(목) 로드스터 공개 행사(Yahoo 요약 기준)",
+          "10/21(수) 3분기 실적 발표 예상"
+        ],
+        "watch_points": [
+          "NHTSA 로보택시 조사 진행 상황",
+          "바클레이즈의 테슬라-스페이스X 합병 시나리오 언급(미확인)",
+          "실적 가이던스와 마진"
+        ]
+      },
+      "analyst_take": "제프리스가 10/12 보유 의견을 유지하되 목표가를 350에서 400달러로 상향함. 컨센서스 평균 397.83달러로 현재가 부근이며 범위가 128~600달러로 매우 넓음.",
+      "extra_actions": [
+        {
+          "date": "10/12",
+          "firm": "Jefferies",
+          "rating": "Hold",
+          "target": 400,
+          "prior_target": 350,
+          "note": "목표가 상향, 보유 유지"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Yahoo Finance TSLA 종목 페이지",
+          "url": "https://finance.yahoo.com/quote/TSLA/"
+        },
+        {
+          "title": "Market close, October 14, 2026 (Tapeboard)",
+          "url": "https://tapeboard.com/blog/market-pulse-2026-10-14"
+        }
+      ]
+    },
+    "PLTR": {
+      "headline": "고밸류 AI주 매도에 3%대 하락",
+      "move_reasons": [
+        "CPI 쇼크로 고밸류 소프트웨어주 약세",
+        "AI 인프라주 급락의 투자심리 악화",
+        "거래량 24.2M으로 전일(18.5M) 대비 증가"
+      ],
+      "driver_type": "섹터",
+      "weekly_outlook": {
+        "stance": "중립",
+        "summary": "200달러 부근 지지 여부가 단기 관건. 금리 부담과 AI 심리에 따라 변동성이 클 전망.",
+        "key_events": [
+          "10/15(목) 미 PPI·소매판매",
+          "11/02(월) 팔란티어 실적(Yahoo 추정일)"
+        ],
+        "watch_points": [
+          "AI 인프라주 낙폭 확대 여부",
+          "밸류에이션 논쟁(2분기 호실적·가이던스 상향 이후)"
+        ]
+      },
+      "analyst_take": "바클레이즈가 10/9 비중확대 의견과 목표가 265달러로 커버리지를 개시함. 컨센서스 평균 205.27달러로 현재가와 비슷하고 범위는 80~265달러.",
+      "extra_actions": [
+        {
+          "date": "10/09",
+          "firm": "Barclays",
+          "rating": "Overweight (신규 커버)",
+          "target": 265,
+          "prior_target": null,
+          "note": "커버리지 개시"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Yahoo Finance PLTR 종목 페이지",
+          "url": "https://finance.yahoo.com/quote/PLTR/"
+        },
+        {
+          "title": "PLTR historical prices (FinancialContent)",
+          "url": "https://www.financialcontent.com/quote/NQ%3APLTR/historical"
+        },
+        {
+          "title": "Market close, October 14, 2026 (Tapeboard)",
+          "url": "https://tapeboard.com/blog/market-pulse-2026-10-14"
+        }
+      ]
+    }
+  },
+  "news": {
+    "market_wrap": "10/14 미 증시는 9월 CPI가 예상을 웃돌고 AI 인프라주가 급락하며 S&P500 -1.11%, 나스닥 -1.88%로 마감함. 기술 섹터가 -2.98%로 가장 약했고 헬스케어(+2.5%)·필수소비재(+2.2%) 등 방어주로 자금이 이동, VIX는 16.87로 상승함.",
+    "mood": "위험회피",
+    "top_news": [
+      {
+        "rank": 1,
+        "title": "9월 CPI 예상 상회, 인플레 재확산",
+        "summary": "9월 소비자물가가 전월비 0.6%, 전년비 3.7%로 예상(3.6%)을 웃돎. 에너지 가격 급등이 주도하고 근원 CPI는 전월비 0.3%였음.",
+        "impact": "하락",
+        "affects": "둘다",
+        "why": "물가 재가속은 연준의 추가 인상 우려를 키워 성장주 밸류에이션에 부담이 됨.",
+        "source": "Meta Trading Club",
+        "url": "https://www.metatradingclub.com/2026/10/14/"
+      },
+      {
+        "rank": 2,
+        "title": "AI 인프라주 급락, 기술주 -3%",
+        "summary": "코어위브가 약 15% 급락하는 등 AI·클라우드 인프라주가 일제히 하락함. 기술 섹터(XLK)는 -2.98%로 최대 낙폭.",
+        "impact": "하락",
+        "affects": "NASDAQ",
+        "why": "엔비디아 등 대형 AI주의 시총 비중이 커 나스닥 낙폭이 S&P500보다 크게 나타남.",
+        "source": "Tapeboard",
+        "url": "https://tapeboard.com/blog/market-pulse-2026-10-14"
+      },
+      {
+        "rank": 3,
+        "title": "연준 인상 경로와 10년물 5%대",
+        "summary": "연준은 9월 25bp 인상(3.75~4.00%)했고 위원 다수가 연내 추가 인상을 예상함. 10년물 금리는 5.19%로 소폭 내렸지만 20년 만의 고수준임.",
+        "impact": "혼조",
+        "affects": "둘다",
+        "why": "금리 수준이 높아 증시 밸류에이션 상단을 제한하나, CPI 후 금리 하락은 낙폭을 일부 완화함.",
+        "source": "Asia Economy",
+        "url": "https://view.asiae.co.kr/en/article/2026100804564226796"
+      },
+      {
+        "rank": 4,
+        "title": "TSMC 실적·미 PPI/소매판매",
+        "summary": "TSMC는 10/15 미국 장 전에 실적을 발표하며 AI 칩 수요와 설비투자 전망이 초점임. 미국에선 PPI·소매판매·실업수당 청구가 같은 날 나옴.",
+        "impact": "혼조",
+        "affects": "둘다",
+        "why": "AI 반도체 수요 확인 여부와 물가·소비 지표가 오늘 밤 기술주 반등 가능성을 좌우함.",
+        "source": "investingLive",
+        "url": "https://investinglive.com/stocks/earnings-calendar-october-12-16-big-banks-asml-and-tsmc-take-center-stage/"
+      },
+      {
+        "rank": 5,
+        "title": "이란 전쟁發 에너지 쇼크 지속",
+        "summary": "브렌트유가 100달러 안팎이고 WTI는 94.46달러(+0.34%)로 마감함. 에너지 섹터만 +0.64% 올랐고 사우디 시설 공격 등 공급 불안이 이어짐.",
+        "impact": "혼조",
+        "affects": "S&P500",
+        "why": "유가 상승은 인플레와 금리 부담을 키우지만 에너지 업종에는 지수 방어 요인으로 작용함.",
+        "source": "investingLive",
+        "url": "https://investinglive.com/stocks/us-cpi-preview-energy-set-to-lift-inflation-to-3-7-core-seen-steady-at-2-4/"
+      }
+    ],
+    "tonight": [
+      "15:00 TSMC 실적 컨퍼런스콜(미국 장 전 발표)",
+      "21:30 미 PPI·소매판매(예상 +0.3%)·주간 실업수당 청구(약 19.5만 건 예상)·필라델피아 연은 제조업지수",
+      "연준 인사 발언 다수(연준 의장은 10/16 금요일 방콕 발언 예정)",
+      "10/21 테슬라 실적, 10/27~28 FOMC 대비 포지션 변화 주시"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "session_date": "2026-10-14",
+  "tickers": {
+    "NVDA": {"close": 221.30, "change_pct": -3.16, "week_pct": null, "month_pct": null,
+             "target_mean": 328.72, "target_high": 515.00, "target_low": 180.00,
+             "buy": null, "hold": null, "sell": null, "next_earnings": "2026-11-17"},
+    "MSFT": {"close": 533.69, "change_pct": -1.80, "week_pct": null, "month_pct": null,
+             "target_mean": 590.28, "target_high": 870.00, "target_low": 440.00,
+             "buy": null, "hold": null, "sell": null, "next_earnings": "2026-10-28"},
+    "AAPL": {"close": 342.96, "change_pct": null, "week_pct": null, "month_pct": null,
+             "target_mean": 329.38, "target_high": 405.00, "target_low": 215.00,
+             "buy": null, "hold": null, "sell": null, "next_earnings": "2026-11-02"},
+    "TSLA": {"close": 367.16, "change_pct": -2.15, "week_pct": null, "month_pct": null,
+             "target_mean": 397.83, "target_high": 600.00, "target_low": 128.11,
+             "buy": null, "hold": null, "sell": null, "next_earnings": "2026-10-21"},
+    "PLTR": {"close": 200.97, "change_pct": -3.69, "week_pct": null, "month_pct": null,
+             "target_mean": 205.27, "target_high": 265.00, "target_low": 80.00,
+             "buy": null, "hold": null, "sell": null, "next_earnings": "2026-11-02"}
+  },
+  "indices": {
+    "^GSPC": {"close": 7718.94, "change_pct": -1.11},
+    "^IXIC": {"close": 26692.87, "change_pct": -1.88},
+    "^DJI": {"close": 51621.48, "change_pct": -0.09},
+    "^VIX": {"close": 16.87, "change_pct": 10.48},
+    "^TNX": {"close": 5.19, "change_pct": -0.52},
+    "DX-Y.NYB": {"close": 102.19, "change_pct": -0.35},
+    "CL=F": {"close": 94.46, "change_pct": 0.34}
+  }
+}
