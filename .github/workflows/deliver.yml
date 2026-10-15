@@ -11,6 +11,10 @@ on:
         type: choice
         options: [now, mock]
         default: now
+      day:
+        description: "data 폴더 날짜 (비우면 오늘 KST)"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -48,12 +52,12 @@ jobs:
           set -o pipefail
           mkdir -p output
           case "${{ github.event.inputs.mode }}" in
-            now)  python main.py deliver --no-wait --force 2>&1 | tee output/run.log ;;
+            now)  python main.py deliver --no-wait --force ${{ github.event.inputs.day && format('--day {0}', github.event.inputs.day) || '' }} 2>&1 | tee output/run.log ;;
             mock) python main.py mock --send 2>&1 | tee output/run.log ;;
             *)    python main.py deliver 2>&1 | tee output/run.log ;;
           esac
       - name: Record sent
-        if: success() && github.event.inputs.mode != 'mock'
+        if: success() && github.event_name == 'schedule'
         run: |
           git add data/ || true
           git diff --cached --quiet && exit 0
