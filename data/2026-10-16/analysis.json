@@ -1,0 +1,249 @@
+{
+ "meta": {
+  "model": "sonnet",
+  "mode": "daily",
+  "session_date": "2026-10-15",
+  "notes": "extended 검색으로 10/15 당일 기사 확보. 근거는 TheStreet/Vistap/MarketBeat/GuruFocus/24-7 Wall St. 등 기사 요약임. NVDA·PANW는 회사 고유 이슈 미확인(섹터·밸류 논리). 오늘 밤 지표·실적 일정은 확인 못해 일반 항목만 기재. BE 실적일 기사 10/22 vs 데이터 10/23 상이. TheStreet URL은 페치 실패로 검색결과 URL 그대로 사용."
+ },
+ "tickers": {
+  "NVDA": {
+   "headline": "AI 금융 우려·반도체 매도 -1.8%",
+   "move_reasons": [
+    "AI 인프라 자금조달·현금흐름 우려로 AI주 매도",
+    "CoreWeave 급락 후 반등에도 부채 불안 잔존",
+    "PPI·소매판매 호조로 인플레·금리 부담, 순환매"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "전일 -3.2%에 이어 조정이 이어졌으나 회사 고유 악재는 확인되지 않음. AI 투자 재원 우려와 금리가 단기 방향을 좌우할 전망.",
+    "key_events": [
+     "11/18 실적발표(예정)",
+     "MSFT Maia 300 등 자체 칩 경쟁 이슈"
+    ],
+    "watch_points": [
+     "CoreWeave 등 AI 인프라 부채 동향",
+     "10년물 5.09% 및 연준 인상 경계"
+    ]
+   },
+   "analyst_take": "컨센서스 평균 약 $329, 매수 59/62건으로 의견은 우호적임. 이번 기간 주요 신규 변경은 확인하지 못했고 Cantor($350)·Rosenblatt($390) 유지 정도임.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "Nvidia Stock News (Oct 15, 2026): NVDA Falls 3.2% to $221.30 - HeyGoTrade",
+     "url": "https://www.heygotrade.com/en/news/nvidia-nvda-stock-news-october-15-2026/"
+    },
+    {
+     "title": "Stock Market Today, October 15, 2026: Dow Gains 556 Points as Investors Rotate Beyond AI",
+     "url": "https://vistapglobal.com/stock-market-today-october-15-2026-dow-gains-556-points-as-investors-rotate-beyond-ai-amwl-crwv-dhi-docs-eprx-ko-modd-nvda-ser-ysg-yum/"
+    },
+    {
+     "title": "NVIDIA Shares Down 1.8% - MarketBeat",
+     "url": "https://www.marketbeat.com/instant-alerts/price-nvidia-nasdaq-nvda-shares-down-18-heres-what-happened-2026-10-15/"
+    }
+   ]
+  },
+  "GOOGL": {
+   "headline": "JP모건 클라우드 근거 목표가 상향",
+   "move_reasons": [
+    "JP모건 Anmuth 목표가 $420→$425 상향",
+    "구글 클라우드 성장성 부각",
+    "AI주 매도 속에서도 상대적 선방"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "긍정",
+    "summary": "클라우드 성장 기대가 주가를 지지하나 AI 투자비용 부담이 논점임. 10/29 실적이 핵심 시험대 전망.",
+    "key_events": [
+     "10/29 3분기 실적발표"
+    ],
+    "watch_points": [
+     "클라우드 이익 증가율 vs 공통 AI 비용",
+     "10년물 금리"
+    ]
+   },
+   "analyst_take": "JP모건은 클라우드 성장을 근거로 $425로 상향했고 UBS($380)·Wells Fargo($417)·Piper($400)·Evercore($450)도 최근 상향함. 컨센서스 평균 약 $431, 매수 57건임.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "Alphabet Stocks Rise as JPMorgan Lifts Target on Cloud Growth - TradingView/GuruFocus",
+     "url": "https://www.tradingview.com/news/gurufocus:92fada085094b:0-alphabet-stocks-rise-as-jpmorgan-lifts-target-on-cloud-growth/"
+    },
+    {
+     "title": "Alphabet Stock Gets Price Target Bump from JPMorgan - MarketBeat",
+     "url": "https://www.marketbeat.com/instant-alerts/analyst-alphabet-nasdaq-googl-stock-gets-price-target-bump-from-jpmorgan-chase-co-2026-10-15/"
+    }
+   ]
+  },
+  "MU": {
+   "headline": "ASML 수주 호재로 반등 +1.9%",
+   "move_reasons": [
+    "ASML 수주 2028년까지 마감, 메모리 공급 부족 기대",
+    "5일 연속 하락 후 기술적 반등",
+    "CXMT 서버 메모리 진출 우려는 부담 잔존"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "낙폭 과대 반등이나 중국 CXMT 경쟁과 인플레·금리 부담이 남아 변동성 큰 구간임. 다음 실적(12/24)까지 섹터 수급이 변수.",
+    "key_events": [
+     "10/29 빅테크 실적(HBM 수요 단서)"
+    ],
+    "watch_points": [
+     "CXMT·SK하이닉스 메모리 가격 뉴스",
+     "50일선 약 $985 회복 여부"
+    ]
+   },
+   "analyst_take": "Mizuho($1,400 상향)·TD Cowen($1,600)·RBC($1,500)·Morgan Stanley($1,200) 모두 매수 의견 유지함. Goldman은 목표가 $1,250이며 컨센서스는 약 $1,561(데이터) 수준임.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "Micron Technology Stock Jumps 1.9% - MarketBeat",
+     "url": "https://www.marketbeat.com/instant-alerts/price-micron-technology-nasdaq-mu-stock-jumps-19-heres-why-2026-10-15/"
+    },
+    {
+     "title": "Micron Technology Stock Slides 16% Over 5 Straight Down Days - Trefis",
+     "url": "https://www.trefis.com/stock/mu/articles/618825/micron-technology-stock-slides-16-over-5-straight-down-days/2026-10-15"
+    }
+   ]
+  },
+  "BE": {
+   "headline": "인플레 쇼크에 고베타 약세 -1.3%",
+   "move_reasons": [
+    "PPI·CPI 호조로 금리 상승, 고밸류주 압박",
+    "Oracle 호재에도 주간 -13~15% 조정",
+    "밸류에이션 부담(후행 PER 300배대)"
+   ],
+   "driver_type": "매크로",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "실적(10/22~23)을 앞두고 베타가 매우 높아 변동성 클 전망. 수주·백로그 증가 확인이 관건임.",
+    "key_events": [
+     "10/22~23 3분기 실적발표(기사 10/22, 데이터 10/23)"
+    ],
+    "watch_points": [
+     "신규 수주·백로그(작년말 약 $60억 대비)",
+     "금리와 고밸류주 흐름"
+    ]
+   },
+   "analyst_take": "Roth는 목표가 $225→$260 상향했으나 Hold, Baird는 $351로 상향함. UBS($350 Buy)·Barclays($308)·Jefferies($264 Hold) 등 의견 엇갈리며 컨센서스 약 $283~285임.",
+   "extra_actions": [
+    {
+     "date": "10/14",
+     "firm": "Roth Capital",
+     "rating": "Neutral",
+     "target": 260,
+     "prior_target": 225,
+     "note": "밸류·투명성 우려 유지"
+    },
+    {
+     "date": "10/15",
+     "firm": "Baird",
+     "rating": "확인 못함",
+     "target": 351,
+     "prior_target": 0,
+     "note": "목표가 $351로 상향"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Bloom Energy Got Good News From Oracle and Fell Anyway - 24/7 Wall St.",
+     "url": "https://247wallst.com/investing/2026/10/15/bloom-energy-got-good-news-from-oracle-and-fell-anyway-is-it-time-to-buy/"
+    },
+    {
+     "title": "Bloom Energy Stocks Fall 3.9% Although Baird Raises Target to $351 - GuruFocus",
+     "url": "https://www.gurufocus.com/news/9126067/bloom-energy-stocks-fall-39-although-baird-raises-target-to-351"
+    }
+   ]
+  },
+  "PANW": {
+   "headline": "목표가 상향에도 밸류 부담 -1.3%",
+   "move_reasons": [
+    "Citi 목표가 $410→$440 상향에도 하락",
+    "GAAP·조정 이익 괴리 등 밸류에이션 부담",
+    "고금리·성장주 약세 및 직전 급등 차익실현"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "증권사 상향이 이어지나 고평가 논란과 금리가 단기 상단을 제한할 전망. 뚜렷한 예정 이벤트는 11/20 실적임.",
+    "key_events": [
+     "11/20 실적발표(예정)"
+    ],
+    "watch_points": [
+     "GAAP 이익 개선 여부",
+     "목표가 상향 지속과 금리"
+    ]
+   },
+   "analyst_take": "Citi($440 Buy)·Wells Fargo($525)·TD Cowen($440)·Morgan Stanley($410) 등 최근 상향이 이어짐. Bernstein은 $351로 시장수익률이며 컨센서스 평균 약 $398임.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "Palo Alto Networks Stocks Fall 2% Although $440 Target Meets an Earnings Gap - GuruFocus",
+     "url": "https://www.gurufocus.com/news/9125901/palo-alto-networks-stocks-fall-2-although-440-target-meets-an-earnings-gap"
+    }
+   ]
+  }
+ },
+ "news": {
+  "market_wrap": "다우 +1.1%(52,178), S&P500 +0.3%(7,744), NASDAQ +0.1%, 러셀2000 +1.3%로 AI·기술주에서 경기민감·소형주로 순환매가 나타남. 10년물이 5.09%로 약 10bp 하락했으나 PPI·소매판매가 예상을 상회함.",
+  "mood": "중립",
+  "top_news": [
+   {
+    "rank": 1,
+    "title": "PPI·소매판매 예상 상회, 금리 경계",
+    "summary": "9월 PPI는 전월비 +1.3%(예상 0.6%), 소매판매 +0.8%(예상 0.4%)로 호조였음. 전일 CPI도 3.7%로 예상을 웃돌아 추가 긴축 우려가 이어짐.",
+    "impact": "하락",
+    "affects": "둘다",
+    "why": "인플레 지속 시 금리 인상 기대가 커져 성장주 밸류에이션을 압박함.",
+    "source": "Vistap Global",
+    "url": "https://vistapglobal.com/stock-market-today-october-15-2026-dow-gains-556-points-as-investors-rotate-beyond-ai-amwl-crwv-dhi-docs-eprx-ko-modd-nvda-ser-ysg-yum/"
+   },
+   {
+    "rank": 2,
+    "title": "AI 인프라 자금조달 우려로 순환매",
+    "summary": "AI 인프라 기업의 현금흐름 대비 차입·투자 부담이 부각되며 CoreWeave가 전일 급락 후 반등함. 자금이 비AI 업종으로 이동함.",
+    "impact": "혼조",
+    "affects": "NASDAQ",
+    "why": "AI·반도체 비중이 큰 NASDAQ은 약세, 다우·소형주는 강세로 갈림.",
+    "source": "TheStreet",
+    "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-15-2026"
+   },
+   {
+    "rank": 3,
+    "title": "반도체 조정, 중국 메모리 경쟁 우려",
+    "summary": "SOX가 -0.9%이며 NVDA는 하락, 마이크론은 ASML 수주 호재로 반등함. CXMT의 서버 메모리 진출 우려가 부담으로 남음.",
+    "impact": "하락",
+    "affects": "NASDAQ",
+    "why": "반도체 대형주 약세가 NASDAQ 상승폭을 제약함.",
+    "source": "MarketBeat",
+    "url": "https://www.marketbeat.com/instant-alerts/price-micron-technology-nasdaq-mu-stock-jumps-19-heres-why-2026-10-15/"
+   },
+   {
+    "rank": 4,
+    "title": "국채금리 5.09%, 유가 $96 상승",
+    "summary": "10년물은 하락했으나 5%대를 유지하고 11월물 WTI는 +2.5%인 $96.25에 마감함. 금은 +2.1%임.",
+    "impact": "혼조",
+    "affects": "S&P500",
+    "why": "유가 상승은 물가 부담이지만 금리 하락은 주택·경기민감주에 우호적임.",
+    "source": "Vistap Global",
+    "url": "https://vistapglobal.com/stock-market-today-october-15-2026-dow-gains-556-points-as-investors-rotate-beyond-ai-amwl-crwv-dhi-docs-eprx-ko-modd-nvda-ser-ysg-yum/"
+   },
+   {
+    "rank": 5,
+    "title": "오전 장 AI 매도 지속, 마감 때 반전",
+    "summary": "장중에는 AI 매도로 혼조였으나 마감에 다우가 556포인트 상승하며 순환매가 확산됨. 50일선 이상 종목 비중이 늘어 시장 폭이 개선됨.",
+    "impact": "상승",
+    "affects": "S&P500",
+    "why": "시장 폭 개선은 지수 하단을 지지하는 요인임.",
+    "source": "Motley Fool",
+    "url": "https://www.fool.com/coverage/stock-market-today/2026/10/15/stock-market-midday-oct-15-markets-mixed-as-ai-sell-off-continues/"
+   }
+  ],
+  "tonight": [
+   "금요일 10/16 월간 옵션 만기(변동성 유의)",
+   "경제지표·실적 일정은 기사에서 확인하지 못함",
+   "22:30 미국 정규장 개장(서머타임)"
+  ]
+ }
+}
