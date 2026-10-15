@@ -20,8 +20,10 @@ class Telegram:
             tok = tok[3:]
         self.token = tok
         self.chat_id = (chat_id or os.environ.get("TELEGRAM_CHAT_ID", "")).strip().strip('"\'')
-        if not self.token or not self.chat_id:
-            raise RuntimeError("TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID 가 비어 있습니다 (Repository secrets 확인)")
+        missing = [n for n, v in (("TELEGRAM_BOT_TOKEN", self.token), ("TELEGRAM_CHAT_ID", self.chat_id)) if not v]
+        if missing:
+            raise RuntimeError(f"{', '.join(missing)} 값이 비어 있음 → Settings > Secrets and variables > Actions > "
+                               "Secrets 탭의 'Repository secrets' 에 정확한 이름으로 등록됐는지 확인")
         self._preflight()
 
     def _preflight(self):
