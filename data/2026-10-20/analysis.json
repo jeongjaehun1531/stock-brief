@@ -1,0 +1,242 @@
+{
+ "meta": {
+  "model": "sonnet",
+  "mode": "daily",
+  "session_date": "2026-10-19",
+  "notes": "웹검색 10회(extended 포함)·WebFetch 6회(2회 실패 포함). 10/19 시장 랩(Motley Fool, TheStreet)으로 반등 배경(AI 신뢰 회복, 메모리 심리, 클라우드)을 확인하고 MU는 TradingKey로 보강함. NVDA·GOOGL·BE·PANW는 개별 원인 기사 없이 섹터·지수 연동으로 기술. 유가는 TheStreet(장중 103달러, +2%)과 market.json(마감 98.15달러, -3.2%)이 달라 market.json 수치를 우선함. BE 실적일은 캘린더 10/22 장마감 후 vs yfinance 10/23로 상이. 일정 시각은 ET를 KST로 환산했으며 SpaceX 실적 시점은 한 매체 기준이라 재확인 필요. extra_actions 없음."
+ },
+ "tickers": {
+  "NVDA": {
+   "headline": "주간 최악 후 AI주 반등 +1.4%",
+   "move_reasons": [
+    "최악의 한 주 뒤 반도체·클라우드 중심 기술주 반등",
+    "AI 기업 신뢰 회복, 코어위브 상향(GS)·6% 상승",
+    "뚜렷한 개별 이슈 없음(섹터·지수 흐름 연동)"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "주간 -4.1% 조정 후 기술적 반등 성격이며, 다음 실적(11/18) 전까지 반도체 심리에 연동될 전망임. 금리 5.1%대가 밸류에이션 부담 요인임.",
+    "key_events": [
+     "10/21(수) 장마감 후 Meta·Tesla 실적(AI 투자 코멘트)"
+    ],
+    "watch_points": [
+     "코어위브 부채·AI 인프라 신용 우려",
+     "자체칩(TPU 등) 확대와 GPU 수요"
+    ]
+   },
+   "analyst_take": "컨센서스 목표가 평균 약 329달러로 현재가 대비 괴리가 크고 매수 59/62임. 최근 Cantor 350달러, Rosenblatt 390달러 유지 흐름임.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "Stock Market Midday, Oct. 19: Tech Stocks Rebound as AI Confidence Returns",
+     "url": "https://www.fool.com/coverage/stock-market-today/2026/10/19/stock-market-midday-oct-19-tech-stocks-rebound-as-ai-confidence-returns/"
+    },
+    {
+     "title": "Stock Market Today (Oct. 19, 2026): Nasdaq climbs as tech rebounds from sell-off",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-oct-19-2026-nasdaq-futures-climb-as-tech-rebound-from-sell-off"
+    },
+    {
+     "title": "Nvidia Stock News (Oct 15, 2026)",
+     "url": "https://www.heygotrade.com/en/news/nvidia-nvda-stock-news-october-15-2026/"
+    },
+    {
+     "title": "Nvidia Stock News (Oct 19, 2026)",
+     "url": "https://www.heygotrade.com/en/news/nvidia-nvda-stock-news-october-19-2026/"
+    }
+   ]
+  },
+  "GOOGL": {
+   "headline": "나스닥 반등에 +1.1%",
+   "move_reasons": [
+    "나스닥 +1.1%, 기술주 반등에 동참",
+    "최악의 한 주 이후 AI 신뢰 회복 분위기",
+    "뚜렷한 개별 이슈 없음(섹터·지수 흐름 연동)"
+   ],
+   "driver_type": "매크로",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "10/29 실적 발표를 앞두고 지수·금리 흐름에 연동될 전망임. 같은 주 빅테크 실적의 AI 투자 코멘트가 참고 지표임.",
+    "key_events": [
+     "10/21(수) Meta·Tesla 실적",
+     "10/29 자사 실적"
+    ],
+    "watch_points": [
+     "빅테크 설비투자 가이던스",
+     "클라우드 성장률 기대치"
+    ]
+   },
+   "analyst_take": "컨센서스 평균 목표가 약 430달러, 매수 57/62임. JP모건 425달러로 상향(10/15), KeyBanc은 435달러에서 410달러로 하향(10/19)하며 Overweight 유지함.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "Stock Market Midday, Oct. 19: Tech Stocks Rebound as AI Confidence Returns",
+     "url": "https://www.fool.com/coverage/stock-market-today/2026/10/19/stock-market-midday-oct-19-tech-stocks-rebound-as-ai-confidence-returns/"
+    },
+    {
+     "title": "Stock Market Today (Oct. 19, 2026): Nasdaq climbs as tech rebounds from sell-off",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-oct-19-2026-nasdaq-futures-climb-as-tech-rebound-from-sell-off"
+    }
+   ]
+  },
+  "MU": {
+   "headline": "메모리 심리 개선 +3.0%",
+   "move_reasons": [
+    "메모리 반도체 심리 개선, 샌디스크 등 동반 급등",
+    "주간 -8.5% 급락 후 낙폭 과대 반등(RSI 과매도)",
+    "대만 노조 성과급 협상·CXMT 경쟁은 부담 요인"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "메모리 심리 반등 속 고점 대비 28% 낮은 구간이며 변동성이 큼. 대만 노조 중재(10/22)와 SK하이닉스 실적(10/28)이 변수임.",
+    "key_events": [
+     "10/22(목) 대만 타이충 노조 중재",
+     "10/28(수) SK하이닉스 실적",
+     "10/21(수) 장마감 후 Meta·Tesla 실적"
+    ],
+    "watch_points": [
+     "대만 노조 파업 여부",
+     "중국 CXMT DDR5 출시 영향"
+    ]
+   },
+   "analyst_take": "컨센서스 평균 목표가 약 1,560달러, 매수 45/49임. 10/1 Mizuho 1,400달러 상향, 모건스탠리 1,200달러·TD카우언 1,600달러·RBC 1,500달러 유지 흐름임.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "Stock Market Midday, Oct. 19: Tech Stocks Rebound as AI Confidence Returns",
+     "url": "https://www.fool.com/coverage/stock-market-today/2026/10/19/stock-market-midday-oct-19-tech-stocks-rebound-as-ai-confidence-returns/"
+    },
+    {
+     "title": "Stock Market Today (Oct. 19, 2026): Nasdaq climbs as tech rebounds from sell-off",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-oct-19-2026-nasdaq-futures-climb-as-tech-rebound-from-sell-off"
+    },
+    {
+     "title": "Micron Stock Forecast: CXMT and Taiwan Labor Risk (TradingKey)",
+     "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262223051-micron-stock-forecast-cxmt-taiwan-strike-856-support-october-19-2026-tradingkey"
+    }
+   ]
+  },
+  "BE": {
+   "headline": "급락 후 반등 +2.2%",
+   "move_reasons": [
+    "주간 -13.7% 급락 후 저가 매수",
+    "유가 하락·위험선호 회복",
+    "뚜렷한 개별 이슈 없음(섹터·지수 흐름 연동)"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "10/23 실적 발표를 앞두고 변동성 확대 가능성이 큼. AI 전력 인프라 기대와 높은 밸류에이션 부담이 공존함.",
+    "key_events": [
+     "10/22(목) 장마감 후 실적 발표(캘린더 기준, yfinance는 10/23)",
+     "10/21(수) Meta·Tesla 실적"
+    ],
+    "watch_points": [
+     "실적 가이던스·수주 잔고",
+     "AI 데이터센터 고객 확대"
+    ]
+   },
+   "analyst_take": "컨센서스 평균 목표가 약 285달러이며 매수 15·중립 12로 의견이 갈림. Truist 240달러(10/16, 218달러에서 상향, Hold), UBS 350달러 상향(10/7) 흐름임.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "Stock Market Today (Oct. 19, 2026): Nasdaq climbs as tech rebounds from sell-off",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-oct-19-2026-nasdaq-futures-climb-as-tech-rebound-from-sell-off"
+    }
+   ]
+  },
+  "PANW": {
+   "headline": "낙폭 후 반등 +1.4%",
+   "move_reasons": [
+    "주간 -14.1% 급락 후 기술적 반등",
+    "나스닥 +1.1% 동반 반등",
+    "뚜렷한 개별 이슈 없음(섹터·지수 흐름 연동)"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "다음 실적은 11/20으로 이번 주는 소프트웨어·보안주 심리와 금리에 연동될 전망임. 급락 후 변동성이 높은 구간임.",
+    "key_events": [
+     "이번 주 뚜렷한 자사 일정 없음"
+    ],
+    "watch_points": [
+     "보안 소프트웨어 섹터 흐름",
+     "10년물 금리"
+    ]
+   },
+   "analyst_take": "컨센서스 평균 목표가 약 399달러, 매수 42/55임. Wells Fargo 525달러(10/13), Citi 440달러(10/15), TD카우언 440달러 상향 흐름임.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "Stock Market Today (Oct. 19, 2026): Nasdaq climbs as tech rebounds from sell-off",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-oct-19-2026-nasdaq-futures-climb-as-tech-rebound-from-sell-off"
+    }
+   ]
+  }
+ },
+ "news": {
+  "market_wrap": "S&P500 +0.41%, 나스닥 +1.11%로 최악의 한 주 이후 반도체·클라우드 중심 기술주가 반등했고 다우는 -0.07%였음. 아마존 +4.95%, 팔란티어 +4.4%, 마이크론 +3.0% 등이 주도했으며 10년물 금리는 5.1%대를 유지함.",
+  "mood": "중립",
+  "top_news": [
+   {
+    "rank": 1,
+    "title": "기술주 반등, AI 신뢰 회복",
+    "summary": "최악의 한 주 뒤 반도체·클라우드 인프라주가 반등을 주도함. 아마존은 모건스탠리 톱픽 지정과 목표가 350달러로 약 5% 상승함.",
+    "impact": "상승",
+    "affects": "NASDAQ",
+    "why": "AI 대형주 반등이 나스닥 지수 낙폭을 되돌리는 핵심 동력임.",
+    "source": "Motley Fool",
+    "url": "https://www.fool.com/coverage/stock-market-today/2026/10/19/stock-market-midday-oct-19-tech-stocks-rebound-as-ai-confidence-returns/"
+   },
+   {
+    "rank": 2,
+    "title": "Meta·Tesla 등 빅테크 실적 주간",
+    "summary": "Meta·Tesla·IBM·TI·램리서치가 10/21 장마감 후 실적을 발표하며 AI 투자 대비 수익성이 초점임.",
+    "impact": "혼조",
+    "affects": "둘다",
+    "why": "설비투자 가이던스가 AI 반도체·전력주와 지수 방향을 좌우함.",
+    "source": "Motley Fool / TheStreet",
+    "url": "https://www.fool.com/coverage/stock-market-today/2026/10/19/stock-market-midday-oct-19-tech-stocks-rebound-as-ai-confidence-returns/"
+   },
+   {
+    "rank": 3,
+    "title": "후티 공격에 유가 100달러 부근",
+    "summary": "후티가 사우디 시설을 공격해 WTI가 장중 약 103달러까지 올랐고, 사우디는 FII 행사를 2027년으로 연기함. 마감 기준 WTI는 98달러로 -3.2%였음.",
+    "impact": "혼조",
+    "affects": "S&P500",
+    "why": "고유가는 인플레이션·금리 부담으로 이어져 지수 상단을 제약함.",
+    "source": "TheStreet",
+    "url": "https://www.thestreet.com/stock-market-today/stock-market-today-oct-19-2026-nasdaq-futures-climb-as-tech-rebound-from-sell-off"
+   },
+   {
+    "rank": 4,
+    "title": "10년물 5.1%대·주택경기 악화",
+    "summary": "10년물이 5.13%로 올랐고 NAHB 주택지수는 29로 2012년 6월 이후 최저임. 30년 모기지 금리는 7.40%임.",
+    "impact": "하락",
+    "affects": "S&P500",
+    "why": "고금리가 성장주 밸류에이션과 주택·경기민감 업종을 압박함.",
+    "source": "TheStreet",
+    "url": "https://www.thestreet.com/stock-market-today/stock-market-today-oct-19-2026-nasdaq-futures-climb-as-tech-rebound-from-sell-off"
+   },
+   {
+    "rank": 5,
+    "title": "유럽 시위·국채 스프레드 확대",
+    "summary": "프랑스·이탈리아 폭력 시위로 유럽 증시가 눌렸고 정치 불확실성에 국채 스프레드가 벌어짐.",
+    "impact": "하락",
+    "affects": "둘다",
+    "why": "유럽 리스크 확대는 글로벌 위험회피로 번질 수 있음.",
+    "source": "Motley Fool",
+    "url": "https://www.fool.com/coverage/stock-market-today/2026/10/19/stock-market-midday-oct-19-tech-stocks-rebound-as-ai-confidence-returns/"
+   }
+  ],
+  "tonight": [
+   "21:30 미국 9월 주택착공·건축허가",
+   "23:00 미국 9월 잠정주택판매",
+   "19:00대 장전 실적: GE에어로·GM·RTX·3M·노스롭·핼리버튼",
+   "22:30 미국 정규장 개장(서머타임)",
+   "10/21 05:00경 장후 실적: 넷플릭스·ISRG·유나이티드항공·COF (SpaceX 포함 여부 미확인)",
+   "주간 연준 인사 발언은 캘린더상 없음"
+  ]
+ }
+}
