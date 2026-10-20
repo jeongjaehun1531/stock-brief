@@ -1,0 +1,214 @@
+{
+ "meta": {
+  "model": "sonnet",
+  "mode": "daily",
+  "session_date": "2026-10-20",
+  "notes": "웹검색 11회(standard), WebFetch 2회(모두 권한 거부로 실패). 10/20 거래일 시장 랩·종목별 원인 기사를 끝내 찾지 못해 종목 이유는 market.json 수치(섹터 SOX, 거래량, 주간 수익률) 기반으로 작성하고 개별 이슈 없음으로 표기함. Top5 뉴스는 market.json 지표(유가·금리·VIX·다우)와 기존 일정 중심이며 외부 기사 URL은 참고용 대체 링크임. 유가 -5.5% 원인 미확인. 오늘밤 경제지표 일정 미확인, BE 실적일 10/23은 yfinance 기준. GOOGL BMO 목표가 상향은 market.json 근거. | 메인 세션 보강: 시장 랩·Top5·오늘밤 일정을 AP(BNN Bloomberg)·Vista Partners·ABC(넷플릭스)·Gotrade 기사로 재작성(추가 웹검색 7회, WebFetch 5회 중 1회 실패). market.json WTI -5.5%는 기사상 12월물 -0.56%·브렌트 -0.7%와 차이(월물 교체 영향 추정)라 Top5에서 수치 인용 생략. 종목별 개별 뉴스는 여전히 미확인. 일부 기사 출처: Webull(PANW 10/12 Phillip 하향)."
+ },
+ "tickers": {
+  "NVDA": {
+   "headline": "나스닥 보합권 속 소폭 하락 -0.3%",
+   "move_reasons": [
+    "반도체지수(SOX) -0.3%로 섹터와 동반 약보합",
+    "거래량 평균 대비 74%로 관망 분위기",
+    "고금리發 AI 투자 자금조달 우려 지속"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "주간 -5.3% 조정 후 거래 한산한 구간이며, 다음 실적(11/18) 전까지 반도체 심리와 금리(10년물 5.12%)에 연동될 전망임.",
+    "key_events": [
+     "10/21(수) 장마감 후 Meta·Tesla 실적(10/22 05:00 KST 전후, AI 투자 코멘트)"
+    ],
+    "watch_points": [
+     "빅테크 설비투자 가이던스",
+     "금리 5.1%대 밸류에이션 부담"
+    ]
+   },
+   "analyst_take": "컨센서스 평균 목표가 약 329달러로 현재가 대비 괴리가 크고 매수 59/62임. 최근 변경은 Cantor 350달러, Rosenblatt 390달러 유지 수준임.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "Stock Market Today, October 20, 2026 (Vista Partners)",
+     "url": "https://vistapglobal.com/stock-market-today-october-20-2026-dow-gains-530-points-small-caps-lead-as-housing-weakens-amwl-brze-crm-docs-eprx-gm-lly-modd-noc-nvda-ser-spcx-tsla-wmt/"
+    }
+   ]
+  },
+  "GOOGL": {
+   "headline": "지수 상승 속 홀로 약세 -1.1%",
+   "move_reasons": [
+    "S&P500 +0.3% 속 대형 기술주 차익 실현성 약세",
+    "10/29 실적 앞두고 관망 심리",
+    "뚜렷한 개별 이슈 없음(섹터·지수 흐름 연동)"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "10/29 실적 발표를 앞두고 빅테크 실적(Meta 등)의 AI 투자 코멘트에 연동될 전망임. 주간 -3.8%로 52주 고점 대비 낙폭이 있는 구간임.",
+    "key_events": [
+     "10/21(수) 장마감 후 Meta·Tesla 실적",
+     "10/29(목) 자사 실적"
+    ],
+    "watch_points": [
+     "클라우드 성장률 기대치",
+     "설비투자 가이던스"
+    ]
+   },
+   "analyst_take": "컨센서스 평균 목표가 약 430달러, 매수 56/61임. BMO가 480달러로 상향(10/20)한 반면 KeyBanc은 410달러로 하향(10/19, Overweight 유지)함.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "How major US stock indexes fared / AI stocks remain volatile (AP)",
+     "url": "https://www.bnnbloomberg.ca/markets/dow-jones/2026/10/20/us-futures-dip-as-ai-sell-off-returns-and-oil-prices-rise-sharply/"
+    }
+   ]
+  },
+  "MU": {
+   "headline": "메모리주 조정 이어져 -1.0%",
+   "move_reasons": [
+    "SOX -0.3%보다 큰 낙폭, 메모리 고점 부담 지속",
+    "주간 -6.0%, 월간 -14.2%의 조정 흐름",
+    "고금리發 AI 투자 자금조달 우려 지속"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "고점(1,255달러) 대비 약 29% 낮은 구간으로 변동성이 큼. 10/28 SK하이닉스 실적 등 메모리 업황 신호가 변수임.",
+    "key_events": [
+     "10/28(수) SK하이닉스 실적",
+     "12/24 자사 실적(예정)"
+    ],
+    "watch_points": [
+     "메모리 가격·AI 수요 코멘트",
+     "대만 노조 이슈"
+    ]
+   },
+   "analyst_take": "컨센서스 평균 목표가 약 1,560달러, 매수 45/49임. 10/1 Mizuho 1,400달러 상향, TD Cowen 1,600달러·RBC 1,500달러 유지 등 긍정 일색임.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "How major US stock indexes fared / AI stocks remain volatile (AP)",
+     "url": "https://www.bnnbloomberg.ca/markets/dow-jones/2026/10/20/us-futures-dip-as-ai-sell-off-returns-and-oil-prices-rise-sharply/"
+    }
+   ]
+  },
+  "BE": {
+   "headline": "실적 앞두고 낙폭 확대 -1.6%",
+   "move_reasons": [
+    "주간 -15.5%, 월간 -18.4% 급락 흐름 지속",
+    "10/23 실적 발표 앞두고 경계 심리",
+    "뚜렷한 개별 이슈 없음(섹터·지수 흐름 연동)"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "10/23 실적 발표(일정은 매체별 상이, 10/22 장마감 후 가능성)가 최대 변수임. 급락 후 변동성 확대 가능성이 큼.",
+    "key_events": [
+     "10/23(금) 실적 발표(yfinance 기준, 재확인 필요)"
+    ],
+    "watch_points": [
+     "데이터센터 수주·가이던스",
+     "AI 전력 인프라 투자 심리"
+    ]
+   },
+   "analyst_take": "컨센서스 평균 목표가 약 285달러로 현재가 대비 괴리가 크나 매수 15/29로 의견이 갈림. Truist가 Hold 유지하며 240달러로 상향(10/16), UBS는 Buy 350달러(10/7)임.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "How major US stock indexes fared / AI stocks remain volatile (AP)",
+     "url": "https://www.bnnbloomberg.ca/markets/dow-jones/2026/10/20/us-futures-dip-as-ai-sell-off-returns-and-oil-prices-rise-sharply/"
+    }
+   ]
+  },
+  "PANW": {
+   "headline": "보안주 약세 지속 -1.9%",
+   "move_reasons": [
+    "주간 -14.3%로 급락, 직전 고점 대비 조정 연장",
+    "거래량은 평균 이하로 매물 출회 제한적",
+    "뚜렷한 개별 이슈 확인 못 함(섹터·지수 흐름 연동)"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "다음 실적(11/20)까지 이벤트가 적어 소프트웨어·보안 섹터 심리에 연동될 전망임. 직전 급락 후 반등 시도 여부가 관건임.",
+    "key_events": [
+     "뚜렷한 자체 일정 없음(실적 11/20 예정)"
+    ],
+    "watch_points": [
+     "소프트웨어 섹터 자금 흐름",
+     "AI 보안 수요 코멘트"
+    ]
+   },
+   "analyst_take": "컨센서스 평균 목표가 약 399달러, 매수 42/55임. Citi 440달러(10/15), Wells Fargo 525달러(10/13) 등 상향 흐름이 이어짐.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "Palo Alto Networks (PANW) 주가 하락 관련 기사",
+     "url": "https://www.webull.com/news/15737112680670208"
+    }
+   ]
+  }
+ },
+ "news": {
+  "market_wrap": "실적 호조(3M·노스롭·일라이릴리 등)와 유가 진정에 다우 +1.02%, 러셀2000 +1.65%로 순환매 장세 전개됨. 반면 고금리(10년물 5.12%) 속 AI주 불안이 이어져 나스닥은 보합(-0.02%) 마감함.",
+  "mood": "중립",
+  "top_news": [
+   {
+    "rank": 1,
+    "title": "메타·테슬라 실적 오늘 밤 발표",
+    "summary": "메타와 테슬라가 10/21 장 마감 후 연달아 실적 발표함. AI 투자(capex) 규모와 테슬라 수익성·현금흐름이 관건임.",
+    "impact": "혼조",
+    "affects": "NASDAQ",
+    "why": "빅테크 AI 투자 가이던스가 엔비디아·마이크론 등 AI 공급망 주가로 직결됨",
+    "source": "Gotrade",
+    "url": "https://www.heygotrade.com/en/news/weekly-economic-outlook-2026-10-19/"
+   },
+   {
+    "rank": 2,
+    "title": "넷플릭스 광고 가이던스 하향, 시간외 -4%",
+    "summary": "3Q EPS 0.87달러로 예상 상회, 매출 128.7억달러로 부합함. 광고매출 전망 하향으로 시간외 4.1% 하락함.",
+    "impact": "하락",
+    "affects": "NASDAQ",
+    "why": "대형 성장주 실적 실망이 기술주 심리에 부담 요인",
+    "source": "AP/ABC News",
+    "url": "https://abcnews.com/Business/wireStory/netflix-posts-higher-q3-profit-revenue-growth-worries-137425950"
+   },
+   {
+    "rank": 3,
+    "title": "고금리 속 AI 투자 자금조달 우려",
+    "summary": "지난주 AI주 약세로 미 증시가 6월 이후 최악의 주를 보냈고 우려가 이어짐. 높은 채권금리가 AI 칩 구매용 차입을 위축시킬 수 있다는 시각임.",
+    "impact": "하락",
+    "affects": "NASDAQ",
+    "why": "10년물 5%대 금리가 고밸류 AI·반도체주 할인율을 높임",
+    "source": "AP/BNN Bloomberg",
+    "url": "https://www.bnnbloomberg.ca/markets/dow-jones/2026/10/20/us-futures-dip-as-ai-sell-off-returns-and-oil-prices-rise-sharply/"
+   },
+   {
+    "rank": 4,
+    "title": "유가 고점서 후퇴, 인플레 부담 완화",
+    "summary": "브렌트유가 장중 112달러 근처까지 올랐다가 108.79달러로 하락함. 중동 외교 진전 기대가 반영됐고 항공주가 강세였음.",
+    "impact": "상승",
+    "affects": "둘다",
+    "why": "유가 안정은 인플레·금리 부담을 덜어 지수에 우호적",
+    "source": "AP/BNN Bloomberg",
+    "url": "https://www.bnnbloomberg.ca/markets/dow-jones/2026/10/20/us-futures-dip-as-ai-sell-off-returns-and-oil-prices-rise-sharply/"
+   },
+   {
+    "rank": 5,
+    "title": "주택지표 부진·12월 인상 경계",
+    "summary": "9월 주택착공 122만건으로 예상(130만) 하회, 잠정주택판매 사상 최저 수준임. 시장은 12월 금리인상 가능성을 여전히 높게 반영 중임.",
+    "impact": "혼조",
+    "affects": "둘다",
+    "why": "경기 둔화 신호와 긴축 우려가 공존해 금리 방향성이 불확실",
+    "source": "Vista Partners",
+    "url": "https://vistapglobal.com/stock-market-today-october-20-2026-dow-gains-530-points-small-caps-lead-as-housing-weakens-amwl-brze-crm-docs-eprx-gm-lly-modd-noc-nvda-ser-spcx-tsla-wmt/"
+   }
+  ],
+  "tonight": [
+   "23:30 미국 EIA 주간 원유재고",
+   "10/22 05:00 이후 메타·테슬라 3Q 실적(장 마감 후)",
+   "연준 블랙아웃 기간(10/17~29), 연준 인사 발언 없음",
+   "10/22 21:30 신규 실업수당청구건수"
+  ]
+ }
+}
