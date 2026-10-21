@@ -1,0 +1,222 @@
+{
+ "meta": {
+  "model": "sonnet",
+  "mode": "daily",
+  "session_date": "2026-10-21",
+  "notes": "GOOGL 시세 수집 실패(market.json 종가·등락률 null)로 가격 수치는 쓰지 않음. 웹검색 15회 중 10/21 당일 시장·종목 기사는 거의 찾지 못해 종목 이유는 market.json 지수·SOX·기간수익률 기반의 추정이며 개별 이슈 확인 불가. Top5는 market.json 지표(유가·금리·VIX·SOX) 중심이고 출처 링크는 참고용. 오늘밤 일정은 일반 캘린더 기준으로 미검증. BE 실적일 10/23, GOOGL 10/29는 yfinance 기준.",
+  "search_count": 15,
+  "fetch_count": 1
+ },
+ "tickers": {
+  "NVDA": {
+   "headline": "나스닥 반등 속 +2.5% 회복",
+   "move_reasons": [
+    "나스닥 +1.1%, SOX +2.0% 반도체 동반 반등",
+    "직전 3거래일 약세(-4%대) 후 저가 매수세",
+    "개별 공시 없음, 거래량은 평균 하회(83%)"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "최근 3일 하락분을 되돌렸으나 한 달 -3%로 52주 고점(243달러) 대비 여전히 낮음. 다음 실적(11/18)까지 반도체 섹터와 금리(10년물 5.1%대) 흐름에 연동될 전망.",
+    "key_events": [
+     "10/22(목) 구글 등 빅테크 실적 전 AI 투자 동향",
+     "10/29(목) 알파벳 실적(AI 설비투자 가이던스)",
+     "11/18(수) 자사 실적"
+    ],
+    "watch_points": [
+     "10년물 금리 5.1%대 지속 여부",
+     "빅테크 설비투자 규모 발언"
+    ]
+   },
+   "analyst_take": "컨센서스 목표가 평균 약 329달러, 62명 중 59명 매수로 낙관 우세. 10월 Cantor(350달러), Rosenblatt(390달러)가 매수 의견과 목표가를 유지함.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "Nvidia Stock News (Oct 19, 2026): NVDA Falls 1.4% to $214.13",
+     "url": "https://www.heygotrade.com/en/news/nvidia-nvda-stock-news-october-19-2026/"
+    },
+    {
+     "title": "Nvidia Stock News (Oct 15, 2026): NVDA Falls 3.2% to $221.30",
+     "url": "https://www.heygotrade.com/en/news/nvidia-nvda-stock-news-october-15-2026/"
+    }
+   ]
+  },
+  "GOOGL": {
+   "headline": "시세 수집 실패, 등락 확인 불가",
+   "move_reasons": [
+    "시세 데이터 없음(종가·등락률 미수집)",
+    "나스닥 +1.1%로 빅테크 전반 강세 환경",
+    "개별 이슈는 웹에서 확인하지 못함"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "긍정",
+    "summary": "10/29 3분기 실적을 앞두고 증권사 목표가 상향이 이어지는 중. 시가총액 약 4.1조달러로 AI·클라우드 성장 기대가 주가 지지 요인.",
+    "key_events": [
+     "10/29(목) 알파벳 3분기 실적 발표(시장 일정 기준)"
+    ],
+    "watch_points": [
+     "클라우드 성장률·설비투자 가이던스",
+     "검색 광고 매출 및 AI 수익화"
+    ]
+   },
+   "analyst_take": "컨센서스 목표가 평균 약 430달러, 61명 중 56명 매수. BMO가 10/20 목표가를 465달러에서 480달러로 올리고 KeyBanc은 435달러에서 410달러로 낮춰 실적 전 시각이 엇갈림.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "Here's what to expect from Alphabet's next earnings report",
+     "url": "https://www.barchart.com/story/news/35499598/here-s-what-to-expect-from-alphabet-s-next-earnings-report"
+    }
+   ]
+  },
+  "MU": {
+   "headline": "반도체 반등 따라 +2.0%",
+   "move_reasons": [
+    "SOX +2.0% 급반등에 메모리주 동반 상승",
+    "최근 한 달 -16.6% 낙폭에 따른 기술적 반등",
+    "뚜렷한 개별 이슈 없음(섹터 흐름 연동)"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "고점(1,255달러) 대비 약 27% 낮은 조정 구간이며 반등 지속 여부가 관건. 다음 실적(12/24)까지 주요 일정이 없어 반도체 지수와 AI 수요 뉴스에 연동될 전망.",
+    "key_events": [
+     "10/22(목) 국내 메모리 업황 관련 뉴스",
+     "10/29(목) 빅테크 실적의 AI 투자 코멘트"
+    ],
+    "watch_points": [
+     "메모리 가격 동향",
+     "SOX 지수 추세 전환 여부"
+    ]
+   },
+   "analyst_take": "컨센서스 목표가 평균 약 1,561달러로 현재가 대비 여력이 크고 49명 중 45명 매수. 10월 초 Mizuho가 1,300달러에서 1,400달러로 올리고 TD Cowen 1,600달러, RBC 1,500달러를 유지함.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "Micron Stock News (Oct 16, 2026): MU Rises 1.9% to $931.24",
+     "url": "https://www.heygotrade.com/en/news/micron-mu-stock-news-october-16-2026/"
+    }
+   ]
+  },
+  "BE": {
+   "headline": "실적 앞두고 +7.1% 급반등",
+   "move_reasons": [
+    "10/23 실적 발표 앞두고 저가 매수 유입",
+    "직전 5거래일 약 -20% 급락 후 반등",
+    "나스닥·AI 인프라주 동반 강세"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "내일(10/23) 실적 발표가 최대 변수이며 변동성 확대 예상. 최근 급락으로 기대감이 일부 낮아져 결과에 따라 방향이 갈릴 전망.",
+    "key_events": [
+     "10/23(금) 3분기 실적 발표(yfinance 기준)"
+    ],
+    "watch_points": [
+     "데이터센터 수주·매출 가이던스",
+     "마진 및 생산능력 확대 코멘트"
+    ]
+   },
+   "analyst_take": "컨센서스 평균 목표가 약 287달러로 29명 중 매수 15, 중립 12, 매도 2로 의견이 갈림. 10월 Truist가 218달러에서 240달러, UBS가 325달러에서 350달러, Barclays가 276달러에서 308달러로 상향함.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "Bloom Energy Corp Q2 2026 financial results (SEC 8-K)",
+     "url": "https://www.sec.gov/Archives/edgar/data/0001664703/000162828026050150/ex991_q226financialresults.htm"
+    }
+   ]
+  },
+  "PANW": {
+   "headline": "낙폭 뒤 +2.0% 반등",
+   "move_reasons": [
+    "직전 3일간 약 -17% 급락 후 기술적 반등",
+    "나스닥 +1.1% 강세장 동조",
+    "뚜렷한 개별 이슈 없음(지수 흐름 연동)"
+   ],
+   "driver_type": "매크로",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "주간 -7.4%로 조정이 깊어 단기 반등 여부를 확인하는 구간. 다음 실적(11/20)까지 이벤트가 적어 지수·소프트웨어 섹터 흐름에 연동될 전망.",
+    "key_events": [
+     "이번 주 뚜렷한 자체 일정 없음",
+     "11/20(금) 실적 발표"
+    ],
+    "watch_points": [
+     "소프트웨어 섹터 수급",
+     "사이버보안 업종 투자심리"
+    ]
+   },
+   "analyst_take": "컨센서스 목표가 평균 약 399달러, 55명 중 42명 매수. 10월 Wells Fargo가 475달러에서 525달러, Citi가 410달러에서 440달러, TD Cowen이 400달러에서 440달러로 올림.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "Is Wall Street Bullish or Bearish on Palo Alto Networks Stock?",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/wall-street-bullish-bearish-palo-102123820.html"
+    }
+   ]
+  }
+ },
+ "news": {
+  "market_wrap": "S&P500 +0.58%(7,757), 나스닥 +1.05%(26,703), 다우 +0.69%로 동반 상승했고 반도체지수(SOX)는 +2.0% 반등함. VIX 16.7로 하락, WTI는 -3.7%(98달러)였으나 10년물 금리는 5.15%로 높은 수준 유지.",
+  "mood": "위험선호",
+  "top_news": [
+   {
+    "rank": 1,
+    "title": "반도체 급반등, SOX +2.0%",
+    "summary": "SOX가 2% 가까이 올라 나스닥 상승을 주도함. 엔비디아·마이크론 등 AI 반도체가 동반 강세였음.",
+    "impact": "상승",
+    "affects": "NASDAQ",
+    "why": "AI 반도체 비중이 큰 나스닥 지수 상승폭을 직접 키움.",
+    "source": "Investinglive",
+    "url": "https://investinglive.com/stocks/nasdaq-leads-a-broad-wall-street-rally-as-treasury-yields-fall/"
+   },
+   {
+    "rank": 2,
+    "title": "10년물 5.15%, 고금리 부담 지속",
+    "summary": "10년물 금리가 5.1%대로 전일 대비 소폭 올랐음. 성장주 밸류에이션 부담이 이어짐.",
+    "impact": "하락",
+    "affects": "둘다",
+    "why": "할인율 상승이 고밸류 기술주의 상단을 제약함.",
+    "source": "TradingView",
+    "url": "https://tapeboard.com/blog/market-pulse-2026-10-13"
+   },
+   {
+    "rank": 3,
+    "title": "국제유가 하락, WTI 98달러대",
+    "summary": "WTI가 3.7% 하락해 98달러 부근에서 마감함. 에너지 비용 부담 완화 기대가 반영됨.",
+    "impact": "상승",
+    "affects": "S&P500",
+    "why": "유가 하락은 인플레 우려와 기업 비용 부담을 낮춰 지수에 우호적임.",
+    "source": "Tapeboard",
+    "url": "https://tapeboard.com/blog/market-pulse-2026-10-13"
+   },
+   {
+    "rank": 4,
+    "title": "빅테크 실적 시즌 본격화",
+    "summary": "알파벳이 10/29 실적을 앞두고 있고 증권사 전망이 엇갈림. AI 설비투자 가이던스가 핵심 변수임.",
+    "impact": "혼조",
+    "affects": "NASDAQ",
+    "why": "대형 기술주 실적이 나스닥 방향을 좌우함.",
+    "source": "Barchart",
+    "url": "https://www.barchart.com/story/news/35499598/here-s-what-to-expect-from-alphabet-s-next-earnings-report"
+   },
+   {
+    "rank": 5,
+    "title": "VIX 16.7, 변동성 완화",
+    "summary": "VIX가 3.6% 하락해 16.7을 기록함. 시장 불안이 다소 진정된 모습임.",
+    "impact": "상승",
+    "affects": "둘다",
+    "why": "변동성 하락은 위험자산 선호를 뒷받침함.",
+    "source": "Tapeboard",
+    "url": "https://tapeboard.com/blog/market-pulse-2026-10-13"
+   }
+  ],
+  "tonight": [
+   "21:30 주간 신규 실업수당 청구건수",
+   "23:00 기존주택판매·필라델피아 연준 지수 등 지표(미검증)",
+   "장중 대형주 실적 발표 확인 필요",
+   "10/23 BE 실적 발표(금요일 예정)"
+  ]
+ }
+}
