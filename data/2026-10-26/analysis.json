@@ -1,0 +1,332 @@
+{
+  "meta": {
+    "model": "sonnet",
+    "mode": "weekly",
+    "session_date": "2026-10-23",
+    "notes": "웹검색이 주말(10/24~26) 신규 뉴스와 종목별 주간 원인 기사를 거의 반환하지 못함. NVDA·MU·GOOGL 주간 원인은 market.json 수치, 10/16 기술주 급락(나스닥 -2.15%) 기사, 섹터 흐름 기반 서술이며 개별 이슈 확인 못함. BE·PANW 원인은 10/24 일간 분석의 확인 기사(Fool, Investing.com 등)와 market.json 애널리스트 데이터를 재사용함. 알파벳·MSFT 실적은 10/28(수) 장 마감 후로 확인(yfinance의 10/29는 오류로 판단), 아마존·인텔 10/29(목) 장 마감 후, 애플은 11/2로 이번 주 아님. 메타는 10/21 발표 완료. 경제지표는 IFCM 캘린더(FOMC 10/28 14:00 ET, 내구재·소비자신뢰 10/27, PCE·GDP 10/29) 기준이고 일부 시각은 통상 발표시각(08:30/10:00 ET)으로 환산한 것이라 확인 권장. 월요일 밤 개별 일정은 미확인."
+  },
+  "tickers": {
+    "NVDA": {
+      "headline": "주간 -1.5%, 반도체 조정 연동",
+      "move_reasons": [
+        "SOX 주간 -3.2%, 반도체 전반 조정에 동행",
+        "10/15 -3.2%, 10/16 -1.8% 등 기술주 급락일에 낙폭",
+        "뚜렷한 개별 이슈 없음(섹터·지수 흐름 연동)"
+      ],
+      "driver_type": "섹터",
+      "weekly_outlook": {
+        "stance": "중립",
+        "summary": "210.96달러로 1개월 -6.1%, 52주 고점(243달러) 대비 -13% 조정 구간임. 이번 주 MSFT·알파벳·아마존의 AI 설비투자 발언이 방향을 좌우할 전망.",
+        "key_events": [
+          "10/29(목) 03:00 FOMC 결정",
+          "10/29(목) 05:00경 MSFT·알파벳 실적 반응",
+          "10/30(금) 아마존·인텔 실적 반응",
+          "11/18(수) 자사 실적"
+        ],
+        "watch_points": [
+          "빅테크 설비투자 가이던스 상향 여부",
+          "10년물 금리(4.99%)와 유가"
+        ]
+      },
+      "analyst_take": "컨센서스 목표가 평균 약 329달러로 현재가 대비 괴리가 크고 62명 중 59명 매수임. 10/22 Needham이 Buy·목표가 300달러를 유지함.",
+      "extra_actions": [],
+      "sources": [
+        {
+          "title": "Nvidia Stock News (Oct 15, 2026): NVDA Falls 3.2% to $221.30",
+          "url": "https://www.heygotrade.com/en/news/nvidia-nvda-stock-news-october-15-2026/"
+        }
+      ]
+    },
+    "GOOGL": {
+      "headline": "주간 -6.0%, 실적 앞 AI비용 우려",
+      "move_reasons": [
+        "10/16 기술주 급락에 -2.5%, 이후 하락 지속",
+        "AI 설비투자(연 약 2,000억달러)·잉여현금흐름 부담 부각",
+        "52주 고점 대비 -22%, 실적 전 포지션 축소"
+      ],
+      "driver_type": "혼합",
+      "weekly_outlook": {
+        "stance": "중립",
+        "summary": "320.21달러로 낙폭이 커 실적 전 변동성이 큰 구간임. 10/28 장 마감 후 3분기 실적에서 클라우드 성장과 설비투자 규모가 관건일 전망.",
+        "key_events": [
+          "10/28(수) 장 마감 후 3분기 실적(한국시간 10/29 05:00경, 컨센서스 EPS 약 3.0달러·매출 약 1,280억달러)",
+          "10/29(목) 03:00 FOMC 결정(실적 약 2시간 전)",
+          "10/29(목) 실적 후 첫 정규장 반응"
+        ],
+        "watch_points": [
+          "클라우드 성장률과 수주잔고(지난 분기 5,140억달러)",
+          "설비투자 가이던스·TPU 외부 판매"
+        ]
+      },
+      "analyst_take": "컨센서스 목표가 평균 약 429달러, 61명 중 56명 매수임. 10/22 Citizens 515→450달러, 10/19 KeyBanc 435→410달러로 하향했고 BMO(465→480달러)·JP모건(420→425달러)은 상향해 엇갈림.",
+      "extra_actions": [],
+      "sources": [
+        {
+          "title": "Google Stock News (Oct 19, 2026): GOOGL Falls 2.5% to $340.59",
+          "url": "https://www.heygotrade.com/en/news/google-googl-stock-news-october-19-2026/"
+        },
+        {
+          "title": "Alphabet Earnings Date: Q3 2026 Report Time, Consensus and Stock Reaction",
+          "url": "https://primexbt.com/for-traders/alphabet-earnings-date/"
+        }
+      ]
+    },
+    "MU": {
+      "headline": "주간 보합, 월간 -18.8% 조정",
+      "move_reasons": [
+        "금요일 +2.5% 반등으로 주간 -0.1%까지 만회",
+        "SOX 주간 -3.2%·월간 -13.7%, 반도체 조정 연동",
+        "뚜렷한 개별 이슈 없음(섹터·지수 흐름 연동)"
+      ],
+      "driver_type": "섹터",
+      "weekly_outlook": {
+        "stance": "중립",
+        "summary": "877.55달러로 52주 고점(1,255달러) 대비 -30% 수준의 조정 국면임. 자사 실적(12/24)까지 개별 일정이 없어 빅테크 설비투자 발언과 SOX에 연동될 전망.",
+        "key_events": [
+          "10/29(목)~10/30(금) MSFT·알파벳·아마존 AI 투자 코멘트 반응"
+        ],
+        "watch_points": [
+          "SOX 추세 전환 여부",
+          "메모리 가격·HBM 수요 뉴스"
+        ]
+      },
+      "analyst_take": "컨센서스 목표가 평균 약 1,562달러로 현재가와 괴리가 크고 49명 중 45명 매수임. 10월 초 Mizuho가 1,300→1,400달러로 상향했고 TD Cowen 1,600달러·RBC 1,500달러·Morgan Stanley 1,200달러는 유지함.",
+      "extra_actions": [],
+      "sources": [
+        {
+          "title": "Micron Stock News (Oct 16, 2026): MU Rises 1.9% to $931.24",
+          "url": "https://www.heygotrade.com/en/news/micron-mu-stock-news-october-16-2026/"
+        }
+      ]
+    },
+    "BE": {
+      "headline": "주간 -12.7%, 실적 후 현금흐름 쇼크",
+      "move_reasons": [
+        "3Q 영업현금흐름 적자 전환, 금요일 -11.2% 급락",
+        "매출 12.4억달러(+138%) 사상 최대에도 차익실현",
+        "JP모건·BTIG·Roth 목표가 하향, 고밸류 부담"
+      ],
+      "driver_type": "개별이슈",
+      "weekly_outlook": {
+        "stance": "부정",
+        "summary": "193.30달러로 주간 -12.7%, 1개월 -27.5% 급락해 변동성이 매우 큼. 거래량이 평소 2.5배로 급증해 목표가 조정 마무리와 AI 전력주 수급이 방향을 가를 전망.",
+        "key_events": [
+          "10/29(목)~10/30(금) 빅테크 설비투자·데이터센터 전력 발언",
+          "자사 일정 없음(실적은 10/23 발표 완료)"
+        ],
+        "watch_points": [
+          "반등 시 거래량 동반 여부",
+          "추가 목표가 조정과 AI 전력인프라주 동반 흐름"
+        ]
+      },
+      "analyst_take": "컨센서스 목표가 평균 약 285달러, 29명 중 매수 15·중립 13·매도 1임. 실적 후 JP모건 314→292달러 하향, 모건스탠리 310→335달러와 번스타인 282→306달러는 상향해 엇갈림.",
+      "extra_actions": [
+        {
+          "date": "10/23",
+          "firm": "BTIG",
+          "rating": "매수",
+          "target": 250,
+          "prior_target": 295,
+          "note": "실적 후 눈높이 조정"
+        },
+        {
+          "date": "10/23",
+          "firm": "Roth Capital",
+          "rating": "중립",
+          "target": 230,
+          "prior_target": 260,
+          "note": "밸류에이션 부담"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Why Bloom Energy Stock Is Crashing Today",
+          "url": "https://www.fool.com/investing/2026/10/23/why-bloom-energy-stock-is-crashing-today/"
+        },
+        {
+          "title": "Bloom Energy Q3 2026 slides: revenue surges 138%, stock falls",
+          "url": "https://www.investing.com/news/company-news/bloom-energy-q3-2026-slides-revenue-surges-138-stock-falls-93CH-4967754"
+        }
+      ]
+    },
+    "PANW": {
+      "headline": "주간 +11.3%, 보안예산 기대 반등",
+      "move_reasons": [
+        "금요일 +7.2%로 주간 낙폭 만회, 52주 고점 대비 -12%",
+        "채널조사상 연말 보안예산 견조 전망",
+        "치명적 취약점 경보와 AI 수혜주 평가로 보안주 동반 강세"
+      ],
+      "driver_type": "혼합",
+      "weekly_outlook": {
+        "stance": "중립",
+        "summary": "380.55달러로 급반등했으나 월간은 -2.4%로 아직 회복 중임. 자사 실적(11/20)까지 일정이 없어 소프트웨어·지수 흐름에 연동될 전망.",
+        "key_events": [
+          "10/29(목)~10/30(금) 빅테크 실적 후 소프트웨어 섹터 반응",
+          "11/20(금) 자사 실적"
+        ],
+        "watch_points": [
+          "반등 후 단기 차익실현 여부",
+          "사이버보안·소프트웨어 섹터 수급"
+        ]
+      },
+      "analyst_take": "컨센서스 목표가 평균 약 399달러, 55명 중 42명 매수임. 10월 Wells Fargo 475→525달러, Citi 410→440달러, TD Cowen 400→440달러로 상향함.",
+      "extra_actions": [],
+      "sources": [
+        {
+          "title": "Why is Palo Alto Networks stock surging today?",
+          "url": "https://www.investing.com/news/stock-market-news/why-is-palo-alto-networks-stock-surging-today-93CH-4970133"
+        }
+      ]
+    }
+  },
+  "news": {
+    "market_wrap": "지난주 S&P500 -0.47%(7,624), 나스닥 -0.71%(25,955)로 약세였고 SOX는 -3.2%로 반도체가 부진을 주도함. 금요일 다우 -1.2%, 유가 WTI +3.8%(103달러), VIX 19.5로 위험회피가 커졌으나 10년물 금리는 주간 -2.2%로 4.99%까지 내림.",
+    "mood": "위험회피",
+    "top_news": [
+      {
+        "rank": 1,
+        "title": "FOMC 10/28, 유가 속 금리 경로",
+        "summary": "연준이 10/28 오후 2시(ET) 금리를 결정하고 2시 30분 기자회견을 엶. 유가 103달러대와 10년물 5% 근접으로 인플레 경계가 큰 상황임.",
+        "impact": "혼조",
+        "affects": "둘다",
+        "why": "금리 경로와 연준 발언이 성장주 밸류에이션과 지수 방향을 좌우함.",
+        "source": "IFCM 경제캘린더",
+        "url": "https://www.ifcmarkets.com/ko/next-week-calendar/usdidx-economic-calendar-20-10-2026"
+      },
+      {
+        "rank": 2,
+        "title": "MSFT·알파벳 실적 10/28 마감 후",
+        "summary": "마이크로소프트와 알파벳이 10/28 장 마감 후, 아마존·인텔이 10/29 마감 후 실적을 발표함. 알파벳 컨센서스는 EPS 약 3.0달러·매출 약 1,280억달러임.",
+        "impact": "혼조",
+        "affects": "NASDAQ",
+        "why": "시총 비중이 큰 빅테크의 AI 설비투자·클라우드 성장 가이던스가 나스닥 변동성을 좌우함.",
+        "source": "BloFin·PrimeXBT",
+        "url": "https://primexbt.com/for-traders/alphabet-earnings-date/"
+      },
+      {
+        "rank": 3,
+        "title": "PCE·GDP 10/29 발표",
+        "summary": "10/29 근원 PCE(전년비 예상 3.1%)와 3분기 GDP(전기비 예상 1.4%)가 나옴. 성장 둔화와 높은 물가가 겹치면 스태그플레이션 우려가 커질 수 있음.",
+        "impact": "하락",
+        "affects": "둘다",
+        "why": "연준 결정 직후 물가·성장 지표가 금리 기대를 재조정함.",
+        "source": "IFCM 경제캘린더",
+        "url": "https://www.ifcmarkets.com/ko/next-week-calendar/usdidx-economic-calendar-20-10-2026"
+      },
+      {
+        "rank": 4,
+        "title": "유가 WTI 103달러, 1개월 +9%",
+        "summary": "WTI가 금요일 +3.8% 올라 103.27달러로 마감했고 연초 대비 약 +80%임. 주말 중 유가 방향이 월요일 시초 분위기를 가늠하게 함.",
+        "impact": "하락",
+        "affects": "둘다",
+        "why": "고유가가 인플레 압력과 기업 비용 부담을 키워 지수에 부담으로 작용함.",
+        "source": "market.json(WTI)",
+        "url": ""
+      },
+      {
+        "rank": 5,
+        "title": "반도체 조정 지속, SOX 월간 -13.7%",
+        "summary": "SOX가 주간 -3.2%, 52주 고점 대비 -26%로 조정 중이며 NVDA·MU도 약세임. 금요일 선물은 S&P -0.58%, 나스닥 -0.08%로 마감함.",
+        "impact": "하락",
+        "affects": "NASDAQ",
+        "why": "AI 반도체 비중이 큰 나스닥에 하방 압력으로 작용함.",
+        "source": "market.json(SOX·선물)",
+        "url": ""
+      }
+    ],
+    "tonight": [
+      "월요일 밤 주요 경제지표 미확인(일정 소강)",
+      "개장(22:30 KST) 후 선물·유가·10년물 금리 방향 확인",
+      "10/27(화) 밤 내구재 수주·소비자신뢰지수 대기"
+    ]
+  },
+  "week_ahead": {
+    "themes": [
+      "FOMC와 빅테크 실적 동시 이벤트",
+      "AI 설비투자 점검과 반도체 반등 여부",
+      "고유가·고금리 속 PCE·GDP 확인"
+    ],
+    "calendar": [
+      {
+        "date": "10/27(화)",
+        "time": "21:30",
+        "event": "미국 9월 내구재 수주 (예상 +0.7%)",
+        "importance": "중"
+      },
+      {
+        "date": "10/27(화)",
+        "time": "23:00",
+        "event": "CB 소비자신뢰지수 (예상 81.5)",
+        "importance": "중"
+      },
+      {
+        "date": "10/27(화)",
+        "time": "23:00",
+        "event": "신규주택판매 (예상 70.8만 채)",
+        "importance": "하"
+      },
+      {
+        "date": "10/28(수)",
+        "time": "23:30",
+        "event": "EIA 원유재고",
+        "importance": "중"
+      },
+      {
+        "date": "10/29(목)",
+        "time": "03:00",
+        "event": "FOMC 금리 결정",
+        "importance": "상"
+      },
+      {
+        "date": "10/29(목)",
+        "time": "03:30",
+        "event": "파월 의장 기자회견",
+        "importance": "상"
+      },
+      {
+        "date": "10/29(목)",
+        "time": "21:30",
+        "event": "미국 3분기 GDP 속보치 (예상 1.4%)",
+        "importance": "상"
+      },
+      {
+        "date": "10/29(목)",
+        "time": "21:30",
+        "event": "근원 PCE 물가 (예상 전년비 3.1%)",
+        "importance": "상"
+      }
+    ],
+    "earnings": [
+      {
+        "date": "10/27(화)",
+        "ticker": "HOOD",
+        "note": "장 마감 후"
+      },
+      {
+        "date": "10/28(수)",
+        "ticker": "GOOGL",
+        "note": "장 마감 후(KST 10/29 05:00경)"
+      },
+      {
+        "date": "10/28(수)",
+        "ticker": "MSFT",
+        "note": "장 마감 후(KST 10/29 05:00경)"
+      },
+      {
+        "date": "10/29(목)",
+        "ticker": "AMZN",
+        "note": "장 마감 후(KST 10/30 새벽)"
+      },
+      {
+        "date": "10/29(목)",
+        "ticker": "INTC",
+        "note": "장 마감 후(KST 10/30 새벽)"
+      },
+      {
+        "date": "10/29(목)",
+        "ticker": "COIN",
+        "note": "장 마감 후"
+      }
+    ]
+  }
+}
