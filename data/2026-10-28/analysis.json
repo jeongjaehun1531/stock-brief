@@ -1,0 +1,212 @@
+{
+ "meta": {
+  "model": "sonnet",
+  "mode": "daily",
+  "session_date": "2026-10-27",
+  "notes": "웹검색 결과가 제목·목록 위주이고 10/27 당일 종목별 기사 본문을 확인하지 못해(WebFetch 권한 거부) 개별 등락 사유는 market.json 수치와 증권사 변경 이력 기반의 추정을 포함함. FOMC(10/27~28, 결정 한국시간 10/29 03:00 안팎)와 알파벳 실적(10/29)은 market.json·통상 일정 기준이며 그 외 빅테크 실적 날짜는 검증하지 못해 구체 일자를 쓰지 않음. 시각은 재확인 필요. top_news 항목은 market.json 수치 기반 요약이며 url은 관련 일반 페이지로 해당 일자 기사 원문이 아닐 수 있음."
+ },
+ "tickers": {
+  "NVDA": {
+   "headline": "반도체 급반등에 동행, +0.9%",
+   "move_reasons": [
+    "SOX +3.6% 급반등에 동행했으나 상승폭은 제한적",
+    "전일 211달러 저점 부근 후 기술적 반등",
+    "뚜렷한 개별 이슈 없음(섹터 흐름 연동)"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "자체 실적은 11/18로 멀어 FOMC와 빅테크 AI 투자 가이던스에 연동될 전망. 한 달 -4.8%로 조정 구간이라 업종 수급이 관건임.",
+    "key_events": [
+     "10/29(목) 알파벳 실적(한국시간 10/30 새벽, AI 투자 단서)",
+     "FOMC 결정(한국시간 10/29 새벽)",
+     "11/18(수) 엔비디아 실적"
+    ],
+    "watch_points": [
+     "빅테크 AI 설비투자 가이던스",
+     "SOX 반등 지속 여부",
+     "10년물 금리 5% 부근 흐름"
+    ]
+   },
+   "analyst_take": "컨센서스는 매수 59/보유 2/매도 1, 평균 목표가 약 $329로 압도적 긍정임. 최근 Needham(300)·Cantor(350)·Rosenblatt(390)이 의견·목표가를 유지함.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "Nvidia Stock News (Oct 20, 2026)",
+     "url": "https://www.heygotrade.com/en/news/nvidia-nvda-stock-news-october-20-2026/"
+    }
+   ]
+  },
+  "GOOGL": {
+   "headline": "실적 앞두고 반발 매수, +1.2%",
+   "move_reasons": [
+    "직전 3거래일 약세 후 기술적 반등",
+    "나스닥 +1.2% 상승 흐름에 동행",
+    "뚜렷한 개별 이슈 없음(실적 전 포지셔닝)"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "10/29 실적이 분수령으로 클라우드 성장과 AI 설비투자 규모가 관건. 주간 -5.8% 조정 후라 결과에 따른 변동성 확대 전망.",
+    "key_events": [
+     "10/29(목) 알파벳 3분기 실적(한국시간 10/30 새벽)",
+     "FOMC 결정(한국시간 10/29 새벽)"
+    ],
+    "watch_points": [
+     "구글 클라우드 성장률·수주잔고",
+     "AI 설비투자 규모",
+     "검색 광고 성장 흐름"
+    ]
+   },
+   "analyst_take": "10월 들어 Citizens(450, 515에서 하향)·KeyBanc(410, 435에서 하향)은 낮추고 BMO(480)·JP모건(425)·UBS(380)는 올려 의견이 엇갈림. 평균 목표가 약 $429로 실적 전 눈높이 조정이 진행 중임.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "Google Stock News (Oct 19, 2026)",
+     "url": "https://www.heygotrade.com/en/news/google-googl-stock-news-october-19-2026/"
+    }
+   ]
+  },
+  "MU": {
+   "headline": "반도체 급반등 속 +2.8%",
+   "move_reasons": [
+    "SOX +3.6% 급반등에 동행",
+    "전일 856 저점 후 이틀 연속 반등",
+    "한 달 -11.9% 조정 뒤 저가 매수세 추정"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "자체 일정은 없고(차기 실적 12/24) 빅테크 AI 투자 발언과 업종 수급에 연동될 전망. 고점 대비 약 26% 낮아 변동성 큰 구간.",
+    "key_events": [
+     "10/29(목) 알파벳 실적(AI 메모리 수요 단서)",
+     "FOMC 결정(한국시간 10/29 새벽)"
+    ],
+    "watch_points": [
+     "HBM·DRAM 가격 동향",
+     "빅테크 설비투자 코멘트",
+     "SOX 지수 방향"
+    ]
+   },
+   "analyst_take": "평균 목표가 약 $1,562, 매수 45/보유 3/매도 1임. 10월 초 Mizuho가 1,400으로 상향했고 모건스탠리(1,200)·TD Cowen(1,600)·RBC(1,500)는 유지함.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "Why Micron Stock Rocketed 34% Higher in October",
+     "url": "https://www.aol.com/articles/why-micron-stock-rocketed-34-181645015.html"
+    }
+   ]
+  },
+  "BE": {
+   "headline": "저점 반발 매수로 +7.1%",
+   "move_reasons": [
+    "전일 193달러 저점 후 반발 매수",
+    "바클레이즈(316)·웰스파고(182) 목표가 상향 여진",
+    "한 달 -16.9% 급락에 따른 과매도 인식"
+   ],
+   "driver_type": "개별이슈",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "10/23 실적 이후 목표가가 엇갈린 채 변동성이 큰 상태. 반등 지속 여부는 AI 전력 인프라 투자 심리에 달림.",
+    "key_events": [
+     "10/29(목) 알파벳 실적(데이터센터 투자 단서)",
+     "FOMC 결정(한국시간 10/29 새벽)"
+    ],
+    "watch_points": [
+     "실적 후 추가 목표가 조정",
+     "AI 데이터센터 전력 수주 소식",
+     "고점 대비 -38% 구간 지지 여부"
+    ]
+   },
+   "analyst_take": "10/23 JP모건은 292(314에서 하향), RBC는 335 유지, KeyBanc은 중립 유지로 실적 후 평가가 갈림. 10/26 바클레이즈 316(308에서)·웰스파고 182(176에서) 상향이나 평균 $285 대비 웰스파고 눈높이는 크게 낮음.",
+   "extra_actions": [],
+   "sources": []
+  },
+  "PANW": {
+   "headline": "사이버보안 강세 지속, +2.9%",
+   "move_reasons": [
+    "직전 이틀 급반등에 이은 상승(주간 +18%)",
+    "나스닥 +1.2% 위험선호 동행",
+    "당일 뚜렷한 개별 뉴스는 확인 못함"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "차기 실적 11/20으로 멀어 업종·수급 연동 전망. 단기 급등으로 52주 고점(432) 근접해 차익 매물 변동성 유의.",
+    "key_events": [
+     "FOMC 결정(한국시간 10/29 새벽)",
+     "11/20(금) 팰로알토 실적"
+    ],
+    "watch_points": [
+     "52주 고점 432 돌파 시도",
+     "금리·성장주 투자심리",
+     "보안 업종 동반 흐름"
+    ]
+   },
+   "analyst_take": "10월 들어 웰스파고 525(475에서)·시티 440(410에서)·TD Cowen 440(400에서) 등 상향이 이어짐. 평균 목표가 약 $399로 현재가와 비슷해 추가 여력 논리는 제한적임.",
+   "extra_actions": [],
+   "sources": []
+  }
+ },
+ "news": {
+  "market_wrap": "반도체(SOX +3.6%)가 급반등하며 나스닥 +1.2%, S&P500 +0.6%로 마감했고 다우는 보합(+0.03%). VIX는 17.5로 하락해 위험선호가 살아났으나 10년물 4.99%·유가 $99.8로 부담은 지속됨.",
+  "mood": "위험선호",
+  "top_news": [
+   {
+    "rank": 1,
+    "title": "FOMC 금리 결정 임박",
+    "summary": "10/27~28 회의 결과가 한국시간 10/29 새벽 발표될 예정임. 10년물이 5% 부근이라 성명서·기자회견 톤에 시장 민감함.",
+    "impact": "혼조",
+    "affects": "둘다",
+    "why": "금리 경로 시사에 따라 성장주 밸류에이션이 크게 흔들림.",
+    "source": "일정 기준(재확인 필요)",
+    "url": "https://investinglive.com/stocks/earnings-macro-week-ahead-the-fed-and-big-tech-report-on-the-same-day/"
+   },
+   {
+    "rank": 2,
+    "title": "빅테크 실적 시즌 이번 주 집중",
+    "summary": "알파벳이 10/29 실적을 발표하며 AI 설비투자와 클라우드 성장이 핵심임. 다른 빅테크 일정은 개별 확인이 필요함.",
+    "impact": "혼조",
+    "affects": "NASDAQ",
+    "why": "AI 투자 규모가 반도체·전력·보안 등 관련주 전반의 수요 기대를 좌우함.",
+    "source": "market.json 일정",
+    "url": "https://www.itiger.com/news/2578591256"
+   },
+   {
+    "rank": 3,
+    "title": "반도체 SOX +3.6% 급반등",
+    "summary": "전일 마감 기준 반도체 지수가 크게 반등해 나스닥 상승을 주도함. 엔비디아·마이크론 등 AI 반도체가 동반 상승함.",
+    "impact": "상승",
+    "affects": "NASDAQ",
+    "why": "반도체 비중이 큰 나스닥 지수에 직접적 상승 기여 요인임.",
+    "source": "market.json 지수",
+    "url": "https://tapeboard.com/blog/market-pulse-2026-10-22"
+   },
+   {
+    "rank": 4,
+    "title": "미 10년물 금리 4.99%",
+    "summary": "10년물이 5% 직전에서 소폭 올랐고 달러 지수도 102.4로 강세임. 원/달러는 1,326원대로 상승함.",
+    "impact": "하락",
+    "affects": "둘다",
+    "why": "금리 5% 돌파 시 주식 할인율 부담이 커져 증시 상단을 제약함.",
+    "source": "market.json 지수",
+    "url": "https://tapeboard.com/blog/market-pulse-2026-10-21"
+   },
+   {
+    "rank": 5,
+    "title": "WTI 유가 $100 안팎",
+    "summary": "WTI가 전일 -1.9% 하락했지만 여전히 $99.8로 높은 수준임. 유가는 물가와 금리 기대에 영향을 줌.",
+    "impact": "혼조",
+    "affects": "S&P500",
+    "why": "고유가는 인플레이션 우려로 이어져 연준 스탠스와 소비·에너지 업종에 영향을 줌.",
+    "source": "market.json 지수",
+    "url": "https://tapeboard.com/blog/market-pulse-2026-10-15"
+   }
+  ],
+  "tonight": [
+   "오늘 밤 확인된 주요 지표 일정 없음(재확인 필요)",
+   "10/29(목) 03:00 FOMC 금리 결정(한국시간, 통상 일정 기준)",
+   "10/29(목) 03:30 파월 의장 기자회견(통상 일정 기준)"
+  ]
+ }
+}
