@@ -1,0 +1,122 @@
+{
+  "meta": {"model": "sonnet", "mode": "daily", "session_date": "2026-10-28",
+    "notes": "GOOGL 시세(market.json)가 '시세 없음'이라 종가·등락률 수치는 쓰지 않음. 실적 관련 수치는 웹 기사 헤드라인 기준(시간외 약 -7~10%, 매체별 상이)이며 장중 종가와 무관. Apple/Meta 실적 일정은 확인하지 못해 일정에서 제외. 일부 기사 원문(CNBC 등)은 열람 실패, 헤드라인·요약 기준으로 작성."},
+  "tickers": {
+    "NVDA": {
+      "headline": "반도체 강세 속 나홀로 약세",
+      "move_reasons": [
+        "SOX +1.8% 상승했으나 자금이 메모리로 이동",
+        "10년물 금리 5.0% 상회, 대형 성장주 부담",
+        "뚜렷한 개별 악재 확인 안 됨(매크로·차익실현)"
+      ],
+      "driver_type": "매크로",
+      "weekly_outlook": {
+        "stance": "중립",
+        "summary": "구글·MS 실적 후 AI 투자(capex) 해석이 엔비디아 수요 기대를 좌우할 전망. 다음 실적은 11/18로 아직 멀어 지표·금리에 연동될 가능성 큼.",
+        "key_events": ["10/29(목) 21:30 3분기 GDP·9월 PCE", "10/30(금) 아마존·인텔 등 빅테크 실적 반응", "11/18(수) 자체 실적"],
+        "watch_points": ["알파벳 capex 코멘트(2027 대폭 증가)", "10년물 금리 5% 안착 여부"]
+      },
+      "analyst_take": "컨센서스 목표가 평균 약 329달러, 62명 중 59명 매수로 낙관 우세. 최근 Needham·Cantor 등이 기존 목표가를 재확인하며 AI 인프라 수요 지속을 근거로 제시함.",
+      "extra_actions": [],
+      "sources": [{"title": "Wall Street rises as Fed holds rates steady, earnings in focus", "url": "https://www.staradvertiser.com/2026/10/28/breaking-news/wall-street-rises-as-fed-holds-rates-steady-earnings-in-focus/"}]
+    },
+    "GOOGL": {
+      "headline": "3Q 실적 후 시간외 급락",
+      "move_reasons": [
+        "10/28 장 마감 후 3Q 발표, 시간외 7~10% 하락 보도",
+        "매출 약 1,280억달러에도 이익·검색광고 기대 하회",
+        "클라우드 매출 약 2배 성장하나 FCF 적자 부각"
+      ],
+      "driver_type": "개별이슈",
+      "weekly_outlook": {
+        "stance": "부정",
+        "summary": "오늘 정규장은 시간외 급락분이 반영되며 갭하락 출발 가능성 큼. 2026 capex 유지·2027 대폭 증가 시사가 AI 투자 부담 논쟁을 키울 전망.",
+        "key_events": ["10/29(목) 22:30 정규장 갭 반응", "10/29(목) 21:30 GDP·PCE", "10/30(금) 증권사 목표가 조정 줄이을 전망"],
+        "watch_points": ["검색·광고 성장률 둔화 여부", "FCF 적자 및 2027 capex 가이던스", "클라우드 수주잔고"]
+      },
+      "analyst_take": "실적 전 최근 한 달은 BMO(480달러)·JP모건(425달러)·UBS(380달러) 상향, 키뱅크·Citizens 하향으로 엇갈림. 컨센서스 평균 약 430달러, 60명 중 55명 매수였으나 실적 후 하향 조정 가능성 있음.",
+      "extra_actions": [],
+      "sources": [
+        {"title": "Alphabet sinks 10% as it holds 2026 capex unchanged, expects significant increase in 2027 (CNBC)", "url": "https://www.cnbc.com/2026/10/28/alphabet-googl-earnings-q3-2026.html"},
+        {"title": "Alphabet's Google Cloud revenue doubles as cash flow stays deep red (Fortune)", "url": "https://fortune.com/2026/10/28/alphabet-google-stock-drops-cloud-revenue-doubles-free-cash-flow-negative/"},
+        {"title": "Alphabet Q3: Google Cloud revenue jumps but search and ad sales miss (investinglive)", "url": "https://investinglive.com/stocks/alphabet-q3-google-cloud-revenue-jumps-103-but-search-and-ad-sales-miss-forecasts/"}
+      ]
+    },
+    "MU": {
+      "headline": "SK하이닉스 호실적에 메모리 급등",
+      "move_reasons": [
+        "SK하이닉스 분기이익 7배 이상 급증 소식",
+        "DRAM·NAND 가격 상승 기조, AI 메모리 수요 기대",
+        "대만 타이중 노조 분쟁 해소 보도"
+      ],
+      "driver_type": "혼합",
+      "weekly_outlook": {
+        "stance": "긍정",
+        "summary": "메모리 업황 호조 확인으로 단기 모멘텀 유효하나, 1개월 -7.7%로 변동성이 큰 구간. 알파벳 capex 해석에 따라 AI 관련주 전반이 흔들릴 수 있음.",
+        "key_events": ["10/29(목) 21:30 GDP·PCE", "11/중 삼성전자 등 메모리 경쟁사 동향", "12/24(목) 자체 실적"],
+        "watch_points": ["DRAM 현물가격 추이", "CXMT 등 중국 메모리 경쟁 헤드라인"]
+      },
+      "analyst_take": "RBC(목표가 1,500달러)·TD Cowen(1,600)·Mizuho(1,400) 등 매수 의견 유지, 컨센서스 평균 약 1,562달러로 49명 중 45명 매수. Fubon이 매수로 신규 커버리지 시작했고 Rosenblatt는 CXMT 관련 매도를 과도하다고 평가함.",
+      "extra_actions": [
+        {"date": "10/28", "firm": "Fubon Securities", "rating": "Buy", "target": 1260, "prior_target": 0, "note": "신규 커버리지 개시"}
+      ],
+      "sources": [
+        {"title": "Wall Street rises as Fed holds rates steady, earnings in focus", "url": "https://www.staradvertiser.com/2026/10/28/breaking-news/wall-street-rises-as-fed-holds-rates-steady-earnings-in-focus/"},
+        {"title": "Micron Stock Extends AI-Fueled Rally As Analysts Hike Targets", "url": "https://stockstotrade.com/news/micron-technology-inc-mu-news-2026_10_28/"}
+      ]
+    },
+    "BE": {
+      "headline": "낙폭과대 반등, 전력주 동반 강세",
+      "move_reasons": [
+        "최근 1개월 -21.7% 급락 후 저가 매수세",
+        "AI 전력인프라 베르티브 +16.5% 호실적 동반 강세 추정",
+        "개별 신규 재료는 확인 안 됨"
+      ],
+      "driver_type": "섹터",
+      "weekly_outlook": {
+        "stance": "중립",
+        "summary": "10/23 실적 발표 이후 목표가 조정이 엇갈린 가운데 반등 지속성은 불확실. AI 데이터센터 전력 투자 규모(빅테크 capex) 코멘트가 방향을 정할 전망.",
+        "key_events": ["10/29(목) 21:30 GDP·PCE", "10/30(금) 아마존 capex 코멘트"],
+        "watch_points": ["고점 351달러 대비 낙폭 회복 여부", "데이터센터 수주 관련 발표"]
+      },
+      "analyst_take": "실적 이후 JP모건은 목표가를 314에서 292달러로 낮추고(비중확대 유지), Barclays는 316달러·Wells Fargo는 182달러로 올림. 컨센서스 평균 약 285달러, 매수 15·중립 12·매도 2로 의견이 갈림.",
+      "extra_actions": [],
+      "sources": [{"title": "Wall Street rises as Fed holds rates steady, earnings in focus", "url": "https://www.staradvertiser.com/2026/10/28/breaking-news/wall-street-rises-as-fed-holds-rates-steady-earnings-in-focus/"}]
+    },
+    "PANW": {
+      "headline": "주간 급등 후 차익실현",
+      "move_reasons": [
+        "최근 5거래일 +13.6% 급반등 후 숨 고르기",
+        "고금리·12월 인상 기대 확대로 고밸류 소프트웨어 부담",
+        "뚜렷한 개별 이슈 없음(섹터 흐름 연동)"
+      ],
+      "driver_type": "매크로",
+      "weekly_outlook": {
+        "stance": "중립",
+        "summary": "단기 급등분 소화 과정으로 지표·금리에 따른 변동성 예상. 다음 실적은 11/20으로 이벤트 공백기.",
+        "key_events": ["10/29(목) 21:30 GDP·PCE", "11/20(금) 자체 실적"],
+        "watch_points": ["10년물 금리 추이", "52주 고점 432달러 접근 여부"]
+      },
+      "analyst_take": "최근 한 달 Wells Fargo(525달러)·Citigroup(440)·TD Cowen(440) 등 목표가 상향이 이어짐. 컨센서스 평균 약 399달러로 현재가와 비슷하며 55명 중 42명 매수임.",
+      "extra_actions": [],
+      "sources": [{"title": "Wall Street rises as Fed holds rates steady, earnings in focus", "url": "https://www.staradvertiser.com/2026/10/28/breaking-news/wall-street-rises-as-fed-holds-rates-steady-earnings-in-focus/"}]
+    }
+  },
+  "news": {
+    "market_wrap": "연준이 금리를 동결하고 경기 평가를 상향한 가운데 S&P500 +0.28%, 나스닥 +0.27%로 소폭 상승 마감함. 반도체지수(SOX)가 4거래일 연속 올라 +1.8%였고 마이크론이 SK하이닉스 호실적에 급등함.",
+    "mood": "중립",
+    "top_news": [
+      {"rank": 1, "title": "알파벳 3Q 실적 쇼크, 시간외 급락", "summary": "클라우드 매출은 약 2배 늘었으나 이익과 검색광고가 기대에 못 미치고 FCF가 적자임. 2026 capex는 유지하되 2027년 대폭 증가를 시사함.", "impact": "하락", "affects": "NASDAQ", "why": "시총 최상위 종목 급락과 AI 투자 수익성 우려가 나스닥 선물을 압박함.", "source": "CNBC", "url": "https://www.cnbc.com/2026/10/28/alphabet-googl-earnings-q3-2026.html"},
+      {"rank": 2, "title": "연준 동결, 12월 인상 확률 85%", "summary": "금리를 동결했으나 인플레이션이 여전히 높다고 평가함. CME 기준 12월 25bp 인상 확률이 85%로 상승함.", "impact": "하락", "affects": "둘다", "why": "인상 기대가 커지며 10년물 5% 상회 시 밸류에이션 부담이 커짐.", "source": "Star-Advertiser(AP)", "url": "https://www.staradvertiser.com/2026/10/28/breaking-news/wall-street-rises-as-fed-holds-rates-steady-earnings-in-focus/"},
+      {"rank": 3, "title": "미 3Q GDP·9월 PCE 발표", "summary": "오늘 밤 GDP 속보치와 PCE 물가가 나옴. 결과에 따라 12월 인상 경로 기대가 달라질 수 있음.", "impact": "혼조", "affects": "둘다", "why": "물가 상회 시 금리 급등과 성장주 약세, 하회 시 안도 랠리 가능함.", "source": "Regards of Wall Street", "url": "https://www.regardsofwallstreet.com/news/stock-market-week-ahead-october-26-2026"},
+      {"rank": 4, "title": "마이크로소프트 실적 호조, 시간외 +4%", "summary": "MS가 분기 실적 발표 후 시간외 4% 넘게 올랐음. 알파벳 급락과 엇갈려 AI 수혜주 간 차별화가 예상됨.", "impact": "상승", "affects": "둘다", "why": "MS 상승이 알파벳 하락을 일부 상쇄해 S&P500 낙폭을 제한할 수 있음.", "source": "Star-Advertiser(AP)", "url": "https://www.staradvertiser.com/2026/10/28/breaking-news/wall-street-rises-as-fed-holds-rates-steady-earnings-in-focus/"},
+      {"rank": 5, "title": "WTI 100달러 상회, 중동 불안", "summary": "후티가 사우디 정유시설을 공격해 유가가 올랐음. 이란 전쟁 이후 WTI가 100달러를 웃돎.", "impact": "하락", "affects": "둘다", "why": "유가 상승은 인플레이션·금리 부담을 키워 증시에 하방 요인임.", "source": "Star-Advertiser(AP)", "url": "https://www.staradvertiser.com/2026/10/28/breaking-news/wall-street-rises-as-fed-holds-rates-steady-earnings-in-focus/"}
+    ],
+    "tonight": [
+      "21:30 미국 3분기 GDP(속보치)·9월 PCE·주간 실업수당청구",
+      "22:30 알파벳 정규장 첫 반응(갭하락 여부)",
+      "개장 전 마스터카드·머크·BMS 실적",
+      "10/30(금) 06:00경 아마존 실적 콘퍼런스콜(장 마감 후), 인텔·스타벅스 실적"
+    ]
+  }
+}
