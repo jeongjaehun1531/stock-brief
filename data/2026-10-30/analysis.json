@@ -1,0 +1,256 @@
+{
+ "meta": {
+  "mode": "daily",
+  "model": "sonnet",
+  "session_date": "2026-10-29",
+  "notes": "NVDA/MU/BE/PANW 는 종목 단독 뉴스 확인 못함(섹터·지수 흐름 위주로 서술). GOOGL 은 CNBC·TheStreet·Tradingkey 등 확인."
+ },
+ "tickers": {
+  "NVDA": {
+   "headline": "AI 투심 약화 속 소폭 하락",
+   "move_reasons": [
+    "알파벳 AI 설비투자 부담에 반도체 동반 약세",
+    "SOX 지수 -1.4%, 지수 대비 낙폭은 작음",
+    "DOJ의 허깅페이스 인수 문의 보도 부담"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "빅테크 설비투자 지속은 수요 측면 우호 요인이나, 현금흐름 악화 우려로 AI 투자 회의론이 단기 변동성 요인임. 다음 실적은 11/18로 이번 주 뚜렷한 자체 이벤트는 없음.",
+    "key_events": [
+     "10/30(금) 3분기 고용비용지수",
+     "11/18(수) 엔비디아 실적(예정)"
+    ],
+    "watch_points": [
+     "AI 투자 현금흐름 논란 확산 여부",
+     "DOJ 허깅페이스 인수 심사 진행",
+     "트럼프 방중 시 반도체 수출 논의"
+    ]
+   },
+   "analyst_take": "최근 1개월 market.json 상 목표가 변경은 유지 위주(Needham 300달러 유지 등)이며 컨센서스는 매수 우세임. 별도 확인된 대형 증권사 변경은 없음.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "Stock Market Today (Oct. 29, 2026) - TheStreet",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-29-2026"
+    },
+    {
+     "title": "Alphabet Earnings Miss Pressures Market - Tradingkey",
+     "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262255000-us-stock-nasdaq-drop-alphabet-microsoft-neoclouds-lumentum-marvell-tradingkey"
+    }
+   ]
+  },
+  "GOOGL": {
+   "headline": "3분기 실적 쇼크, 12.6% 급락",
+   "move_reasons": [
+    "조정 EPS 2.67달러, 예상 3.02달러 크게 하회",
+    "검색 매출 +12%로 성장 둔화",
+    "FCF -90.7억달러, 현금소진 우려",
+    "올해 capex 1,950~2,050억달러 유지·내년 대폭 증가 예고"
+   ],
+   "driver_type": "개별이슈",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "클라우드는 +103%로 강했으나 검색 둔화와 현금흐름 악화가 부각돼 단기 반등 여력과 추가 눌림이 공존함. 증권사 목표가 하향이 이어져 변동성 확대 전망.",
+    "key_events": [
+     "10/30(금) 아마존·인텔 급락 여파",
+     "11/3 이후 미 중간선거 관련 불확실성"
+    ],
+    "watch_points": [
+     "52주 저점(267.67달러) 지지 여부",
+     "추가 목표가 하향·투자의견 조정",
+     "클라우드 수주잔고와 capex 효율 논의"
+    ]
+   },
+   "analyst_take": "Bernstein 385→325, UBS 380→332, MS 400→375, RBC 425→400 등 다수 하향했고 Citizens 는 의견을 Market Perform 으로 하향함. 클라우드는 긍정이나 검색 수익화와 실행 리스크를 지적하는 논리임.",
+   "extra_actions": [
+    {
+     "date": "10/29",
+     "firm": "Bank of America",
+     "rating": "Buy",
+     "target": 380,
+     "prior_target": 430,
+     "note": "실적 부진, 내년 성장 반등 기대"
+    },
+    {
+     "date": "10/29",
+     "firm": "Needham",
+     "rating": "Buy",
+     "target": null,
+     "prior_target": null,
+     "note": "TPU 부족·검색 쿼리 증가 근거 유지"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wall Street is saying about Alphabet's dismal 3rd-quarter earnings - AOL",
+     "url": "https://www.aol.com/articles/burning-cash-wall-street-saying-153259000.html"
+    },
+    {
+     "title": "Stock Market Today October 29, 2026 - StockTitan",
+     "url": "https://www.stocktitan.net/articles/stock-market-today-live-october-29-2026"
+    },
+    {
+     "title": "Alphabet sinks 10% as it holds 2026 capex unchanged - CNBC",
+     "url": "https://www.cnbc.com/2026/10/28/alphabet-googl-earnings-q3-2026.html"
+    }
+   ]
+  },
+  "MU": {
+   "headline": "반도체 약세에 5% 하락",
+   "move_reasons": [
+    "SOX -1.4%, 반도체 전반 차익실현",
+    "AI 투자 현금흐름 우려로 메모리 동반 하락",
+    "전일 급반등(+4%) 이후 되돌림"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "주간으로는 +9%로 반등했으나 월간 -12%로 고점 대비 조정 구간임. 자체 실적은 12/24로 멀어 반도체 업종 심리와 AI 투자 뉴스에 연동될 전망.",
+    "key_events": [
+     "10/30(금) 3분기 고용비용지수",
+     "12/24(목) 마이크론 실적(예정)"
+    ],
+    "watch_points": [
+     "SOX 지수 반등 여부",
+     "중국 대상 반도체 수출 논의",
+     "빅테크 capex 코멘트"
+    ]
+   },
+   "analyst_take": "최근 1개월 목표가는 Mizuho 1,400달러 상향, TD Cowen 1,600달러·RBC 1,500달러 유지 등 우호적임. 컨센서스 평균은 현재가 대비 크게 높음.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "Alphabet Earnings Miss Pressures Market - Tradingkey",
+     "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262255000-us-stock-nasdaq-drop-alphabet-microsoft-neoclouds-lumentum-marvell-tradingkey"
+    },
+    {
+     "title": "Stock Market Today (Oct. 29, 2026) - TheStreet",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-29-2026"
+    }
+   ]
+  },
+  "BE": {
+   "headline": "뚜렷한 개별 이슈 없이 약세",
+   "move_reasons": [
+    "뚜렷한 개별 이슈 없음(섹터·지수 흐름 연동)",
+    "AI 인프라 투자 회의론에 데이터센터 관련주 부담",
+    "시총 대비 변동성 큰 고베타 종목"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "10/23 실적 이후 증권사 의견이 엇갈리며 월간 -20%의 조정 중임. 빅테크 capex 규모와 데이터센터 전력 수요 코멘트가 주가 방향을 좌우할 전망.",
+    "key_events": [
+     "10/30(금) 아마존 실적 후 AI 인프라 투자 반응"
+    ],
+    "watch_points": [
+     "빅테크 capex 가이던스",
+     "전력·가스 가격 동향",
+     "목표가 조정 추이"
+    ]
+   },
+   "analyst_take": "JP모건은 목표가를 314→292달러로 낮췄고, Citi 284달러·Barclays 316달러·Wells Fargo 182달러는 소폭 상향함. 투자의견은 중립 위주로 의견이 갈림.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "Stock Market Today (Oct. 29, 2026) - TheStreet",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-29-2026"
+    }
+   ]
+  },
+  "PANW": {
+   "headline": "뚜렷한 이슈 없이 3.5% 조정",
+   "move_reasons": [
+    "뚜렷한 개별 이슈 없음(섹터·지수 흐름 연동)",
+    "나스닥 -1.4%, 기술주 전반 약세",
+    "직전 3거래일 급반등 후 차익실현"
+   ],
+   "driver_type": "매크로",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "주간 +7%로 반등 후 조정이며, 실적은 11/20으로 이번 주 자체 촉매는 적음. 기술주 심리와 금리 흐름에 연동될 전망.",
+    "key_events": [
+     "10/30(금) 3분기 고용비용지수",
+     "11/20(금) 팔로알토 실적(예정)"
+    ],
+    "watch_points": [
+     "10년물 금리 5% 안팎 등락",
+     "나스닥 기술주 투자심리",
+     "보안 업종 목표가 변화"
+    ]
+   },
+   "analyst_take": "10월 중 Wells Fargo 525달러, Citi 440달러, TD Cowen 440달러로 상향이 잇따랐음. 컨센서스는 매수 우세이며 평균 목표가는 현재가 대비 소폭 높음.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "Stock Market Today (Oct. 29, 2026) - TheStreet",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-29-2026"
+    }
+   ]
+  }
+ },
+ "news": {
+  "market_wrap": "알파벳 실적 부진(-12.6%)으로 AI 설비투자·현금흐름 우려가 재부각되며 나스닥 -1.38%, S&P500 -0.30%, 다우 -0.25%로 마감함. 장 마감 후 아마존(시간외 약 -6.7%)과 인텔(약 -17.6%)도 급락해 나스닥 선물이 약세임.",
+  "mood": "위험회피",
+  "top_news": [
+   {
+    "rank": 1,
+    "title": "알파벳 실적 쇼크, AI 투자 우려",
+    "summary": "3분기 EPS·매출이 예상을 밑돌고 FCF가 적자(-90.7억달러)로 하루 시총 약 4,000억달러 이상 증발함. 클라우드는 +103%였으나 검색 성장이 둔화됨.",
+    "impact": "하락",
+    "affects": "NASDAQ",
+    "why": "대형 기술주 비중이 큰 나스닥 지수에 직접 부담이며 AI 투자 수익성 논란이 업종 전반으로 확산됨.",
+    "source": "AOL/TheStreet",
+    "url": "https://www.aol.com/articles/burning-cash-wall-street-saying-153259000.html"
+   },
+   {
+    "rank": 2,
+    "title": "아마존·인텔 시간외 급락",
+    "summary": "아마존은 AWS +39%에도 12개월 FCF가 적자로 전환했고, 인텔은 4분기 가이던스가 부진해 시간외 급락함. 모두 구체적 사유는 회사 발표 기준 확인이 제한적임.",
+    "impact": "하락",
+    "affects": "둘다",
+    "why": "시총 상위 종목의 시간외 약세가 오늘 밤 지수 선물과 개장 초 분위기를 누를 전망.",
+    "source": "StockTitan",
+    "url": "https://www.stocktitan.net/articles/stock-market-today-live-october-29-2026"
+   },
+   {
+    "rank": 3,
+    "title": "9월 PCE 3.6%, GDP 3.4%",
+    "summary": "PCE 물가가 전년비 3.6%로 오르고 근원은 3.1%였으며 3분기 GDP는 예상을 상회함. 연준은 전일 3.75~4.00% 동결함.",
+    "impact": "하락",
+    "affects": "둘다",
+    "why": "물가 재가속은 금리 인하 기대를 낮춰 성장주 밸류에이션에 부담이 됨.",
+    "source": "TheStreet",
+    "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-29-2026"
+   },
+   {
+    "rank": 4,
+    "title": "이란 협상·유가 100달러대",
+    "summary": "WTI는 102달러대, 브렌트는 114달러 안팎이며 미국은 이란과 잠정 합의를 협상 중임. 협상 결렬 시 중간선거 직후 군사행동 재개 가능성이 언급됨.",
+    "impact": "혼조",
+    "affects": "둘다",
+    "why": "고유가는 인플레이션과 금리 부담으로, 협상 진전은 위험선호 회복 요인으로 작용함.",
+    "source": "TheStreet",
+    "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-29-2026"
+   },
+   {
+    "rank": 5,
+    "title": "MS 250억달러 회사채·마벨 급락",
+    "summary": "마이크로소프트가 9년여 만에 250억달러 이상 투자등급 회사채를 발행하고, 마벨은 루멘텀 인수 협상 보도에 13% 급락함. AI 투자가 부채로 조달되는 점이 논란임.",
+    "impact": "하락",
+    "affects": "NASDAQ",
+    "why": "AI 투자 자금조달 부담이 부각되면 반도체·클라우드 관련주 투자심리가 위축됨.",
+    "source": "Tradingkey",
+    "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262255000-us-stock-nasdaq-drop-alphabet-microsoft-neoclouds-lumentum-marvell-tradingkey"
+   }
+  ],
+  "tonight": [
+   "19:30 엑슨모빌 3분기 실적",
+   "21:30 미국 3분기 고용비용지수",
+   "미국 개장 전 애브비 실적",
+   "아마존·인텔 급락 후 정규장 반응",
+   "중간선거(다음 주)·이란 협상 헤드라인"
+  ]
+ }
+}
