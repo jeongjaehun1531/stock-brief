@@ -1,0 +1,237 @@
+{
+ "meta": {
+  "model": "sonnet",
+  "mode": "daily",
+  "session_date": "2026-10-30",
+  "notes": "웹검색 결과가 대부분 제목만 제공되어 NVDA/MU/BE/PANW 개별 원인은 확인 못함(섹터·매크로 연동으로 기재). 10/30 당일 직접 기사 미확보, 10/29 FXEmpire·주간전망 기사 기반. 11/2 지표 일정은 미확인. 증권사 추가 변경(extra_actions)은 근거 미확보로 비움."
+ },
+ "tickers": {
+  "NVDA": {
+   "headline": "AI 기술주 투매에 -4.2%",
+   "move_reasons": [
+    "알파벳·아마존·인텔 부진 후 AI 투자 우려 확산",
+    "SOX -7.2% 급락, 반도체 동반 매도",
+    "12월 금리인상 베팅 확대로 성장주 부담"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "AI 피로감과 금리인상 우려로 단기 변동성 큰 구간임. 11/18 실적 전까지는 반도체 업황 심리와 매크로 지표에 연동될 전망.",
+    "key_events": [
+     "11/3(화) 미국 중간선거",
+     "11/6(금) 10월 고용보고서",
+     "11/18(수) 엔비디아 실적(예정)"
+    ],
+    "watch_points": [
+     "SOX 지수 반등 여부",
+     "AMD·퀄컴 실적 코멘트",
+     "12월 금리인상 확률"
+    ]
+   },
+   "analyst_take": "컨센서스 목표가 평균 약 329달러(62명 중 59명 매수)로 현가 대비 여력 큼. 최근 Needham·Cantor는 목표가 유지(300·350달러).",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "Nasdaq Index: Alphabet Miss Hits Tech Stocks as Fed Hike Bets Build (FXEmpire)",
+     "url": "https://www.fxempire.com/forecasts/article/nasdaq-index-alphabet-miss-hits-tech-stocks-as-fed-hike-bets-build-1641357"
+    },
+    {
+     "title": "5 Market Movers: Midterms, Jobs, AMD, Qualcomm [2026]",
+     "url": "https://tech-insider.org/wall-st-week-ahead-midterms-jobs-fed-hike-odds-ai-market-2026/"
+    }
+   ]
+  },
+  "GOOGL": {
+   "headline": "실적 쇼크 여진, 추가 -1.4%",
+   "move_reasons": [
+    "3분기 EPS·매출 시장 예상 하회 후 전일 -12% 급락",
+    "실적 후 증권사 목표가 연쇄 하향",
+    "AI 투자 부담 우려 지속, 거래량 평균의 2.1배"
+   ],
+   "driver_type": "개별이슈",
+   "weekly_outlook": {
+    "stance": "부정",
+    "summary": "실적 쇼크 여진으로 주간 -12.6%를 기록해 단기 투자심리 취약함. 반등 여부는 AI 투자 대비 수익성 논거 회복에 달린 전망.",
+    "key_events": [
+     "11/3(화) 미국 중간선거",
+     "11/6(금) 10월 고용보고서"
+    ],
+    "watch_points": [
+     "추가 목표가 조정",
+     "52주 저가(270.7달러) 지지 여부",
+     "클라우드·AI 투자 관련 경영진 코멘트"
+    ]
+   },
+   "analyst_take": "실적 후 시티(447→375달러), 웰스파고(417→371), 번스타인(385→325), RBC(425→400), UBS(380→332)가 목표가를 낮춤. 투자의견은 대체로 유지해 하향은 단기 실적·투자 부담 반영 성격임.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "Nasdaq Index: Alphabet Miss Hits Tech Stocks as Fed Hike Bets Build (FXEmpire)",
+     "url": "https://www.fxempire.com/forecasts/article/nasdaq-index-alphabet-miss-hits-tech-stocks-as-fed-hike-bets-build-1641357"
+    },
+    {
+     "title": "Alphabet Worst Week Since 2011, Intel Record Crash, Warsh 'Cracks': Week On Wall Street",
+     "url": "https://www.benzinga.com/markets/market-summary/26/10/62760190/alphabet-worst-week-since-2011-intel-record-crash-warsh-cracks-this-week-on-wall-street"
+    }
+   ]
+  },
+  "MU": {
+   "headline": "반도체 급락에 -5.3%",
+   "move_reasons": [
+    "SOX -7.2% 급락, 메모리 동반 약세",
+    "DRAM 관련주 전일부터 약세 지속",
+    "뚜렷한 개별 악재는 확인 못함(섹터 연동)"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "주가가 고점 대비 크게 내려와 변동성 큼. 다음 실적(12/24 예정)까지 개별 이벤트가 적어 반도체 업황 심리에 연동될 전망.",
+    "key_events": [
+     "11/6(금) 10월 고용보고서",
+     "AMD·퀄컴 실적(주중)"
+    ],
+    "watch_points": [
+     "메모리 가격·AI 수요 코멘트",
+     "SOX 지수 흐름"
+    ]
+   },
+   "analyst_take": "컨센서스 목표가 평균 약 1,562달러로 현가 대비 괴리 큼(49명 중 45명 매수). 최근 변경은 10/1 미즈호 상향(1,300→1,400달러) 등 긍정 우위.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "Nasdaq Index: Alphabet Miss Hits Tech Stocks as Fed Hike Bets Build (FXEmpire)",
+     "url": "https://www.fxempire.com/forecasts/article/nasdaq-index-alphabet-miss-hits-tech-stocks-as-fed-hike-bets-build-1641357"
+    },
+    {
+     "title": "5 Market Movers: Midterms, Jobs, AMD, Qualcomm [2026]",
+     "url": "https://tech-insider.org/wall-st-week-ahead-midterms-jobs-fed-hike-odds-ai-market-2026/"
+    }
+   ]
+  },
+  "BE": {
+   "headline": "AI전력주 투매 -8.6%",
+   "move_reasons": [
+    "AI 인프라 투자 우려에 고밸류 전력주 매도",
+    "금리인상 베팅 확대로 성장주 할인율 부담",
+    "한 달 -27% 조정 후 추가 하락, 개별 뉴스는 확인 못함"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "변동성 극대 구간으로 단기 방향성은 AI 인프라 심리에 좌우될 전망. 실적(10/23) 이후 대형 이벤트가 없어 지표·금리 연동 예상.",
+    "key_events": [
+     "11/3(화) 미국 중간선거",
+     "11/6(금) 10월 고용보고서"
+    ],
+    "watch_points": [
+     "10년물 금리 4.9% 부근 흐름",
+     "AI 데이터센터 투자 뉴스"
+    ]
+   },
+   "analyst_take": "컨센서스 평균 약 285달러, 매수 15·중립 12로 의견 분산. 실적 직후 JP모건은 목표가 하향(314→292달러), 바클레이즈·웰스파고·씨티는 소폭 상향.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "Nasdaq Index: Alphabet Miss Hits Tech Stocks as Fed Hike Bets Build (FXEmpire)",
+     "url": "https://www.fxempire.com/forecasts/article/nasdaq-index-alphabet-miss-hits-tech-stocks-as-fed-hike-bets-build-1641357"
+    }
+   ]
+  },
+  "PANW": {
+   "headline": "기술주 약세 연동 -3.9%",
+   "move_reasons": [
+    "나스닥 -2.9% 급락, 고밸류 소프트웨어 동반 약세",
+    "AI 우려와 금리인상 베팅이 성장주 압박",
+    "뚜렷한 개별 이슈 없음(지수 흐름 연동)"
+   ],
+   "driver_type": "매크로",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "실적(11/20 예정) 전까지 개별 이벤트 적고 지수·금리 연동 가능성 높음. 사이버보안 수요 논리는 유지되나 밸류 부담 존재.",
+    "key_events": [
+     "11/3(화) 미국 중간선거",
+     "11/6(금) 10월 고용보고서",
+     "11/20(금) PANW 실적(예정)"
+    ],
+    "watch_points": [
+     "나스닥 반등 여부",
+     "사이버보안 업종 자금 흐름"
+    ]
+   },
+   "analyst_take": "컨센서스 평균 약 399달러(55명 중 42명 매수). 10월 중 웰스파고(475→525달러)·시티(410→440)·TD카우언(400→440)이 상향.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "Nasdaq Index: Alphabet Miss Hits Tech Stocks as Fed Hike Bets Build (FXEmpire)",
+     "url": "https://www.fxempire.com/forecasts/article/nasdaq-index-alphabet-miss-hits-tech-stocks-as-fed-hike-bets-build-1641357"
+    },
+    {
+     "title": "5 Market Movers: Midterms, Jobs, AMD, Qualcomm [2026]",
+     "url": "https://tech-insider.org/wall-st-week-ahead-midterms-jobs-fed-hike-odds-ai-market-2026/"
+    }
+   ]
+  }
+ },
+ "news": {
+  "market_wrap": "S&P500 -1.8%, 나스닥 -2.9%, SOX -7.2%로 AI·반도체 중심 급락 마감함. VIX는 19.4로 +12.9% 상승하며 위험회피 분위기임.",
+  "mood": "위험회피",
+  "top_news": [
+   {
+    "rank": 1,
+    "title": "AI 우려에 기술주·반도체 투매",
+    "summary": "알파벳 실적 부진에 이어 아마존·인텔 실적 실망이 겹치며 AI 투자 회의론이 확산됨. SOX가 7% 넘게 급락함.",
+    "impact": "하락",
+    "affects": "NASDAQ",
+    "why": "AI·반도체 대형주 비중이 큰 나스닥에 직접적 하방 압력으로 작용함.",
+    "source": "CNBC/Tech Insider",
+    "url": "https://tech-insider.org/wall-st-week-ahead-midterms-jobs-fed-hike-odds-ai-market-2026/"
+   },
+   {
+    "rank": 2,
+    "title": "12월 연준 금리인상 베팅 확대",
+    "summary": "연준은 동결했으나 인플레이션이 높다고 밝혀 12월 인상 확률이 약 80%로 거론됨. 10월 고용보고서가 변수임.",
+    "impact": "하락",
+    "affects": "둘다",
+    "why": "금리 상승 기대는 성장주 밸류에이션을 압박함.",
+    "source": "Tech Insider(Reuters 인용)",
+    "url": "https://tech-insider.org/wall-st-week-ahead-midterms-jobs-fed-hike-odds-ai-market-2026/"
+   },
+   {
+    "rank": 3,
+    "title": "알파벳 주간 낙폭, 2011년 이후 최대",
+    "summary": "3분기 실적 하회로 알파벳이 급락하고 목표가 하향이 이어짐. 마이크로소프트 등 빅테크로 심리 악화가 번짐.",
+    "impact": "하락",
+    "affects": "둘다",
+    "why": "시총 최상위 빅테크 약세가 지수 전반을 끌어내림.",
+    "source": "Benzinga/FXEmpire",
+    "url": "https://www.fxempire.com/forecasts/article/nasdaq-index-alphabet-miss-hits-tech-stocks-as-fed-hike-bets-build-1641357"
+   },
+   {
+    "rank": 4,
+    "title": "다음 주 중간선거·애플 실적·고용",
+    "summary": "11/3 중간선거, 주중 애플·AMD·퀄컴 실적, 11/6 10월 고용보고서가 예정됨. 이벤트 집중으로 변동성 확대 가능성 큼.",
+    "impact": "혼조",
+    "affects": "둘다",
+    "why": "정책 불확실성과 빅테크 실적이 지수 방향을 좌우함.",
+    "source": "CNBC",
+    "url": "https://www.cnbc.com/2026/10/30/stock-market-next-week-outlook-for-nov-2-6-2026.html"
+   },
+   {
+    "rank": 5,
+    "title": "10년물 금리 4.93%로 하락",
+    "summary": "위험회피 속 미 10년물 금리가 전일 대비 하락했고 달러 인덱스는 보합권임. 원/달러는 1,333원대임.",
+    "impact": "혼조",
+    "affects": "둘다",
+    "why": "금리 하락은 성장주에 우호적이나 위험회피 매도를 상쇄하진 못함.",
+    "source": "market.json(야후파이낸스)",
+    "url": "https://finance.yahoo.com/quote/%5ETNX/"
+   }
+  ],
+  "tonight": [
+   "주말 휴장: 미국장 11/2(월) 새벽 영향 없음 (토요일 밤 미국장 휴장)",
+   "11/2(월) 밤: 미국 정규장 개장 23:30, 주요 지표는 확인 필요(ISM 제조업 발표 가능성)",
+   "11/3(화) 미국 중간선거, 주중 애플·AMD·퀄컴 실적",
+   "11/6(금) 밤 미국 10월 고용보고서"
+  ]
+ }
+}
