@@ -1,0 +1,232 @@
+{
+ "meta": {
+  "mode": "daily",
+  "model": "sonnet",
+  "session_date": "2026-11-02",
+  "notes": "2차 검색으로 11/2 시장 마감 기사 확인: AI 인프라·반도체 매도(원인 단일 특정 불가), 유가는 이란 종전 협상 기대. MU는 키옥시아 가이던스(Yahoo 11/2)가 근거. NVDA·GOOGL·BE·PANW는 당일 개별 뉴스 미확인으로 섹터·지수 연동 서술. 일정은 캘린더 사이트 기준(변동 가능)."
+ },
+ "tickers": {
+  "NVDA": {
+   "headline": "반도체 급락 동반 -1.3%",
+   "move_reasons": [
+    "AI·인프라주 매도 지속(마벨 -12.8%, AMD -7.0%)",
+    "SOX -3.37%, AI 트레이드 신뢰 약화",
+    "Melius 목표가 420→315달러 하향(11/02)"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "AI 트레이드 신뢰 약화로 조정(1개월 -13.6%) 중이며 중간선거·고용지표 전까지 변동성 클 전망. AMD 등 동종 실적이 심리 변수임.",
+    "key_events": [
+     "11/03(화) 미 중간선거",
+     "11/06(금) 22:30 10월 고용보고서",
+     "11/18(수) NVDA 실적"
+    ],
+    "watch_points": [
+     "SOX 추가 하락 여부",
+     "AMD·SMCI·ANET 실적 속 AI 수요 코멘트"
+    ]
+   },
+   "analyst_take": "컨센서스 목표가 평균 약 329달러로 현재가 대비 여유 큼. Melius는 Buy 유지하며 목표가를 315달러로 낮춤.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "AI selling overwhelms oil's plunge (investingLive, 11/2)",
+     "url": "https://investinglive.com/news/investinglive-americas-fx-news-wrap-2-nov-it-s-a-wrap-ai-selling-overwhelms-oil-s-plunge/"
+    },
+    {
+     "title": "Nasdaq 100 Enters Correction as Chipmaker Selloff Offsets Oil Slump (11/2)",
+     "url": "https://features.financialjuice.com/2026/11/02/nasdaq-100-enters-correction-as-chipmaker-selloff-offsets-oil-slump-us-market-wrap/"
+    }
+   ]
+  },
+  "GOOGL": {
+   "headline": "급락 후 약보합 -0.3%",
+   "move_reasons": [
+    "10/30 급락 이후 낙폭 이어짐(52주 저점 근접)",
+    "당일 뚜렷한 개별 이슈 미확인(AI주 약세 연동)",
+    "Wells Fargo 목표가 371→365달러 하향(11/02)"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "주간 -11.9%, 1개월 -18.8%로 52주 저점(270.7달러) 근접 구간. 증권사 목표가 하향이 이어져 반등 시도는 제한적일 전망.",
+    "key_events": [
+     "11/03(화) 24:00 JOLTS(9월)",
+     "11/06(금) 22:30 10월 고용보고서"
+    ],
+    "watch_points": [
+     "52주 저점 지지 여부",
+     "AI 투자비(capex) 부담 관련 코멘트"
+    ]
+   },
+   "analyst_take": "Citi·Wells Fargo·Bernstein·RBC 등이 최근 목표가를 낮췄으나 투자의견은 대부분 유지. 평균 목표가 약 407달러는 여전히 현재가 상회.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "Nasdaq 100 Enters Correction as Chipmaker Selloff Offsets Oil Slump (11/2)",
+     "url": "https://features.financialjuice.com/2026/11/02/nasdaq-100-enters-correction-as-chipmaker-selloff-offsets-oil-slump-us-market-wrap/"
+    }
+   ]
+  },
+  "MU": {
+   "headline": "키옥시아 보수적 가이던스 -5.8%",
+   "move_reasons": [
+    "키옥시아 12월분기 영업익 가이던스가 시장 예상 하회",
+    "WDC·SNDK 등 메모리주 동반 하락",
+    "SOX -3.37% 등 AI·반도체 매도세 지속"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "키옥시아는 출하 시점 이연 영향이며 3월분기 급성장·내년 물량 완판을 언급함. 다만 AI주 매도세가 이어져 메모리주 변동성 클 전망.",
+    "key_events": [
+     "11/04(수) 06:00경 AMD 실적",
+     "11/05(목) 07:00경 QCOM 실적(11/4 장 마감 후)"
+    ],
+    "watch_points": [
+     "SOX 1만 선 지지 여부",
+     "HBM·D램 가격 관련 보도"
+    ]
+   },
+   "analyst_take": "최근 Rosenblatt(1,900달러), Needham(1,650달러) 등 Buy 유지, DA Davidson은 10/07 목표가 3,000달러로 상향. 컨센서스 평균 약 1,562달러로 괴리 큼.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "Micron Falls 4% as Kioxia's Cautious Outlook Hits Memory Stocks (Yahoo, 11/2)",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/micron-falls-4-kioxia-cautious-185355108.html"
+    },
+    {
+     "title": "Micron Technology Shares Down 5.8% (MarketBeat, 11/2)",
+     "url": "https://www.marketbeat.com/instant-alerts/price-micron-technology-nasdaq-mu-shares-down-58-whats-next-2026-11-02/"
+    }
+   ]
+  },
+  "BE": {
+   "headline": "AI전력주 약세 -3.4%",
+   "move_reasons": [
+    "AI 인프라주 매도세 속 동반 약세(CoreWeave 등 급락)",
+    "뚜렷한 개별 이슈 없음(섹터·지수 흐름 연동)",
+    "50일·200일선 하회, 1개월 -32%"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "실적(10/23) 이후 조정 중이며 AI 인프라 투자 심리에 연동될 전망. 금리 하락(10년물 4.89%)은 성장주에 우호적임.",
+    "key_events": [
+     "11/06(금) 22:30 10월 고용보고서"
+    ],
+    "watch_points": [
+     "AI 데이터센터 전력 수요 관련 뉴스",
+     "200달러 선 지지 여부"
+    ]
+   },
+   "analyst_take": "10월 말 Citi·Barclays·Wells Fargo는 목표가 상향, JP모건은 314→292달러 하향으로 의견 엇갈림. 매수 15·중립 12·매도 2로 분산됨.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "Bloom Energy Stock Falls 3.5% (MarketBeat, 11/2)",
+     "url": "https://www.marketbeat.com/instant-alerts/price-bloom-energy-nyse-be-stock-falls-35-time-to-sell-2026-11-02/"
+    },
+    {
+     "title": "AI selling overwhelms oil's plunge (investingLive, 11/2)",
+     "url": "https://investinglive.com/news/investinglive-americas-fx-news-wrap-2-nov-it-s-a-wrap-ai-selling-overwhelms-oil-s-plunge/"
+    }
+   ]
+  },
+  "PANW": {
+   "headline": "보안주 조정 -3.9%",
+   "move_reasons": [
+    "당일 개별 뉴스·애널리스트 변경 확인 안 됨",
+    "나스닥 -1.07%, 성장·소프트웨어주 약세 연동",
+    "주간 -9.9%, 직전 급등분 되돌림"
+   ],
+   "driver_type": "매크로",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "연초 대비 +91% 상승 후 변동성 확대 구간. 다음 실적(11/20) 전까지 시장 심리·금리에 연동될 전망.",
+    "key_events": [
+     "11/04(수) 장전 DDOG 실적(소프트웨어 심리 참고)",
+     "11/20(금) PANW 실적"
+    ],
+    "watch_points": [
+     "소프트웨어 섹터 자금 흐름",
+     "10년물 금리 방향"
+    ]
+   },
+   "analyst_take": "10월 중순 Wells Fargo(525달러), Citi(440달러) 목표가 상향 등 긍정 기조. 컨센서스 평균 약 399달러로 현재가 상회.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "Palo Alto Networks Stock Falls 3.9% (MarketBeat, 11/2)",
+     "url": "https://www.marketbeat.com/instant-alerts/price-palo-alto-networks-nasdaq-panw-stock-falls-39-heres-what-happened-2026-11-02/"
+    },
+    {
+     "title": "AI selling overwhelms oil's plunge (investingLive, 11/2)",
+     "url": "https://investinglive.com/news/investinglive-americas-fx-news-wrap-2-nov-it-s-a-wrap-ai-selling-overwhelms-oil-s-plunge/"
+    }
+   ]
+  }
+ },
+ "news": {
+  "market_wrap": "S&P500 -0.51%, 나스닥 -1.07%(나스닥100 조정권 진입 보도)이며 SOX -3.37%로 AI·반도체 매도가 유가 급락 호재를 압도함. 다우는 +0.41%, WTI는 이란 종전 협상 기대로 -7.5%(약 96달러)임.",
+  "mood": "위험회피",
+  "top_news": [
+   {
+    "rank": 1,
+    "title": "AI·반도체 매도 지속, 마벨 -12.8%",
+    "summary": "마벨 -12.8%, 인텔 -8.7%, AMD -7.0%, 코어위브 -9.0% 등 AI 인프라주가 급락함. 나스닥100은 조정권에 진입했다는 보도임.",
+    "impact": "하락",
+    "affects": "NASDAQ",
+    "why": "AI 트레이드 신뢰 약화로 지수 비중 큰 대형 기술주에 매도가 확산됨.",
+    "source": "investingLive",
+    "url": "https://investinglive.com/news/investinglive-americas-fx-news-wrap-2-nov-it-s-a-wrap-ai-selling-overwhelms-oil-s-plunge/"
+   },
+   {
+    "rank": 2,
+    "title": "이란 종전 기대에 유가 급락",
+    "summary": "이란 대통령이 평화협상 권한 확대를 언급하고 트럼프가 합의 낙관론을 밝혀 WTI가 -7.5% 하락함.",
+    "impact": "혼조",
+    "affects": "S&P500",
+    "why": "유가 하락은 인플레·금리 부담을 덜지만 이번엔 AI 매도에 가려짐.",
+    "source": "FinancialJuice",
+    "url": "https://features.financialjuice.com/2026/11/02/nasdaq-100-enters-correction-as-chipmaker-selloff-offsets-oil-slump-us-market-wrap/"
+   },
+   {
+    "rank": 3,
+    "title": "키옥시아 보수적 가이던스",
+    "summary": "키옥시아의 12월분기 영업익 가이던스가 예상을 밑돌아 MU -5.8%, WDC·SNDK 등이 하락함. 회사는 출하 이연 영향이며 3월분기 반등을 언급함.",
+    "impact": "하락",
+    "affects": "NASDAQ",
+    "why": "메모리 사이클 우려가 반도체 지수 약세를 키움.",
+    "source": "Yahoo Finance",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/micron-falls-4-kioxia-cautious-185355108.html"
+   },
+   {
+    "rank": 4,
+    "title": "미 중간선거(11/3)·연준 경계",
+    "summary": "11/3 중간선거로 정책 불확실성이 부각되고 ISM 지불가격 75.2로 물가 압력이 지속돼 연준 경계감이 유지됨.",
+    "impact": "혼조",
+    "affects": "둘다",
+    "why": "정책 불확실성과 금리 경로 우려가 위험자산 심리를 제약함.",
+    "source": "investingLive",
+    "url": "https://investinglive.com/news/investinglive-americas-fx-news-wrap-2-nov-it-s-a-wrap-ai-selling-overwhelms-oil-s-plunge/"
+   },
+   {
+    "rank": 5,
+    "title": "JOLTS·AMD 등 실적, 금요일 고용",
+    "summary": "JOLTS는 KST 11/4 00:00, AMD·SMCI·ANET 등은 11/3 장 마감 후 실적이며 10월 고용보고서는 11/6임.",
+    "impact": "혼조",
+    "affects": "둘다",
+    "why": "AI 반도체 실적과 노동지표가 금리·성장주 방향을 좌우함.",
+    "source": "Tickzen 캘린더",
+    "url": "https://tickzen.app/stock-analysis/earnings-calendar/november-2026"
+   }
+  ],
+  "tonight": [
+   "23:30 미국 정규장 개장(11/3, 중간선거 당일)",
+   "24:00 미국 9월 JOLTS 구인건수(KST 11/4 00:00)",
+   "06:00경 AMD·SMCI·ANET·AMGN 등 실적(11/4 새벽, 장 마감 후)"
+  ]
+ }
+}
