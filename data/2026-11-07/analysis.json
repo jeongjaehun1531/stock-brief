@@ -1,0 +1,215 @@
+{
+ "meta": {
+  "model": "sonnet",
+  "mode": "daily",
+  "session_date": "2026-11-06",
+  "notes": "웹검색 총 11회(1차 6회+보강 5회, extended), 웹페치 5회. 11/6 당일 기사로 NVDA·MU·BE·PANW 원인과 시장 요약 보강. GOOGL은 당일 기사 못 찾아 '뚜렷한 개별 이슈 없음' 유지. Top4~5는 지수 데이터 기반(URL 없음). NVDA 실적일은 기사(11/17 장 마감 후) 기준으로 market.json(11/18)과 한국시간 기준 일치. 일정은 공식 캘린더 미확인."
+ },
+ "tickers": {
+  "NVDA": {
+   "headline": "전일 -9% 급락 후 반등 +2.8%",
+   "move_reasons": [
+    "11/5 AI·반도체 -9.3% 급락 후 저가 매수",
+    "SOX +4.2% 반등, 10월 고용 예상 상회",
+    "개별 악재 없이 데이터센터 우려가 낙폭 원인"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "급락 원인이 회사 고유 악재보다 선거 후 데이터센터 규제·AI 수익화 우려여서 정책 헤드라인에 민감한 흐름 전망. 11/17 실적 발표를 앞두고 변동성 유지.",
+    "key_events": [
+     "11/17(화) 장 마감 후 실적발표(한국 11/18 아침)"
+    ],
+    "watch_points": [
+     "52주 저점 164달러 이탈 여부",
+     "10년물 금리 4.86% 부담"
+    ]
+   },
+   "analyst_take": "최근 Melius가 목표가를 420달러에서 315달러로 낮췄으나 Buy 유지. 컨센서스 평균 목표가는 약 327달러, 62명 중 59명이 Buy.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "Nvidia Stock (NVDA) Falls 9.3% as AI Chip Stocks Slide (Nov 5)",
+     "url": "https://www.heygotrade.com/en/news/nvidia-nvda-stock-news-november-6-2026/"
+    },
+    {
+     "title": "Stock Market Today (Nov. 6, 2026)",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-6-144816072.html"
+    }
+   ]
+  },
+  "GOOGL": {
+   "headline": "소폭 상승 +0.8%",
+   "move_reasons": [
+    "뚜렷한 개별 이슈 없음(지수 흐름 연동)",
+    "나스닥 +1.1% 반등에 동행",
+    "거래량은 평균 수준(0.95배)"
+   ],
+   "driver_type": "매크로",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "한 달 -18%로 조정 폭이 크나 이번 주는 +1.8%로 상대적으로 선방. 개별 일정 없이 지수·금리 흐름에 연동될 전망.",
+    "key_events": [
+     "뚜렷한 예정 이벤트 없음(실적은 10/29 발표 완료)"
+    ],
+    "watch_points": [
+     "52주 저점 271달러 지지 여부",
+     "AI 투자 비용 관련 증권사 코멘트"
+    ]
+   },
+   "analyst_take": "실적 직후 Citi(447→375달러), Wells Fargo(371→365달러), Bernstein(385→325달러) 등이 목표가를 낮춤. 그래도 컨센서스 평균 약 400달러로 현재가 대비 여력이 크다는 입장이 다수.",
+   "extra_actions": [],
+   "sources": []
+  },
+  "MU": {
+   "headline": "급락 후 데이터센터 우려 완화 +5.1%",
+   "move_reasons": [
+    "선거 후 데이터센터 건설 둔화 우려 완화",
+    "Citi, 2027 메모리 수요>공급 증가 전망",
+    "11/5 -17% 급락 후 반등, SOX +4.2%"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "낙폭이 커 반등과 재하락이 엇갈리는 장세 전망. 아시아 메모리 시장에서 선거 후 수요 둔화 징후는 아직 없다는 평가가 나옴.",
+    "key_events": [
+     "12/24 실적발표(market.json 기준)",
+     "주중 반도체 지수·메모리 가격 동향"
+    ],
+    "watch_points": [
+     "반등 지속 시 거래량 유지 여부",
+     "AI 투자 관련 빅테크 발언"
+    ]
+   },
+   "analyst_take": "Citi는 2027년 메모리 공급 +22%, 수요 +26%로 타이트한 수급을 예상. 컨센서스 평균 목표가 약 1,562달러, 49명 중 45명 Buy.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "Why Micron Stock Bounced Back Friday",
+     "url": "https://www.fool.com/investing/2026/11/06/why-micron-stock-bounced-back-friday/"
+    },
+    {
+     "title": "Micron stock rebounds 5% after huge selloff",
+     "url": "https://invezz.com/ng/news/2026/11/06/micron-stock-rebounds-5percent-after-huge-selloff-even-as-ai-demand-risks-persist/"
+    }
+   ]
+  },
+  "BE": {
+   "headline": "전일 -16% 급락 후 반등 +3.4%",
+   "move_reasons": [
+    "11/5 데이터센터 투자 둔화 우려로 -16% 급락",
+    "AI 인프라주 반등에 동행",
+    "한 달 -36%, 숏리포트(Hunterbrook) 부담 지속"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "데이터센터 전력 수요 둔화 우려가 핵심 변수로 반등과 추가 하락이 엇갈리는 구간. 이번 주 예정 실적은 없고 분기 실적은 2027년 2월 예상.",
+    "key_events": [
+     "뚜렷한 예정 이벤트 없음(실적은 10/23 발표 완료)"
+    ],
+    "watch_points": [
+     "애널리스트 목표가 추가 조정",
+     "금리 상승세 지속 여부"
+    ]
+   },
+   "analyst_take": "Barclays가 11/3 목표가를 316→289달러로 낮추고, JP모건도 10/23 314→292달러로 하향. 반면 Citi는 281→284달러로 소폭 상향, 컨센서스는 Buy 16·Hold 11·Sell 2로 엇갈림.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "What Is Behind Thursday's Drop In Bloom Energy Stock?",
+     "url": "https://www.trefis.com/stock/be/articles/623337/what-is-behind-thursdays-drop-in-bloom-energy-stock/2026-11-06"
+    }
+   ]
+  },
+  "PANW": {
+   "headline": "반등장 속 보합권 -0.3%",
+   "move_reasons": [
+    "11/5 -9.6% 급락, 뚜렷한 개별 뉴스 없음",
+    "데스크로스 등 기술적 매도 압력 지속",
+    "반등장에도 매물 소화 중, 3개월 저점 근접"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "11/19 실적발표를 앞두고 관망 심리 속 변동성 전망. 낙폭이 커 실적 기대와 부담이 교차.",
+    "key_events": [
+     "11/19(목) 실적발표(market.json 기준)"
+    ],
+    "watch_points": [
+     "실적 가이던스와 AI 보안 수요",
+     "52주 저점 대비 가격대"
+    ]
+   },
+   "analyst_take": "10월 Citi가 목표가를 410→440달러, Wells Fargo가 475→525달러로 상향. 컨센서스 평균 약 399달러, 55명 중 42명 Buy.",
+   "extra_actions": [],
+   "sources": [
+    {
+     "title": "Palo Alto Networks (PANW) Stock: $314.67, Down 9.59% Nov 5",
+     "url": "https://journalarta.com/en/2026/11/06/palo-alto-networks-panw-stock-falls-9-59-on-thursday-death-cross-pressure/"
+    }
+   ]
+  }
+ },
+ "news": {
+  "market_wrap": "나스닥 +1.1%, S&P500 +0.3%로 전날 AI 급락(나스닥 -5.5%) 후 반등했고 다우는 -0.5%. 10월 고용 16.5만 명(예상 약 5.9만 명)에 실업률 4.1%였으나 주간으로는 나스닥 -3.4%.",
+  "mood": "중립",
+  "top_news": [
+   {
+    "rank": 1,
+    "title": "AI 급락 후 반등, 나스닥 조정권",
+    "summary": "11/5 나스닥이 5.5% 급락해 조정 국면에 진입한 뒤 11/6 반등. 반도체 SOX는 4.2% 상승.",
+    "impact": "상승",
+    "affects": "NASDAQ",
+    "why": "낙폭 과대 인식에 따른 저가 매수가 지수 방향을 좌우함.",
+    "source": "Yahoo Finance",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-6-144816072.html"
+   },
+   {
+    "rank": 2,
+    "title": "선거 후 데이터센터 규제 우려",
+    "summary": "중간선거에서 반AI 성향 후보 약진으로 데이터센터 건설 둔화 우려가 AI 급락의 배경이 됨.",
+    "impact": "하락",
+    "affects": "NASDAQ",
+    "why": "AI 투자 둔화 기대는 반도체·전력 인프라 실적 전망을 낮춤.",
+    "source": "Motley Fool",
+    "url": "https://www.fool.com/investing/2026/11/06/why-micron-stock-bounced-back-friday/"
+   },
+   {
+    "rank": 3,
+    "title": "10월 고용 16.5만, 예상 상회",
+    "summary": "비농업 고용이 시장 예상(약 5.9만)을 크게 웃돌고 실업률은 4.1% 유지.",
+    "impact": "혼조",
+    "affects": "둘다",
+    "why": "경기 호조는 실적에 긍정적이나 금리 인상 부담을 키울 수 있음.",
+    "source": "Yahoo Finance",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-6-144816072.html"
+   },
+   {
+    "rank": 4,
+    "title": "10년물 4.86%, 고금리 부담",
+    "summary": "10년물 금리가 4.86%로 상승(+0.45%)하고 달러 강세, 원/달러 1,363원.",
+    "impact": "하락",
+    "affects": "둘다",
+    "why": "금리 상승은 성장주 밸류에이션 부담으로 작용함.",
+    "source": "market.json 지수 데이터",
+    "url": ""
+   },
+   {
+    "rank": 5,
+    "title": "유가 90달러대 유지",
+    "summary": "WTI가 90달러대로 높은 수준을 유지하며 VIX는 25.6으로 경계감 지속.",
+    "impact": "혼조",
+    "affects": "S&P500",
+    "why": "고유가는 물가·금리 경로 부담 요인임.",
+    "source": "market.json 지수 데이터",
+    "url": ""
+   }
+  ],
+  "tonight": [
+   "오늘(토) 밤 미국장은 휴장(주말)",
+   "주말 중 미 정책·지정학 헤드라인 확인 필요",
+   "11/9(월) 23:30 미국장 개장(KST, 동절기), 주간 일정은 월요일 브리핑 참고(공식 캘린더 미확인)"
+  ]
+ }
+}
