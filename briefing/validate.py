@@ -8,6 +8,42 @@ STANCES = {"긍정", "중립", "부정"}
 PLAN_HOLD = {"비중 확대 검토", "보유 유지", "비중 축소 검토"}
 PLAN_WATCH = {"분할 진입 검토", "관망", "진입 보류"}
 LEVEL_LABELS = {"지지", "저항", "목표"}
+MOAT_STATUS = {"이상 없음", "주의", "경고"}
+THREAT_TYPES = {"경쟁", "기술대체", "고객이탈", "규제", "공급망", "기타"}
+SEVERITY = {"낮음", "중간", "높음"}
+
+
+def _check_moat(p: str, mw) -> list[str]:
+    if not isinstance(mw, dict):
+        return [f"{p}.moat_watch 없음"]
+    errs = []
+    if not isinstance(mw.get("moat"), str) or not mw["moat"].strip():
+        errs.append(f"{p}.moat_watch.moat 비어있음")
+    if mw.get("status") not in MOAT_STATUS:
+        errs.append(f"{p}.moat_watch.status 는 {sorted(MOAT_STATUS)} 중 하나")
+    th = mw.get("threats")
+    if not isinstance(th, list) or len(th) > 3:
+        errs.append(f"{p}.moat_watch.threats 는 0~3개 리스트")
+        th = []
+    for i, x in enumerate(th):
+        q = f"{p}.moat_watch.threats[{i}]"
+        if not isinstance(x, dict) or not x.get("issue"):
+            errs.append(f"{q}.issue 비어있음")
+            continue
+        if x.get("type") not in THREAT_TYPES:
+            errs.append(f"{q}.type 은 {sorted(THREAT_TYPES)} 중 하나")
+        if x.get("severity") not in SEVERITY:
+            errs.append(f"{q}.severity 는 {sorted(SEVERITY)} 중 하나")
+        if not isinstance(x.get("new"), bool):
+            errs.append(f"{q}.new 는 true/false")
+    has_new = any(isinstance(x, dict) and x.get("new") for x in th)
+    if mw.get("status") in ("주의", "경고") and not has_new:
+        errs.append(f"{p}.moat_watch.status 가 {mw.get('status')} 이면 new: true 인 위협이 1개 이상 있어야 함")
+    if mw.get("status") == "이상 없음" and any(isinstance(x, dict) and x.get("new") and x.get("severity") == "높음" for x in th):
+        errs.append(f"{p}.moat_watch: 심각도 '높음' 신규 위협이 있으면 status 는 '이상 없음' 일 수 없음")
+    if not mw.get("verdict"):
+        errs.append(f"{p}.moat_watch.verdict 비어있음")
+    return errs
 
 
 def _anchor_prices(m: dict, sym: str) -> list[float]:
@@ -97,6 +133,7 @@ def validate(analysis_path: Path, market_path: Path | None = None) -> list[str]:
         q = (m.get("quotes") or {}).get(sym) or {}
         av = (m.get("analyst") or {}).get(sym) or {}
         tg = [v for v in (av.get("target_mean"), av.get("target_median")) if v] if m else None
+        errs += _check_moat(p, t.get("moat_watch"))
         errs += _check_plan(p, t.get("action_plan"), holding.get(sym), _anchor_prices(m, sym), q.get("close"), tg)
         for i, x in enumerate(t.get("extra_actions") or []):
             if not isinstance(x, dict) or not x.get("firm"):

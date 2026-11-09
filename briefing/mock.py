@@ -92,6 +92,20 @@ def _mock_plan(t: Ticker, q: Quote, i: int) -> dict:
     }
 
 
+def _mock_moat(i: int) -> dict:
+    if i % 3 == 0:
+        return {"moat": "[예시] 소프트웨어 생태계와 개발자 락인", "status": "이상 없음", "threats": [],
+                "verdict": "새로운 위협 이슈 없음"}
+    if i % 3 == 1:
+        return {"moat": "[예시] 검색 점유율과 광고 네트워크", "status": "주의",
+                "threats": [{"issue": "[예시] 경쟁사 AI 검색 서비스 무료 전환", "type": "경쟁", "severity": "중간", "new": True, "url": "https://example.com"},
+                            {"issue": "[예시] 반독점 소송 항소심 진행", "type": "규제", "severity": "낮음", "new": False}],
+                "verdict": "[예시] 점유율 이탈 신호는 아직 제한적, 이용자 지표 확인 필요"}
+    return {"moat": "[예시] HBM 기술 선도와 고객 인증", "status": "경고",
+            "threats": [{"issue": "[예시] 최대 고객사가 경쟁사 HBM 인증 완료", "type": "고객이탈", "severity": "높음", "new": True, "url": "https://example.com"}],
+            "verdict": "[예시] 독점 공급 지위 약화 가능성, 다음 분기 점유율 확인 필요"}
+
+
 def mock_strategy_summary() -> dict:
     return {"overview": "[예시] 실적 시즌 변동성이 큰 구간이라 보유 종목은 비중 유지, 신규 진입은 실적 확인 후 분할 접근이 무난한 흐름.",
             "focus": ["[예시] NVDA 실적 발표 전후 반도체 변동성", "[예시] 10년물 금리 5% 근접 여부"]}
@@ -117,6 +131,7 @@ def mock_ai_tickers(tickers: list[Ticker], quotes: dict[str, Quote]) -> dict[str
             },
             "analyst_take": "[예시] 주요 IB 다수가 AI 인프라 수요 지속을 근거로 목표가를 상향. 일부는 밸류에이션 부담으로 의견 유지.",
             "extra_actions": [],
+            "moat_watch": _mock_moat(i),
             "action_plan": _mock_plan(t, quotes[t.symbol], i),
             "sources": [{"title": "[예시] 샘플 기사 제목", "url": "https://example.com"}],
         }
