@@ -1,93 +1,410 @@
 {
- "meta": {"model": "sonnet", "mode": "weekly", "session_date": "2026-11-06",
-  "notes": "웹검색 6회+웹페치 3회(표준 모드). 지난주 원인은 11/5 AI·반도체 급락(선거 후 데이터센터 규제·AI 수익화 우려, Qualcomm·Arm 가이던스, Micron 대만 공장 중단 보도) 기사 기준. PANW·BE·GOOGL 주간 개별 기사는 못 찾아 섹터 흐름 위주로 서술. 이번 주 경제지표·실적 일정은 공식 캘린더 미확인(통상 일정 기반 추정, 날짜 변동 가능). 주말 뉴스 검색 근거 부족으로 Top5 일부는 지수 데이터 기반(URL 없음)."},
- "tickers": {
-  "NVDA": {
-   "headline": "주간 -8.8%, AI 급락 여파",
-   "move_reasons": ["11/5 하루 -9.3% 급락이 주간 낙폭 대부분", "선거 후 데이터센터 규제·AI 수익화 우려", "개별 악재 없이 섹터 투매에 동행"],
-   "driver_type": "섹터",
-   "weekly_outlook": {"stance": "중립", "summary": "11/17 실적을 앞두고 정책 헤드라인과 금리에 민감한 흐름 전망. 한 달 -19%로 낙폭이 커 반등과 변동성이 공존할 전망.",
-    "key_events": ["11/17(화) 장 마감 후 실적발표(다음 주)", "11/12 전후 CPI 등 금리 변수"],
-    "watch_points": ["52주 저점 164달러 이탈 여부", "10년물 4.86% 추이"]},
-   "analyst_take": "Melius가 목표가를 420달러에서 315달러로 낮췄으나 Buy 유지. 컨센서스 평균 약 327달러, 62명 중 59명 Buy.",
-   "extra_actions": [],
-   "sources": [{"title": "Nvidia Stock (NVDA) Falls 9.3% as AI Chip Stocks Slide (Nov 5)", "url": "https://www.heygotrade.com/en/news/nvidia-nvda-stock-news-november-6-2026/"}]
+  "meta": {
+    "model": "sonnet",
+    "mode": "weekly",
+    "session_date": "2026-11-06",
+    "notes": "웹검색 6회+웹페치 3회(표준 모드). 지난주 원인은 11/5 AI·반도체 급락(선거 후 데이터센터 규제·AI 수익화 우려, Qualcomm·Arm 가이던스, Micron 대만 공장 중단 보도) 기사 기준. PANW·BE·GOOGL 주간 개별 기사는 못 찾아 섹터 흐름 위주로 서술. 이번 주 경제지표·실적 일정은 공식 캘린더 미확인(통상 일정 기반 추정, 날짜 변동 가능). 주말 뉴스 검색 근거 부족으로 Top5 일부는 지수 데이터 기반(URL 없음)."
   },
-  "GOOGL": {
-   "headline": "주간 +1.8%, 급락장 속 선방",
-   "move_reasons": ["AI 급락장에서도 상대적으로 방어", "10월 말 실적 후 목표가 하향이 이어짐", "11/6 +0.8% 지수 반등에 동행"],
-   "driver_type": "혼합",
-   "weekly_outlook": {"stance": "중립", "summary": "한 달 -18%로 조정 폭은 크나 이번 주는 선방. 예정 이벤트 없이 지수·금리에 연동될 전망.",
-    "key_events": ["뚜렷한 예정 이벤트 없음(실적은 10/29 발표 완료)"],
-    "watch_points": ["52주 저점 271달러 지지 여부", "AI 투자 비용 논란 재부각 여부"]},
-   "analyst_take": "Citi(447→375), Wells Fargo(371→365), Bernstein(385→325) 등 하향이 잇따랐으나 평균 목표가는 약 400달러. 58명 중 53명 Buy.",
-   "extra_actions": [],
-   "sources": []
+  "tickers": {
+    "NVDA": {
+      "headline": "주간 -8.8%, AI 급락 여파",
+      "move_reasons": [
+        "11/5 하루 -9.3% 급락이 주간 낙폭 대부분",
+        "선거 후 데이터센터 규제·AI 수익화 우려",
+        "개별 악재 없이 섹터 투매에 동행"
+      ],
+      "driver_type": "섹터",
+      "weekly_outlook": {
+        "stance": "중립",
+        "summary": "11/17 실적을 앞두고 정책 헤드라인과 금리에 민감한 흐름 전망. 한 달 -19%로 낙폭이 커 반등과 변동성이 공존할 전망.",
+        "key_events": [
+          "11/17(화) 장 마감 후 실적발표(다음 주)",
+          "11/12 전후 CPI 등 금리 변수"
+        ],
+        "watch_points": [
+          "52주 저점 164달러 이탈 여부",
+          "10년물 4.86% 추이"
+        ]
+      },
+      "analyst_take": "Melius가 목표가를 420달러에서 315달러로 낮췄으나 Buy 유지. 컨센서스 평균 약 327달러, 62명 중 59명 Buy.",
+      "extra_actions": [],
+      "sources": [
+        {
+          "title": "Nvidia Stock (NVDA) Falls 9.3% as AI Chip Stocks Slide (Nov 5)",
+          "url": "https://www.heygotrade.com/en/news/nvidia-nvda-stock-news-november-6-2026/"
+        }
+      ],
+      "action_plan": {
+        "stance": "보유 유지",
+        "summary": "실적 전 비중 유지, 추격 추가 자제",
+        "if_up": "200일선(204.67달러) 회복 시 → 11/17 실적 전까지 비중 유지, 추격 추가는 자제하고 실적 확인 후 판단",
+        "if_down": "52주 저점(164.27달러) 이탈 시 → 실적 전 비중 일부 축소로 리스크 관리 검토; 11/12 CPI 후 금리 급등 시에도 변동성 대비",
+        "levels": [
+          {
+            "label": "지지",
+            "price": 164.27,
+            "basis": "52주 저점"
+          },
+          {
+            "label": "저항",
+            "price": 204.67,
+            "basis": "200일선"
+          },
+          {
+            "label": "목표",
+            "price": 327.14,
+            "basis": "증권사 평균 목표가"
+          }
+        ],
+        "risk": "AI 투자 둔화 우려가 11/17 실적·가이던스에서 확인되면 반등 시나리오가 무너질 수 있음"
+      }
+    },
+    "GOOGL": {
+      "headline": "주간 +1.8%, 급락장 속 선방",
+      "move_reasons": [
+        "AI 급락장에서도 상대적으로 방어",
+        "10월 말 실적 후 목표가 하향이 이어짐",
+        "11/6 +0.8% 지수 반등에 동행"
+      ],
+      "driver_type": "혼합",
+      "weekly_outlook": {
+        "stance": "중립",
+        "summary": "한 달 -18%로 조정 폭은 크나 이번 주는 선방. 예정 이벤트 없이 지수·금리에 연동될 전망.",
+        "key_events": [
+          "뚜렷한 예정 이벤트 없음(실적은 10/29 발표 완료)"
+        ],
+        "watch_points": [
+          "52주 저점 271달러 지지 여부",
+          "AI 투자 비용 논란 재부각 여부"
+        ]
+      },
+      "analyst_take": "Citi(447→375), Wells Fargo(371→365), Bernstein(385→325) 등 하향이 잇따랐으나 평균 목표가는 약 400달러. 58명 중 53명 Buy.",
+      "extra_actions": [],
+      "sources": [],
+      "action_plan": {
+        "stance": "보유 유지",
+        "summary": "예정 이벤트 없어 지지선 확인하며 유지",
+        "if_up": "20일선(317.44달러) 회복 시 → 단기 하락 추세 완화로 보고 비중 유지, 추가 매수는 200일선(339.51달러) 안착 확인 후 검토",
+        "if_down": "52주 저점(270.70달러) 이탈 시 → 비중 일부 축소 검토; 11/12 CPI 후 금리 급등 시 성장주 동반 약세 유의",
+        "levels": [
+          {
+            "label": "지지",
+            "price": 270.7,
+            "basis": "52주 저점"
+          },
+          {
+            "label": "저항",
+            "price": 317.44,
+            "basis": "20일선"
+          },
+          {
+            "label": "목표",
+            "price": 400.37,
+            "basis": "증권사 평균 목표가"
+          }
+        ],
+        "risk": "AI 투자 비용 논란과 목표가 하향이 이어지면 추가 조정이 길어질 수 있음"
+      }
+    },
+    "MU": {
+      "headline": "주간 -22%, 대만 공장 중단 쇼크",
+      "move_reasons": [
+        "11/5 하루 -17.5%, 메모리주 투매 주도",
+        "블룸버그: 대만 45억달러 공장 계획 중단 보도",
+        "AI 투자 둔화 우려, 가격 상승 속도 둔화 전망"
+      ],
+      "driver_type": "혼합",
+      "weekly_outlook": {
+        "stance": "중립",
+        "summary": "고점 대비 -45%로 낙폭이 커 기술적 반등 여지가 있으나 AI 투자 둔화 우려가 이어지는 한 변동성 큰 흐름 전망. 실적은 12/24로 멀어 정책·섹터 뉴스가 변수.",
+        "key_events": [
+          "이번 주 실적 없음(다음 실적 12/24)",
+          "반도체 업종 동향·SOX 흐름"
+        ],
+        "watch_points": [
+          "대만 공장 중단 관련 후속 보도",
+          "메모리 가격(DRAM·HBM) 동향"
+        ]
+      },
+      "analyst_take": "최근 DA Davidson이 목표가를 2,100달러에서 3,000달러로 올렸고 Rosenblatt 1,900달러 Buy 유지. 평균 목표가 약 1,562달러로 현재가 대비 괴리가 큼.",
+      "extra_actions": [],
+      "sources": [
+        {
+          "title": "What Sent Micron Stock Lower?",
+          "url": "https://www.trefis.com/stock/mu/articles/623345/what-sent-micron-stock-lower/2026-11-06"
+        }
+      ],
+      "action_plan": {
+        "stance": "보유 유지",
+        "summary": "급락 후 변동성 큼, 비중 점검 우선",
+        "if_up": "200일선(756.73달러) 회복 시 → 기술적 반등 확인으로 보고 비중 유지, 20일선(879.01달러) 전까지 추격 추가는 자제",
+        "if_down": "반등 없이 주간 저점을 다시 밀리며 하락이 이어지면 → 비중 점검 및 일부 축소로 변동성 관리 검토; 이번 주 실적은 없고 다음 실적은 12/24",
+        "levels": [
+          {
+            "label": "저항",
+            "price": 756.73,
+            "basis": "200일선"
+          },
+          {
+            "label": "저항",
+            "price": 879.01,
+            "basis": "20일선"
+          },
+          {
+            "label": "목표",
+            "price": 1561.91,
+            "basis": "증권사 평균 목표가"
+          }
+        ],
+        "risk": "대만 공장 중단 여파와 AI 투자 둔화 우려로 하락이 추가로 이어질 수 있음"
+      }
+    },
+    "BE": {
+      "headline": "주간 -14.7%, 전력 인프라 동반 약세",
+      "move_reasons": [
+        "11/5 AI 급락에 데이터센터 전력주 동반 하락",
+        "선거 후 데이터센터 건설 둔화 우려",
+        "한 달 -36.5%로 고점 부담 해소 과정"
+      ],
+      "driver_type": "섹터",
+      "weekly_outlook": {
+        "stance": "중립",
+        "summary": "데이터센터 정책·AI 투자 헤드라인에 연동될 전망. 실적(10/23) 이후 목표가 조정이 이어지는 중.",
+        "key_events": [
+          "뚜렷한 예정 이벤트 없음(실적 10/23 완료)"
+        ],
+        "watch_points": [
+          "데이터센터 전력 계약 관련 소식",
+          "52주 저점 대비 반등 여부(현재 173달러)"
+        ]
+      },
+      "analyst_take": "Barclays가 11/3 목표가를 316달러에서 289달러로, JP Morgan이 10/23 314달러에서 292달러로 낮췄으나 의견은 Overweight 유지. 컨센서스는 Buy 16·Hold 12로 엇갈림.",
+      "extra_actions": [],
+      "sources": [],
+      "action_plan": {
+        "stance": "보유 유지",
+        "summary": "낙폭 과대하나 반등 확인 전 신중",
+        "if_up": "20일선(217.43달러) 회복 시 → 반등 추세 전환 신호로 보고 비중 유지, 200일선(222.41달러) 안착 확인 후 추가 검토",
+        "if_down": "반등 없이 약세가 이어지면 → 비중 일부 축소로 손실 관리 검토; 실적(10/23)은 이미 발표돼 이번 주는 금리·AI 투자 헤드라인이 변수",
+        "levels": [
+          {
+            "label": "저항",
+            "price": 217.43,
+            "basis": "20일선"
+          },
+          {
+            "label": "저항",
+            "price": 222.41,
+            "basis": "200일선"
+          },
+          {
+            "label": "목표",
+            "price": 283.85,
+            "basis": "증권사 평균 목표가"
+          }
+        ],
+        "risk": "데이터센터 투자 둔화 헤드라인이 나오면 목표가 하향과 함께 낙폭이 더 커질 수 있음"
+      }
+    },
+    "PANW": {
+      "headline": "주간 -14.2%, 성장주 동반 조정",
+      "move_reasons": [
+        "11/5 나스닥 -5.5% 급락에 고밸류 종목 동반 하락",
+        "개별 악재 확인 못 함(섹터·금리 연동)",
+        "YTD +70%로 차익실현 매물 출회"
+      ],
+      "driver_type": "섹터",
+      "weekly_outlook": {
+        "stance": "중립",
+        "summary": "11/19 실적 발표를 앞두고 AI 보안 수요 기대와 고밸류 부담이 맞설 전망. 금리와 성장주 흐름에 민감할 전망.",
+        "key_events": [
+          "11/19(목) 장 마감 후 실적발표 예정(다음 주, 미확정)"
+        ],
+        "watch_points": [
+          "10년물 금리 4.86%",
+          "CyberArk 인수 통합 비용 언급 여부"
+        ]
+      },
+      "analyst_take": "평균 목표가 약 400달러로 현재가 대비 약 27% 위이며 고점 목표 525달러. 주간 낙폭 이후 실적 전 의견 조정 여부가 관건임.",
+      "extra_actions": [],
+      "sources": [],
+      "action_plan": {
+        "stance": "관망",
+        "summary": "11/19 실적 확인 전 관망",
+        "if_up": "20일선(363.48달러) 회복 시 → 11/19 실적 전 분할 진입을 검토하되 소액으로 제한",
+        "if_down": "200일선(273.59달러) 이탈 시 → 진입 보류하고 실적 후 재평가; 실적 직전에는 신규 진입 자제",
+        "levels": [
+          {
+            "label": "지지",
+            "price": 273.59,
+            "basis": "200일선"
+          },
+          {
+            "label": "저항",
+            "price": 363.48,
+            "basis": "20일선"
+          },
+          {
+            "label": "목표",
+            "price": 400.0,
+            "basis": "증권사 평균 목표가"
+          }
+        ],
+        "risk": "AI 보안 수요 기대로 실적이 호조이면 관망 중 상승분을 놓칠 수 있음"
+      }
+    }
   },
-  "MU": {
-   "headline": "주간 -22%, 대만 공장 중단 쇼크",
-   "move_reasons": ["11/5 하루 -17.5%, 메모리주 투매 주도", "블룸버그: 대만 45억달러 공장 계획 중단 보도", "AI 투자 둔화 우려, 가격 상승 속도 둔화 전망"],
-   "driver_type": "혼합",
-   "weekly_outlook": {"stance": "중립", "summary": "고점 대비 -45%로 낙폭이 커 기술적 반등 여지가 있으나 AI 투자 둔화 우려가 이어지는 한 변동성 큰 흐름 전망. 실적은 12/24로 멀어 정책·섹터 뉴스가 변수.",
-    "key_events": ["이번 주 실적 없음(다음 실적 12/24)", "반도체 업종 동향·SOX 흐름"],
-    "watch_points": ["대만 공장 중단 관련 후속 보도", "메모리 가격(DRAM·HBM) 동향"]},
-   "analyst_take": "최근 DA Davidson이 목표가를 2,100달러에서 3,000달러로 올렸고 Rosenblatt 1,900달러 Buy 유지. 평균 목표가 약 1,562달러로 현재가 대비 괴리가 큼.",
-   "extra_actions": [],
-   "sources": [{"title": "What Sent Micron Stock Lower?", "url": "https://www.trefis.com/stock/mu/articles/623345/what-sent-micron-stock-lower/2026-11-06"}]
+  "news": {
+    "market_wrap": "지난주 S&P500 -2.7%, 나스닥 -3.4%, 필라델피아 반도체 -12.1%로 AI·반도체가 낙폭을 주도함. 11/5 급락 후 11/6 반등했으나 VIX 25.6(주간 +32%)로 경계감이 남음.",
+    "mood": "위험회피",
+    "top_news": [
+      {
+        "rank": 1,
+        "title": "AI·반도체 급락, 반등 지속 여부",
+        "summary": "11/5 나스닥 -5.5% 급락 뒤 11/6 소폭 반등. SOX는 주간 -12%.",
+        "impact": "혼조",
+        "affects": "NASDAQ",
+        "why": "저가 매수와 추가 투매 사이 방향이 이번 주 나스닥 변동성을 좌우함.",
+        "source": "Yahoo Finance",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-6-144816072.html"
+      },
+      {
+        "rank": 2,
+        "title": "선거 후 데이터센터 규제 우려",
+        "summary": "중간선거 이후 데이터센터 인허가·전력 규제 강화 가능성이 부각됨.",
+        "impact": "하락",
+        "affects": "NASDAQ",
+        "why": "AI 투자 둔화 기대가 반도체·전력 인프라 실적 전망을 낮춤.",
+        "source": "Motley Fool",
+        "url": "https://www.heygotrade.com/en/news/nvidia-nvda-stock-news-november-6-2026/"
+      },
+      {
+        "rank": 3,
+        "title": "마이크론 대만 공장 계획 중단",
+        "summary": "블룸버그가 45억달러 규모 대만 메모리 공장 계획 중단을 보도. 메모리 업황 우려 확산.",
+        "impact": "하락",
+        "affects": "NASDAQ",
+        "why": "메모리·장비주 약세가 반도체 지수 전반으로 번질 수 있음.",
+        "source": "Trefis",
+        "url": "https://www.trefis.com/stock/mu/articles/623345/what-sent-micron-stock-lower/2026-11-06"
+      },
+      {
+        "rank": 4,
+        "title": "10년물 4.86%, 고금리 부담",
+        "summary": "10월 고용 호조 후 금리 4.86%, 달러 강세, 원/달러 1,356원.",
+        "impact": "하락",
+        "affects": "둘다",
+        "why": "금리 상승은 성장주 밸류에이션을 압박함.",
+        "source": "market.json 지수 데이터",
+        "url": ""
+      },
+      {
+        "rank": 5,
+        "title": "유가 90달러대, 이번 주 CPI 주시",
+        "summary": "WTI는 주간 -12.8%에도 90달러대. 이번 주 CPI가 금리 경로를 가를 전망.",
+        "impact": "혼조",
+        "affects": "S&P500",
+        "why": "물가 지표가 연준 기대와 금리를 통해 지수에 영향을 줌.",
+        "source": "market.json 지수 데이터",
+        "url": ""
+      }
+    ],
+    "tonight": [
+      "월요일 특별한 주요 지표 일정 미확인",
+      "23:30 미국 정규장 개장(KST)",
+      "AI·반도체 반등 지속 여부와 연준 인사 발언 확인"
+    ]
   },
-  "BE": {
-   "headline": "주간 -14.7%, 전력 인프라 동반 약세",
-   "move_reasons": ["11/5 AI 급락에 데이터센터 전력주 동반 하락", "선거 후 데이터센터 건설 둔화 우려", "한 달 -36.5%로 고점 부담 해소 과정"],
-   "driver_type": "섹터",
-   "weekly_outlook": {"stance": "중립", "summary": "데이터센터 정책·AI 투자 헤드라인에 연동될 전망. 실적(10/23) 이후 목표가 조정이 이어지는 중.",
-    "key_events": ["뚜렷한 예정 이벤트 없음(실적 10/23 완료)"],
-    "watch_points": ["데이터센터 전력 계약 관련 소식", "52주 저점 대비 반등 여부(현재 173달러)"]},
-   "analyst_take": "Barclays가 11/3 목표가를 316달러에서 289달러로, JP Morgan이 10/23 314달러에서 292달러로 낮췄으나 의견은 Overweight 유지. 컨센서스는 Buy 16·Hold 12로 엇갈림.",
-   "extra_actions": [],
-   "sources": []
+  "week_ahead": {
+    "themes": [
+      "AI·반도체 급락 후 반등 여부",
+      "CPI 등 물가와 금리 4.9% 부담",
+      "NVDA 실적(11/17) 앞둔 경계감"
+    ],
+    "calendar": [
+      {
+        "date": "11/10(화)",
+        "time": "20:00",
+        "event": "NFIB 소기업 낙관지수(통상 일정)",
+        "importance": "하"
+      },
+      {
+        "date": "11/11(수)",
+        "time": "종일",
+        "event": "미국 베테랑스데이(채권시장 휴장, 주식은 통상 개장)",
+        "importance": "하"
+      },
+      {
+        "date": "11/12(목)",
+        "time": "22:30",
+        "event": "미국 10월 CPI(통상 일정, 확인 필요)",
+        "importance": "상"
+      },
+      {
+        "date": "11/12(목)",
+        "time": "22:30",
+        "event": "주간 신규 실업수당 청구",
+        "importance": "중"
+      },
+      {
+        "date": "11/13(금)",
+        "time": "22:30",
+        "event": "미국 10월 PPI(통상 일정, 확인 필요)",
+        "importance": "중"
+      },
+      {
+        "date": "11/13(금)",
+        "time": "22:30",
+        "event": "미국 10월 소매판매(통상 일정, 확인 필요)",
+        "importance": "중"
+      },
+      {
+        "date": "11/13(금)",
+        "time": "23:15",
+        "event": "미국 10월 산업생산",
+        "importance": "하"
+      },
+      {
+        "date": "11/14(토)",
+        "time": "00:00",
+        "event": "미시간대 11월 소비자심리 예비치",
+        "importance": "중"
+      }
+    ],
+    "earnings": [
+      {
+        "date": "11/11(수)",
+        "ticker": "CSCO",
+        "note": "시스코, 장 마감 후(추정)"
+      },
+      {
+        "date": "11/12(목)",
+        "ticker": "AMAT",
+        "note": "어플라이드 머티어리얼즈, 장 마감 후(추정)"
+      },
+      {
+        "date": "11/12(목)",
+        "ticker": "DIS",
+        "note": "디즈니, 장 시작 전(추정)"
+      },
+      {
+        "date": "11/17(화)",
+        "ticker": "NVDA",
+        "note": "관심종목, 이번 주 아님 · 다음 주 장 마감 후"
+      },
+      {
+        "date": "11/19(목)",
+        "ticker": "PANW",
+        "note": "관심종목, 이번 주 아님 · 다음 주 장 마감 후(추정)"
+      }
+    ]
   },
-  "PANW": {
-   "headline": "주간 -14.2%, 성장주 동반 조정",
-   "move_reasons": ["11/5 나스닥 -5.5% 급락에 고밸류 종목 동반 하락", "개별 악재 확인 못 함(섹터·금리 연동)", "YTD +70%로 차익실현 매물 출회"],
-   "driver_type": "섹터",
-   "weekly_outlook": {"stance": "중립", "summary": "11/19 실적 발표를 앞두고 AI 보안 수요 기대와 고밸류 부담이 맞설 전망. 금리와 성장주 흐름에 민감할 전망.",
-    "key_events": ["11/19(목) 장 마감 후 실적발표 예정(다음 주, 미확정)"],
-    "watch_points": ["10년물 금리 4.86%", "CyberArk 인수 통합 비용 언급 여부"]},
-   "analyst_take": "평균 목표가 약 400달러로 현재가 대비 약 27% 위이며 고점 목표 525달러. 주간 낙폭 이후 실적 전 의견 조정 여부가 관건임.",
-   "extra_actions": [],
-   "sources": []
+  "strategy_summary": {
+    "overview": "급락 직후 11/12 CPI와 11/17 NVDA 실적을 앞둔 경계 구간으로, 보유 종목은 비중 유지하며 지지선 이탈 여부를 점검하는 기조. 추격 매수·신규 진입은 이벤트 확인 후로 미룸.",
+    "focus": [
+      "11/12(목) 미국 10월 CPI와 금리 반응",
+      "11/17(화) NVDA 실적 전 52주 저점(164.27달러) 지지",
+      "MU·BE 낙폭 이후 반등 확인"
+    ]
   }
- },
- "news": {
-  "market_wrap": "지난주 S&P500 -2.7%, 나스닥 -3.4%, 필라델피아 반도체 -12.1%로 AI·반도체가 낙폭을 주도함. 11/5 급락 후 11/6 반등했으나 VIX 25.6(주간 +32%)로 경계감이 남음.",
-  "mood": "위험회피",
-  "top_news": [
-   {"rank": 1, "title": "AI·반도체 급락, 반등 지속 여부", "summary": "11/5 나스닥 -5.5% 급락 뒤 11/6 소폭 반등. SOX는 주간 -12%.", "impact": "혼조", "affects": "NASDAQ", "why": "저가 매수와 추가 투매 사이 방향이 이번 주 나스닥 변동성을 좌우함.", "source": "Yahoo Finance", "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-6-144816072.html"},
-   {"rank": 2, "title": "선거 후 데이터센터 규제 우려", "summary": "중간선거 이후 데이터센터 인허가·전력 규제 강화 가능성이 부각됨.", "impact": "하락", "affects": "NASDAQ", "why": "AI 투자 둔화 기대가 반도체·전력 인프라 실적 전망을 낮춤.", "source": "Motley Fool", "url": "https://www.heygotrade.com/en/news/nvidia-nvda-stock-news-november-6-2026/"},
-   {"rank": 3, "title": "마이크론 대만 공장 계획 중단", "summary": "블룸버그가 45억달러 규모 대만 메모리 공장 계획 중단을 보도. 메모리 업황 우려 확산.", "impact": "하락", "affects": "NASDAQ", "why": "메모리·장비주 약세가 반도체 지수 전반으로 번질 수 있음.", "source": "Trefis", "url": "https://www.trefis.com/stock/mu/articles/623345/what-sent-micron-stock-lower/2026-11-06"},
-   {"rank": 4, "title": "10년물 4.86%, 고금리 부담", "summary": "10월 고용 호조 후 금리 4.86%, 달러 강세, 원/달러 1,356원.", "impact": "하락", "affects": "둘다", "why": "금리 상승은 성장주 밸류에이션을 압박함.", "source": "market.json 지수 데이터", "url": ""},
-   {"rank": 5, "title": "유가 90달러대, 이번 주 CPI 주시", "summary": "WTI는 주간 -12.8%에도 90달러대. 이번 주 CPI가 금리 경로를 가를 전망.", "impact": "혼조", "affects": "S&P500", "why": "물가 지표가 연준 기대와 금리를 통해 지수에 영향을 줌.", "source": "market.json 지수 데이터", "url": ""}
-  ],
-  "tonight": ["월요일 특별한 주요 지표 일정 미확인", "23:30 미국 정규장 개장(KST)", "AI·반도체 반등 지속 여부와 연준 인사 발언 확인"]
- },
- "week_ahead": {
-  "themes": ["AI·반도체 급락 후 반등 여부", "CPI 등 물가와 금리 4.9% 부담", "NVDA 실적(11/17) 앞둔 경계감"],
-  "calendar": [
-   {"date": "11/10(화)", "time": "20:00", "event": "NFIB 소기업 낙관지수(통상 일정)", "importance": "하"},
-   {"date": "11/11(수)", "time": "종일", "event": "미국 베테랑스데이(채권시장 휴장, 주식은 통상 개장)", "importance": "하"},
-   {"date": "11/12(목)", "time": "22:30", "event": "미국 10월 CPI(통상 일정, 확인 필요)", "importance": "상"},
-   {"date": "11/12(목)", "time": "22:30", "event": "주간 신규 실업수당 청구", "importance": "중"},
-   {"date": "11/13(금)", "time": "22:30", "event": "미국 10월 PPI(통상 일정, 확인 필요)", "importance": "중"},
-   {"date": "11/13(금)", "time": "22:30", "event": "미국 10월 소매판매(통상 일정, 확인 필요)", "importance": "중"},
-   {"date": "11/13(금)", "time": "23:15", "event": "미국 10월 산업생산", "importance": "하"},
-   {"date": "11/14(토)", "time": "00:00", "event": "미시간대 11월 소비자심리 예비치", "importance": "중"}
-  ],
-  "earnings": [
-   {"date": "11/11(수)", "ticker": "CSCO", "note": "시스코, 장 마감 후(추정)"},
-   {"date": "11/12(목)", "ticker": "AMAT", "note": "어플라이드 머티어리얼즈, 장 마감 후(추정)"},
-   {"date": "11/12(목)", "ticker": "DIS", "note": "디즈니, 장 시작 전(추정)"},
-   {"date": "11/17(화)", "ticker": "NVDA", "note": "관심종목, 이번 주 아님 · 다음 주 장 마감 후"},
-   {"date": "11/19(목)", "ticker": "PANW", "note": "관심종목, 이번 주 아님 · 다음 주 장 마감 후(추정)"}
-  ]
- }
 }
