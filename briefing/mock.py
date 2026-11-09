@@ -35,6 +35,7 @@ def mock_quotes(tickers: list[Ticker], session: date) -> dict[str, Quote]:
         q.volume_ratio = 0.8 + 0.25 * i
         q.market_cap = (3.1 - 0.5 * i) * 1e12 if i < 5 else 9e10
         q.next_earnings = "2026-10-29" if i % 2 == 0 else None
+        q.ma20, q.ma50, q.ma200 = round(sum(s[-20:]) / 20, 2), round(q.close * 0.97, 2), round(q.close * 0.9, 2)
         out[t.symbol] = q
     return out
 
@@ -72,6 +73,30 @@ def mock_views(tickers: list[Ticker], quotes: dict[str, Quote]) -> dict[str, Ana
     return out
 
 
+def _mock_plan(t: Ticker, q: Quote, i: int) -> dict:
+    if t.holding:
+        stance = ["보유 유지", "비중 확대 검토", "비중 축소 검토"][i % 3]
+        up = f"[예시] 20일선(${q.ma20:,.0f}) 위 안착 시 → 비중 유지, 추격 추가는 자제"
+        down = f"[예시] 200일선(${q.ma200:,.0f}) 이탈 시 → 비중 일부 축소로 리스크 관리 검토"
+    else:
+        stance = ["관망", "분할 진입 검토", "진입 보류"][i % 3]
+        up = f"[예시] 20일선(${q.ma20:,.0f}) 돌파 후 안착 시 → 소액 분할 진입 검토"
+        down = f"[예시] 200일선(${q.ma200:,.0f}) 부근 → 실적 확인 후 진입 여부 판단"
+    return {
+        "stance": stance,
+        "summary": "[예시] 실적 전까지 비중 유지, 변동성 대비" if t.holding else "[예시] 실적 확인 후 분할 접근",
+        "if_up": up, "if_down": down,
+        "levels": [{"label": "지지", "price": q.ma200, "basis": "200일선"},
+                   {"label": "저항", "price": q.ma20, "basis": "20일선"}],
+        "risk": "[예시] 금리 급등 시 성장주 밸류에이션 재조정",
+    }
+
+
+def mock_strategy_summary() -> dict:
+    return {"overview": "[예시] 실적 시즌 변동성이 큰 구간이라 보유 종목은 비중 유지, 신규 진입은 실적 확인 후 분할 접근이 무난한 흐름.",
+            "focus": ["[예시] NVDA 실적 발표 전후 반도체 변동성", "[예시] 10년물 금리 5% 근접 여부"]}
+
+
 def mock_ai_tickers(tickers: list[Ticker], quotes: dict[str, Quote]) -> dict[str, dict]:
     out = {}
     for i, t in enumerate(tickers):
@@ -92,6 +117,7 @@ def mock_ai_tickers(tickers: list[Ticker], quotes: dict[str, Quote]) -> dict[str
             },
             "analyst_take": "[예시] 주요 IB 다수가 AI 인프라 수요 지속을 근거로 목표가를 상향. 일부는 밸류에이션 부담으로 의견 유지.",
             "extra_actions": [],
+            "action_plan": _mock_plan(t, quotes[t.symbol], i),
             "sources": [{"title": "[예시] 샘플 기사 제목", "url": "https://example.com"}],
         }
     return out

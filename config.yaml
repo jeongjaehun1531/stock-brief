@@ -12,6 +12,11 @@ schedule:
   weekly_preview_day: 월     # 주말 이슈 + 이번 주 일정 + 지난주 성적표
 tickers_file: tickers.md
 
+watchlist:
+  # tickers.md 소제목에 이 단어가 있으면 그 아래 종목을 '보유 종목'으로 보고
+  # 대응 방안을 보유자 관점(비중 관리)으로, 나머지는 신규 진입 관점으로 작성
+  holding_keyword: 보유
+
 claude:
   model: claude-sonnet-5-5   # 비용↓: claude-haiku-5-5 / 품질↑: claude-opus-5-5
   web_search_tool: web_search_20260318   # 동적 필터링(토큰 절약). 문제 시 web_search_20250305

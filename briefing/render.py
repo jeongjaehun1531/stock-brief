@@ -12,6 +12,8 @@ def render_cards(html_path: Path, out_dir: Path, width_px: int = 1080) -> list[P
     from playwright.sync_api import sync_playwright
 
     out_dir.mkdir(parents=True, exist_ok=True)
+    for old in out_dir.glob("*.png"):  # 이전 실행에서 남은 카드 제거
+        old.unlink()
     scale = width_px / 480
     paths: list[Path] = []
     with sync_playwright() as p:

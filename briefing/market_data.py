@@ -29,6 +29,9 @@ class Quote:
     as_of: date | None = None
     market_cap: float | None = None
     next_earnings: str | None = None
+    ma20: float | None = None           # 20일 이동평균 (대응 방안의 가격 기준용)
+    ma50: float | None = None
+    ma200: float | None = None
     error: str | None = None
 
     @property
@@ -71,6 +74,9 @@ def _quote_from_frame(symbol: str, df: pd.DataFrame, session: date) -> Quote:
         avg = df["Volume"].iloc[-21:-1].mean()
         q.volume_ratio = q.volume / avg if avg else None
     q.spark = [round(float(x), 4) for x in c.iloc[-30:]]
+    for n in (20, 50, 200):
+        if len(c) >= n:
+            setattr(q, f"ma{n}", round(float(c.iloc[-n:].mean()), 2))
     return q
 
 

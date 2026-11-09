@@ -19,6 +19,8 @@ class Ticker:
     symbol: str
     name: str = ""
     memo: str = ""
+    section: str = ""      # tickers.md 의 소제목 (예: '보유 종목')
+    holding: bool = False  # 소제목에 config.yaml watchlist.holding_keyword 가 들어 있으면 True
 
     @property
     def label(self) -> str:
@@ -37,7 +39,10 @@ def load_config(path: str | Path | None = None) -> dict:
     return cfg
 
 
-def parse_tickers(text: str) -> list[Ticker]:
+_HEADING_RE = re.compile(r"^#{1,6}\s+(?!-)(.+)$")
+
+
+def parse_tickers(text: str, holding_keyword: str = "보유") -> list[Ticker]:
     """tickers.md 파싱.
 
     인식 규칙
@@ -45,16 +50,24 @@ def parse_tickers(text: str) -> list[Ticker]:
       - `- NVDA | 엔비디아 | 메모` 형식 (이름·메모 생략 가능)
       - `#` 으로 시작하는 줄, `~~취소선~~` 줄, 코드블록 내부는 무시
       - 중복 티커는 첫 번째만 사용
+      - `## 보유 종목` 처럼 소제목에 holding_keyword 가 있으면 그 아래 종목은 보유 종목
     """
     tickers: list[Ticker] = []
     seen: set[str] = set()
     in_code = False
+    section = ""
     for raw in text.splitlines():
         line = raw.strip()
         if line.startswith("```"):
             in_code = not in_code
             continue
-        if in_code or not line or line.startswith("#") or line.startswith(">"):
+        if in_code or not line:
+            continue
+        h = _HEADING_RE.match(line)
+        if h:
+            section = h.group(1).strip()
+            continue
+        if line.startswith("#") or line.startswith(">"):
             continue
         if not (line.startswith("- ") or line.startswith("* ")):
             continue
@@ -73,6 +86,8 @@ def parse_tickers(text: str) -> list[Ticker]:
                 symbol=symbol,
                 name=parts[1] if len(parts) > 1 else "",
                 memo=parts[2] if len(parts) > 2 else "",
+                section=section,
+                holding=bool(holding_keyword) and holding_keyword in section,
             )
         )
     return tickers
@@ -82,7 +97,8 @@ def load_tickers(cfg: dict) -> list[Ticker]:
     path = ROOT / cfg.get("tickers_file", "tickers.md")
     if not path.exists():
         raise FileNotFoundError(f"관심종목 파일이 없습니다: {path}")
-    tickers = parse_tickers(path.read_text(encoding="utf-8"))
+    kw = (cfg.get("watchlist") or {}).get("holding_keyword", "보유")
+    tickers = parse_tickers(path.read_text(encoding="utf-8"), kw)
     if not tickers:
         raise ValueError(f"{path.name} 에서 인식된 티커가 없습니다. '- NVDA' 형식인지 확인하세요.")
     return tickers

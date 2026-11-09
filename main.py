@@ -98,7 +98,8 @@ def render_day(cfg, day: str, now: datetime) -> tuple[dict, list[Path], Path, Pa
             "AI 분석이 준비되지 않아 시세·목표가만 전송"
     ctx = build_context(session_info=m["session"], report_dt=now, tickers=m["tickers"], quotes=m["quotes"],
                         indices=m["indices"], futures=m["futures"], views=m["views"],
-                        ai_tickers=ai_tickers, news=news, weekly=weekly, week_ahead=a.get("week_ahead"))
+                        ai_tickers=ai_tickers, news=news, weekly=weekly, week_ahead=a.get("week_ahead"),
+                        strategy_summary=a.get("strategy_summary"))
     ocfg = cfg.get("output", {})
     out = ROOT / ocfg.get("dir", "output") / day
     html_path = save_html(render_html(ctx, mode="page"), out, f"briefing_{day}.html")
@@ -197,7 +198,8 @@ def cmd_mock(cfg, args):
           views=mock.mock_views(tickers, quotes))
     import json
     analysis = {"meta": {"mode": "weekly" if args.weekly else "daily"},
-                "tickers": mock.mock_ai_tickers(tickers, quotes), "news": mock.mock_news()}
+                "tickers": mock.mock_ai_tickers(tickers, quotes), "news": mock.mock_news(),
+                "strategy_summary": mock.mock_strategy_summary()}
     if args.weekly:
         analysis["week_ahead"] = mock.mock_week_ahead()
     (day_dir(day) / "analysis.json").write_text(json.dumps(analysis, ensure_ascii=False), "utf-8")

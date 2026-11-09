@@ -5,6 +5,47 @@ import json
 from pathlib import Path
 
 STANCES = {"긍정", "중립", "부정"}
+PLAN_HOLD = {"비중 확대 검토", "보유 유지", "비중 축소 검토"}
+PLAN_WATCH = {"분할 진입 검토", "관망", "진입 보류"}
+LEVEL_LABELS = {"지지", "저항", "목표"}
+
+
+def _anchor_prices(m: dict, sym: str) -> list[float]:
+    """대응 방안 가격으로 허용되는 market.json 숫자들."""
+    q = (m.get("quotes") or {}).get(sym) or {}
+    av = (m.get("analyst") or {}).get(sym) or {}
+    keys_q = ("ma20", "ma50", "ma200", "low_52w", "high_52w", "close")
+    keys_a = ("target_low", "target_mean", "target_median", "target_high")
+    vals = [q.get(k) for k in keys_q] + [av.get(k) for k in keys_a]
+    vals += [a.get("target") for a in av.get("actions") or []]
+    return [float(v) for v in vals if isinstance(v, (int, float)) and v > 0]
+
+
+def _check_plan(p: str, plan, holding: bool | None, anchors: list[float]) -> list[str]:
+    errs = []
+    if not isinstance(plan, dict):
+        return [f"{p}.action_plan 없음"]
+    allowed = PLAN_HOLD if holding else PLAN_WATCH if holding is not None else PLAN_HOLD | PLAN_WATCH
+    if plan.get("stance") not in allowed:
+        errs.append(f"{p}.action_plan.stance 는 {sorted(allowed)} 중 하나")
+    for k in ("summary", "if_up", "if_down"):
+        if not isinstance(plan.get(k), str) or not plan[k].strip():
+            errs.append(f"{p}.action_plan.{k} 비어있음")
+    lv = plan.get("levels") or []
+    if not isinstance(lv, list) or len(lv) > 3:
+        errs.append(f"{p}.action_plan.levels 는 0~3개 리스트")
+        lv = []
+    for i, x in enumerate(lv):
+        if x.get("label") not in LEVEL_LABELS:
+            errs.append(f"{p}.action_plan.levels[{i}].label 은 {LEVEL_LABELS} 중 하나")
+        price = x.get("price")
+        if not isinstance(price, (int, float)):
+            errs.append(f"{p}.action_plan.levels[{i}].price 는 숫자")
+        elif anchors and not any(abs(price - a) / a <= 0.015 for a in anchors):
+            errs.append(f"{p}.action_plan.levels[{i}].price {price} 는 market.json 의 이동평균·52주 고저·목표가 어느 것과도 맞지 않음")
+        if not x.get("basis"):
+            errs.append(f"{p}.action_plan.levels[{i}].basis 비어있음")
+    return errs
 IMPACTS = {"상승", "하락", "혼조"}
 
 
@@ -16,9 +57,12 @@ def validate(analysis_path: Path, market_path: Path | None = None) -> list[str]:
         return [f"JSON 파싱 실패: {e}"]
 
     expected: list[str] = []
+    m: dict = {}
+    holding: dict[str, bool] = {}
     if market_path and market_path.exists():
         m = json.loads(market_path.read_text(encoding="utf-8"))
         expected = [t["symbol"] for t in m.get("tickers", [])]
+        holding = {t["symbol"]: bool(t.get("holding")) for t in m.get("tickers", []) if "holding" in t}
 
     tk = a.get("tickers")
     if not isinstance(tk, dict):
@@ -39,6 +83,7 @@ def validate(analysis_path: Path, market_path: Path | None = None) -> list[str]:
             errs.append(f"{p}.weekly_outlook.summary 비어있음")
         elif wo.get("stance") not in STANCES:
             errs.append(f"{p}.weekly_outlook.stance 는 {STANCES} 중 하나")
+        errs += _check_plan(p, t.get("action_plan"), holding.get(sym), _anchor_prices(m, sym))
         for i, x in enumerate(t.get("extra_actions") or []):
             if not isinstance(x, dict) or not x.get("firm"):
                 errs.append(f"{p}.extra_actions[{i}].firm 비어있음")
@@ -58,6 +103,10 @@ def validate(analysis_path: Path, market_path: Path | None = None) -> list[str]:
                     errs.append(f"news.top_news[{i}].impact 는 {IMPACTS} 중 하나")
         if not n.get("market_wrap"):
             errs.append("news.market_wrap 비어있음")
+
+    ss = a.get("strategy_summary")
+    if not isinstance(ss, dict) or not ss.get("overview"):
+        errs.append("strategy_summary.overview 비어있음")
 
     meta = a.get("meta") or {}
     if meta.get("mode") not in (None, "daily", "weekly"):
