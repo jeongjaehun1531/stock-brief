@@ -86,8 +86,8 @@ def _mock_plan(t: Ticker, q: Quote, i: int) -> dict:
         "stance": stance,
         "summary": "[예시] 실적 전까지 비중 유지, 변동성 대비" if t.holding else "[예시] 실적 확인 후 분할 접근",
         "if_up": up, "if_down": down,
-        "levels": [{"label": "지지", "price": q.ma200, "basis": "200일선"},
-                   {"label": "저항", "price": q.ma20, "basis": "20일선"}],
+        "levels": [{"label": "지지" if q.ma200 < q.close else "저항", "price": q.ma200, "basis": "200일선"},
+                   {"label": "지지" if q.ma20 < q.close else "저항", "price": q.ma20, "basis": "20일선"}],
         "risk": "[예시] 금리 급등 시 성장주 밸류에이션 재조정",
     }
 

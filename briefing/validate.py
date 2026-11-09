@@ -21,7 +21,12 @@ def _anchor_prices(m: dict, sym: str) -> list[float]:
     return [float(v) for v in vals if isinstance(v, (int, float)) and v > 0]
 
 
-def _check_plan(p: str, plan, holding: bool | None, anchors: list[float]) -> list[str]:
+def _near(price: float, vals: list[float], tol: float = 0.015) -> bool:
+    return any(v and abs(price - v) / v <= tol for v in vals)
+
+
+def _check_plan(p: str, plan, holding: bool | None, anchors: list[float],
+                close: float | None = None, targets: list[float] | None = None) -> list[str]:
     errs = []
     if not isinstance(plan, dict):
         return [f"{p}.action_plan 없음"]
@@ -41,8 +46,14 @@ def _check_plan(p: str, plan, holding: bool | None, anchors: list[float]) -> lis
         price = x.get("price")
         if not isinstance(price, (int, float)):
             errs.append(f"{p}.action_plan.levels[{i}].price 는 숫자")
-        elif anchors and not any(abs(price - a) / a <= 0.015 for a in anchors):
+        elif anchors and not _near(price, anchors):
             errs.append(f"{p}.action_plan.levels[{i}].price {price} 는 market.json 의 이동평균·52주 고저·목표가 어느 것과도 맞지 않음")
+        elif close and x.get("label") == "지지" and not (close * 0.7 <= price <= close * 1.005):
+            errs.append(f"{p}.action_plan.levels[{i}] 지지 {price} 는 현재가 {close:.2f} 아래 30% 이내여야 함 (없으면 빼기)")
+        elif close and x.get("label") == "저항" and not (close * 0.995 <= price <= close * 1.3):
+            errs.append(f"{p}.action_plan.levels[{i}] 저항 {price} 는 현재가 {close:.2f} 위 30% 이내여야 함 (없으면 빼기)")
+        elif x.get("label") == "목표" and targets is not None and not _near(price, targets):
+            errs.append(f"{p}.action_plan.levels[{i}] 목표 {price} 는 증권사 평균/중간 목표가여야 함")
         if not x.get("basis"):
             errs.append(f"{p}.action_plan.levels[{i}].basis 비어있음")
     return errs
@@ -83,7 +94,10 @@ def validate(analysis_path: Path, market_path: Path | None = None) -> list[str]:
             errs.append(f"{p}.weekly_outlook.summary 비어있음")
         elif wo.get("stance") not in STANCES:
             errs.append(f"{p}.weekly_outlook.stance 는 {STANCES} 중 하나")
-        errs += _check_plan(p, t.get("action_plan"), holding.get(sym), _anchor_prices(m, sym))
+        q = (m.get("quotes") or {}).get(sym) or {}
+        av = (m.get("analyst") or {}).get(sym) or {}
+        tg = [v for v in (av.get("target_mean"), av.get("target_median")) if v] if m else None
+        errs += _check_plan(p, t.get("action_plan"), holding.get(sym), _anchor_prices(m, sym), q.get("close"), tg)
         for i, x in enumerate(t.get("extra_actions") or []):
             if not isinstance(x, dict) or not x.get("firm"):
                 errs.append(f"{p}.extra_actions[{i}].firm 비어있음")
