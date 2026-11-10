@@ -1,0 +1,362 @@
+{
+ "meta": {
+  "mode": "daily",
+  "model": "sonnet",
+  "session_date": "2026-11-10",
+  "notes": "11/10 당일 종목별 개별 뉴스는 검색에서 확인 안 됨(NVDA -5.5% 직접 원인 미확인, 직전 주 AI 데이터센터 둔화 우려 흐름으로 해석). 10년물 +12bp는 market.json 수치, CPI 결과 수치는 미확인이라 기재 안 함. 시장 배경은 11/8 로이터(Khaleej Times) 기준."
+ },
+ "tickers": {
+  "NVDA": {
+   "headline": "엔비디아 -5.5%, 52주 저점 근접",
+   "move_reasons": [
+    "AI 데이터센터 투자 둔화 우려 지속",
+    "10년물 4.98% 급등, 성장주 부담",
+    "Citi·Wells 목표가 하향, 거래량 3.1배",
+    "뚜렷한 당일 개별 악재는 미확인"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "11/18 실적을 앞두고 변동성 확대 전망. 낙폭 과대 인식과 투자 둔화 우려가 맞서는 구간.",
+    "key_events": [
+     "11/18(수) 실적발표(미국 기준)",
+     "이번 주 PPI·연준 인사 발언"
+    ],
+    "watch_points": [
+     "52주 저점 164달러 지지 여부",
+     "실적 가이던스의 미국 고객 수요 코멘트"
+    ]
+   },
+   "analyst_take": "Citi(285달러)·Wells Fargo(300달러)가 목표가를 각각 315달러에서 낮췄으나 투자의견은 매수 유지. RBC·골드만삭스는 330·300달러로 유지, 컨센서스 평균 대비 현재가 괴리 큼.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "CUDA 소프트웨어 생태계와 개발자 락인",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(검색 기준)"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "실적 전까지 비중 유지, 저점 이탈 주시",
+    "if_up": "200일선(204.54달러) 회복 시 → 실적 전 비중 유지, 추격 추가는 자제",
+    "if_down": "52주 저점(164.27달러) 이탈 시 → 실적 전 비중 일부 축소로 리스크 관리 검토",
+    "levels": [
+     {
+      "label": "지지",
+      "price": 164.27,
+      "basis": "52주 저점"
+     },
+     {
+      "label": "저항",
+      "price": 204.54,
+      "basis": "200일선"
+     },
+     {
+      "label": "목표",
+      "price": 315.0,
+      "basis": "증권사 중간값"
+     }
+    ],
+    "risk": "미국 AI 투자 둔화가 실적 가이던스에서 확인될 경우"
+   },
+   "sources": [
+    {
+     "title": "Nvidia Sinks 9% as Midterm Data-Center Fears Deepen AI Chip Rout",
+     "url": "https://www.tikr.com/blog/nvidia-sinks-9-as-midterm-data-center-fears-deepen-ai-chip-rout-absolute-slaughter"
+    },
+    {
+     "title": "Wall St Week Ahead: As tech swoon roils market",
+     "url": "https://www.khaleejtimes.com/business/wall-st-week-ahead-as-tech-swoon-roils-market-us-inflation-data-on-tap-3"
+    }
+   ]
+  },
+  "GOOGL": {
+   "headline": "구글 -0.3%, 약보합 속 횡보",
+   "move_reasons": [
+    "뚜렷한 개별 이슈 없음(지수 흐름 연동)",
+    "실적 후 급락분 일부 되돌림 후 횡보",
+    "금리 상승으로 빅테크 전반 약세"
+   ],
+   "driver_type": "매크로",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "실적 이후 목표가 하향이 이어진 가운데 박스권 흐름 전망. 금리·AI 투자 심리에 연동될 가능성.",
+    "key_events": [
+     "이번 주 PPI·연준 인사 발언"
+    ],
+    "watch_points": [
+     "52주 저점 270달러 유지 여부",
+     "20일선(310.89달러) 회복 시도"
+    ]
+   },
+   "analyst_take": "실적 직후(10/29~11/2) RBC 400달러, Citi 375달러, Wells Fargo 365달러, Bernstein 325달러로 목표가 하향. 매수 의견은 대부분 유지, 평균 목표가는 현재가 대비 여유 큼.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "검색 점유율·데이터와 자체 AI 인프라(TPU) 수직 통합",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(검색 기준)"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "박스권 유지, 저점 지지 확인",
+    "if_up": "20일선(310.89달러) 회복 시 → 비중 유지, 추세 전환 확인 후 추가 검토",
+    "if_down": "52주 저점(270.70달러) 이탈 시 → 비중 일부 축소로 리스크 관리 검토",
+    "levels": [
+     {
+      "label": "지지",
+      "price": 270.7,
+      "basis": "52주 저점"
+     },
+     {
+      "label": "저항",
+      "price": 310.89,
+      "basis": "20일선"
+     },
+     {
+      "label": "목표",
+      "price": 400.0,
+      "basis": "증권사 중간값"
+     }
+    ],
+    "risk": "AI 투자 심리 악화와 금리 추가 상승"
+   },
+   "sources": [
+    {
+     "title": "Wall St Week Ahead: As tech swoon roils market",
+     "url": "https://www.khaleejtimes.com/business/wall-st-week-ahead-as-tech-swoon-roils-market-us-inflation-data-on-tap-3"
+    }
+   ]
+  },
+  "MU": {
+   "headline": "마이크론 -1.1%, 급락 후 숨고르기",
+   "move_reasons": [
+    "전일 반등 후 차익 매물",
+    "금리 상승, 반도체 조정 지속",
+    "뚜렷한 개별 이슈 없음(섹터 연동)"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "주간 -15%로 낙폭이 커 변동성 높은 구간. 200일선 회복 여부가 단기 분수령.",
+    "key_events": [
+     "다음 실적 12/24 예정(1주 내 일정 없음)",
+     "NVDA 11/18 실적(HBM 수요 간접 영향)"
+    ],
+    "watch_points": [
+     "200일선(760달러) 회복 여부",
+     "SOX 지수 반등 지속 여부"
+    ]
+   },
+   "analyst_take": "최근 확인된 변경은 Rosenblatt 1,900달러, Needham 1,650달러 유지 수준. 컨센서스 평균 목표가는 현재가의 2배 이상으로 매수 의견이 압도적.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "HBM·첨단 DRAM 공정 기술력과 3사 과점 구조",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(검색 기준)"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "200일선 회복 전까지 변동성 관리",
+    "if_up": "200일선(760.07달러) 회복 시 → 비중 유지, 20일선(854.81달러)까지 반등 여부 확인",
+    "if_down": "직전 저점 부근 재하락 시 → 비중 일부 축소로 리스크 관리 검토",
+    "levels": [
+     {
+      "label": "저항",
+      "price": 760.07,
+      "basis": "200일선"
+     },
+     {
+      "label": "저항",
+      "price": 854.81,
+      "basis": "20일선"
+     },
+     {
+      "label": "목표",
+      "price": 1550.0,
+      "basis": "증권사 중간값"
+     }
+    ],
+    "risk": "AI 반도체 투자 둔화 우려가 메모리 수요 전망에 반영될 경우"
+   },
+   "sources": []
+  },
+  "BE": {
+   "headline": "블룸에너지 -4.4%, 낙폭 확대",
+   "move_reasons": [
+    "AI 데이터센터 투자 둔화 우려 지속",
+    "금리 급등으로 고밸류 성장주 부담",
+    "뚜렷한 개별 이슈 없음(테마 연동)"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "부정",
+    "summary": "월간 -29%로 추세 약세. 데이터센터 전력 투자 심리가 핵심 변수.",
+    "key_events": [
+     "이번 주 PPI·연준 인사 발언",
+     "다음 실적은 1주 내 일정 없음"
+    ],
+    "watch_points": [
+     "20일선(210달러) 회복 여부",
+     "AI 인프라 관련주 동반 흐름"
+    ]
+   },
+   "analyst_take": "RBC는 335달러 아웃퍼폼 유지, Barclays는 11/3 의견을 Overweight로 올렸으나 목표가는 316달러에서 289달러로 하향. 컨센서스는 매수·중립이 팽팽해 시각이 갈림.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "고체산화물 연료전지(SOFC) 기술과 데이터센터 현지발전 납품 실적",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(검색 기준)"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "변동성 큼, 반등 확인 전 추가 자제",
+    "if_up": "20일선(210.11달러) 회복 시 → 비중 유지, 200일선(222.89달러)까지 추세 확인",
+    "if_down": "직전 저점(약 167달러대) 재이탈 시 → 비중 일부 축소로 리스크 관리 검토",
+    "levels": [
+     {
+      "label": "저항",
+      "price": 210.11,
+      "basis": "20일선"
+     },
+     {
+      "label": "저항",
+      "price": 222.89,
+      "basis": "200일선"
+     },
+     {
+      "label": "목표",
+      "price": 295.0,
+      "basis": "증권사 중간값"
+     }
+    ],
+    "risk": "데이터센터 투자 지연이 수주 전망에 반영될 경우"
+   },
+   "sources": []
+  },
+  "PANW": {
+   "headline": "팰로알토 -1.4%, 실적 앞 약세",
+   "move_reasons": [
+    "뚜렷한 개별 이슈 없음(지수 흐름 연동)",
+    "금리 상승으로 성장주 약세",
+    "11/19 실적 앞 관망 심리"
+   ],
+   "driver_type": "매크로",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "실적 발표(11/19)를 앞두고 관망세 전망. 월간 -19% 조정 후 기대치 부담은 다소 완화.",
+    "key_events": [
+     "11/19(목) 실적발표(예정)"
+    ],
+    "watch_points": [
+     "실적 가이던스와 플랫폼 전환 성과",
+     "200일선(275달러) 위 유지 여부"
+    ]
+   },
+   "analyst_take": "10월 중순 Wells Fargo 525달러, Citi 440달러로 목표가를 올림. 컨센서스 평균 목표가는 현재가 대비 여유가 있어 실적 확인이 관건.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "방화벽·SASE·SOC 통합 플랫폼과 고객 락인",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(검색 기준)"
+   },
+   "action_plan": {
+    "stance": "관망",
+    "summary": "실적 확인 후 진입 여부 판단",
+    "if_up": "실적 호조로 20일선(356.30달러) 회복 시 → 추격보다 눌림 확인 후 분할 진입 검토",
+    "if_down": "실적 부진으로 200일선(275.05달러) 접근 시 → 진입 보류, 지지 확인 후 재검토",
+    "levels": [
+     {
+      "label": "지지",
+      "price": 275.05,
+      "basis": "200일선"
+     },
+     {
+      "label": "저항",
+      "price": 356.3,
+      "basis": "20일선"
+     },
+     {
+      "label": "목표",
+      "price": 415.0,
+      "basis": "증권사 중간값"
+     }
+    ],
+    "risk": "실적 호조에도 시장 전반 약세가 이어질 경우"
+   },
+   "sources": []
+  }
+ },
+ "strategy_summary": {
+  "overview": "금리 급등과 AI 투자 둔화 우려로 보유 종목 전반이 약세여서 신규 추가보다 지지선 관리가 우선. NVDA 실적(11/18) 전까지 변동성 확대에 대비.",
+  "focus": [
+   "11/18 NVDA 실적 전후 변동성",
+   "10년물 5% 근접 여부와 이번 주 PPI·연준 발언",
+   "11/19 PANW 실적(관심종목)"
+  ]
+ },
+ "news": {
+  "market_wrap": "S&P500 -0.38%, 나스닥 -0.74%로 약세 마감. 10년물 금리 4.98%로 급등, 달러 강세 속 NVDA(-5.5%) 등 AI 대형주가 부진.",
+  "mood": "위험회피",
+  "top_news": [
+   {
+    "rank": 1,
+    "title": "10년물 금리 5% 육박, 긴축 우려",
+    "summary": "10년물이 4.98%로 하루 12bp 올랐고 달러지수도 상승. 12월 FOMC 인상 가능성이 높게 거론되는 상황(로이터 11/8 기준).",
+    "impact": "하락",
+    "affects": "둘다",
+    "why": "금리 상승은 고밸류 성장주 할인율을 높여 나스닥에 부담.",
+    "source": "Reuters(Khaleej Times)",
+    "url": "https://www.khaleejtimes.com/business/wall-st-week-ahead-as-tech-swoon-roils-market-us-inflation-data-on-tap-3"
+   },
+   {
+    "rank": 2,
+    "title": "AI 데이터센터 투자 둔화 우려",
+    "summary": "중간선거 결과 이후 AI 규제·데이터센터 투자 둔화 우려가 반도체·AI 인프라주 급락을 촉발. 나스닥은 고점 대비 조정권.",
+    "impact": "하락",
+    "affects": "NASDAQ",
+    "why": "AI 설비투자 기대가 꺾이면 지수 비중 큰 빅테크·반도체 실적 전망 악화.",
+    "source": "Reuters(Khaleej Times)",
+    "url": "https://www.khaleejtimes.com/business/wall-st-week-ahead-as-tech-swoon-roils-market-us-inflation-data-on-tap-3"
+   },
+   {
+    "rank": 3,
+    "title": "NVDA 실적 앞두고 변동성 확대",
+    "summary": "11/18 실적을 앞두고 Citi·Wells Fargo가 목표가를 하향. 낙폭 과대 시각도 공존.",
+    "impact": "혼조",
+    "affects": "둘다",
+    "why": "시총 최상위 종목이라 실적 기대 변화가 지수 전체 방향에 영향.",
+    "source": "Tikr",
+    "url": "https://www.tikr.com/blog/nvidia-sinks-9-as-midterm-data-center-fears-deepen-ai-chip-rout-absolute-slaughter"
+   },
+   {
+    "rank": 4,
+    "title": "CoreWeave·시스코 등 AI 실적 주간",
+    "summary": "이번 주 CoreWeave, Cisco, Nebius 등 AI 인프라 기업 실적 예정(정확한 일자는 미확인).",
+    "impact": "혼조",
+    "affects": "NASDAQ",
+    "why": "AI 인프라 자금조달·수요 확인 여부가 투자심리 방향 결정.",
+    "source": "Stocktwits",
+    "url": "https://stocktwits.com/news-articles/markets/equity/what-to-expect-markets-this-week-nov-8-2026/cNGYG4ZR9Iu"
+   },
+   {
+    "rank": 5,
+    "title": "유가 하락·VIX 안정, 변동성은 잔존",
+    "summary": "WTI는 86달러대로 주간 -10%, VIX는 19.5로 전일 급등 후 소폭 하락.",
+    "impact": "혼조",
+    "affects": "S&P500",
+    "why": "유가 안정은 인플레 부담을 덜지만 VIX 높은 수준이 위험선호를 제약.",
+    "source": "market.json",
+    "url": "https://finance.yahoo.com/quote/%5EVIX/"
+   }
+  ],
+  "tonight": [
+   "23:30 미국 정규장 개장(11/11 재향군인의 날: 주식시장 정상, 채권시장 휴장)",
+   "이번 주 PPI·연준 인사(Goolsbee 등) 발언 예정(시각 미확인)",
+   "이번 주 CoreWeave·Cisco 등 실적(일자 미확인)"
+  ]
+ }
+}
