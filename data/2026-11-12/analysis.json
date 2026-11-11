@@ -1,0 +1,403 @@
+{
+ "meta": {
+  "model": "sonnet",
+  "mode": "daily",
+  "session_date": "2026-11-11",
+  "notes": "웹검색 종목별 근거는 시장 전반 기사 위주(개별 기사 미확인 항목은 '뚜렷한 개별 이슈 없음'으로 표기). NVDA 실적일은 market.json 11/18 사용(일부 기사는 11/17). PANW 해자 검색은 최신 근거 부족. 채권시장 휴장으로 10년물은 전일 종가(약 5.0%) 기준."
+ },
+ "tickers": {
+  "NVDA": {
+   "headline": "CoreWeave 호재로 AI 반등 +2.9%",
+   "move_reasons": [
+    "CoreWeave 실적·선수금 $90억에 AI 자금조달 우려 완화",
+    "이틀 연속 하락 후 낙폭과대 반발 매수",
+    "CEO 이사회 조사 이슈는 부담으로 잔존"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "실적(11/18 전후)을 앞두고 변동성이 큰 구간임. 금리·규제 이슈가 반등 폭을 제한할 수 있음.",
+    "key_events": [
+     "11/18 실적발표(market.json 기준)",
+     "의회 중국 관련 브리핑 요구 진행",
+     "12월 FOMC 인상 경계"
+    ],
+    "watch_points": [
+     "CEO 이사회 조사 후속 보도",
+     "실적 가이던스(데이터센터 매출 전망)",
+     "10년물 5% 안착 여부"
+    ]
+   },
+   "analyst_take": "최근 Citi(315→285)·Wells Fargo(315→300)가 목표가를 낮췄으나 Morgan Stanley·Goldman은 300달러 유지. 평균 목표가는 현재가 대비 여유가 커 낙폭과대 시각이 우세함.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "CUDA 소프트웨어 생태계와 개발자 락인",
+    "status": "주의",
+    "threats": [
+     {
+      "issue": "CEO 관련 이사회 조사·의회 중국 칩 유출 압박",
+      "type": "규제",
+      "severity": "중간",
+      "new": true,
+      "url": "https://thenextweb.com/news/house-chairs-jensen-huang-briefing-megaspeed"
+     }
+    ],
+    "verdict": "생태계 해자는 유지되나 수출 규제·거버넌스 리스크는 모니터링 필요"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "실적 전 비중 유지, 추격매수 자제",
+    "if_up": "200일선(204.47달러) 회복 시 → 실적 전 비중 유지, 추격 추가는 자제",
+    "if_down": "52주 저점(164.27달러) 이탈 시 → 비중 일부 축소로 리스크 관리 검토",
+    "levels": [
+     {
+      "label": "지지",
+      "price": 164.27,
+      "basis": "52주 저점"
+     },
+     {
+      "label": "저항",
+      "price": 204.47,
+      "basis": "200일선"
+     },
+     {
+      "label": "목표",
+      "price": 315.0,
+      "basis": "증권사 목표가 중간값"
+     }
+    ],
+    "risk": "CEO 조사·수출통제 이슈가 실적 가이던스 부담으로 이어질 경우"
+   },
+   "sources": [
+    {
+     "title": "Stock market today: chip stock rally rekindles AI trade (Yahoo Finance)",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-veterans-day-140638547.html"
+    },
+    {
+     "title": "Rebounding AI stocks lift Wall Street (Korea Times)",
+     "url": "https://www.koreatimes.co.kr/world/20261112/rebounding-ai-stocks-lift-wall-street"
+    },
+    {
+     "title": "House chairs ask Huang to explain reported spy link",
+     "url": "https://thenextweb.com/news/house-chairs-jensen-huang-briefing-megaspeed"
+    }
+   ]
+  },
+  "GOOGL": {
+   "headline": "AI 반등 동참, 저점 대비 회복 +2.1%",
+   "move_reasons": [
+    "CoreWeave 호재로 AI 인프라 투심 회복",
+    "3분기 실적 후 급락분(-12.6%) 일부 되돌림",
+    "뚜렷한 개별 이슈 없음(섹터·지수 흐름 연동)"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "실적 이후 목표가 하향이 이어진 뒤 반등 시도 구간임. 20일선 회복 여부가 단기 분기점임.",
+    "key_events": [
+     "12월 FOMC 인상 경계",
+     "AI 인프라 기업 실적 흐름"
+    ],
+    "watch_points": [
+     "20일선(308달러) 회복 여부",
+     "클라우드 성장·설비투자 코멘트 재평가"
+    ]
+   },
+   "analyst_take": "실적 직후 Citi(447→375)·Bernstein(385→325)·RBC(425→400) 등이 목표가를 낮췄으나 대부분 매수 의견은 유지. 클라우드 급성장과 검색 쿼리 증가가 핵심 논리임.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "검색 점유율·데이터와 자체 AI 인프라(TPU) 수직 통합",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(검색 기준)"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "20일선 회복 확인하며 보유",
+    "if_up": "20일선(308.18달러) 회복 시 → 보유 유지, 50일선(329.89달러)까지 추세 확인",
+    "if_down": "52주 저점(270.7달러) 이탈 시 → 비중 일부 축소로 리스크 관리 검토",
+    "levels": [
+     {
+      "label": "지지",
+      "price": 270.7,
+      "basis": "52주 저점"
+     },
+     {
+      "label": "저항",
+      "price": 308.18,
+      "basis": "20일선"
+     },
+     {
+      "label": "목표",
+      "price": 400.37,
+      "basis": "증권사 목표가 평균"
+     }
+    ],
+    "risk": "설비투자 부담과 AI 경쟁 심화로 반등이 꺾일 경우"
+   },
+   "sources": [
+    {
+     "title": "Stock Market Today, Nov 11, 2026 (Vista)",
+     "url": "https://vistapglobal.com/stock-market-today-november-11-2026-nasdaq-leads-veterans-day-rally-as-ai-shares-rebound-ant-be-cost-crwv-eprx-googl-modd-nvda-ser-spcx/"
+    },
+    {
+     "title": "Stock market today (Yahoo Finance)",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-veterans-day-140638547.html"
+    }
+   ]
+  },
+  "MU": {
+   "headline": "메모리 반등 주도 +11.9%",
+   "move_reasons": [
+    "CoreWeave 호재로 AI 인프라 수요 우려 완화",
+    "SK하이닉스·샌디스크 등 메모리주 동반 10%대 급등",
+    "전일까지 급락 뒤 낙폭과대 반발"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "급반등 이후 단기 과열·차익실현 가능성이 있음. 다음 실적은 12/24로 멀어 AI 센티먼트와 금리가 주요 변수임.",
+    "key_events": [
+     "다음 실적 12/24",
+     "엔비디아 실적(11/18 전후) 수요 시그널"
+    ],
+    "watch_points": [
+     "20일선(849.67달러) 안착 여부",
+     "메모리 가격·HBM 수요 코멘트"
+    ]
+   },
+   "analyst_take": "최근 1개월 내 market.json 상 주요 변경은 없고 Rosenblatt 1,900달러·Needham 1,650달러 매수 유지. 평균 목표가 1,562달러로 상단 여력이 크다는 시각이 우세함.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "HBM·첨단 DRAM 공정 기술력과 3사 과점 구조",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(검색 기준)"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "급반등 후 추세 확인, 보유 유지",
+    "if_up": "20일선(849.67달러) 안착 시 → 보유 유지, 50일선(950.53달러)까지 추세 확인",
+    "if_down": "200일선(762.08달러) 이탈 시 → 비중 일부 축소로 리스크 관리 검토",
+    "levels": [
+     {
+      "label": "지지",
+      "price": 762.08,
+      "basis": "200일선"
+     },
+     {
+      "label": "저항",
+      "price": 849.67,
+      "basis": "20일선"
+     },
+     {
+      "label": "목표",
+      "price": 1550.0,
+      "basis": "증권사 목표가 중간값"
+     }
+    ],
+    "risk": "변동성이 커 하루 10% 안팎 급락이 재발할 수 있음"
+   },
+   "sources": [
+    {
+     "title": "Rebounding AI stocks lift Wall Street (Korea Times)",
+     "url": "https://www.koreatimes.co.kr/world/20261112/rebounding-ai-stocks-lift-wall-street"
+    },
+    {
+     "title": "Stock market today (Yahoo Finance)",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-veterans-day-140638547.html"
+    }
+   ]
+  },
+  "BE": {
+   "headline": "데이터센터 자금우려 완화 +13.0%",
+   "move_reasons": [
+    "CoreWeave 선수금 소식에 데이터센터 투자 우려 완화",
+    "3분기 매출 +138%, 연간 가이던스 상향 재부각",
+    "낙폭과대 반발 매수"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "AI 전력 인프라 센티먼트에 민감해 변동성이 큼. 20일선 부근 공방이 단기 방향을 가를 전망임.",
+    "key_events": [
+     "12월 FOMC 인상 경계",
+     "AI 인프라 기업 실적 흐름"
+    ],
+    "watch_points": [
+     "20일선(208.61달러) 지지 여부",
+     "데이터센터 투자 규제 관련 뉴스"
+    ]
+   },
+   "analyst_take": "RBC 335달러 유지, Barclays는 11/03 316→289달러로 낮춤. Citi는 281→284달러, 평균 목표가 284달러로 현재가 대비 상단은 열려 있으나 의견이 갈림.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "고체산화물 연료전지(SOFC) 기술과 데이터센터 현지발전 납품 실적",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(검색 기준)"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "20일선 지지 확인하며 보유",
+    "if_up": "200일선(223.17달러) 회복 시 → 보유 유지, 50일선(245.23달러)까지 추세 확인",
+    "if_down": "20일선(208.61달러) 이탈 후 회복 못 하면 → 비중 일부 축소로 리스크 관리 검토",
+    "levels": [
+     {
+      "label": "지지",
+      "price": 208.61,
+      "basis": "20일선"
+     },
+     {
+      "label": "저항",
+      "price": 223.17,
+      "basis": "200일선"
+     },
+     {
+      "label": "목표",
+      "price": 295.0,
+      "basis": "증권사 목표가 중간값"
+     }
+    ],
+    "risk": "데이터센터 투자 둔화·규제 우려 재부각 시 급락 가능"
+   },
+   "sources": [
+    {
+     "title": "Stock Market Today, Nov 11, 2026 (Vista)",
+     "url": "https://vistapglobal.com/stock-market-today-november-11-2026-nasdaq-leads-veterans-day-rally-as-ai-shares-rebound-ant-be-cost-crwv-eprx-googl-modd-nvda-ser-spcx/"
+    },
+    {
+     "title": "Stock market today (Yahoo Finance)",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-veterans-day-140638547.html"
+    }
+   ]
+  },
+  "PANW": {
+   "headline": "기술주 반등 연동 +2.5%",
+   "move_reasons": [
+    "뚜렷한 개별 이슈 없음(섹터·지수 흐름 연동)",
+    "나스닥 +1.6% 반등에 성장주 매수세",
+    "실적(11/19) 앞둔 기대감 유입"
+   ],
+   "driver_type": "매크로",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "실적 발표(11/19)가 이번 주 최대 변수임. 금리 부담 속 가이던스에 따라 변동성이 커질 수 있음.",
+    "key_events": [
+     "11/19 실적발표(market.json 기준)"
+    ],
+    "watch_points": [
+     "플랫폼화 성과와 가이던스",
+     "10년물 금리 5% 근접 여부"
+    ]
+   },
+   "analyst_take": "10월 중순 Citi(410→440)·Wells Fargo(475→525)가 목표가를 올렸고 매수 의견이 다수임. 평균 목표가 400달러로 현재가 대비 여력이 있음.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "방화벽·SASE·SOC 통합 플랫폼과 고객 락인",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(검색 기준)"
+   },
+   "action_plan": {
+    "stance": "관망",
+    "summary": "실적 확인 후 진입 판단",
+    "if_up": "20일선(354.28달러) 회복 시 → 실적 결과 확인 후 분할 진입 검토",
+    "if_down": "200일선(275.81달러)까지 조정 시 → 실적 이후 분할 진입 재검토",
+    "levels": [
+     {
+      "label": "지지",
+      "price": 275.81,
+      "basis": "200일선"
+     },
+     {
+      "label": "저항",
+      "price": 354.28,
+      "basis": "20일선"
+     },
+     {
+      "label": "목표",
+      "price": 415.0,
+      "basis": "증권사 목표가 중간값"
+     }
+    ],
+    "risk": "실적 가이던스 부진 시 추가 조정 가능"
+   },
+   "sources": [
+    {
+     "title": "Stock market today (Yahoo Finance)",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-veterans-day-140638547.html"
+    }
+   ]
+  }
+ },
+ "strategy_summary": {
+  "overview": "AI 반등으로 변동성이 완화됐으나 10년물 5%·12월 인상 우려가 남아 있어 추격보다 지지선 확인 중심의 대응이 유효함. 보유 종목은 비중 유지하되 실적·규제 이벤트 전후 리스크 관리를 병행할 전망.",
+  "focus": [
+   "NVDA 실적(11/18 전후)과 CEO 이사회 조사 후속",
+   "PANW 실적(11/19) 전후 변동성",
+   "10년물 5% 안착 여부와 12월 FOMC 인상 경계"
+  ]
+ },
+ "news": {
+  "market_wrap": "S&P500 +1.31%, 나스닥 +1.60%로 반등 마감하며 선거 후 낙폭을 만회. CoreWeave 호실적이 AI 트레이드를 되살렸고 VIX는 17.5로 하락.",
+  "mood": "위험선호",
+  "top_news": [
+   {
+    "rank": 1,
+    "title": "CoreWeave 호실적, AI 트레이드 재점화",
+    "summary": "매출 전망 상향과 약 90억 달러 선수금 기대로 자금조달 우려가 완화됨. 주가는 24~26% 급등.",
+    "impact": "상승",
+    "affects": "NASDAQ",
+    "why": "AI 인프라 자금조달 불안이 해소되며 반도체·전력주 전반에 매수세 유입.",
+    "source": "Yahoo Finance",
+    "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-veterans-day-140638547.html"
+   },
+   {
+    "rank": 2,
+    "title": "10월 CPI 쇼크, 12월 인상 경계",
+    "summary": "CPI가 예상보다 높아 10년물이 약 5%로 급등, 12월 금리인상 가능성이 대부분 반영됨. 11/11 채권시장은 휴장이었음.",
+    "impact": "하락",
+    "affects": "둘다",
+    "why": "금리 상승은 성장주 할인율을 높여 지수 상단을 제약.",
+    "source": "Yahoo Finance",
+    "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-veterans-day-140638547.html"
+   },
+   {
+    "rank": 3,
+    "title": "반도체·메모리 급반등",
+    "summary": "마이크론 등 메모리주가 10%대 상승, 엔비디아·브로드컴도 동반 강세. 코스피도 2.6% 상승.",
+    "impact": "상승",
+    "affects": "NASDAQ",
+    "why": "지수 내 비중이 큰 반도체 반등이 나스닥 상승을 주도.",
+    "source": "Korea Times",
+    "url": "https://www.koreatimes.co.kr/world/20261112/rebounding-ai-stocks-lift-wall-street"
+   },
+   {
+    "rank": 4,
+    "title": "엔비디아 CEO 이사회 조사·의회 압박",
+    "summary": "CEO 관련 보도로 이사회가 조사에 착수했고 하원이 중국 관련 브리핑을 요구함.",
+    "impact": "혼조",
+    "affects": "둘다",
+    "why": "시총 최상위 종목의 규제·거버넌스 불확실성이 지수 변동성을 키울 수 있음.",
+    "source": "The Next Web",
+    "url": "https://thenextweb.com/news/house-chairs-jensen-huang-briefing-megaspeed"
+   },
+   {
+    "rank": 5,
+    "title": "중간선거 후 AI 데이터센터 규제 우려",
+    "summary": "민주당 약진으로 데이터센터 건설이 제약될 수 있다는 우려가 지속됨. 브렌트유는 93달러로 상승.",
+    "impact": "혼조",
+    "affects": "NASDAQ",
+    "why": "AI 설비투자 기대 약화와 유가 상승이 위험자산 선호를 제한.",
+    "source": "Korea Times",
+    "url": "https://www.koreatimes.co.kr/world/20261112/rebounding-ai-stocks-lift-wall-street"
+   }
+  ],
+  "tonight": [
+   "미국 장 전 Nebius 실적(11/12)",
+   "미국 채권시장 정상 재개(전일 CPI 반영)",
+   "12월 FOMC 인상 기대 관련 연준 인사 발언 주시"
+  ]
+ }
+}
