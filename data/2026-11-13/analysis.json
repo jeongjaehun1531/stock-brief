@@ -1,0 +1,356 @@
+{
+ "meta": {
+  "model": "sonnet",
+  "mode": "daily",
+  "session_date": "2026-11-12",
+  "notes": "시간 제한으로 웹검색 5회·WebFetch 2회만 수행. 11/12 당일 종목별 원인 기사는 검색에서 확인 못 함(NVDA 목표가 하향은 market.json analyst.actions 기준, 배경은 11/5 TIKR 기사). GOOGL은 market.json 시세 오류(null)라 등락·가격 레벨 미작성. 뉴스 Top5는 market.json 지표와 최근 기사 배경 위주이며 개별 사건 수치는 market.json 값만 사용."
+ },
+ "tickers": {
+  "NVDA": {
+   "headline": "실적 앞두고 -4.3%, 목표가 줄하향",
+   "move_reasons": [
+    "BMO·골드만·씨티·RBC 등 목표가 일제 하향",
+    "KeyBanc 투자의견 Overweight→Sector Weight 하향",
+    "10년물 5.10% 돌파로 고밸류 성장주 부담",
+    "거래량 평균 4.5배, 1개월 -24.9% 낙폭 확대"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "부정",
+    "summary": "11/18 실적 발표를 앞두고 변동성 확대 전망. 데이터센터 증설 둔화 우려가 실적 가이던스로 해소되는지가 관건임.",
+    "key_events": [
+     "11/18(수) NVDA 실적발표(장 마감 후)",
+     "10년물 금리 5% 안착 여부"
+    ],
+    "watch_points": [
+     "실적 가이던스와 데이터센터 매출 전망",
+     "52주 저점(148.8달러) 접근 여부",
+     "추가 증권사 목표가·투자의견 조정"
+    ]
+   },
+   "analyst_take": "11/12 하루에만 BMO(340→240), 골드만(300→220), 씨티(285→225), RBC(330→230)가 목표가를 낮추고 KeyBanc는 Sector Weight로 하향함. 다만 컨센서스 평균 목표가는 309.7달러로 현재가 대비 여전히 큰 괴리이며 매수 의견이 55/62임.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "CUDA 소프트웨어 생태계와 개발자 락인",
+    "status": "이상 없음",
+    "threats": [
+     {
+      "issue": "CEO 관련 이사회 조사·의회 중국 칩 유출 압박",
+      "type": "규제",
+      "severity": "중간",
+      "new": false,
+      "url": "https://thenextweb.com/news/house-chairs-jensen-huang-briefing-megaspeed"
+     }
+    ],
+    "verdict": "CUDA 생태계 해자는 유지되나 수출규제·데이터센터 인허가 리스크는 모니터링 필요"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "실적 전 비중 유지, 저점 이탈 시 점검",
+    "if_up": "20일선(201.25달러) 회복 시 → 실적 전 비중 유지, 추격 추가는 자제",
+    "if_down": "52주 저점(148.8달러) 이탈 시 → 비중 일부 축소로 리스크 관리 검토",
+    "levels": [
+     {
+      "label": "지지",
+      "price": 148.8,
+      "basis": "52주 저점"
+     },
+     {
+      "label": "저항",
+      "price": 201.25,
+      "basis": "20일선"
+     },
+     {
+      "label": "목표",
+      "price": 309.72,
+      "basis": "증권사 평균 목표가"
+     }
+    ],
+    "risk": "실적에서 AI 투자 둔화가 확인되면 목표가 하향이 추가로 이어질 수 있음"
+   },
+   "sources": [
+    {
+     "title": "Nvidia Sinks 9% as Midterm Data-Center Fears Deepen AI Chip Rout (TIKR, 11/5)",
+     "url": "https://www.tikr.com/blog/nvidia-sinks-9-as-midterm-data-center-fears-deepen-ai-chip-rout-absolute-slaughter"
+    }
+   ]
+  },
+  "GOOGL": {
+   "headline": "시세 데이터 없음, 이슈 확인 불가",
+   "move_reasons": [
+    "market.json에 GOOGL 시세 없음(등락률 미확인)",
+    "개별 이슈 검색에서 11/12 관련 기사 확인 못 함",
+    "지수·빅테크 약세 연동 여부만 추정 가능"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "10/29 실적 이후 목표가 하향이 이어진 상태이며 뚜렷한 신규 일정은 확인되지 않음. 금리와 AI 투자 심리에 연동될 전망.",
+    "key_events": [
+     "10년물 금리 5% 안착 여부"
+    ],
+    "watch_points": [
+     "시세 데이터 복구 후 20·50일선 위치 확인",
+     "AI 인프라 투자 관련 뉴스",
+     "증권사 목표가 변화"
+    ]
+   },
+   "analyst_take": "10월 말 실적 이후 씨티(447→375), 웰스파고(417→371→365), 번스타인(385→325), RBC(425→400)가 목표가를 낮춤. 평균 목표가 400.4달러, 매수 53/58로 의견은 여전히 우호적임.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "검색 점유율·데이터와 자체 AI 인프라(TPU) 수직 통합",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(검색 기준)"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "시세 미확인, 기존 비중 유지",
+    "if_up": "금리 안정과 함께 AI 투자 심리가 회복되면 → 비중 유지, 추가 매수는 시세 확인 후 판단",
+    "if_down": "금리 상승이 이어지며 빅테크 전반이 약세를 보이면 → 리스크 관리 차원의 비중 점검 검토",
+    "levels": [
+     {
+      "label": "목표",
+      "price": 400.37,
+      "basis": "증권사 평균 목표가"
+     }
+    ],
+    "risk": "당일 시세·이동평균 데이터가 없어 가격 기준 대응이 불가함"
+   },
+   "sources": []
+  },
+  "MU": {
+   "headline": "-1.6%, 반등 후 숨고르기",
+   "move_reasons": [
+    "전일 +10%대 급반등 뒤 차익 실현 성격",
+    "10년물 5.10%로 상승, 성장주 부담",
+    "SOX -0.5%로 반도체 동반 약세"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "주간 +21.6% 반등했으나 1개월은 -12.7%로 변동성이 큼. 다음 실적(12/24)까지 개별 일정은 없고 AI 반도체 심리와 금리에 연동될 전망.",
+    "key_events": [
+     "11/18(수) NVDA 실적(메모리 수요 간접 영향)",
+     "12/24 MU 실적발표"
+    ],
+    "watch_points": [
+     "20일선(843달러) 회복 여부",
+     "200일선(763.9달러) 방어",
+     "HBM 수요·DRAM 가격 뉴스"
+    ]
+   },
+   "analyst_take": "최근 1개월 주요 증권사의 큰 목표가 변경은 확인되지 않았고 로젠블랫(1,900)·니덤(1,650)은 매수·목표가 유지함. 평균 목표가 1,562달러, 매수 45/49.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "HBM·첨단 DRAM 공정 기술력과 3사 과점 구조",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(검색 기준)"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "200일선 지키는 동안 비중 유지",
+    "if_up": "20일선(843.03달러) 회복 시 → 비중 유지, 급등 추격 추가는 자제",
+    "if_down": "200일선(763.89달러) 이탈 시 → 비중 일부 축소로 리스크 관리 검토",
+    "levels": [
+     {
+      "label": "지지",
+      "price": 763.89,
+      "basis": "200일선"
+     },
+     {
+      "label": "저항",
+      "price": 843.03,
+      "basis": "20일선"
+     },
+     {
+      "label": "목표",
+      "price": 1561.91,
+      "basis": "증권사 평균 목표가"
+     }
+    ],
+    "risk": "NVDA 실적에서 AI 투자 둔화 신호가 나오면 메모리 업황 기대가 함께 꺾일 수 있음"
+   },
+   "sources": []
+  },
+  "BE": {
+   "headline": "-3.6%, AI 전력주 동반 조정",
+   "move_reasons": [
+    "뚜렷한 개별 이슈 없음(섹터·지수 흐름 연동)",
+    "AI 데이터센터 증설 둔화 우려가 전력 인프라로 확산",
+    "금리 상승으로 고밸류 성장주 부담"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "주간 +20.5% 반등 뒤 20일선(206.9달러) 아래로 되밀림. 개별 일정은 없고 NVDA 실적과 금리에 따라 변동성이 클 전망.",
+    "key_events": [
+     "11/18(수) NVDA 실적(데이터센터 투자 가늠)"
+    ],
+    "watch_points": [
+     "20일선(206.89달러) 회복 여부",
+     "데이터센터 전력 수요·신규 계약 뉴스",
+     "10년물 금리 5% 유지 여부"
+    ]
+   },
+   "analyst_take": "RBC는 11/9 Outperform·목표가 335달러 재확인, 바클레이즈는 11/3 목표가 316→289로 낮추며 의견을 Overweight로 상향함. 평균 목표가 283.8달러이나 매수 16·중립 11·매도 2로 의견이 갈림.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "고체산화물 연료전지(SOFC) 기술과 데이터센터 현지발전 납품 실적",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(검색 기준)"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "20일선 회복 전까지 보수적 보유",
+    "if_up": "20일선(206.89달러) 회복 시 → 비중 유지, 200일선(223.35달러) 부근에서는 추격 추가 자제",
+    "if_down": "최근 저점권 하회하며 거래량이 늘면 → 비중 일부 축소로 변동성 관리 검토",
+    "levels": [
+     {
+      "label": "저항",
+      "price": 206.89,
+      "basis": "20일선"
+     },
+     {
+      "label": "저항",
+      "price": 223.35,
+      "basis": "200일선"
+     },
+     {
+      "label": "목표",
+      "price": 283.85,
+      "basis": "증권사 평균 목표가"
+     }
+    ],
+    "risk": "AI 데이터센터 투자 둔화가 확인되면 밸류에이션 부담이 커질 수 있음"
+   },
+   "sources": []
+  },
+  "PANW": {
+   "headline": "-3.5%, 제프리스 목표가 하향",
+   "move_reasons": [
+    "제프리스 목표가 450→400달러 하향(Buy 유지)",
+    "10년물 5.10%로 고밸류 소프트웨어 부담",
+    "실적(11/19) 앞둔 경계 매물"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "11/19 실적 발표가 주간 최대 이벤트로 발표 전 변동성 확대 전망. 1개월 -14%로 20·50일선 아래에 있어 반등 확인이 필요함.",
+    "key_events": [
+     "11/19(목) PANW 실적발표(장 마감 후 예상)"
+    ],
+    "watch_points": [
+     "20일선(351.89달러) 회복 여부",
+     "실적 가이던스와 플랫폼화 성과",
+     "200일선(276.5달러) 방어"
+    ]
+   },
+   "analyst_take": "제프리스가 11/12 목표가를 450→400달러로 낮췄으나 Buy 유지함. 10월에는 씨티(410→440)와 웰스파고(475→525)가 상향했으며 평균 목표가 399달러, 매수 42/55.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "방화벽·SASE·SOC 통합 플랫폼과 고객 락인",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(검색 기준)"
+   },
+   "action_plan": {
+    "stance": "관망",
+    "summary": "실적 확인 후 진입 판단",
+    "if_up": "실적 발표에서 가이던스가 양호하고 20일선(351.89달러)을 회복하면 → 분할 진입 검토",
+    "if_down": "실적 부진으로 200일선(276.5달러)에 접근하면 → 진입 보류, 지지 확인 후 재검토",
+    "levels": [
+     {
+      "label": "지지",
+      "price": 276.5,
+      "basis": "200일선"
+     },
+     {
+      "label": "저항",
+      "price": 351.89,
+      "basis": "20일선"
+     },
+     {
+      "label": "목표",
+      "price": 415.0,
+      "basis": "증권사 중간 목표가"
+     }
+    ],
+    "risk": "실적 호조에도 고밸류 부담과 금리 상승으로 주가가 약세를 이어갈 수 있음"
+   },
+   "sources": []
+  }
+ },
+ "strategy_summary": {
+  "overview": "10년물 금리 5.10%와 AI 데이터센터 투자 둔화 우려로 AI 반도체 변동성이 큰 구간이라 신규 추격보다 비중 유지 기조가 적절함. 11/18 NVDA, 11/19 PANW 실적 전후 조건부 대응을 점검할 필요가 있음.",
+  "focus": [
+   "11/18(수) NVDA 실적 전후 변동성",
+   "10년물 금리 5% 안착 여부",
+   "11/19(목) PANW 실적",
+   "GOOGL 시세 데이터 누락(수동 확인 필요)"
+  ]
+ },
+ "news": {
+  "market_wrap": "S&P500 -0.35%, 나스닥 -0.39%로 소폭 하락 마감했고 VIX는 18.7로 6.9% 상승함. 10년물 금리가 5.10%로 오르며 NVDA(-4.3%) 등 AI 대형주가 약세를 주도함.",
+  "mood": "위험회피",
+  "top_news": [
+   {
+    "rank": 1,
+    "title": "10년물 금리 5.10%로 상승",
+    "summary": "10년물 금리가 하루 10.5bp 올라 5.10%를 기록함. 달러인덱스도 103.19로 강세임.",
+    "impact": "하락",
+    "affects": "둘다",
+    "why": "할인율 상승이 성장주·AI 밸류에이션에 부담으로 작용함.",
+    "source": "market.json(Yahoo Finance)",
+    "url": "https://journalarta.com/en/2026/11/11/stock-market-today-sp-500-slips-0-38-to-7520-93-and-nasdaq-falls-0-74-as-10-year-yield-rises-to-4-98/"
+   },
+   {
+    "rank": 2,
+    "title": "NVDA 목표가 일제 하향·KeyBanc 강등",
+    "summary": "BMO·골드만·씨티·RBC가 목표가를 낮추고 KeyBanc는 투자의견을 하향함. NVDA는 -4.3% 하락함.",
+    "impact": "하락",
+    "affects": "NASDAQ",
+    "why": "시총 최상위 NVDA 약세가 나스닥과 반도체 지수에 직접 부담임.",
+    "source": "market.json(애널리스트 액션)",
+    "url": "https://www.tikr.com/blog/nvidia-sinks-9-as-midterm-data-center-fears-deepen-ai-chip-rout-absolute-slaughter"
+   },
+   {
+    "rank": 3,
+    "title": "AI 데이터센터 증설 둔화 우려 지속",
+    "summary": "중간선거 이후 AI 규제·인허가 우려로 데이터센터 관련주가 큰 폭 조정을 받았음. 최근 반등 후에도 불안이 남아 있음.",
+    "impact": "하락",
+    "affects": "둘다",
+    "why": "AI 설비투자 기대 훼손은 반도체·전력 등 지수 주도주의 실적 전망을 흔듦.",
+    "source": "TIKR",
+    "url": "https://www.tikr.com/blog/nvidia-sinks-9-as-midterm-data-center-fears-deepen-ai-chip-rout-absolute-slaughter"
+   },
+   {
+    "rank": 4,
+    "title": "WTI 88.7달러, 하루 +2.5%",
+    "summary": "유가가 하루 만에 2.5% 올랐으나 한 달 기준으로는 6.7% 낮은 수준임.",
+    "impact": "하락",
+    "affects": "S&P500",
+    "why": "유가 반등은 인플레이션·금리 부담을 키워 증시에 부담임.",
+    "source": "market.json(Yahoo Finance)",
+    "url": "https://journalarta.com/en/2026/11/11/stock-market-today-sp-500-slips-0-38-to-7520-93-and-nasdaq-falls-0-74-as-10-year-yield-rises-to-4-98/"
+   },
+   {
+    "rank": 5,
+    "title": "원/달러 1,334원, 선물은 소폭 약세",
+    "summary": "원/달러는 0.55% 하락(원화 강세)했고 S&P·나스닥 선물은 약 -0.25%로 마감함. 오늘 아시아장 출발 분위기는 조심스러움.",
+    "impact": "혼조",
+    "affects": "둘다",
+    "why": "선물 약세는 미국 개장 초 투자심리에 영향을 줌.",
+    "source": "market.json(Yahoo Finance)",
+    "url": "https://journalarta.com/en/2026/11/11/stock-market-today-sp-500-slips-0-38-to-7520-93-and-nasdaq-falls-0-74-as-10-year-yield-rises-to-4-98/"
+   }
+  ],
+  "tonight": [
+   "23:30 미국 정규장 개장(겨울시간 기준)",
+   "금리·달러 흐름과 NVDA 실적(11/18) 앞둔 반도체 수급 확인",
+   "세부 경제지표 일정은 미확인(발표 캘린더 확인 필요)"
+  ]
+ }
+}
