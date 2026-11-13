@@ -1,0 +1,365 @@
+{
+ "meta": {
+  "mode": "daily",
+  "model": "sonnet",
+  "session_date": "2026-11-13",
+  "notes": "웹검색 결과가 제목 위주라 11/13 당일 종목별 원인 기사는 확인 못 함(개별 이슈 없음·섹터/매크로 연동으로 표기, 수치는 market.json만 사용). NVDA 실적일은 market.json 기준 11/18(한국 11/19 아침), PANW는 회사 발표 기준 11/18(market.json은 11/19). 뉴스 Top5는 market.json 지표 중심, 원문 미열람. 해자 위협은 NVDA 기존 이슈만 유지."
+ },
+ "tickers": {
+  "NVDA": {
+   "headline": "-2.0%, 3일 연속 약세 이어감",
+   "move_reasons": [
+    "SOX -3.4% 급락, 반도체 전반 매물 출회",
+    "11/12 주요 증권사 목표가 줄하향 여진",
+    "주간 -12.7%, 거래량 평균 대비 1.8배 투매 양상",
+    "10년물 5.15% 상승·달러 강세로 성장주 부담"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "11/18(수) 장 마감 후 실적 발표를 앞두고 변동성 확대 예상. 낙폭이 커 실적 안도 시 반등 여지도 있으나 가이던스 실망 시 52주 저점 시험 가능.",
+    "key_events": [
+     "11/18(수) 실적발표(장 마감 후, 한국 11/19 아침)",
+     "11/19(목) 실적 후 증권사 목표가 조정"
+    ],
+    "watch_points": [
+     "데이터센터 매출·차기 분기 가이던스",
+     "중국 수출통제·CEO 관련 이슈 후속",
+     "52주 저점 148.8달러 지지 여부"
+    ]
+   },
+   "analyst_take": "11/12 BMO(340→240), 골드만(300→220), 시티(285→225), RBC(330→230)가 목표가를 일제히 낮췄고 KeyBanc은 Sector Weight로 하향. 투자의견은 대체로 매수 유지로 하향 폭은 밸류에이션 부담 반영 성격.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "CUDA 소프트웨어 생태계와 개발자 락인",
+    "status": "이상 없음",
+    "threats": [
+     {
+      "issue": "CEO 관련 이사회 조사·의회 중국 칩 유출 압박",
+      "type": "규제",
+      "severity": "중간",
+      "new": false,
+      "url": "https://thenextweb.com/news/house-chairs-jensen-huang-briefing-megaspeed"
+     }
+    ],
+    "verdict": "CUDA 생태계 해자는 유지되나 수출규제·CEO 관련 리스크는 모니터링 필요"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "실적 전 비중 유지, 변동성 관리",
+    "if_up": "20일선(198.69달러) 회복 시 → 실적 호재 확인 후 비중 유지, 추격 추가는 자제",
+    "if_down": "52주 저점(148.8달러) 이탈 시 → 실적 결과 확인 후 비중 일부 축소 검토",
+    "levels": [
+     {
+      "label": "지지",
+      "price": 148.8,
+      "basis": "52주 저점"
+     },
+     {
+      "label": "저항",
+      "price": 198.69,
+      "basis": "20일선"
+     },
+     {
+      "label": "목표",
+      "price": 282.0,
+      "basis": "증권사 목표가 중간값"
+     }
+    ],
+    "risk": "실적에서 AI 투자 둔화나 가이던스 실망이 확인될 경우"
+   },
+   "sources": [
+    {
+     "title": "Why Nvidia stock just fell again (Motley Fool, 11/10)",
+     "url": "https://www.fool.com/investing/2026/11/10/why-nvidia-stock-just-fell-again/"
+    }
+   ]
+  },
+  "GOOGL": {
+   "headline": "-1.0%, 반등 후 숨 고르기",
+   "move_reasons": [
+    "뚜렷한 개별 이슈 없음(나스닥 -0.9% 연동)",
+    "거래량 평균 대비 75% 수준으로 소폭 조정",
+    "10월 하순 실적 후 낙폭 만회 중, 주간 +3.9%"
+   ],
+   "driver_type": "매크로",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "주요 개별 일정 없고 금리·AI 투자 심리에 연동될 전망. 20일선(303달러) 회복 여부가 단기 분수령.",
+    "key_events": [
+     "11/18(수) NVDA 실적(AI 인프라 투자 심리 변수)"
+    ],
+    "watch_points": [
+     "10년물 금리 5.2% 안착 여부",
+     "TPU·Gemini 관련 외부 고객 수주 소식"
+    ]
+   },
+   "analyst_take": "10월 말 실적 후 Citi(447→375), Wells Fargo(417→371), Bernstein(385→325), RBC(425→400) 등이 목표가를 낮췄으나 매수 의견은 유지. 컨센서스 평균 목표가는 현재가 대비 여유가 큰 편.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "검색 점유율·데이터와 자체 AI 인프라(TPU) 수직 통합",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(검색 기준)"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "추세 회복 확인까지 비중 유지",
+    "if_up": "20일선(303.42달러) 안착 시 → 50일선(328달러) 방향 반등 기대, 비중 유지",
+    "if_down": "52주 저점(270.7달러) 이탈 시 → 비중 축소 검토로 리스크 관리",
+    "levels": [
+     {
+      "label": "지지",
+      "price": 270.7,
+      "basis": "52주 저점"
+     },
+     {
+      "label": "저항",
+      "price": 303.42,
+      "basis": "20일선"
+     },
+     {
+      "label": "목표",
+      "price": 400.0,
+      "basis": "증권사 목표가 중간값"
+     }
+    ],
+    "risk": "AI 투자 부담·광고 경기 둔화로 실적 눈높이가 더 낮아질 경우"
+   },
+   "sources": []
+  },
+  "MU": {
+   "headline": "-2.5%, 반도체 급락 동조",
+   "move_reasons": [
+    "SOX -3.4%, 메모리·AI 반도체 동반 약세",
+    "뚜렷한 개별 이슈 없음(섹터 연동)",
+    "50일선(944달러) 아래 약세 지속, 월간 -16%"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "실적은 12/24로 멀어 11/18 NVDA 실적과 HBM 수요 신호에 연동될 전망. 200일선(766달러) 지지 여부가 관건.",
+    "key_events": [
+     "11/18(수) NVDA 실적(HBM 수요 가늠)"
+    ],
+    "watch_points": [
+     "HBM·DRAM 가격 동향",
+     "200일선 766달러 방어 여부"
+    ]
+   },
+   "analyst_take": "최근 확인된 변경은 Rosenblatt 목표가 1,900달러 유지, Needham 1,650달러 유지(10/22). 매수 의견 45곳으로 컨센서스는 강세 일변도.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "HBM·첨단 DRAM 공정 기술력과 3사 과점 구조",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(검색 기준)"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "200일선 지지 확인하며 보유",
+    "if_up": "20일선(838달러) 회복 시 → 비중 유지, 추격 추가는 자제",
+    "if_down": "200일선(765.61달러) 종가 이탈 시 → 비중 일부 축소 검토",
+    "levels": [
+     {
+      "label": "지지",
+      "price": 765.61,
+      "basis": "200일선"
+     },
+     {
+      "label": "저항",
+      "price": 838.0,
+      "basis": "20일선"
+     },
+     {
+      "label": "목표",
+      "price": 1550.0,
+      "basis": "증권사 목표가 중간값"
+     }
+    ],
+    "risk": "AI 반도체 투자 둔화로 메모리 사이클 고점 논란이 커질 경우"
+   },
+   "sources": []
+  },
+  "BE": {
+   "headline": "-4.9%, 고변동 성장주 매물",
+   "move_reasons": [
+    "뚜렷한 개별 이슈 없음(AI 인프라주 약세 연동)",
+    "금리 상승 부담에 고밸류 성장주 매도",
+    "주간 +10.8% 반등 후 차익실현 성격"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "자체 일정은 없고 NVDA 실적 등 AI 전력 인프라 심리에 연동. 변동성이 매우 커 20일선(205달러) 회복 여부를 확인할 구간.",
+    "key_events": [
+     "11/18(수) NVDA 실적(데이터센터 투자 신호)"
+    ],
+    "watch_points": [
+     "데이터센터 신규 계약 발표",
+     "금리 상승 속도"
+    ]
+   },
+   "analyst_take": "RBC 11/9 Outperform·목표가 335달러 유지, Barclays 11/3 Overweight로 상향(목표 316→289). 컨센서스는 매수 16·중립 11·매도 2로 의견이 갈림.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "고체산화물 연료전지(SOFC) 기술과 데이터센터 현지발전 납품 실적",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(검색 기준)"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "변동성 감안해 비중 점검",
+    "if_up": "20일선(205.43달러) 회복 시 → 200일선(223.53달러)까지 반등 여지, 비중 유지",
+    "if_down": "최근 저점권 재이탈 등 추세 약화 시 → 비중 일부 축소로 리스크 관리 검토",
+    "levels": [
+     {
+      "label": "저항",
+      "price": 205.43,
+      "basis": "20일선"
+     },
+     {
+      "label": "저항",
+      "price": 223.53,
+      "basis": "200일선"
+     },
+     {
+      "label": "목표",
+      "price": 295.0,
+      "basis": "증권사 목표가 중간값"
+     }
+    ],
+    "risk": "고밸류 부담과 높은 변동성으로 낙폭이 확대될 경우"
+   },
+   "sources": []
+  },
+  "PANW": {
+   "headline": "-0.1%, 실적 앞두고 보합권",
+   "move_reasons": [
+    "뚜렷한 개별 이슈 없음",
+    "11/12 Jefferies 목표가 450→400 하향 여파",
+    "11/18 실적 대기 관망세"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "11/18(수) 장 마감 후 회계 2027 1분기 실적 발표 예정. 한국시간 11/19 아침 결과 확인 가능하며 가이던스에 따라 변동성 확대 예상.",
+    "key_events": [
+     "11/18(수) 회계 1Q27 실적(장 마감 후)"
+    ],
+    "watch_points": [
+     "차세대 보안 ARR·플랫폼화 성과",
+     "연간 가이던스 상향 여부"
+    ]
+   },
+   "analyst_take": "Jefferies가 11/12 Buy 유지하며 목표가를 450→400달러로 낮춤. Citi는 10/15 440달러로 상향, 컨센서스 매수 43곳.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "방화벽·SASE·SOC 통합 플랫폼과 고객 락인",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(검색 기준)"
+   },
+   "action_plan": {
+    "stance": "관망",
+    "summary": "실적 확인 후 진입 판단",
+    "if_up": "실적 호조로 20일선(350.91달러) 회복 시 → 분할 진입 검토",
+    "if_down": "실적 부진·가이던스 하향으로 200일선(277.23달러)에 접근하면 → 진입 보류 후 지지 확인",
+    "levels": [
+     {
+      "label": "지지",
+      "price": 277.23,
+      "basis": "200일선"
+     },
+     {
+      "label": "저항",
+      "price": 350.91,
+      "basis": "20일선"
+     },
+     {
+      "label": "목표",
+      "price": 415.0,
+      "basis": "증권사 목표가 중간값"
+     }
+    ],
+    "risk": "실적 호재에도 보안 업종 밸류에이션 부담으로 반등이 제한될 경우"
+   },
+   "sources": [
+    {
+     "title": "PANW 회계 2027 1분기 실적 발표 일정(11/18)",
+     "url": "https://finviz.com/news/414245/palo-alto-networks-to-announce-fiscal-first-quarter-2027-financial-results-on-wednesday-november-18-2026"
+    }
+   ]
+  }
+ },
+ "strategy_summary": {
+  "overview": "반도체·AI 주도주가 급락하고 금리가 5.15%로 오른 방어적 국면으로, 실적 전까지 보유 비중 유지와 변동성 관리가 기조. 11/18 NVDA·PANW 실적 전 추격 매수보다 지지선 확인이 우선.",
+  "focus": [
+   "11/18 NVDA 실적과 가이던스(한국 11/19 아침)",
+   "10년물 금리 5.2% 돌파 여부",
+   "MU 200일선(766달러)·NVDA 52주 저점(148.8달러) 지지"
+  ]
+ },
+ "news": {
+  "market_wrap": "금요일 S&P500 -0.40%, 나스닥 -0.91%로 하락했고 반도체지수(SOX)는 -3.43% 급락. 10년물 금리 5.15%·달러 강세에 기술주 중심 약세였으나 다우는 +0.10%로 버팀.",
+  "mood": "위험회피",
+  "top_news": [
+   {
+    "rank": 1,
+    "title": "반도체 급락, SOX -3.4%",
+    "summary": "AI 반도체 중심 매도가 이어지며 SOX가 하루 -3.4%. NVDA는 주간 -12.7%.",
+    "impact": "하락",
+    "affects": "NASDAQ",
+    "why": "반도체 대형주 비중이 커 나스닥 지수를 직접 압박함",
+    "source": "market.json 지표",
+    "url": "https://www.fool.com/investing/2026/11/10/why-nvidia-stock-just-fell-again/"
+   },
+   {
+    "rank": 2,
+    "title": "10년물 금리 5.15%로 상승",
+    "summary": "10년물이 5.154%로 52주 고점(5.36%)에 근접하며 3거래일 상승.",
+    "impact": "하락",
+    "affects": "둘다",
+    "why": "할인율 상승으로 성장주 밸류에이션 부담이 커짐",
+    "source": "market.json 지표",
+    "url": "https://www.cmegroup.com/education/events/econoday/673861"
+   },
+   {
+    "rank": 3,
+    "title": "NVDA 실적 앞두고 경계",
+    "summary": "11/18 장 마감 후 NVDA 실적 발표를 앞두고 주요 증권사가 목표가를 일제히 하향.",
+    "impact": "혼조",
+    "affects": "둘다",
+    "why": "AI 투자 사이클 가늠자로 지수 변동성 확대 요인",
+    "source": "market.json 증권사 변경",
+    "url": "https://www.fool.com/investing/2026/11/10/why-nvidia-stock-just-fell-again/"
+   },
+   {
+    "rank": 4,
+    "title": "달러 강세·유가 89달러대",
+    "summary": "달러인덱스 103.4로 52주 고점권, WTI는 88.9달러 유지.",
+    "impact": "하락",
+    "affects": "S&P500",
+    "why": "강달러·고유가는 기업 이익과 물가 우려를 자극함",
+    "source": "market.json 지표",
+    "url": "https://www.cmegroup.com/education/events/econoday/673861"
+   },
+   {
+    "rank": 5,
+    "title": "VIX 19대, 선물 약세",
+    "summary": "VIX 19.3으로 상승, 나스닥 선물은 -1.6%로 마감해 월요일 약세 출발 가능성.",
+    "impact": "하락",
+    "affects": "NASDAQ",
+    "why": "주말 이후 갭 하락 위험이 투자 심리에 부담",
+    "source": "market.json 지표",
+    "url": "https://www.cmegroup.com/education/events/econoday/673861"
+   }
+  ],
+  "tonight": [
+   "오늘(토) 미국 증시 주말 휴장, 정규 거래 없음",
+   "11/16(월) 미국장 개장 전까지 주말 뉴스·지정학 헤드라인 점검",
+   "다음 주 11/18(수) NVDA·PANW 실적(장 마감 후), 한국시간 11/19 아침 확인"
+  ]
+ }
+}
