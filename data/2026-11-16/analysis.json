@@ -1,0 +1,483 @@
+{
+ "meta": {
+  "model": "sonnet",
+  "mode": "weekly",
+  "session_date": "2026-11-13",
+  "notes": "웹검색 결과가 제목 위주이고 구·신 기사가 섞여 일부 내용은 market.json 수치와 확인된 기사 중심으로 작성. 주말 뉴스는 제한적. 실적일은 market.json 기준(NVDA 11/18, PANW 11/19)."
+ },
+ "tickers": {
+  "NVDA": {
+   "headline": "CEO 조사 악재에 주간 -12.7%",
+   "move_reasons": [
+    "이사회, CEO 관련 독립 조사 착수 발표",
+    "중국 칩 유출 관련 의회 압박 지속",
+    "실적 앞두고 AI 투자 피로감·차익실현",
+    "증권사 목표가 줄하향(BMO·GS·씨티 등)"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "11/18 실적이 이번 주 최대 분수령. 낙폭이 커 기대치는 낮아졌으나 CEO 거버넌스 이슈가 변동성을 키울 전망.",
+    "key_events": [
+     "11/18(수) 장 마감 후 실적발표",
+     "11/19(목) 06:00 전후 실적 반응(한국시간)"
+    ],
+    "watch_points": [
+     "데이터센터 매출·차기 분기 가이던스",
+     "CEO 조사 진행 상황과 경영 공백 우려",
+     "중국 매출·수출통제 언급"
+    ]
+   },
+   "analyst_take": "11/12 BMO·골드만·씨티·RBC가 목표가를 220~240달러로 낮췄으나 Buy 의견은 유지함. 키뱅크는 의견을 Sector Weight로 내림.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "CUDA 소프트웨어 생태계와 개발자 락인",
+    "status": "이상 없음",
+    "threats": [
+     {
+      "issue": "CEO 관련 이사회 조사·의회 중국 칩 유출 압박",
+      "type": "규제",
+      "severity": "중간",
+      "new": false,
+      "url": "https://thenextweb.com/news/house-chairs-jensen-huang-briefing-megaspeed"
+     }
+    ],
+    "verdict": "CUDA 생태계 해자는 유지되나 CEO 조사·수출규제 리스크는 모니터링 필요"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "실적 전 비중 유지, 추가매수는 확인 후",
+    "if_up": "실적 호조로 20일선(198.69달러) 회복 시 → 비중 유지, 급등 추격 추가는 자제",
+    "if_down": "실적 실망으로 52주 저점(148.8달러) 이탈 시 → 비중 일부 축소로 리스크 관리 검토",
+    "levels": [
+     {
+      "label": "지지",
+      "price": 148.8,
+      "basis": "52주 저점"
+     },
+     {
+      "label": "저항",
+      "price": 198.69,
+      "basis": "20일선"
+     },
+     {
+      "label": "목표",
+      "price": 275.0,
+      "basis": "증권사 목표가 중간값"
+     }
+    ],
+    "risk": "CEO 교체·조사 확대가 실적 호재를 압도할 가능성"
+   },
+   "sources": [
+    {
+     "title": "Stocks Fall Before Nvidia's High-Stakes AI Results: Markets Wrap",
+     "url": "https://news.bloombergtax.com/daily-tax-report-international/asian-stocks-set-for-declines-as-selloff-deepens-markets-wrap"
+    },
+    {
+     "title": "Stock Futures, Treasurys Steady But Nvidia Slides Premarket on Huang Probe",
+     "url": "https://www.morningstar.com/news/dow-jones/202611092199/stock-futures-treasurys-steady-but-nvidia-slides-prema"
+    },
+    {
+     "title": "Nvidia Erases Its 2026 Gains, Down 29% From Peak",
+     "url": "https://fourweekmba.com/ai-nvidia-erases-its-2026-gains-down-29-and-1-7t-from-peak/"
+    }
+   ]
+  },
+  "GOOGL": {
+   "headline": "주간 +3.9%, 금요일 숨고르기",
+   "move_reasons": [
+    "TPU 신제품 공개 등 AI 칩 기대 지속",
+    "11/9 AI 인프라 낙관에 반등",
+    "금리 상승·나스닥 약세로 금요일 -1%"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "이번 주 개별 실적은 없고 NVDA 실적·금리 흐름에 연동될 전망. 20일선 안착 여부가 관건.",
+    "key_events": [
+     "11/18(수) NVDA 실적(TPU 대비 AI칩 수요 가늠)",
+     "11/18(수) FOMC 의사록"
+    ],
+    "watch_points": [
+     "20일선(303.42달러) 회복 여부",
+     "Gemini·TPU 외부 공급 계약 소식"
+    ]
+   },
+   "analyst_take": "10월 말 실적 후 씨티·웰스파고·번스타인 등이 목표가를 낮췄으나 매수 의견이 다수임. 컨센서스 목표가는 현재가 대비 여력이 큰 편임.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "검색 점유율·데이터와 자체 AI 인프라(TPU) 수직 통합",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(검색 기준)"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "이벤트 부재, 추세 확인하며 유지",
+    "if_up": "20일선(303.42달러) 안착 시 → 보유 유지, 50일선(328.19달러)까지 추세 확인",
+    "if_down": "52주 저점(270.7달러) 부근 이탈 시 → 비중 일부 축소 검토",
+    "levels": [
+     {
+      "label": "지지",
+      "price": 270.7,
+      "basis": "52주 저점"
+     },
+     {
+      "label": "저항",
+      "price": 303.42,
+      "basis": "20일선"
+     },
+     {
+      "label": "저항",
+      "price": 328.19,
+      "basis": "50일선"
+     }
+    ],
+    "risk": "AI 설비투자 부담과 금리 상승이 밸류에이션을 계속 압박할 가능성"
+   },
+   "sources": [
+    {
+     "title": "why alphabet stock was moving higher today",
+     "url": "https://fool.com/investing/2026/11/09/why-alphabet-stock-was-moving-higher-today"
+    },
+    {
+     "title": "Google Expands AI Hardware Push With 2 New TPU Chips",
+     "url": "https://stocktwits.com/news-articles/markets/equity/google-expands-ai-hardware-push-with-2-new-tpu-chips-targets-secure-inference-doubles-compute/cNGrQ6JR9ey"
+    }
+   ]
+  },
+  "MU": {
+   "headline": "반도체 반등으로 주간 +12.8%",
+   "move_reasons": [
+    "전주 급락 뒤 SOX 반등(+8%) 동반",
+    "DRAM 가격 강세·장기 공급계약 기대",
+    "금요일 NVDA·반도체 약세로 -2.5%"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "자체 일정은 없고 NVDA 실적에 따른 AI 반도체 심리에 연동될 전망. 변동성이 매우 큰 구간임.",
+    "key_events": [
+     "11/18(수) NVDA 실적(HBM 수요 간접 확인)"
+    ],
+    "watch_points": [
+     "NVDA의 HBM·메모리 관련 코멘트",
+     "삼성전자 HBM 인증 소식",
+     "200일선(765.61달러) 방어 여부"
+    ]
+   },
+   "analyst_take": "최근 1개월 내 market.json 상 신규 변경은 10/22 유지 의견뿐임(Rosenblatt 1,900달러, Needham 1,650달러). 컨센서스는 매수 일색임.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "HBM·첨단 DRAM 공정 기술력과 3사 과점 구조",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(검색 기준)"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "200일선 지키는 한 보유, 급등락 대비",
+    "if_up": "20일선(838달러) 회복 시 → 보유 유지, 추격 추가는 자제",
+    "if_down": "200일선(765.61달러) 이탈 시 → 비중 일부 축소로 리스크 관리 검토",
+    "levels": [
+     {
+      "label": "지지",
+      "price": 765.61,
+      "basis": "200일선"
+     },
+     {
+      "label": "저항",
+      "price": 838.0,
+      "basis": "20일선"
+     },
+     {
+      "label": "저항",
+      "price": 943.78,
+      "basis": "50일선"
+     }
+    ],
+    "risk": "NVDA 실적 실망이 AI 반도체 전반 투매로 번질 가능성"
+   },
+   "sources": [
+    {
+     "title": "Memory Stocks Fell Up to 26% While DRAM Prices Kept Rising",
+     "url": "https://fourweekmba.com/ai-memory-stocks-fell-up-to-26-while-dram-prices-kept-rising/"
+    },
+    {
+     "title": "Micron Tech Gains as Tech Giants Scramble to Lock in Multiyear Supply",
+     "url": "https://www.webull.com/news/15860562724807680"
+    }
+   ]
+  },
+  "BE": {
+   "headline": "데이터센터 계약 호재, 주간 +10.8%",
+   "move_reasons": [
+    "구글·NTT DATA 전력 공급 계약 소식에 반등",
+    "11/9·11/11 급등 후 차익실현",
+    "금요일 -4.9%, 금리·성장주 약세 영향"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "단기 일정 없이 AI 전력 테마와 금리에 연동될 전망. 20일선 저항 돌파 여부가 관건.",
+    "key_events": [
+     "11/18(수) FOMC 의사록",
+     "11/18(수) NVDA 실적(AI 투자 심리)"
+    ],
+    "watch_points": [
+     "신규 데이터센터 계약 발표",
+     "20일선(205.43달러) 회복 여부",
+     "10년물 금리 5% 상회 지속 여부"
+    ]
+   },
+   "analyst_take": "RBC가 11/9 Outperform·335달러를 유지했고 바클레이즈는 11/3 목표가를 289달러로 낮춤. 의견은 매수·중립이 갈림.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "고체산화물 연료전지(SOFC) 기술과 데이터센터 현지발전 납품 실적",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(검색 기준)"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "테마 강하나 변동성 커 비중 관리",
+    "if_up": "20일선(205.43달러) 회복 시 → 보유 유지, 200일선(223.53달러) 도달 전 추격 자제",
+    "if_down": "최근 저점권 이탈로 20일선 아래 약세가 이어지면 → 비중 일부 축소 검토",
+    "levels": [
+     {
+      "label": "저항",
+      "price": 205.43,
+      "basis": "20일선"
+     },
+     {
+      "label": "저항",
+      "price": 223.53,
+      "basis": "200일선"
+     },
+     {
+      "label": "목표",
+      "price": 283.85,
+      "basis": "증권사 목표가 평균"
+     }
+    ],
+    "risk": "고금리 장기화로 고밸류 성장주 전반이 재차 조정받을 가능성"
+   },
+   "sources": [
+    {
+     "title": "here s why bloom energy stock popped today",
+     "url": "https://fool.com/investing/2026/11/11/here-s-why-bloom-energy-stock-popped-today"
+    },
+    {
+     "title": "Bloom Energy Stock Fell 16% on the Same Day 2 Giant Data Center Deals Named It",
+     "url": "https://www.mitrade.com/insights/news/live-news/article-8-2239951-20261109"
+    }
+   ]
+  },
+  "PANW": {
+   "headline": "실적 앞두고 주간 +2.7%",
+   "move_reasons": [
+    "사이버보안주 반등과 실적 기대감",
+    "11/12 제프리스 목표가 하향(450→400)",
+    "금요일 보합권(-0.1%)"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "11/19 실적이 이번 주 핵심. 플랫폼화 성과와 가이던스가 주가 방향을 정할 전망.",
+    "key_events": [
+     "11/19(목) 장 마감 후 실적발표(한국시간 11/20 오전)"
+    ],
+    "watch_points": [
+     "플랫폼 전환 고객 수·ARR 성장률",
+     "차기 분기·연간 가이던스",
+     "AI 보안 신제품 기여도"
+    ]
+   },
+   "analyst_take": "제프리스가 11/12 Buy 유지하며 목표가를 400달러로 낮췄고, 씨티는 10/15 440달러로 올림. 컨센서스는 매수 우위임.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "방화벽·SASE·SOC 통합 플랫폼과 고객 락인",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(검색 기준)"
+   },
+   "action_plan": {
+    "stance": "관망",
+    "summary": "실적 확인 후 진입 여부 판단",
+    "if_up": "실적 호조로 20일선(350.91달러) 상회 시 → 분할 진입 검토",
+    "if_down": "실적 실망으로 200일선(277.23달러) 부근까지 밀리면 → 진입 보류, 지지 확인 후 재검토",
+    "levels": [
+     {
+      "label": "지지",
+      "price": 277.23,
+      "basis": "200일선"
+     },
+     {
+      "label": "저항",
+      "price": 350.91,
+      "basis": "20일선"
+     },
+     {
+      "label": "목표",
+      "price": 415.0,
+      "basis": "증권사 목표가 중간값"
+     }
+    ],
+    "risk": "실적 호조에도 높은 기대치로 주가가 하락할 가능성"
+   },
+   "sources": [
+    {
+     "title": "Palo Alto Networks stock set for in-line Q1 as KeyBanc sees balanced setup",
+     "url": "https://ca.investing.com/news/analyst-ratings/palo-alto-networks-stock-set-for-inline-q1-as-keybanc-sees-balanced-setup-93CH-4320916"
+    }
+   ]
+  }
+ },
+ "strategy_summary": {
+  "overview": "NVDA 실적 전후 변동성이 커 보유 종목은 비중 유지하며 지지선 이탈 여부를 점검하는 한 주로 봄. 신규 진입(PANW)은 11/19 실적 확인 후 판단함.",
+  "focus": [
+   "11/18 NVDA 실적과 CEO 조사 이슈",
+   "11/19 PANW 실적",
+   "11/18 FOMC 의사록·10년물 5% 상회 여부"
+  ]
+ },
+ "news": {
+  "market_wrap": "지난주 S&P500 +2.5%, 나스닥 +2.3%, SOX +8.1%로 반등했으나 금요일은 반도체 중심 조정(나스닥 -0.9%, SOX -3.4%). 10년물 금리 5.15%로 상승하며 NVDA 실적 앞두고 경계감 확산.",
+  "mood": "중립",
+  "top_news": [
+   {
+    "rank": 1,
+    "title": "NVDA 실적 D-2, CEO 조사 변수",
+    "summary": "엔비디아가 11/18 장 마감 후 실적을 발표함. CEO 관련 이사회 조사가 겹쳐 불확실성이 큼.",
+    "impact": "혼조",
+    "affects": "둘다",
+    "why": "시총 비중이 큰 NVDA 결과가 AI 반도체·나스닥 전반 심리를 좌우함.",
+    "source": "Morningstar",
+    "url": "https://www.morningstar.com/news/dow-jones/202611092199/stock-futures-treasurys-steady-but-nvidia-slides-prema"
+   },
+   {
+    "rank": 2,
+    "title": "10년물 5.15%, 금리 부담 재확대",
+    "summary": "미 10년물 금리가 한 주간 6% 올라 5.15%에 도달함. 달러지수도 103대로 강세임.",
+    "impact": "하락",
+    "affects": "NASDAQ",
+    "why": "장기금리 상승은 성장주 밸류에이션을 압박함.",
+    "source": "market.json(Yahoo Finance)",
+    "url": "https://finance.yahoo.com/quote/%5ETNX/"
+   },
+   {
+    "rank": 3,
+    "title": "소매판매·FOMC 의사록 주간",
+    "summary": "11/17 소매판매·산업생산, 11/18 FOMC 의사록이 예정됨. 연준 의장 연설도 이어짐.",
+    "impact": "혼조",
+    "affects": "둘다",
+    "why": "금리 경로 기대 변화가 지수 방향에 직접 영향함.",
+    "source": "Thrive in Markets",
+    "url": "https://thriveinmarkets.com/calendar/2026-11-16/"
+   },
+   {
+    "rank": 4,
+    "title": "월마트·홈디포·타깃 실적",
+    "summary": "대형 소매업체 실적이 이번 주 집중됨. 소비 둔화 여부를 확인할 수 있음.",
+    "impact": "혼조",
+    "affects": "S&P500",
+    "why": "소비 지표가 경기·금리 전망에 영향을 줌.",
+    "source": "Barchart",
+    "url": "https://www.barchart.com/story/news/36150106/nvda-earnings-fomc-and-other-key-things-to-watch-this-week"
+   },
+   {
+    "rank": 5,
+    "title": "중간선거 후 AI 규제 우려·지정학",
+    "summary": "선거 결과로 AI 규제 강화 우려가 커졌고 이란 관련 지정학 변수도 남아 있음. APEC 정상 회동 소식도 주목됨.",
+    "impact": "하락",
+    "affects": "NASDAQ",
+    "why": "규제·지정학 불확실성이 AI 관련 대형주 위험선호를 낮춤.",
+    "source": "Stocktwits",
+    "url": "https://stocktwits.com/news-articles/markets/equity/dow-s-and-p-500-nasdaq-futures-rebound-after-sharp-ai-selloff-last-week-nvda-amd-vir-sndk-in-focus/cNGADuWR9eT"
+   }
+  ],
+  "tonight": [
+   "22:30 미국 11월 엠파이어스테이트 제조업지수",
+   "02:00(화) 연준 의장 연설",
+   "오늘 밤 NVDA 실적 전 포지션 조정 주의"
+  ]
+ },
+ "week_ahead": {
+  "themes": [
+   "NVDA 실적과 AI 투자 사이클 점검",
+   "10년물 5% 상회, 금리 부담",
+   "대형 소매업체 실적과 소비 점검"
+  ],
+  "calendar": [
+   {
+    "date": "11/16(월)",
+    "time": "22:30",
+    "event": "미국 11월 엠파이어스테이트 제조업지수",
+    "importance": "중"
+   },
+   {
+    "date": "11/17(화)",
+    "time": "02:00",
+    "event": "연준 의장 연설",
+    "importance": "상"
+   },
+   {
+    "date": "11/17(화)",
+    "time": "22:30",
+    "event": "미국 10월 소매판매",
+    "importance": "상"
+   },
+   {
+    "date": "11/17(화)",
+    "time": "23:15",
+    "event": "미국 10월 산업생산",
+    "importance": "중"
+   },
+   {
+    "date": "11/18(수)",
+    "time": "미정",
+    "event": "월마트·홈디포·타깃 등 소매 실적 집중",
+    "importance": "중"
+   },
+   {
+    "date": "11/19(목)",
+    "time": "04:00",
+    "event": "FOMC 의사록",
+    "importance": "상"
+   },
+   {
+    "date": "11/20(금)",
+    "time": "미정",
+    "event": "미시간대 소비자심리 확정치",
+    "importance": "하"
+   }
+  ],
+  "earnings": [
+   {
+    "date": "11/18(수)",
+    "ticker": "NVDA",
+    "note": "장 마감 후"
+   },
+   {
+    "date": "11/19(목)",
+    "ticker": "PANW",
+    "note": "장 마감 후"
+   },
+   {
+    "date": "11/17~11/20",
+    "ticker": "WMT",
+    "note": "이번 주 중 발표"
+   },
+   {
+    "date": "11/17~11/20",
+    "ticker": "HD",
+    "note": "이번 주 중 발표"
+   },
+   {
+    "date": "11/17~11/20",
+    "ticker": "TGT",
+    "note": "이번 주 중 발표"
+   }
+  ]
+ }
+}
