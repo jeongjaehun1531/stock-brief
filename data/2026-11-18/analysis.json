@@ -1,0 +1,369 @@
+{
+ "meta": {
+  "model": "sonnet",
+  "mode": "daily",
+  "session_date": "2026-11-17",
+  "notes": "비상 모드: market.json 미생성(yfinance 미설치·Yahoo WebFetch 차단)으로 market_web.json 작성. NVDA·지수만 11/17 종가(MarketScreener), GOOGL·MU·BE·PANW 종가·등락률·이동평균은 확인 못해 null, 52주 고저·목표가는 11/16 market.json 값 재사용. NVDA 실적 결과는 미확인. 레벨은 52주 저점·평균 목표가만 사용."
+ },
+ "tickers": {
+  "NVDA": {
+   "headline": "실적 앞두고 소폭 하락, 5일 -13%",
+   "move_reasons": [
+    "11/17 종가 155.46달러(-0.44%), 장 마감 후 실적 발표 대기",
+    "CEO 사임·CFO 임시 CEO 체제로 경영 불확실성",
+    "중국 수출통제 강화 법안·AI 밸류에이션 논란"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "실적 결과는 이 분석 작성 시점에 확인하지 못함. 가이던스와 CEO 승계 언급이 이번 주 주가 방향을 좌우할 전망.",
+    "key_events": [
+     "11/17(화) 장 마감 후 실적(한국 11/18 06:20경, 결과 미확인)",
+     "12/01~02 하원 비공개 증언",
+     "12/03 상원 은행위 청문회"
+    ],
+    "watch_points": [
+     "실적 후 가이던스·HBM 수요 코멘트",
+     "CEO 승계 일정",
+     "수출통제 법안 진행"
+    ]
+   },
+   "analyst_take": "11/12 BMO·골드만·씨티 등이 목표가를 하향했으나 컨센서스는 여전히 매수 우위임. 핵심 논리는 AI 수요 지속 vs 경영 공백·규제 리스크임.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "CUDA 소프트웨어 생태계와 개발자 락인",
+    "status": "주의",
+    "threats": [
+     {
+      "issue": "CEO 관련 이사회 조사·의회 중국 칩 유출 압박",
+      "type": "규제",
+      "severity": "중간",
+      "new": false,
+      "url": "https://thenextweb.com/news/house-chairs-jensen-huang-briefing-megaspeed"
+     },
+     {
+      "issue": "美, AI칩 원격접속 우회 차단 규칙 신규 발표",
+      "type": "규제",
+      "severity": "중간",
+      "new": true,
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262307685-us-stock-nasdaq-falls-nvidia-amd-drops-us-ai-chip-curbs-tradingkey"
+     }
+    ],
+    "verdict": "CUDA 해자는 유지되나 CEO 공백·수출규제 강화로 규제 리스크 확대"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "실적 확인 전 비중 유지, 변동성 관리",
+    "if_up": "실적 후 가이던스가 기대를 웃돌며 반등하면 → 비중 유지, 추격 추가는 자제",
+    "if_down": "52주 저점(148.8달러) 이탈 시 → 비중 일부 축소 등 리스크 관리 검토",
+    "levels": [
+     {
+      "label": "지지",
+      "price": 148.8,
+      "basis": "52주 저점"
+     },
+     {
+      "label": "목표",
+      "price": 267.6463,
+      "basis": "증권사 평균 목표가"
+     }
+    ],
+    "risk": "실적 가이던스 부진 또는 CEO 공백 장기화 시 하방이 더 커질 수 있음"
+   },
+   "sources": [
+    {
+     "title": "Wall Street ends lower ahead of Nvidia earnings, Anthropic debut",
+     "url": "https://www.marketscreener.com/news/wall-street-ends-lower-ahead-of-nvidia-earnings-anthropic-debut-ce785edcdc8df226"
+    },
+    {
+     "title": "New York Stocks Fall Broadly Ahead of Nvidia Earnings (BigGo)",
+     "url": "https://finance.biggo.com/news/e0c1bf46-a63f-48e9-81f9-b54a392cd4d5"
+    }
+   ]
+  },
+  "GOOGL": {
+   "headline": "전일 등락률 미확인, 지수 연동",
+   "move_reasons": [
+    "시세 데이터 미확보로 등락률 확인 못함",
+    "S&P500 -1.0%, 전 업종 하락한 위험회피 장세",
+    "뚜렷한 개별 이슈 없음(섹터·지수 흐름 연동)"
+   ],
+   "driver_type": "매크로",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "금리 인상 우려와 NVDA 실적 결과에 따라 AI 빅테크 전반이 움직일 전망. 개별 일정은 확인하지 못함.",
+    "key_events": [
+     "11/17(화) 장 마감 후 NVDA 실적",
+     "11/18(수) FOMC 의사록(한국 11/19 04:00)",
+     "11/19(목) Anthropic 상장"
+    ],
+    "watch_points": [
+     "NVDA 실적 후 AI 투자 심리",
+     "12월 금리 인상 확률 95% 수준 반영"
+    ]
+   },
+   "analyst_take": "최근 증권사 컨센서스는 매수 우위이며 목표가 평균은 시세 대비 여유가 큼. 이번 주 신규 변경은 확인하지 못함.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "검색 점유율·데이터와 자체 AI 인프라(TPU) 수직 통합",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(검색 기준)"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "보유 유지, 지수 변동성 관리",
+    "if_up": "실적·FOMC 후 지수가 안정되면 → 비중 유지, 추가는 분할로 검토",
+    "if_down": "시장 급락이 이어지면 → 비중 점검 등 리스크 관리 검토",
+    "levels": [
+     {
+      "label": "목표",
+      "price": 400.37357,
+      "basis": "증권사 평균 목표가"
+     }
+    ],
+    "risk": "금리 인상 확정 시 성장주 전반 밸류에이션 압박"
+   },
+   "sources": [
+    {
+     "title": "Wall Street ends lower ahead of Nvidia earnings, Anthropic debut",
+     "url": "https://www.marketscreener.com/news/wall-street-ends-lower-ahead-of-nvidia-earnings-anthropic-debut-ce785edcdc8df226"
+    },
+    {
+     "title": "New York Stocks Fall Broadly Ahead of Nvidia Earnings (BigGo)",
+     "url": "https://finance.biggo.com/news/e0c1bf46-a63f-48e9-81f9-b54a392cd4d5"
+    }
+   ]
+  },
+  "MU": {
+   "headline": "전일 등락률 미확인, 반도체 약세 지속",
+   "move_reasons": [
+    "시세 데이터 미확보로 등락률 확인 못함",
+    "반도체 약세·AI 지출 둔화 우려 지속",
+    "NVDA 실적에 HBM 수요 시사점 대기"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "NVDA 실적의 HBM 관련 코멘트가 단기 방향을 좌우할 전망. 자체 실적은 12월 예정.",
+    "key_events": [
+     "11/17(화) 장 마감 후 NVDA 실적",
+     "11/19(목) FOMC 의사록 후 금리 반응",
+     "12/24 자체 실적(보도 기준)"
+    ],
+    "watch_points": [
+     "NVDA HBM 수요 코멘트",
+     "반도체지수 낙폭 회복 여부"
+    ]
+   },
+   "analyst_take": "최근 증권사들은 메모리 공급 부족을 근거로 높은 목표가를 유지하고 있음. 이번 주 신규 변경은 확인하지 못함.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "HBM·첨단 DRAM 공정 기술력과 3사 과점 구조",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(검색 기준)"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "보유 유지, NVDA 실적 확인 후 판단",
+    "if_up": "NVDA 실적에서 AI 수요가 확인되며 반도체가 반등하면 → 비중 유지",
+    "if_down": "반도체 급락이 이어지면 → 비중 일부 축소 등 리스크 관리 검토",
+    "levels": [
+     {
+      "label": "목표",
+      "price": 1561.9111,
+      "basis": "증권사 평균 목표가"
+     }
+    ],
+    "risk": "AI 지출 둔화 우려가 재확산될 경우"
+   },
+   "sources": [
+    {
+     "title": "Wall Street ends lower ahead of Nvidia earnings, Anthropic debut",
+     "url": "https://www.marketscreener.com/news/wall-street-ends-lower-ahead-of-nvidia-earnings-anthropic-debut-ce785edcdc8df226"
+    },
+    {
+     "title": "New York Stocks Fall Broadly Ahead of Nvidia Earnings (BigGo)",
+     "url": "https://finance.biggo.com/news/e0c1bf46-a63f-48e9-81f9-b54a392cd4d5"
+    }
+   ]
+  },
+  "BE": {
+   "headline": "전일 등락률 미확인, AI 전력주 변동성",
+   "move_reasons": [
+    "시세 데이터 미확보로 등락률 확인 못함",
+    "AI 인프라 투자 둔화 우려와 고금리 부담",
+    "뚜렷한 개별 이슈 없음(섹터·지수 흐름 연동)"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "AI 데이터센터 투자 심리와 금리에 민감해 NVDA 실적 반응에 연동될 전망. 개별 일정은 확인하지 못함.",
+    "key_events": [
+     "11/17(화) 장 마감 후 NVDA 실적",
+     "11/19(목) FOMC 의사록(한국시간)"
+    ],
+    "watch_points": [
+     "AI 인프라 투자 코멘트",
+     "10년물 금리 방향"
+    ]
+   },
+   "analyst_take": "컨센서스 목표가는 시세 대비 높으나 변동성이 커 의견이 갈림. 이번 주 신규 변경은 확인하지 못함.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "고체산화물 연료전지(SOFC) 기술과 데이터센터 현지발전 납품 실적",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(검색 기준)"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "보유 유지, 변동성 감안한 비중 관리",
+    "if_up": "AI 인프라 심리가 회복되면 → 비중 유지, 추가는 분할로 검토",
+    "if_down": "AI 투자 둔화 신호가 나오면 → 비중 일부 축소 등 리스크 관리 검토",
+    "levels": [
+     {
+      "label": "목표",
+      "price": 283.84616,
+      "basis": "증권사 평균 목표가"
+     }
+    ],
+    "risk": "고변동성 종목으로 지수 급락 시 낙폭이 클 수 있음"
+   },
+   "sources": [
+    {
+     "title": "Wall Street ends lower ahead of Nvidia earnings, Anthropic debut",
+     "url": "https://www.marketscreener.com/news/wall-street-ends-lower-ahead-of-nvidia-earnings-anthropic-debut-ce785edcdc8df226"
+    },
+    {
+     "title": "New York Stocks Fall Broadly Ahead of Nvidia Earnings (BigGo)",
+     "url": "https://finance.biggo.com/news/e0c1bf46-a63f-48e9-81f9-b54a392cd4d5"
+    }
+   ]
+  },
+  "PANW": {
+   "headline": "실적 하루 앞두고 관망, 등락률 미확인",
+   "move_reasons": [
+    "시세 데이터 미확보로 등락률 확인 못함",
+    "11/18(수) 장 마감 후 회계 1분기 실적 발표 예정",
+    "소프트웨어주 약세(Intuit -7%, Workday -5.8%) 영향 가능"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "11/18 장 마감 후(한국 11/19 아침) 실적 발표가 핵심 이벤트임. 가이던스와 플랫폼화 성과에 따라 변동성이 클 전망.",
+    "key_events": [
+     "11/18(수) 장 마감 후 FQ1 실적(한국 11/19 아침)",
+     "11/19(목) 실적 반응"
+    ],
+    "watch_points": [
+     "ARR·가이던스",
+     "소프트웨어 업종 약세 지속 여부"
+    ]
+   },
+   "analyst_take": "컨센서스는 매수 우위이며 목표가 평균은 시세 대비 여유가 있음. 이번 주 신규 변경은 확인하지 못함.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "방화벽·SASE·SOC 통합 플랫폼과 고객 락인",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(검색 기준)"
+   },
+   "action_plan": {
+    "stance": "관망",
+    "summary": "관망, 실적 확인 후 진입 판단",
+    "if_up": "실적에서 가이던스가 안정적이면 → 분할 진입 검토",
+    "if_down": "실적 후 급락하면 → 진입 보류하고 안정 확인 후 재검토",
+    "levels": [
+     {
+      "label": "목표",
+      "price": 398.62686,
+      "basis": "증권사 평균 목표가"
+     }
+    ],
+    "risk": "소프트웨어 약세가 이어지면 좋은 실적에도 하락할 수 있음"
+   },
+   "sources": [
+    {
+     "title": "Wall Street ends lower ahead of Nvidia earnings, Anthropic debut",
+     "url": "https://www.marketscreener.com/news/wall-street-ends-lower-ahead-of-nvidia-earnings-anthropic-debut-ce785edcdc8df226"
+    },
+    {
+     "title": "New York Stocks Fall Broadly Ahead of Nvidia Earnings (BigGo)",
+     "url": "https://finance.biggo.com/news/e0c1bf46-a63f-48e9-81f9-b54a392cd4d5"
+    }
+   ]
+  }
+ },
+ "strategy_summary": {
+  "overview": "전 업종 하락한 위험회피 장세이며 NVDA 실적·FOMC 의사록 확인 전까지 보유 종목은 비중 유지, 신규 진입은 실적 후 판단. 금리 인상 우려가 커 변동성 관리가 우선임.",
+  "focus": [
+   "NVDA 실적 결과와 가이던스(한국 11/18 06:20경 발표)",
+   "PANW 11/18 장 마감 후 실적",
+   "11/19 04:00 FOMC 의사록·Anthropic 상장"
+  ]
+ },
+ "news": {
+  "market_wrap": "S&P500 -1.02%(7,341), 나스닥 -0.74%, 다우 -1.67%로 전 업종이 하락했고 S&P500은 9월 이후 첫 4일 연속 하락임. 소프트웨어·은행·항공 약세가 두드러짐.",
+  "mood": "위험회피",
+  "top_news": [
+   {
+    "rank": 1,
+    "title": "NVDA 실적 장 마감 후 발표",
+    "summary": "CEO 사임 후 첫 분기 실적으로 시장 예상은 매출 약 1,091억 달러임. 결과는 작성 시점에 미확인임.",
+    "impact": "혼조",
+    "affects": "둘다",
+    "why": "시총 최상위 NVDA 가이던스가 AI 반도체·나스닥 심리를 좌우함.",
+    "source": "BigGo Finance",
+    "url": "https://finance.biggo.com/news/e0c1bf46-a63f-48e9-81f9-b54a392cd4d5"
+   },
+   {
+    "rank": 2,
+    "title": "연준 매파 발언·12월 인상 기대",
+    "summary": "연준 인사들이 끈질긴 물가를 이유로 인상 경로를 시사했고 12월 25bp 인상 확률이 95%대로 반영됨. 한 연준 총재는 추가 100~150bp 인상을 언급함.",
+    "impact": "하락",
+    "affects": "둘다",
+    "why": "금리 상승은 성장주 밸류에이션과 AI 투자 자금조달을 압박함.",
+    "source": "MarketScreener",
+    "url": "https://www.marketscreener.com/news/wall-street-ends-lower-ahead-of-nvidia-earnings-anthropic-debut-ce785edcdc8df226"
+   },
+   {
+    "rank": 3,
+    "title": "소프트웨어주 급락",
+    "summary": "Intuit -7.2%, Workday -5.8% 등 소프트웨어가 약세를 주도함. 은행·항공도 부진했음.",
+    "impact": "하락",
+    "affects": "NASDAQ",
+    "why": "소프트웨어 비중이 큰 나스닥·S&P500 성장주 지수를 끌어내림.",
+    "source": "MarketScreener",
+    "url": "https://www.marketscreener.com/news/wall-street-ends-lower-ahead-of-nvidia-earnings-anthropic-debut-ce785edcdc8df226"
+   },
+   {
+    "rank": 4,
+    "title": "유가 상승·수입물가 급등",
+    "summary": "WTI 87달러, 브렌트 94달러로 유가가 올랐고 수입물가가 석유 가격으로 상승함. 소매판매는 견조했음.",
+    "impact": "하락",
+    "affects": "둘다",
+    "why": "물가 재상승 우려가 금리 인상 기대를 키움.",
+    "source": "BigGo Finance",
+    "url": "https://finance.biggo.com/news/e0c1bf46-a63f-48e9-81f9-b54a392cd4d5"
+   },
+   {
+    "rank": 5,
+    "title": "Anthropic IPO 가격 결정·상장",
+    "summary": "공모가가 희망범위(70~78달러) 상단을 넘을 수 있다는 보도임. 11/18 가격 결정, 11/19 나스닥 상장 예정임.",
+    "impact": "혼조",
+    "affects": "NASDAQ",
+    "why": "AI 수요 확인 호재지만 기존 AI주 자금이 이동할 우려도 있음.",
+    "source": "BigGo Finance",
+    "url": "https://finance.biggo.com/news/e0c1bf46-a63f-48e9-81f9-b54a392cd4d5"
+   }
+  ],
+  "tonight": [
+   "11/18(수) 06:20경 NVDA 실적 발표 결과 확인(한국시간)",
+   "11/18(수) 미국 FOMC 10월 의사록(한국 11/19 04:00)",
+   "11/18(수) 장 마감 후 PANW 실적(한국 11/19 아침)",
+   "11/18(수) Anthropic 공모가 결정, 11/19 상장"
+  ]
+ }
+}
