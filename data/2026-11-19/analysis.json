@@ -1,0 +1,370 @@
+{
+ "meta": {
+  "model": "sonnet",
+  "mode": "daily",
+  "session_date": "2026-11-18",
+  "notes": "비상 모드: market.json 미생성(웹 시세). 11/18 지수 종가·NVDA 종가는 확인 못해 null(NVDA 등락률 -2.9%만 Kiplinger 확인). GOOGL·MU·BE·PANW 종가·등락률·PANW 실적 결과 미확인. 52주 고저·목표가는 11/18 market_web 값 재사용. 가격 레벨은 목표가(NVDA는 52주 저점 추가)만 사용. 종목별 웹검색 생략."
+ },
+ "tickers": {
+  "NVDA": {
+   "headline": "실적 호조에도 장중 반전, -2.9%",
+   "move_reasons": [
+    "11/17 장후 실적: 매출 115.8B(예상 108.8B)·Q4 가이던스 130B",
+    "장 초반 +2% 상승 후 매도 전환해 -2.9% 마감",
+    "CEO 공백·소프트웨어/금리 인상 우려가 상승분 반납"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "실적은 예상을 웃돌았으나 주가는 '재료 소멸' 반응을 보임. CEO 승계와 규제 이슈가 단기 방향을 좌우할 전망.",
+    "key_events": [
+     "11/19(목) Anthropic 상장",
+     "12/01~02 하원 비공개 증언",
+     "12/09 FOMC(인상 확률 91%)"
+    ],
+    "watch_points": [
+     "실적 후 반등 실패 여부(저점 148.8달러)",
+     "CEO 후임 선정 진행",
+     "AI칩 수출 허가제 확대"
+    ]
+   },
+   "analyst_take": "Bernstein이 11/12 중립으로 하향하며 목표가를 200달러로 낮췄고 Freedom Capital도 230달러로 하향함. 실적 호조에도 CEO 공백 리스크가 의견을 갈라놓음.",
+   "extra_actions": [
+    {
+     "date": "11/12",
+     "firm": "Bernstein",
+     "rating": "Market Perform",
+     "target": 200,
+     "prior_target": 400,
+     "note": "의견 하향, CEO 리스크"
+    },
+    {
+     "date": "11/18",
+     "firm": "Freedom Capital",
+     "rating": "-",
+     "target": 230,
+     "prior_target": 305,
+     "note": "목표가 하향"
+    }
+   ],
+   "moat_watch": {
+    "moat": "CUDA 소프트웨어 생태계와 개발자 락인",
+    "status": "주의",
+    "threats": [
+     {
+      "issue": "CEO 관련 이사회 조사·의회 중국 칩 유출 압박",
+      "type": "규제",
+      "severity": "중간",
+      "new": false,
+      "url": "https://thenextweb.com/news/house-chairs-jensen-huang-briefing-megaspeed"
+     },
+     {
+      "issue": "美, AI칩 원격접속 우회 차단 규칙 신규 발표",
+      "type": "규제",
+      "severity": "중간",
+      "new": false,
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262307685-us-stock-nasdaq-falls-nvidia-amd-drops-us-ai-chip-curbs-tradingkey"
+     },
+     {
+      "issue": "미 상무부, 동남아·브라질 AI칩 수출 허가제 제안",
+      "type": "규제",
+      "severity": "중간",
+      "new": true,
+      "url": "https://www.kiplinger.com/news/live/nvidia-earnings-live-updates-and-commentary-november-2026"
+     }
+    ],
+    "verdict": "CUDA 해자는 유지되나 CEO 공백·수출규제 확대로 규제 리스크 지속"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "실적 호조에도 약세, 보유 유지",
+    "if_up": "150달러대 회복 후 지수 안정 시 → 비중 유지, 추격 추가는 자제",
+    "if_down": "52주 저점(148.8달러) 이탈 시 → 비중 일부 축소 등 리스크 관리 검토",
+    "levels": [
+     {
+      "label": "지지",
+      "price": 148.8,
+      "basis": "52주 저점"
+     },
+     {
+      "label": "목표",
+      "price": 267.6463,
+      "basis": "증권사 평균 목표가"
+     }
+    ],
+    "risk": "CEO 공백 장기화·금리 인상 확정 시 실적 호재가 무력화될 수 있음"
+   },
+   "sources": [
+    {
+     "title": "Nvidia Earnings: Live Updates (Kiplinger)",
+     "url": "https://www.kiplinger.com/news/live/nvidia-earnings-live-updates-and-commentary-november-2026"
+    }
+   ]
+  },
+  "GOOGL": {
+   "headline": "전일 등락률 미확인, NVDA 반락 연동",
+   "move_reasons": [
+    "시세 데이터 미확보로 등락률 확인 못함",
+    "NVDA 실적 후 장중 반전(-2.9%) 흐름 연동 가능",
+    "뚜렷한 개별 이슈 없음(섹터·지수 흐름 연동)"
+   ],
+   "driver_type": "매크로",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "NVDA 실적 후 반응과 금리 인상 우려에 연동될 전망. 개별 일정은 확인하지 못함.",
+    "key_events": [
+     "11/19(목) Anthropic 상장",
+     "12/09 FOMC(인상 확률 91%)"
+    ],
+    "watch_points": [
+     "NVDA 반락 지속 여부",
+     "금리 인상 기대 변화"
+    ]
+   },
+   "analyst_take": "최근 증권사 컨센서스는 매수 우위이며 목표가 평균은 시세 대비 여유가 큼. 이번 주 신규 변경은 확인하지 못함.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "검색 점유율·데이터와 자체 AI 인프라(TPU) 수직 통합",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(검색 기준)"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "보유 유지, 지수 변동성 관리",
+    "if_up": "실적·FOMC 후 지수가 안정되면 → 비중 유지, 추가는 분할로 검토",
+    "if_down": "시장 급락이 이어지면 → 비중 점검 등 리스크 관리 검토",
+    "levels": [
+     {
+      "label": "목표",
+      "price": 400.37357,
+      "basis": "증권사 평균 목표가"
+     }
+    ],
+    "risk": "금리 인상 확정 시 성장주 전반 밸류에이션 압박"
+   },
+   "sources": [
+    {
+     "title": "Nvidia Earnings: Live Updates (Kiplinger)",
+     "url": "https://www.kiplinger.com/news/live/nvidia-earnings-live-updates-and-commentary-november-2026"
+    }
+   ]
+  },
+  "MU": {
+   "headline": "전일 등락률 미확인, NVDA 반락 연동",
+   "move_reasons": [
+    "시세 데이터 미확보로 등락률 확인 못함",
+    "NVDA 실적 후 장중 반전(-2.9%) 흐름 연동 가능",
+    "뚜렷한 개별 이슈 없음(섹터·지수 흐름 연동)"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "NVDA 실적 후 반응과 금리 인상 우려에 연동될 전망. 개별 일정은 확인하지 못함.",
+    "key_events": [
+     "11/19(목) Anthropic 상장",
+     "12/09 FOMC(인상 확률 91%)"
+    ],
+    "watch_points": [
+     "NVDA 반락 지속 여부",
+     "금리 인상 기대 변화"
+    ]
+   },
+   "analyst_take": "최근 증권사들은 메모리 공급 부족을 근거로 높은 목표가를 유지하고 있음. 이번 주 신규 변경은 확인하지 못함.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "HBM·첨단 DRAM 공정 기술력과 3사 과점 구조",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(검색 기준)"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "보유 유지, NVDA 실적 확인 후 판단",
+    "if_up": "NVDA 실적에서 AI 수요가 확인되며 반도체가 반등하면 → 비중 유지",
+    "if_down": "반도체 급락이 이어지면 → 비중 일부 축소 등 리스크 관리 검토",
+    "levels": [
+     {
+      "label": "목표",
+      "price": 1561.9111,
+      "basis": "증권사 평균 목표가"
+     }
+    ],
+    "risk": "AI 지출 둔화 우려가 재확산될 경우"
+   },
+   "sources": [
+    {
+     "title": "Nvidia Earnings: Live Updates (Kiplinger)",
+     "url": "https://www.kiplinger.com/news/live/nvidia-earnings-live-updates-and-commentary-november-2026"
+    }
+   ]
+  },
+  "BE": {
+   "headline": "전일 등락률 미확인, NVDA 반락 연동",
+   "move_reasons": [
+    "시세 데이터 미확보로 등락률 확인 못함",
+    "NVDA 실적 후 장중 반전(-2.9%) 흐름 연동 가능",
+    "뚜렷한 개별 이슈 없음(섹터·지수 흐름 연동)"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "NVDA 실적 후 반응과 금리 인상 우려에 연동될 전망. 개별 일정은 확인하지 못함.",
+    "key_events": [
+     "11/19(목) Anthropic 상장",
+     "12/09 FOMC(인상 확률 91%)"
+    ],
+    "watch_points": [
+     "NVDA 반락 지속 여부",
+     "금리 인상 기대 변화"
+    ]
+   },
+   "analyst_take": "컨센서스 목표가는 시세 대비 높으나 변동성이 커 의견이 갈림. 이번 주 신규 변경은 확인하지 못함.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "고체산화물 연료전지(SOFC) 기술과 데이터센터 현지발전 납품 실적",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(검색 기준)"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "보유 유지, 변동성 감안한 비중 관리",
+    "if_up": "AI 인프라 심리가 회복되면 → 비중 유지, 추가는 분할로 검토",
+    "if_down": "AI 투자 둔화 신호가 나오면 → 비중 일부 축소 등 리스크 관리 검토",
+    "levels": [
+     {
+      "label": "목표",
+      "price": 283.84616,
+      "basis": "증권사 평균 목표가"
+     }
+    ],
+    "risk": "고변동성 종목으로 지수 급락 시 낙폭이 클 수 있음"
+   },
+   "sources": [
+    {
+     "title": "Nvidia Earnings: Live Updates (Kiplinger)",
+     "url": "https://www.kiplinger.com/news/live/nvidia-earnings-live-updates-and-commentary-november-2026"
+    }
+   ]
+  },
+  "PANW": {
+   "headline": "실적 발표일, 등락률·결과 미확인",
+   "move_reasons": [
+    "시세 데이터 미확보로 등락률 확인 못함",
+    "11/18 장 마감 후 FQ1 실적 발표(결과 미확인)",
+    "뚜렷한 개별 이슈 없음(섹터·지수 흐름 연동)"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "11/18 장 마감 후 발표된 실적 결과를 확인하지 못함. 오늘 장 반응과 가이던스가 방향을 좌우할 전망.",
+    "key_events": [
+     "11/18(수) 장 마감 후 FQ1 실적(결과 미확인)",
+     "11/19(목) 실적 반응"
+    ],
+    "watch_points": [
+     "ARR·가이던스",
+     "소프트웨어 업종 약세 지속 여부"
+    ]
+   },
+   "analyst_take": "컨센서스는 매수 우위이며 목표가 평균은 시세 대비 여유가 있음. 이번 주 신규 변경은 확인하지 못함.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "방화벽·SASE·SOC 통합 플랫폼과 고객 락인",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(검색 기준)"
+   },
+   "action_plan": {
+    "stance": "관망",
+    "summary": "관망, 실적 반응 확인 후 판단",
+    "if_up": "실적 반응이 안정적이면 → 분할 진입 검토",
+    "if_down": "실적 후 급락하면 → 진입 보류하고 안정 확인 후 재검토",
+    "levels": [
+     {
+      "label": "목표",
+      "price": 398.62686,
+      "basis": "증권사 평균 목표가"
+     }
+    ],
+    "risk": "소프트웨어 약세가 이어지면 좋은 실적에도 하락할 수 있음"
+   },
+   "sources": [
+    {
+     "title": "Nvidia Earnings: Live Updates (Kiplinger)",
+     "url": "https://www.kiplinger.com/news/live/nvidia-earnings-live-updates-and-commentary-november-2026"
+    }
+   ]
+  }
+ },
+ "strategy_summary": {
+  "overview": "NVDA 실적 호조에도 반락해 심리가 약하고 금리 인상 우려가 남아 보유 종목은 비중 유지, 신규 진입은 PANW 실적 반응 확인 후 판단. 시세 일부를 확인하지 못해 보수적으로 접근.",
+  "focus": [
+   "NVDA 52주 저점(148.8달러) 방어 여부",
+   "PANW 실적 반응(결과 미확인)",
+   "11/19 Anthropic 상장·12/09 금리 인상 기대"
+  ]
+ },
+ "news": {
+  "market_wrap": "11/18 지수 종가는 확인하지 못함. NVDA는 장 초반 +2% 후 -2.9%로 반전해 AI 심리가 약했음.",
+  "mood": "위험회피",
+  "top_news": [
+   {
+    "rank": 1,
+    "title": "NVDA 호실적에도 장중 반전",
+    "summary": "매출 115.8B·Q4 가이던스 130B로 예상을 웃돌았으나 -2.9% 마감함. 150B 자사주 매입도 발표함.",
+    "impact": "하락",
+    "affects": "둘다",
+    "why": "시총 최상위 NVDA의 매도 전환이 AI·나스닥 심리를 누름.",
+    "source": "Kiplinger",
+    "url": "https://www.kiplinger.com/news/live/nvidia-earnings-live-updates-and-commentary-november-2026"
+   },
+   {
+    "rank": 2,
+    "title": "12월 금리 인상 기대 91%",
+    "summary": "CME FedWatch가 12/9 25bp 인상 확률을 91%로 반영함.",
+    "impact": "하락",
+    "affects": "둘다",
+    "why": "금리 상승은 성장주 밸류에이션을 압박함.",
+    "source": "Kiplinger",
+    "url": "https://www.kiplinger.com/news/live/nvidia-earnings-live-updates-and-commentary-november-2026"
+   },
+   {
+    "rank": 3,
+    "title": "NVDA CEO 공백 장기화",
+    "summary": "이사회는 CEO 복귀 의사가 없다고 밝히고 후임을 물색 중이며 독립 조사가 진행됨.",
+    "impact": "하락",
+    "affects": "NASDAQ",
+    "why": "거버넌스 불확실성이 AI 대장주 프리미엄을 낮춤.",
+    "source": "Kiplinger",
+    "url": "https://www.kiplinger.com/news/live/nvidia-earnings-live-updates-and-commentary-november-2026"
+   },
+   {
+    "rank": 4,
+    "title": "AI칩 수출 허가제 확대 제안",
+    "summary": "상무부가 말레이시아·태국·인도네시아·싱가포르·브라질 대상 허가 요건을 제안함.",
+    "impact": "하락",
+    "affects": "NASDAQ",
+    "why": "반도체 매출 지역 제약 우려가 커짐.",
+    "source": "Kiplinger",
+    "url": "https://www.kiplinger.com/news/live/nvidia-earnings-live-updates-and-commentary-november-2026"
+   },
+   {
+    "rank": 5,
+    "title": "PANW 실적·Anthropic 상장",
+    "summary": "PANW는 11/18 장후 실적을 발표했고(결과 미확인) Anthropic은 11/19 상장 예정임.",
+    "impact": "혼조",
+    "affects": "NASDAQ",
+    "why": "보안 소프트웨어와 AI 신규 상장이 기술주 수급·심리를 좌우함.",
+    "source": "Kiplinger",
+    "url": "https://www.kiplinger.com/news/live/nvidia-earnings-live-updates-and-commentary-november-2026"
+   }
+  ],
+  "tonight": [
+   "11/19 미국 장 개장: PANW 실적 반응",
+   "11/19 Anthropic 상장",
+   "주간 신규 실업수당 청구(21:30)"
+  ]
+ }
+}
