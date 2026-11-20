@@ -1,0 +1,355 @@
+{
+ "meta": {
+  "model": "sonnet",
+  "mode": "daily",
+  "session_date": "2026-11-20",
+  "notes": "비상 모드(market.json 미도착, 웹 기반 갱신). 11/20(금) 확인: S&P500 6,910.39(-3.70%)·NASDAQ 22,617.73(-5.28%)·NVDA 125.53(-14.01%)는 CappNotes·Motley Fool 기준(Fool은 S&P -3.82%/나스닥 -5.13% 등 일부 수치 불일치), MU -13.89%·BE -15.30%는 CappNotes 기준. VIX 35.89, 美10년물 4.92%(-12bp). GOOGL(GOOG 264.0달러, -2.6%는 Fool 기재, 종가 미반영)·PANW는 종가·등락률 확인 못해 null, MU·BE 종가도 미확인. NVDA SEC 회계조사는 로이터 보도를 CappNotes가 인용한 것으로 직접 교차검증 못함. 52주 고저·목표가·투자의견은 직전 값 재사용(NVDA 52주 저점은 125.53으로 갱신). 증권사 개별 변경·MU/BE 하락 개별 사유는 확인 못함. 해자 위협은 NVDA 신규(SEC·캘리포니아 AG)만 반영하고 나머지는 직전 유지. 가격 레벨은 market.json 수치만 사용."
+ },
+ "tickers": {
+  "NVDA": {
+   "headline": "SEC 회계조사 보도에 -14%",
+   "move_reasons": [
+    "SEC 집행팀의 회계 문제 조사 보도(로이터 인용)",
+    "AI 투자 회의론에 반도체 전반 급락(AMD·브로드컴 -12%)",
+    "수출규제·캘리포니아 AG 소환장 등 규제 리스크 겹침"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "부정",
+    "summary": "7거래일 연속 하락 후 -14% 급락으로 변동성이 극단적임. 월요일 반등 여부와 SEC 조사 구체 내용이 관건임.",
+    "key_events": [
+     "11/23(월) 미국장 재개",
+     "11/26(목) 추수감사절 휴장",
+     "11/27(금) 단축거래"
+    ],
+    "watch_points": [
+     "SEC 조사 공식 확인·공시 여부",
+     "12/9 FOMC 인상 가능성(Kalshi 90%)"
+    ]
+   },
+   "analyst_take": "컨센서스는 매수 우위(매수47·보유14·매도1), 평균 목표가 약 268달러로 현재가 대비 괴리가 매우 큼. 11/20 당일 개별 증권사 변경은 확인 못함.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "CUDA 소프트웨어 생태계와 개발자 락인",
+    "status": "주의",
+    "threats": [
+     {
+      "issue": "SEC 집행팀 회계 조사·캘리포니아 AG 중국 유출 소환장",
+      "type": "규제",
+      "severity": "높음",
+      "new": true,
+      "url": "https://cappnotes.substack.com/p/closing-look-friday-november-20-2026"
+     },
+     {
+      "issue": "CEO 관련 이사회 조사·의회 중국 칩 유출 압박",
+      "type": "규제",
+      "severity": "중간",
+      "new": false,
+      "url": "https://thenextweb.com/news/house-chairs-jensen-huang-briefing-megaspeed"
+     },
+     {
+      "issue": "美, AI칩 원격접속 우회 차단 규칙 강화",
+      "type": "규제",
+      "severity": "중간",
+      "new": false,
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262307685-us-stock-nasdaq-falls-nvidia-amd-drops-us-ai-chip-curbs-tradingkey"
+     }
+    ],
+    "verdict": "SEC 회계조사·규제 리스크가 새로 부각됐으나 CUDA 생태계 자체의 훼손 신호는 아직 없음"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "조사 내용 확인 전 조건부 대응",
+    "if_up": "월요일 반등이 거래량 동반하며 이어지면 → 보유 유지, 추격 추가는 자제",
+    "if_down": "종가 기준 125.5달러 저점 이탈이 이어지고 조사 악재가 구체화되면 → 비중 일부 축소로 리스크 관리 검토",
+    "levels": [
+     {
+      "label": "목표",
+      "price": 267.6463,
+      "basis": "증권사 평균 목표가"
+     }
+    ],
+    "risk": "SEC 조사가 확대되면 반등 없이 하락이 길어질 수 있음"
+   },
+   "sources": [
+    {
+     "title": "Motley Fool: Nvidia's $2.5T rout deepens as SEC probe adds to AI sell-off",
+     "url": "https://www.fool.com/coverage/stock-market-today/2026/11/20/stock-market-today-nov-20-nvidia-s-usd2-5-trillion-rout-deepens-as-sec-accounting-probe-adds-to-wall-street-s-ai-sell-off/"
+    },
+    {
+     "title": "CappNotes: Closing Look Nov 20 2026",
+     "url": "https://cappnotes.substack.com/p/closing-look-friday-november-20-2026"
+    }
+   ]
+  },
+  "GOOGL": {
+   "headline": "AI 투매에 동반 약세",
+   "move_reasons": [
+    "AI 투매·기술주 -7% 급락 속 동반 하락(GOOG 약 -2.6%, Fool)",
+    "개별 악재는 확인 못함"
+   ],
+   "driver_type": "매크로",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "급락 직후 변동성이 큰 구간이며 다음 거래일은 11/23(월)임. 추수감사절 주간 저유동성 유의.",
+    "key_events": [
+     "11/23(월) 미국장 재개",
+     "11/26(목) 추수감사절 휴장",
+     "11/27(금) 단축거래"
+    ],
+    "watch_points": [
+     "월요일 AI·반도체주 반등 여부",
+     "추수감사절 주간 저유동성 변동성"
+    ]
+   },
+   "analyst_take": "컨센서스는 매수 우위이며 평균 목표가는 400.4달러임.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "검색 점유율·데이터와 자체 AI 인프라(TPU) 수직 통합",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(확인된 기사 기준)"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "시세 미확인, 조건부 대응",
+    "if_up": "지수 반등 안착 시 → 비중 유지하며 추세 확인",
+    "if_down": "지수 추가 급락·VIX 급등 지속 시 → 비중·변동성 점검 후 리스크 관리 검토",
+    "levels": [
+     {
+      "label": "목표",
+      "price": 400.37357,
+      "basis": "증권사 평균 목표가"
+     }
+    ],
+    "risk": "급락장에서 개별 사유를 확인하지 못해 판단 정확도 낮음"
+   },
+   "sources": [
+    {
+     "title": "StockAnalysis GOOGL 뉴스 요약",
+     "url": "https://stockanalysis.com/stocks/googl/?r=1104a"
+    }
+   ]
+  },
+  "MU": {
+   "headline": "메모리주 -13.9% 급락",
+   "move_reasons": [
+    "메모리·스토리지주 동반 급락(-13.89%)",
+    "AI 투자 회의론·NVDA 조사 보도 파장, 개별 뉴스는 미확인"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "급락 직후 변동성이 큰 구간이며 다음 거래일은 11/23(월)임. 추수감사절 주간 저유동성 유의.",
+    "key_events": [
+     "11/23(월) 미국장 재개",
+     "11/26(목) 추수감사절 휴장",
+     "11/27(금) 단축거래"
+    ],
+    "watch_points": [
+     "월요일 AI·반도체주 반등 여부",
+     "추수감사절 주간 저유동성 변동성"
+    ]
+   },
+   "analyst_take": "컨센서스는 매수 우위이며 평균 목표가는 1561.9달러임.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "HBM·첨단 DRAM 공정 기술력과 3사 과점 구조",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(확인된 기사 기준)"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "시세 미확인, 조건부 대응",
+    "if_up": "지수 반등 안착 시 → 비중 유지하며 추세 확인",
+    "if_down": "지수 추가 급락·VIX 급등 지속 시 → 비중·변동성 점검 후 리스크 관리 검토",
+    "levels": [
+     {
+      "label": "목표",
+      "price": 1561.9111,
+      "basis": "증권사 평균 목표가"
+     }
+    ],
+    "risk": "급락장에서 개별 사유를 확인하지 못해 판단 정확도 낮음"
+   },
+   "sources": [
+    {
+     "title": "Trefis: Why Did Micron Stock Fall Nearly 8%?",
+     "url": "https://www.trefis.com/stock/mu/articles/625793/why-did-micron-stock-fall-nearly-8/2026-11-17"
+    }
+   ]
+  },
+  "BE": {
+   "headline": "AI 인프라주 -15.3% 급락",
+   "move_reasons": [
+    "AI 데이터센터 인프라 테마 투매(-15.30%)",
+    "개별 사유는 확인 못함"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "급락 직후 변동성이 큰 구간이며 다음 거래일은 11/23(월)임. 추수감사절 주간 저유동성 유의.",
+    "key_events": [
+     "11/23(월) 미국장 재개",
+     "11/26(목) 추수감사절 휴장",
+     "11/27(금) 단축거래"
+    ],
+    "watch_points": [
+     "월요일 AI·반도체주 반등 여부",
+     "추수감사절 주간 저유동성 변동성"
+    ]
+   },
+   "analyst_take": "바클레이즈가 11/4 투자의견을 Overweight로 상향(목표가 289달러, 기존 316달러)함. 컨센서스 평균 목표가는 283.8달러임.",
+   "extra_actions": [
+    {
+     "date": "11/04",
+     "firm": "Barclays",
+     "rating": "Overweight(상향)",
+     "target": 289,
+     "prior_target": 316,
+     "note": "투자의견 상향·목표가 조정"
+    }
+   ],
+   "moat_watch": {
+    "moat": "고체산화물 연료전지(SOFC) 기술과 데이터센터 현지발전 납품 실적",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(확인된 기사 기준)"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "시세 미확인, 조건부 대응",
+    "if_up": "지수 반등 안착 시 → 비중 유지하며 추세 확인",
+    "if_down": "지수 추가 급락·VIX 급등 지속 시 → 비중·변동성 점검 후 리스크 관리 검토",
+    "levels": [
+     {
+      "label": "목표",
+      "price": 283.84616,
+      "basis": "증권사 평균 목표가"
+     }
+    ],
+    "risk": "급락장에서 개별 사유를 확인하지 못해 판단 정확도 낮음"
+   },
+   "sources": [
+    {
+     "title": "StockAnalysis BE 뉴스 요약",
+     "url": "https://stockanalysis.com/stocks/be"
+    }
+   ]
+  },
+  "PANW": {
+   "headline": "시세 미확인(지수 급락 연동)",
+   "move_reasons": [
+    "11/20 종가·등락률 미확인",
+    "S&P -3.7%·NASDAQ -5.3% 급락장 연동 추정"
+   ],
+   "driver_type": "매크로",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "급락 직후 변동성이 큰 구간이며 다음 거래일은 11/23(월)임. 추수감사절 주간 저유동성 유의.",
+    "key_events": [
+     "11/23(월) 미국장 재개",
+     "11/26(목) 추수감사절 휴장",
+     "11/27(금) 단축거래"
+    ],
+    "watch_points": [
+     "월요일 AI·반도체주 반등 여부",
+     "추수감사절 주간 저유동성 변동성"
+    ]
+   },
+   "analyst_take": "컨센서스는 매수 우위이며 평균 목표가는 398.6달러임.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "방화벽·SASE·SOC 통합 플랫폼과 고객 락인",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(확인된 기사 기준)"
+   },
+   "action_plan": {
+    "stance": "관망",
+    "summary": "시세 미확인, 조건부 대응",
+    "if_up": "실적 후 반등이 지수 안정과 함께 이어지면 → 분할 진입 검토",
+    "if_down": "지수 추가 하락 시 → 진입 보류하고 관망",
+    "levels": [
+     {
+      "label": "목표",
+      "price": 398.62686,
+      "basis": "증권사 평균 목표가"
+     }
+    ],
+    "risk": "급락장에서 개별 사유를 확인하지 못해 판단 정확도 낮음"
+   },
+   "sources": []
+  }
+ },
+ "strategy_summary": {
+  "overview": "S&P500 조정 진입·VIX 35.9의 위험회피 국면으로 보유 종목은 조건부 리스크 점검 중심임. 반등 확인 전 추격 매수는 자제함.",
+  "focus": [
+   "NVDA SEC 회계조사 후속 보도(해자 주의)",
+   "월요일 AI·반도체주 기술적 반등 여부",
+   "12/9 FOMC 금리 인상 가능성"
+  ]
+ },
+ "news": {
+  "market_wrap": "S&P500 6,910(-3.70%)·NASDAQ 22,618(-5.28%)·다우 -1.9%로 마감, S&P500은 7거래일 연속 하락에 조정 구간 진입함. 기술주 -7%대, 엔비디아 -14%에 VIX 35.9로 급등함.",
+  "mood": "위험회피",
+  "top_news": [
+   {
+    "rank": 1,
+    "title": "엔비디아 SEC 회계조사 보도, -14%",
+    "summary": "SEC 집행팀이 엔비디아 회계 문제를 들여다본다는 보도가 나옴. 시총 약 2.5조 달러가 증발함.",
+    "impact": "하락",
+    "affects": "둘다",
+    "why": "시총 최상위 종목 급락이 지수 하락을 직접 주도함.",
+    "source": "Motley Fool",
+    "url": "https://www.fool.com/coverage/stock-market-today/2026/11/20/stock-market-today-nov-20-nvidia-s-usd2-5-trillion-rout-deepens-as-sec-accounting-probe-adds-to-wall-street-s-ai-sell-off/"
+   },
+   {
+    "rank": 2,
+    "title": "AI 반도체 투매(AMD·브로드컴 -12%)",
+    "summary": "AI 투자 회수 의문에 반도체·메모리주가 동반 급락함. 마이크론 -13.9%.",
+    "impact": "하락",
+    "affects": "NASDAQ",
+    "why": "지수 내 AI·반도체 비중이 커 나스닥 -5%대 낙폭을 키움.",
+    "source": "StockTitan",
+    "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-20-2026"
+   },
+   {
+    "rank": 3,
+    "title": "연준 인상 경계 확산",
+    "summary": "쿡·폴슨 이사가 인상 가능성을 시사해 12/9 FOMC 인상 확률이 Kalshi 기준 90%로 반영됨.",
+    "impact": "하락",
+    "affects": "둘다",
+    "why": "금리 인상 우려가 성장주 밸류에이션을 압박함.",
+    "source": "CappNotes",
+    "url": "https://cappnotes.substack.com/p/closing-look-friday-november-20-2026"
+   },
+   {
+    "rank": 4,
+    "title": "VIX 35.9 급등·안전자산 선호",
+    "summary": "VIX가 3월 말 이후 최고로 뛰고 美10년물은 4.92%로 12bp 하락함.",
+    "impact": "하락",
+    "affects": "둘다",
+    "why": "변동성 확대로 위험자산 비중 축소가 가속될 수 있음.",
+    "source": "CappNotes",
+    "url": "https://cappnotes.substack.com/p/closing-look-friday-november-20-2026"
+   },
+   {
+    "rank": 5,
+    "title": "Anthropic 상장 2일차 AI 수급 재편",
+    "summary": "Anthropic이 공모가 83달러 위인 88.62달러로 마감함. 기존 AI 대형주에서 자금이 이동했다는 해석이 나옴.",
+    "impact": "혼조",
+    "affects": "NASDAQ",
+    "why": "AI 테마 내 자금 이동이 대형 반도체주 약세를 부추김.",
+    "source": "StockTitan",
+    "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-20-2026"
+   }
+  ],
+  "tonight": [
+   "주말: 미국장 휴장, 다음 거래일 11/23(월) 22:30 개장",
+   "11/26(목) 추수감사절 미국장 휴장, 11/27(금) 단축거래(~03:00 KST 마감)",
+   "주말 AI칩 수출규제·NVDA CEO 후임 관련 뉴스 체크"
+  ]
+ }
+}

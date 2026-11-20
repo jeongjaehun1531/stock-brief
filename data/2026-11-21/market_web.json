@@ -1,0 +1,80 @@
+{
+ "session_date": "2026-11-20",
+ "tickers": {
+  "NVDA": {
+   "close": 125.53,
+   "change_pct": -14.01,
+   "week_pct": null,
+   "month_pct": null,
+   "next_earnings": null,
+   "high_52w": 243.3699951171875,
+   "low_52w": 125.53,
+   "target_mean": 267.6463,
+   "target_high": 515.0,
+   "target_low": 130.0,
+   "buy": 47,
+   "hold": 14,
+   "sell": 1
+  },
+  "GOOGL": {
+   "next_earnings": null,
+   "high_52w": 408.6099853515625,
+   "low_52w": 270.70001220703125,
+   "target_mean": 400.37357,
+   "target_high": 500.0,
+   "target_low": 300.0,
+   "buy": 53,
+   "hold": 5,
+   "sell": 0,
+   "close": null,
+   "change_pct": null
+  },
+  "MU": {
+   "high_52w": 1255.0,
+   "low_52w": 192.58999633789062,
+   "target_mean": 1561.9111,
+   "target_high": 3000.0,
+   "target_low": 361.0,
+   "buy": 45,
+   "hold": 4,
+   "sell": 0,
+   "close": null,
+   "change_pct": -13.89
+  },
+  "BE": {
+   "high_52w": 351.2799987792969,
+   "low_52w": 75.69999694824219,
+   "target_mean": 283.84616,
+   "target_high": 380.0,
+   "target_low": 102.0,
+   "buy": 16,
+   "hold": 12,
+   "sell": 1,
+   "close": null,
+   "change_pct": -15.3
+  },
+  "PANW": {
+   "next_earnings": null,
+   "high_52w": 432.3299865722656,
+   "low_52w": 139.57000732421875,
+   "target_mean": 398.62686,
+   "target_high": 525.0,
+   "target_low": 190.0,
+   "buy": 43,
+   "hold": 11,
+   "sell": 1,
+   "close": null,
+   "change_pct": null
+  }
+ },
+ "indices": {
+  "^GSPC": {
+   "close": 6910.39,
+   "change_pct": -3.7
+  },
+  "^IXIC": {
+   "close": 22617.73,
+   "change_pct": -5.28
+  }
+ }
+}
