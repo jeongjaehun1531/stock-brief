@@ -1,0 +1,429 @@
+{
+ "meta": {
+  "model": "sonnet",
+  "mode": "weekly",
+  "session_date": "2026-11-20",
+  "notes": "시세: 11/21 수집본(금 11/20 종가) 재사용. 웹검색 7회·페이지조회 4회 수행. 검색 결과에 2025년 기사가 다수 섞여 주말·이번 주 일정은 확인된 것만 반영(경제지표 세부 일시·타 기업 실적은 미확인이라 제외/표기). MU·BE·GOOGL·PANW 주간 개별 사유는 확인 못해 섹터 연동으로 기술. 11/21자 분석의 NVDA 위협(SEC 조사 등)은 new:false로 재게재. 가격 레벨은 market.json 수치만 사용."
+ },
+ "tickers": {
+  "NVDA": {
+   "headline": "실적 후 -23% 주간 폭락",
+   "move_reasons": [
+    "CEO 사임·중국 유출 의혹 속 11/18 실적 발표",
+    "11/20 SEC 회계조사 보도로 하루 -14%",
+    "AI 투자 회의론에 AMD·브로드컴 등 동반 급락"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "부정",
+    "summary": "주간 -22.9%, 1개월 -40.8%로 52주 저점(124.5달러) 바로 위에서 마감함. 이번 주는 SEC 조사 후속 보도와 CEO 후임 소식에 따라 변동성이 클 전망.",
+    "key_events": [
+     "SEC 조사·이사회 안보위원회 후속 보도",
+     "11/26(목) 추수감사절 휴장",
+     "11/27(금) 단축거래"
+    ],
+    "watch_points": [
+     "52주 저점 124.5달러 방어 여부",
+     "거래량 급증 속 반등 시 지속성",
+     "CEO 후임·규제 뉴스"
+    ]
+   },
+   "analyst_take": "11/12 골드만(220달러)·BMO(240달러) 등이 목표가를 일제히 낮췄고 평균 목표가는 약 244달러로 현재가 대비 괴리가 큼. 실적 후 추가 조정 가능성이 있어 이번 주 리포트 확인 필요.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "CUDA 소프트웨어 생태계와 개발자 락인",
+    "status": "이상 없음",
+    "threats": [
+     {
+      "issue": "SEC 집행팀 회계 조사·캘리포니아 AG 중국 유출 소환장",
+      "type": "규제",
+      "severity": "높음",
+      "new": false,
+      "url": "https://cappnotes.substack.com/p/closing-look-friday-november-20-2026"
+     },
+     {
+      "issue": "CEO 관련 이사회 조사·의회 중국 칩 유출 압박",
+      "type": "규제",
+      "severity": "중간",
+      "new": false,
+      "url": "https://thenextweb.com/news/house-chairs-jensen-huang-briefing-megaspeed"
+     },
+     {
+      "issue": "美, AI칩 원격접속 우회 차단 규칙 강화",
+      "type": "규제",
+      "severity": "중간",
+      "new": false,
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262307685-us-stock-nasdaq-falls-nvidia-amd-drops-us-ai-chip-curbs-tradingkey"
+     }
+    ],
+    "verdict": "신규 위협은 없으나 기존 규제·지배구조 리스크가 이어지고 CUDA 생태계 자체의 훼손 신호는 아직 없음"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "저점 방어 확인 전 추가 매수 보류",
+    "if_up": "반등해도 SEC 조사 불확실성이 남아 있으면 → 추격 추가 없이 비중 유지",
+    "if_down": "52주 저점(124.5달러) 종가 이탈 시 → 비중 일부 축소로 리스크 관리 검토",
+    "levels": [
+     {
+      "label": "지지",
+      "price": 124.5,
+      "basis": "52주 저점"
+     }
+    ],
+    "risk": "SEC 조사가 확대되며 실적 신뢰 훼손으로 이어질 경우"
+   },
+   "sources": [
+    {
+     "title": "Stock Market Today Nov 20: Nvidia's $2.5T rout deepens (Motley Fool)",
+     "url": "https://www.fool.com/coverage/stock-market-today/2026/11/20/stock-market-today-nov-20-nvidia-s-usd2-5-trillion-rout-deepens-as-sec-accounting-probe-adds-to-wall-street-s-ai-sell-off/"
+    },
+    {
+     "title": "Another wipeout hits Wall Street (AP)",
+     "url": "https://www.wcax.com/2026/11/17/another-wipeout-hits-wall-street-nvidia-other-jittery-ai-stocks-swing-lower/?outputType=amp"
+    },
+    {
+     "title": "Closing Look Friday Nov 20, 2026 (CappNotes)",
+     "url": "https://cappnotes.substack.com/p/closing-look-friday-november-20-2026"
+    }
+   ]
+  },
+  "GOOGL": {
+   "headline": "AI 투매 속 주간 -10%",
+   "move_reasons": [
+    "AI 투자 회의론·금리 인상 경계에 빅테크 동반 약세",
+    "금요일 -2.7%로 52주 저점(264.2달러) 근접",
+    "개별 악재는 확인 못함(섹터 연동)"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "주간 -10.3%, 1개월 -18.2%로 모든 이동평균선 아래에 있음. 다만 NVDA 대비 낙폭은 작아 이번 주는 시장 변동성에 연동될 전망.",
+    "key_events": [
+     "11/26(목) 추수감사절 휴장",
+     "11/27(금) 단축거래"
+    ],
+    "watch_points": [
+     "52주 저점 264.2달러 지지 여부",
+     "20일선(289.45달러) 회복 여부"
+    ]
+   },
+   "analyst_take": "10월 말 실적 후 씨티(375달러)·웰스파고(365달러) 등이 목표가를 낮췄으나 매수 의견은 유지됨. 평균 목표가 약 397달러로 현재가 대비 여력이 크다는 평가임.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "검색 점유율·데이터와 자체 AI 인프라(TPU) 수직 통합",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(확인된 기사 기준)"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "저점 지지 확인하며 보유",
+    "if_up": "20일선(289.45달러) 회복 시 → 비중 유지, 추세 전환 확인 후 판단",
+    "if_down": "52주 저점(264.22달러) 이탈 시 → 비중 일부 축소로 리스크 관리 검토",
+    "levels": [
+     {
+      "label": "지지",
+      "price": 264.22,
+      "basis": "52주 저점"
+     },
+     {
+      "label": "저항",
+      "price": 289.45,
+      "basis": "20일선"
+     },
+     {
+      "label": "저항",
+      "price": 322.3,
+      "basis": "50일선"
+     }
+    ],
+    "risk": "AI 투자 회의론이 빅테크 전반 멀티플 하락으로 번질 경우"
+   },
+   "sources": [
+    {
+     "title": "Another wipeout hits Wall Street (AP)",
+     "url": "https://www.wcax.com/2026/11/17/another-wipeout-hits-wall-street-nvidia-other-jittery-ai-stocks-swing-lower/?outputType=amp"
+    }
+   ]
+  },
+  "MU": {
+   "headline": "반도체 투매에 주간 -24%",
+   "move_reasons": [
+    "금요일 -13.9%, AI 반도체·메모리 동반 급락",
+    "NVDA SEC 조사 보도와 AI 투자 회수 의문 파장",
+    "개별 뉴스는 확인 못함(섹터 연동)"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "부정",
+    "summary": "주간 -23.6%, 1개월 -30.6%로 200일선(772.5달러) 아래로 밀림. 다음 실적(12/18)까지 반도체 섹터 수급과 NVDA 흐름에 좌우될 전망.",
+    "key_events": [
+     "다음 실적 12/18",
+     "11/27(금) 단축거래"
+    ],
+    "watch_points": [
+     "SOX 지수 반등 여부",
+     "메모리 가격·HBM 수요 코멘트"
+    ]
+   },
+   "analyst_take": "평균 목표가 약 1,562달러로 현재가 대비 괴리가 매우 큼. 10월 실적 이후 로젠블랫(1,900달러)·니덤(1,650달러) 등 매수 의견 유지.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "HBM·첨단 DRAM 공정 기술력과 3사 과점 구조",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(확인된 기사 기준)"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "변동성 확대, 추가 매수 신중",
+    "if_up": "200일선(772.54달러) 회복 시 → 추세 복원 신호로 보고 비중 유지",
+    "if_down": "섹터 투매가 이어져 주간 저점을 재차 이탈하면 → 비중 축소 여부 점검",
+    "levels": [
+     {
+      "label": "저항",
+      "price": 772.54,
+      "basis": "200일선"
+     }
+    ],
+    "risk": "AI 수요 둔화 우려가 메모리 가격 전망까지 번질 경우"
+   },
+   "sources": [
+    {
+     "title": "Another wipeout hits Wall Street (AP)",
+     "url": "https://www.wcax.com/2026/11/17/another-wipeout-hits-wall-street-nvidia-other-jittery-ai-stocks-swing-lower/?outputType=amp"
+    }
+   ]
+  },
+  "BE": {
+   "headline": "AI 전력주 투매 주간 -26%",
+   "move_reasons": [
+    "금요일 -15.3%, AI 데이터센터 인프라 테마 급락",
+    "AI 투자 회의론·금리 고점 우려로 고밸류 종목 압박",
+    "개별 사유는 확인 못함"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "부정",
+    "summary": "주간 -25.8%, 1개월 -34.6%로 모든 이동평균선을 하회함. 이번 주는 AI 인프라 센티먼트와 금리 방향에 연동될 전망.",
+    "key_events": [
+     "11/27(금) 단축거래"
+    ],
+    "watch_points": [
+     "AI 데이터센터 투자 관련 코멘트",
+     "10년물 금리 방향"
+    ]
+   },
+   "analyst_take": "바클레이즈가 11/3 Overweight로 상향(289달러), RBC는 11/9 Outperform·335달러 유지함. 평균 목표가 약 283달러.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "고체산화물 연료전지(SOFC) 기술과 데이터센터 현지발전 납품 실적",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(확인된 기사 기준)"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "고변동 종목, 비중 관리 우선",
+    "if_up": "20일선(192.12달러) 회복 시 → 추세 반전 확인 후 비중 유지 판단",
+    "if_down": "주간 저점을 재차 이탈하면 → 비중 일부 축소로 리스크 관리 검토",
+    "levels": [
+     {
+      "label": "목표",
+      "price": 282.69,
+      "basis": "증권사 평균 목표가"
+     }
+    ],
+    "risk": "AI 인프라 투자 둔화가 수주에 영향을 줄 경우"
+   },
+   "sources": [
+    {
+     "title": "Another wipeout hits Wall Street (AP)",
+     "url": "https://www.wcax.com/2026/11/17/another-wipeout-hits-wall-street-nvidia-other-jittery-ai-stocks-swing-lower/?outputType=amp"
+    }
+   ]
+  },
+  "PANW": {
+   "headline": "급락장 속 주간 +6.5% 선방",
+   "move_reasons": [
+    "주간은 +6.5%로 방어적 성격 부각",
+    "금요일 -5.1%로 시장 급락에 연동",
+    "개별 악재는 확인 못함"
+   ],
+   "driver_type": "매크로",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "주간 +6.5%로 시장 대비 강했으나 금요일 하락으로 20일선 아래로 내려옴. 다음 실적은 2027/2/17로 이번 주 개별 이벤트는 없음.",
+    "key_events": [
+     "이번 주 예정 실적 없음"
+    ],
+    "watch_points": [
+     "20일선(345.93달러) 회복 여부",
+     "200일선(281.38달러) 지지"
+    ]
+   },
+   "analyst_take": "11/12 제프리스가 목표가를 400달러로 하향(기존 450달러), 매수 유지. 평균 목표가 약 410달러.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "방화벽·SASE·SOC 통합 플랫폼과 고객 락인",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(확인된 기사 기준)"
+   },
+   "action_plan": {
+    "stance": "관망",
+    "summary": "시장 안정 확인 후 진입 검토",
+    "if_up": "20일선(345.93달러) 회복·안착 시 → 분할 진입 검토",
+    "if_down": "200일선(281.38달러) 근처까지 조정 시 → 지지 확인 후 진입 검토",
+    "levels": [
+     {
+      "label": "지지",
+      "price": 281.38,
+      "basis": "200일선"
+     },
+     {
+      "label": "저항",
+      "price": 345.93,
+      "basis": "20일선"
+     },
+     {
+      "label": "목표",
+      "price": 409.72,
+      "basis": "증권사 평균 목표가"
+     }
+    ],
+    "risk": "시장 급락이 지속되면 방어주도 동반 하락할 수 있음"
+   },
+   "sources": []
+  }
+ },
+ "strategy_summary": {
+  "overview": "지난주 지수와 AI 반도체가 급락해 이번 주는 방어적 기조를 권장함. 저점 방어 여부를 확인하기 전에는 추격 매수보다 비중 관리가 우선임.",
+  "focus": [
+   "NVDA 52주 저점(124.5달러) 방어와 SEC 조사 후속",
+   "12/9 FOMC 앞둔 금리 인상 경계",
+   "추수감사절 주간 얇은 거래량 속 변동성"
+  ]
+ },
+ "news": {
+  "market_wrap": "지난주 S&P500 -8.6%(6,910), NASDAQ -10.0%(22,618)로 급락했고 금요일 하루 -3.7%·-5.3%였음. NVDA 실적 후 AI 반도체 투매에 VIX는 약 36까지 올랐고 10년물은 4.91%로 마감함.",
+  "mood": "위험회피",
+  "top_news": [
+   {
+    "rank": 1,
+    "title": "엔비디아 SEC 회계조사 후폭풍",
+    "summary": "SEC 회계조사 보도로 엔비디아가 금요일 -14% 급락함. 후속 보도에 따라 이번 주 AI 대형주 변동성이 클 전망.",
+    "impact": "하락",
+    "affects": "둘다",
+    "why": "시총 최상위 종목 흐름이 지수 방향을 좌우함.",
+    "source": "Motley Fool",
+    "url": "https://www.fool.com/coverage/stock-market-today/2026/11/20/stock-market-today-nov-20-nvidia-s-usd2-5-trillion-rout-deepens-as-sec-accounting-probe-adds-to-wall-street-s-ai-sell-off/"
+   },
+   {
+    "rank": 2,
+    "title": "AI 반도체·인프라주 투매 지속 여부",
+    "summary": "AMD·브로드컴 등이 금요일 -12%대, 마이크론 -13.9% 등 동반 급락함. 반등 vs 추가 하락이 이번 주 최대 관건.",
+    "impact": "하락",
+    "affects": "NASDAQ",
+    "why": "지수 내 AI 비중이 커 낙폭이 나스닥에 집중됨.",
+    "source": "StockTitan",
+    "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-20-2026"
+   },
+   {
+    "rank": 3,
+    "title": "연준 인상 경계, 12/9 FOMC",
+    "summary": "연준 이사들의 인상 시사로 12월 인상 확률이 크게 반영됨. 이번 주 연준 인사 발언에 주목.",
+    "impact": "하락",
+    "affects": "둘다",
+    "why": "금리 인상 우려가 성장주 밸류에이션을 누름.",
+    "source": "CappNotes",
+    "url": "https://cappnotes.substack.com/p/closing-look-friday-november-20-2026"
+   },
+   {
+    "rank": 4,
+    "title": "VIX 36 근접, 위험회피 확산",
+    "summary": "VIX가 3월 말 이후 최고 수준으로 뛰고 10년물은 4.91%로 하락함. 안전자산 선호가 강해짐.",
+    "impact": "하락",
+    "affects": "둘다",
+    "why": "변동성 확대가 기관의 위험자산 축소를 부를 수 있음.",
+    "source": "CappNotes",
+    "url": "https://cappnotes.substack.com/p/closing-look-friday-november-20-2026"
+   },
+   {
+    "rank": 5,
+    "title": "추수감사절 주간 얇은 유동성",
+    "summary": "11/26 휴장, 11/27 단축거래로 거래량이 줄어듦. 급락 직후라 작은 뉴스에도 변동폭이 커질 수 있음.",
+    "impact": "혼조",
+    "affects": "둘다",
+    "why": "저유동성 구간에서 낙폭 또는 반등이 과장될 수 있음.",
+    "source": "CappNotes",
+    "url": "https://cappnotes.substack.com/p/closing-look-friday-november-20-2026"
+   }
+  ],
+  "tonight": [
+   "22:30 미국 정규장 개장(월)",
+   "주말 AI칩 수출규제·NVDA CEO 후임 관련 뉴스 확인",
+   "경제지표 세부 일정은 확인 못함(미국 지표 발표 전 체크)"
+  ]
+ },
+ "week_ahead": {
+  "themes": [
+   "AI 반도체 급락 후 저점 확인",
+   "12/9 FOMC 금리 인상 경계",
+   "추수감사절 주간 저유동성"
+  ],
+  "calendar": [
+   {
+    "date": "11/25(화)",
+    "time": "22:30",
+    "event": "미국 주간 신규 실업수당청구(추수감사절 주간 앞당김, 통상 일정)",
+    "importance": "중"
+   },
+   {
+    "date": "11/26(목)",
+    "time": "-",
+    "event": "추수감사절 미국장 휴장",
+    "importance": "상"
+   },
+   {
+    "date": "11/27(금)",
+    "time": "22:30",
+    "event": "블랙프라이데이 단축거래(~03:00 KST 마감)",
+    "importance": "중"
+   },
+   {
+    "date": "12/9(수)",
+    "time": "-",
+    "event": "FOMC 결과 발표 예정(주 후반 인상 경계 지속)",
+    "importance": "상"
+   }
+  ],
+  "earnings": [
+   {
+    "date": "11/18(수)",
+    "ticker": "NVDA",
+    "note": "실적 발표 완료, 후폭풍 진행 중"
+   },
+   {
+    "date": "-",
+    "ticker": "GOOGL",
+    "note": "이번 주 실적 없음"
+   },
+   {
+    "date": "12/18(금)",
+    "ticker": "MU",
+    "note": "다음 실적(이번 주 없음)"
+   },
+   {
+    "date": "-",
+    "ticker": "BE",
+    "note": "이번 주 실적 없음"
+   },
+   {
+    "date": "2027/2/17",
+    "ticker": "PANW",
+    "note": "다음 실적(이번 주 없음)"
+   }
+  ]
+ }
+}
