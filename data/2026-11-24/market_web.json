@@ -2,8 +2,8 @@
  "session_date": "2026-11-23",
  "tickers": {
   "NVDA": {
-   "close": null,
-   "change_pct": null,
+   "close": 165.05,
+   "change_pct": 31.48,
    "week_pct": null,
    "month_pct": null,
    "next_earnings": "2026-11-18",
@@ -32,8 +32,8 @@
    "sell": 0
   },
   "MU": {
-   "close": null,
-   "change_pct": null,
+   "close": 707.7,
+   "change_pct": 19.04,
    "week_pct": null,
    "month_pct": null,
    "next_earnings": "2026-12-18",
@@ -79,12 +79,16 @@
  },
  "indices": {
   "^GSPC": {
-   "close": null,
-   "change_pct": null
+   "close": 7237.17,
+   "change_pct": 4.74
   },
   "^IXIC": {
-   "close": null,
-   "change_pct": null
+   "close": 24089.56,
+   "change_pct": 6.51
+  },
+  "^DJI": {
+   "close": 49595.31,
+   "change_pct": 3.0
   }
  }
 }
