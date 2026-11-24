@@ -1,0 +1,367 @@
+{
+ "meta": {
+  "model": "sonnet",
+  "mode": "daily",
+  "session_date": "2026-11-24",
+  "notes": "비상 모드(market.json 미도착, 웹 기반). 지수 종가·등락률은 BigGo Finance 기사 기준(S&P 7,201 -0.5%, 나스닥 23,733 -1.5%, 다우 50,018 +0.9%). NVDA -5.9%(mlq.ai 제목), MU -11%(BigGo)만 등락률 확인, 개별 종가는 모두 미확인(null). GOOGL은 1%대 하락만 확인, BE·PANW 등락률·뉴스 미확인. 이동평균 없음, 52주 고저·목표가·의견수는 11/24 market.json 재사용. 해자 신규 위협 검색 미실시(직전 moat 재사용, 위협 이월). 신규 관세 내용은 헤드라인 수준만 확인."
+ },
+ "tickers": {
+  "NVDA": {
+   "headline": "전일 +31% 급등분 되돌림(-5.9%)",
+   "move_reasons": [
+    "전일 CEO 복귀 급등 후 차익실현",
+    "반도체지수(SOX) 약 -8% 동반 급락",
+    "AMD·브로드컴 등 AI 반도체 일제 약세"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "급등 직후 변동성이 큰 구간임. 12월 금리 인상 기대와 AI 투자 피로감이 상단을 누르는 전망.",
+    "key_events": [
+     "11/25(수) 22:30 PCE·GDP 2차 추정",
+     "11/26(목) 추수감사절 휴장",
+     "11/27(금) 오후 1시 조기 폐장"
+    ],
+    "watch_points": [
+     "반등 유지 여부(전일 급등분 방어)",
+     "금리 인상 기대 변화",
+     "규제·조사 뉴스"
+    ]
+   },
+   "analyst_take": "11/12 BMO·골드만삭스·씨티가 목표가를 하향했고 평균 목표가는 약 245달러로 높은 편임. 매수 의견 우세(48/12/2).",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "CUDA 소프트웨어 생태계와 개발자 락인",
+    "status": "이상 없음",
+    "threats": [
+     {
+      "issue": "SEC 집행팀 회계 조사·캘리포니아 AG 중국 유출 소환장",
+      "type": "규제",
+      "severity": "높음",
+      "new": false,
+      "url": "https://cappnotes.substack.com/p/closing-look-friday-november-20-2026"
+     },
+     {
+      "issue": "CEO 관련 이사회 조사·의회 중국 칩 유출 압박",
+      "type": "규제",
+      "severity": "중간",
+      "new": false,
+      "url": "https://thenextweb.com/news/house-chairs-jensen-huang-briefing-megaspeed"
+     },
+     {
+      "issue": "美, AI칩 원격접속 우회 차단 규칙 강화",
+      "type": "규제",
+      "severity": "중간",
+      "new": false,
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262307685-us-stock-nasdaq-falls-nvidia-amd-drops-us-ai-chip-curbs-tradingkey"
+     }
+    ],
+    "verdict": "CEO 복귀로 지배구조 리스크 일부 완화, 규제·조사 이슈는 진행 중이며 CUDA 생태계 훼손 신호는 없음"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "급등 되돌림, 추격·투매 모두 자제",
+    "if_up": "PCE 등 물가 안정과 반도체 반등 재개 시 → 보유 유지, 추격 추가는 자제",
+    "if_down": "SOX 급락 확대 시 → 52주 저점 부근 방어 여부 확인하며 비중 점검 검토",
+    "levels": [
+     {
+      "label": "지지",
+      "price": 124.5,
+      "basis": "52주 저점"
+     },
+     {
+      "label": "목표",
+      "price": 244.55,
+      "basis": "증권사 평균 목표가"
+     }
+    ],
+    "risk": "종가 미확인 상태의 판단이며 반도체 변동성이 예상보다 클 수 있음"
+   },
+   "sources": [
+    {
+     "title": "Stock market today: chip sector tumbles, Nvidia falls 6%",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-24-dow-sp-500-nasdaq-chip-stocks-nvidia-140629923.html"
+    },
+    {
+     "title": "Dow Reclaims 50,000; SOX plunges nearly 8%",
+     "url": "https://finance.biggo.com/news/efa4550f-327b-4612-b151-77555e7d62dd"
+    }
+   ]
+  },
+  "GOOGL": {
+   "headline": "빅테크 동반 약세(-1%대 추정)",
+   "move_reasons": [
+    "메타·아마존과 함께 1%대 하락(정확한 종가 미확인)",
+    "나스닥 -1.5% 속 AI 투자 경계 재부각",
+    "뚜렷한 개별 이슈 없음(섹터·지수 흐름 연동)"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "추수감사절 단축 주간으로 거래량이 얇아 지수 방향에 연동될 전망. 개별 이벤트는 확인되지 않음.",
+    "key_events": [
+     "11/25(수) 22:30 PCE·GDP 2차 추정",
+     "11/26(목) 추수감사절 휴장",
+     "11/27(금) 오후 1시 조기 폐장"
+    ],
+    "watch_points": [
+     "빅테크 AI 투자 부담 논란",
+     "TPU 관련 뉴스",
+     "금리 인상 기대"
+    ]
+   },
+   "analyst_take": "평균 목표가 약 396달러로 매수 의견 압도적(53/6/0). 11/24 기준 신규 변경은 확인하지 못함.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "검색 점유율·데이터와 자체 AI 인프라(TPU) 수직 통합",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(확인된 기사 기준)"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "지수 연동, 별도 대응 불필요",
+    "if_up": "물가지표 안정과 기술주 반등 시 → 보유 유지",
+    "if_down": "52주 저점 이탈 시 → 비중 점검과 리스크 관리 검토",
+    "levels": [
+     {
+      "label": "지지",
+      "price": 264.22,
+      "basis": "52주 저점"
+     },
+     {
+      "label": "목표",
+      "price": 395.77,
+      "basis": "증권사 평균 목표가"
+     }
+    ],
+    "risk": "종가 미확인이라 현재가 대비 레벨 거리가 부정확할 수 있음"
+   },
+   "sources": [
+    {
+     "title": "Dow Reclaims 50,000; SOX plunges nearly 8%",
+     "url": "https://finance.biggo.com/news/efa4550f-327b-4612-b151-77555e7d62dd"
+    }
+   ]
+  },
+  "MU": {
+   "headline": "메모리 급락 -11%, 전일 급등 반납",
+   "move_reasons": [
+    "SOX -8% 속 메모리·스토리지 동반 급락",
+    "전일 +19% 숏커버링 급등 되돌림",
+    "SK하이닉스·샌디스크 등도 약세"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "고변동 구간이며 12/18 실적 전까지 반도체 심리에 연동될 전망. 단기 방향성은 지수·SOX에 좌우됨.",
+    "key_events": [
+     "12/18(금) 실적(예정)",
+     "11/25(수) 22:30 PCE·GDP 2차 추정",
+     "11/26(목) 추수감사절 휴장"
+    ],
+    "watch_points": [
+     "SOX 반등 여부",
+     "메모리 업황 뉴스",
+     "금리 인상 기대"
+    ]
+   },
+   "analyst_take": "평균 목표가 약 1,550달러로 컨센서스는 매우 높음(45/4/0). 11/24 신규 목표가 변경은 확인하지 못함.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "HBM·첨단 DRAM 공정 기술력과 3사 과점 구조",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(확인된 기사 기준)"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "변동성 확대, 비중 점검 구간",
+    "if_up": "SOX 반등 안착 시 → 보유 유지, 급등 추격은 자제",
+    "if_down": "추가 급락으로 변동성이 커질 시 → 비중 일부 축소로 리스크 관리 검토",
+    "levels": [
+     {
+      "label": "목표",
+      "price": 1550.24,
+      "basis": "증권사 평균 목표가"
+     }
+    ],
+    "risk": "종가 미확인이며 이동평균 부재로 가격 기준이 제한적임"
+   },
+   "sources": [
+    {
+     "title": "Stock market today: chip sector tumbles, Nvidia falls 6%",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-24-dow-sp-500-nasdaq-chip-stocks-nvidia-140629923.html"
+    },
+    {
+     "title": "Dow Reclaims 50,000; SOX plunges nearly 8%",
+     "url": "https://finance.biggo.com/news/efa4550f-327b-4612-b151-77555e7d62dd"
+    }
+   ]
+  },
+  "BE": {
+   "headline": "종가 미확인(AI 인프라주 약세 연동 추정)",
+   "move_reasons": [
+    "11/24 종가·등락률 확인 못함",
+    "나스닥 -1.5% 등 AI 관련주 약세 흐름",
+    "개별 이슈 확인되지 않음"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "11월 들어 조정이 깊었던 종목으로 지수·AI 심리에 민감할 전망. 개별 일정은 확인하지 못함.",
+    "key_events": [
+     "11/25(수) 22:30 PCE·GDP 2차 추정",
+     "11/26(목) 추수감사절 휴장",
+     "11/27(금) 오후 1시 조기 폐장"
+    ],
+    "watch_points": [
+     "AI 전력 인프라 수주 뉴스",
+     "금리 인상 기대"
+    ]
+   },
+   "analyst_take": "평균 목표가 약 283달러(중간값 295달러), 매수 17·보유 11·매도 1. 11/24 신규 변경은 확인하지 못함.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "고체산화물 연료전지(SOFC) 기술과 데이터센터 현지발전 납품 실적",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(확인된 기사 기준)"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "확인된 정보 부족, 기존 비중 유지",
+    "if_up": "AI 인프라주 반등 시 → 보유 유지",
+    "if_down": "변동성 확대 시 → 비중 점검과 리스크 관리 검토",
+    "levels": [
+     {
+      "label": "목표",
+      "price": 282.69,
+      "basis": "증권사 평균 목표가"
+     }
+    ],
+    "risk": "종가 미확인으로 현재 위치 판단이 불완전함"
+   },
+   "sources": []
+  },
+  "PANW": {
+   "headline": "종가 미확인(방어 순환 속 보안주)",
+   "move_reasons": [
+    "11/24 종가·등락률 확인 못함",
+    "방어주 쪽 자금 순환 속 소프트웨어는 불명",
+    "개별 이슈 확인되지 않음"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "다음 실적은 2027/02/17로 이벤트 공백 구간임. 지수·금리 흐름에 연동될 전망.",
+    "key_events": [
+     "11/25(수) 22:30 PCE·GDP 2차 추정",
+     "11/26(목) 추수감사절 휴장",
+     "11/27(금) 오후 1시 조기 폐장"
+    ],
+    "watch_points": [
+     "보안주 상대강도",
+     "금리 인상 기대"
+    ]
+   },
+   "analyst_take": "평균 목표가 약 412달러, 매수 우세(43/10/1). 11/24 신규 변경은 확인하지 못함.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "방화벽·SASE·SOC 통합 플랫폼과 고객 락인",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(확인된 기사 기준)"
+   },
+   "action_plan": {
+    "stance": "관망",
+    "summary": "시장 안정 확인 후 진입 검토",
+    "if_up": "지수 안정 시 → 분할 진입 검토",
+    "if_down": "시장 급락 재개 시 → 진입 보류하고 재검토",
+    "levels": [
+     {
+      "label": "저항",
+      "price": 432.33,
+      "basis": "52주 고점"
+     },
+     {
+      "label": "목표",
+      "price": 411.72,
+      "basis": "증권사 평균 목표가"
+     }
+    ],
+    "risk": "종가 미확인으로 진입 시점 판단이 불완전함"
+   },
+   "sources": []
+  }
+ },
+ "strategy_summary": {
+  "overview": "반도체發 급락과 금리 인상 기대로 변동성이 큰 구간이며 방어적 기조가 유효함. 오늘 밤 PCE 확인 전까지 추격 매매보다 비중 점검 위주로 대응 검토.",
+  "focus": [
+   "11/25 22:30 PCE·GDP 결과",
+   "SOX 반등 여부(NVDA·MU)",
+   "12월 금리 인상 기대 변화"
+  ]
+ },
+ "news": {
+  "market_wrap": "11/24(화) 다우 +0.9%(50,018, 50,000 회복)·S&P500 -0.5%(7,201)·나스닥 -1.5%(23,733). SOX 약 -8%로 전일 엔비디아發 반등이 되돌려지며 방어주로 자금 이동.",
+  "mood": "위험회피",
+  "top_news": [
+   {
+    "rank": 1,
+    "title": "반도체 급락, SOX -8%",
+    "summary": "엔비디아 -5.9%, 마이크론 -11% 등 AI 반도체가 전일 급등분을 반납함.",
+    "impact": "하락",
+    "affects": "NASDAQ",
+    "why": "시총 상위 반도체 약세가 나스닥 하락을 주도함.",
+    "source": "Yahoo Finance",
+    "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-24-dow-sp-500-nasdaq-chip-stocks-nvidia-140629923.html"
+   },
+   {
+    "rank": 2,
+    "title": "12월 금리 인상 기대 95%",
+    "summary": "장중 시장은 12월 25bp 인상 확률을 95%로 반영했고 10년물은 약 4.9%임.",
+    "impact": "하락",
+    "affects": "둘다",
+    "why": "금리 인상은 고밸류 기술주 부담으로 작용함.",
+    "source": "Yahoo Finance",
+    "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-24-dow-sp-500-nasdaq-chip-stocks-nvidia-140629923.html"
+   },
+   {
+    "rank": 3,
+    "title": "11/25 PCE·GDP 발표",
+    "summary": "12/9 FOMC 전 핵심 물가지표가 한국시간 오늘 밤 발표됨.",
+    "impact": "혼조",
+    "affects": "둘다",
+    "why": "결과가 금리 인상 경로와 성장주 밸류에이션을 좌우함.",
+    "source": "StockTitan",
+    "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-23-2026"
+   },
+   {
+    "rank": 4,
+    "title": "방어주 순환, 다우 신고가권",
+    "summary": "헬스케어·필수소비·월마트·J&J 등이 강세였고 다우는 50,000을 회복함.",
+    "impact": "혼조",
+    "affects": "S&P500",
+    "why": "성장주→방어주 이동으로 지수 간 차별화가 커짐.",
+    "source": "BigGo Finance",
+    "url": "https://finance.biggo.com/news/efa4550f-327b-4612-b151-77555e7d62dd"
+   },
+   {
+    "rank": 5,
+    "title": "신규 관세 경계·단축 거래 주간",
+    "summary": "블룸버그는 신규 관세 우려를 언급했고 11/26 휴장·11/27 조기 폐장으로 거래량이 줄어듦.",
+    "impact": "하락",
+    "affects": "둘다",
+    "why": "얇은 거래량에서 악재 반응이 과장될 수 있음.",
+    "source": "Bloomberg",
+    "url": "https://bloomberg.com/news/articles/2026-11-24/us-tech-stocks-poised-to-slide-as-ai-caution-returns-after-rally"
+   }
+  ],
+  "tonight": [
+   "22:30 미국 3Q GDP 2차·개인소득/지출·PCE",
+   "11/26(목) 추수감사절 휴장",
+   "11/27(금) 조기 폐장(한국시간 11/28 03:00)"
+  ]
+ }
+}

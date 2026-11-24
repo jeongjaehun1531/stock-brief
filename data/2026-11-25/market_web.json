@@ -1,0 +1,94 @@
+{
+ "session_date": "2026-11-24",
+ "tickers": {
+  "NVDA": {
+   "close": null,
+   "change_pct": -5.9,
+   "week_pct": null,
+   "month_pct": null,
+   "high_52w": 243.3699951171875,
+   "low_52w": 124.5,
+   "target_mean": 244.54807,
+   "target_high": 425.0,
+   "target_low": 130.0,
+   "buy": 48,
+   "hold": 12,
+   "sell": 2,
+   "next_earnings": "2026-11-18"
+  },
+  "GOOGL": {
+   "close": null,
+   "change_pct": null,
+   "week_pct": null,
+   "month_pct": null,
+   "high_52w": 408.6099853515625,
+   "low_52w": 264.2200012207031,
+   "target_mean": 395.7702,
+   "target_high": 500.0,
+   "target_low": 300.0,
+   "buy": 53,
+   "hold": 6,
+   "sell": 0,
+   "next_earnings": "2026-10-29"
+  },
+  "MU": {
+   "close": null,
+   "change_pct": -11.0,
+   "week_pct": null,
+   "month_pct": null,
+   "high_52w": 1255.0,
+   "low_52w": 192.58999633789062,
+   "target_mean": 1550.2444,
+   "target_high": 3000.0,
+   "target_low": 361.0,
+   "buy": 45,
+   "hold": 4,
+   "sell": 0,
+   "next_earnings": "2026-12-18"
+  },
+  "BE": {
+   "close": null,
+   "change_pct": null,
+   "week_pct": null,
+   "month_pct": null,
+   "high_52w": 351.2799987792969,
+   "low_52w": 75.69999694824219,
+   "target_mean": 282.69232,
+   "target_high": 380.0,
+   "target_low": 102.0,
+   "buy": 17,
+   "hold": 11,
+   "sell": 1,
+   "next_earnings": "2026-10-23"
+  },
+  "PANW": {
+   "close": null,
+   "change_pct": null,
+   "week_pct": null,
+   "month_pct": null,
+   "high_52w": 432.3299865722656,
+   "low_52w": 139.57000732421875,
+   "target_mean": 411.7249,
+   "target_high": 510.0,
+   "target_low": 190.0,
+   "buy": 43,
+   "hold": 10,
+   "sell": 1,
+   "next_earnings": "2027-02-17"
+  }
+ },
+ "indices": {
+  "^GSPC": {
+   "close": 7201,
+   "change_pct": -0.5
+  },
+  "^IXIC": {
+   "close": 23733,
+   "change_pct": -1.5
+  },
+  "^DJI": {
+   "close": 50018,
+   "change_pct": 0.9
+  }
+ }
+}
