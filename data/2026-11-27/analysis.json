@@ -1,0 +1,402 @@
+{
+ "meta": {
+  "model": "sonnet",
+  "mode": "daily",
+  "session_date": "2026-11-25",
+  "notes": "11/26 미국 추수감사절 휴장 → 직전 거래일 11/25 기준 분석. 오늘자 market.json 대신 11/26 수집본(11/25 세션) 사용. 개별 종목(GOOGL·MU·BE·PANW) 고유 이슈와 휴장 중 아시아·유럽장, 다음주 일정 세부(ISM·고용 일정)는 검색으로 확인하지 못해 예정으로 표기."
+ },
+ "tickers": {
+  "NVDA": {
+   "headline": "AI 매도·PCE 부담 -3.9%",
+   "move_reasons": [
+    "10월 PCE 근원 3.3%로 12월 인상 기대 강화",
+    "AI 투자 부담 재부각, 반도체 동반 약세",
+    "11/18 실적 후 이틀째 되돌림, 20일선 하회"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "단기 낙폭이 커 기술적 반등 여지는 있으나 금리 인상 기대와 규제 이슈가 상단을 누를 전망. 조기 폐장·얇은 거래량으로 변동성 주의.",
+    "key_events": [
+     "11/27(금) 조기 폐장(한국시간 11/28 03:00)",
+     "12/1(화)~12/3(목) ISM 제조업·서비스 PMI(예정)",
+     "12/4(금) 11월 고용보고서(예정)",
+     "12/8~9 FOMC(인상 기대 반영)"
+    ],
+    "watch_points": [
+     "20일선(172.48달러) 회복 여부",
+     "SOX 반등 지속성",
+     "중국 수출통제·조사 뉴스"
+    ]
+   },
+   "analyst_take": "11월 중순 BMO·골드만·씨티·RBC 등이 목표가를 잇달아 하향했으나 평균 목표가는 약 242달러로 현재가 대비 괴리가 큼(매수 49/보유 12/매도 2). 하향 논리는 AI 투자 사이클 둔화 우려와 밸류에이션 부담임.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "CUDA 소프트웨어 생태계와 개발자 락인",
+    "status": "이상 없음",
+    "threats": [
+     {
+      "issue": "SEC 집행팀 회계 조사·캘리포니아 AG 중국 유출 소환장",
+      "type": "규제",
+      "severity": "높음",
+      "new": false,
+      "url": "https://cappnotes.substack.com/p/closing-look-friday-november-20-2026"
+     },
+     {
+      "issue": "CEO 관련 이사회 조사·의회 중국 칩 유출 압박",
+      "type": "규제",
+      "severity": "중간",
+      "new": false,
+      "url": "https://thenextweb.com/news/house-chairs-jensen-huang-briefing-megaspeed"
+     },
+     {
+      "issue": "美, AI칩 원격접속 우회 차단 규칙 강화",
+      "type": "규제",
+      "severity": "중간",
+      "new": false,
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262307685-us-stock-nasdaq-falls-nvidia-amd-drops-us-ai-chip-curbs-tradingkey"
+     }
+    ],
+    "verdict": "규제·조사 이슈는 진행 중이나 CUDA 생태계 훼손 신호는 새로 확인되지 않음"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "낙폭 과대 구간, 추격·투매 자제",
+    "if_up": "20일선(172.48달러) 회복 시 → 보유 유지, 추격 추가는 자제",
+    "if_down": "52주 저점(124.5달러) 방향으로 하락 확대 시 → 비중 일부 축소로 리스크 관리 검토",
+    "levels": [
+     {
+      "label": "지지",
+      "price": 124.5,
+      "basis": "52주 저점"
+     },
+     {
+      "label": "저항",
+      "price": 172.48,
+      "basis": "20일선"
+     },
+     {
+      "label": "목표",
+      "price": 242.43,
+      "basis": "증권사 평균 목표가"
+     }
+    ],
+    "risk": "AI 투자 피로감과 금리 인상이 예상보다 길어질 수 있음"
+   },
+   "sources": [
+    {
+     "title": "Stocks Close Mixed on Nov 25, 2026 (Vista Partners)",
+     "url": "https://vistapglobal.com/stocks-close-mixed-on-wednesday-november-25-2026-as-hot-pce-inflation-new-tariff-plans-and-an-ai-sell-off-test-wall-street-amd-eprx-googl-modd-nvda-ser-spcx-vix/"
+    }
+   ]
+  },
+  "GOOGL": {
+   "headline": "빅테크 약세 연동 -2.1%",
+   "move_reasons": [
+    "AI 설비투자·수익화 회의론 지속(개별 호재·악재 미확인)",
+    "금리 인상 기대로 대형 성장주 동반 하락",
+    "52주 저점 근처에서 20일선 하회"
+   ],
+   "driver_type": "매크로",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "실적 일정이 없어(다음 실적 2/4) 금리·AI 심리에 연동될 전망. 52주 저점 부근 지지 여부가 관건임.",
+    "key_events": [
+     "11/27(금) 조기 폐장(한국시간 11/28 03:00)",
+     "12/1(화)~12/3(목) ISM 제조업·서비스 PMI(예정)",
+     "12/4(금) 11월 고용보고서(예정)",
+     "12/8~9 FOMC(인상 기대 반영)"
+    ],
+    "watch_points": [
+     "52주 저점(262.73달러) 방어",
+     "AI 설비투자 관련 뉴스",
+     "빅테크 동반 흐름"
+    ]
+   },
+   "analyst_take": "10월 말 씨티·웰스파고·번스타인 등이 목표가를 낮췄으나 평균 목표가 약 395달러로 매수 의견이 압도적(54/6/0). 검색 침식 우려와 AI 비용 증가가 하향 배경임.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "검색 점유율·데이터와 자체 AI 인프라(TPU) 수직 통합",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(검색 중 신규 경쟁 구조 변화 기사 확인 못함)"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "지수 연동, 저점 방어 확인",
+    "if_up": "20일선(283.05달러) 회복 시 → 보유 유지, 추격 추가는 자제",
+    "if_down": "52주 저점(262.73달러) 이탈 시 → 비중 일부 축소로 리스크 관리 검토",
+    "levels": [
+     {
+      "label": "지지",
+      "price": 262.73,
+      "basis": "52주 저점"
+     },
+     {
+      "label": "저항",
+      "price": 283.05,
+      "basis": "20일선"
+     },
+     {
+      "label": "목표",
+      "price": 395.11,
+      "basis": "증권사 평균 목표가"
+     }
+    ],
+    "risk": "AI 검색 대체 우려가 실적으로 확인될 경우"
+   },
+   "sources": [
+    {
+     "title": "Stocks Close Mixed on Nov 25, 2026 (Vista Partners)",
+     "url": "https://vistapglobal.com/stocks-close-mixed-on-wednesday-november-25-2026-as-hot-pce-inflation-new-tariff-plans-and-an-ai-sell-off-test-wall-street-amd-eprx-googl-modd-nvda-ser-spcx-vix/"
+    }
+   ]
+  },
+  "MU": {
+   "headline": "반도체 매도 속 -4.5%",
+   "move_reasons": [
+    "AI 투자 부담에 반도체 동반 급락(장중 낙폭 컸음)",
+    "거래량 평소 대비 약 1.5배, 매도 압력 확대",
+    "최근 1주 -14.7%, 20일선 하회"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "12/18 실적 전까지 반도체·메모리 심리에 연동될 전망. 고변동 구간이라 지수·SOX 방향이 우선임.",
+    "key_events": [
+     "11/27(금) 조기 폐장(한국시간 11/28 03:00)",
+     "12/1(화)~12/3(목) ISM 제조업·서비스 PMI(예정)",
+     "12/4(금) 11월 고용보고서(예정)",
+     "12/8~9 FOMC(인상 기대 반영)",
+     "12/18(금) 실적 발표(예정)"
+    ],
+    "watch_points": [
+     "SOX 반등 여부",
+     "메모리 가격·업황 뉴스",
+     "HBM 경쟁 관련 소식"
+    ]
+   },
+   "analyst_take": "평균 목표가 약 1,530달러로 현재가의 2.5배 수준이며 매수 44/보유 5/매도 0임. 최근 1개월 내 새 목표가 변경은 확인하지 못했음.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "HBM·첨단 DRAM 공정 기술력과 3사 과점 구조",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(HBM 경쟁 관련 신규 기사 확인 못함)"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "변동성 확대, 비중 점검 구간",
+    "if_up": "20일선(742.8달러) 회복 시 → 보유 유지, 급등 추격은 자제",
+    "if_down": "반등 없이 하락 확대 시 → 12/18 실적 전 비중 일부 축소로 리스크 관리 검토",
+    "levels": [
+     {
+      "label": "저항",
+      "price": 742.8,
+      "basis": "20일선"
+     },
+     {
+      "label": "목표",
+      "price": 1529.69,
+      "basis": "증권사 평균 목표가"
+     }
+    ],
+    "risk": "하방 지지 기준이 없어 하락 시 속도가 빠를 수 있음"
+   },
+   "sources": [
+    {
+     "title": "Stocks Close Mixed on Nov 25, 2026 (Vista Partners)",
+     "url": "https://vistapglobal.com/stocks-close-mixed-on-wednesday-november-25-2026-as-hot-pce-inflation-new-tariff-plans-and-an-ai-sell-off-test-wall-street-amd-eprx-googl-modd-nvda-ser-spcx-vix/"
+    }
+   ]
+  },
+  "BE": {
+   "headline": "AI 전력주 약세 -2.3%",
+   "move_reasons": [
+    "AI 인프라 투자 부담에 전력 관련주 동반 하락(개별 이슈 미확인)",
+    "금리 인상 기대로 고밸류 성장주 부담",
+    "최근 1주 -10.6%, 20일선 하회"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "다음 실적은 내년 2월로 단기 개별 이벤트 없음. AI 인프라 심리와 금리에 연동될 전망.",
+    "key_events": [
+     "11/27(금) 조기 폐장(한국시간 11/28 03:00)",
+     "12/1(화)~12/3(목) ISM 제조업·서비스 PMI(예정)",
+     "12/4(금) 11월 고용보고서(예정)",
+     "12/8~9 FOMC(인상 기대 반영)"
+    ],
+    "watch_points": [
+     "AI 데이터센터 투자 뉴스",
+     "20일선(183.46달러) 회복 여부",
+     "금리 흐름"
+    ]
+   },
+   "analyst_take": "RBC가 11/9 Outperform·목표가 335달러를 재확인했고 바클레이즈는 11/3 목표가를 289달러로 낮췄음. 평균 목표가 약 279달러(매수 17/보유 11/매도 1).",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "고체산화물 연료전지(SOFC) 기술과 데이터센터 현지발전 납품 실적",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(확인된 기사 기준)"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "변동성 큼, 기존 비중 점검",
+    "if_up": "20일선(183.46달러) 회복 시 → 보유 유지, 추격 추가는 자제",
+    "if_down": "AI 인프라주 약세 재개 시 → 비중 일부 축소로 리스크 관리 검토",
+    "levels": [
+     {
+      "label": "저항",
+      "price": 183.46,
+      "basis": "20일선"
+     },
+     {
+      "label": "목표",
+      "price": 279.31,
+      "basis": "증권사 평균 목표가"
+     }
+    ],
+    "risk": "하방 지지 기준이 멀어 급락 시 방어선이 부재함"
+   },
+   "sources": [
+    {
+     "title": "Stocks Close Mixed on Nov 25, 2026 (Vista Partners)",
+     "url": "https://vistapglobal.com/stocks-close-mixed-on-wednesday-november-25-2026-as-hot-pce-inflation-new-tariff-plans-and-an-ai-sell-off-test-wall-street-amd-eprx-googl-modd-nvda-ser-spcx-vix/"
+    }
+   ]
+  },
+  "PANW": {
+   "headline": "약세장 속 +0.9% 선방",
+   "move_reasons": [
+    "지수·AI주 약세에도 보안주 방어적 강세(개별 이슈 미확인)",
+    "거래량은 평소보다 적어 완만한 상승",
+    "최근 1주 +4.8%, 20일선 상회"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "실적은 내년 2월로 멀어 지수 흐름에 연동될 전망. 20일선 위 유지 여부가 관건임.",
+    "key_events": [
+     "11/27(금) 조기 폐장(한국시간 11/28 03:00)",
+     "12/1(화)~12/3(목) ISM 제조업·서비스 PMI(예정)",
+     "12/4(금) 11월 고용보고서(예정)",
+     "12/8~9 FOMC(인상 기대 반영)"
+    ],
+    "watch_points": [
+     "20일선(339.72달러) 지지",
+     "50일선(366.18달러) 돌파 여부",
+     "보안 업종 수급"
+    ]
+   },
+   "analyst_take": "11/12 제프리스가 목표가를 450→400달러로 낮췄으나 Buy 유지함. 평균 목표가 약 412달러(매수 43/보유 10/매도 1).",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "방화벽·SASE·SOC 통합 플랫폼과 고객 락인",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(확인된 기사 기준)"
+   },
+   "action_plan": {
+    "stance": "관망",
+    "summary": "시장 안정 확인 후 분할 진입 검토",
+    "if_up": "50일선(366.18달러) 돌파 시 → 분할 진입 검토",
+    "if_down": "20일선(339.72달러) 이탈 시 → 진입 보류하고 재검토",
+    "levels": [
+     {
+      "label": "지지",
+      "price": 339.72,
+      "basis": "20일선"
+     },
+     {
+      "label": "저항",
+      "price": 366.18,
+      "basis": "50일선"
+     },
+     {
+      "label": "목표",
+      "price": 412.12,
+      "basis": "증권사 평균 목표가"
+     }
+    ],
+    "risk": "시장 급락 재개 시 방어주도 동반 하락할 수 있음"
+   },
+   "sources": [
+    {
+     "title": "Stocks Close Mixed on Nov 25, 2026 (Vista Partners)",
+     "url": "https://vistapglobal.com/stocks-close-mixed-on-wednesday-november-25-2026-as-hot-pce-inflation-new-tariff-plans-and-an-ai-sell-off-test-wall-street-amd-eprx-googl-modd-nvda-ser-spcx-vix/"
+    }
+   ]
+  }
+ },
+ "strategy_summary": {
+  "overview": "뜨거운 PCE와 12월 인상 기대, 관세안으로 방어적 기조가 유효함. 오늘은 조기 폐장·얇은 거래량이라 추격 매매보다 비중 점검 위주로 대응 검토.",
+  "focus": [
+   "11/27 조기 폐장 전후 변동성",
+   "NVDA 20일선(172.48달러) 회복 여부",
+   "12/4 고용보고서·12/8~9 FOMC 인상 기대"
+  ]
+ },
+ "news": {
+  "market_wrap": "11/25(수) 다우 +0.33%(50,183)·S&P500 -0.25%(7,183)·나스닥 -0.62%(23,586). 뜨거운 PCE와 신규 관세안, AI 반도체 매도에 장중 밀렸다 방어주 중심으로 낙폭을 줄였고, 11/26(목)은 추수감사절로 휴장했음.",
+  "mood": "위험회피",
+  "top_news": [
+   {
+    "rank": 1,
+    "title": "PCE 근원 3.3%, 12월 인상 기대",
+    "summary": "10월 PCE 근원이 예상을 소폭 웃돌아 12/8~9 FOMC 25bp 인상 기대가 강해짐. 10년물은 4.85% 부근임.",
+    "impact": "하락",
+    "affects": "둘다",
+    "why": "긴축 기대가 고밸류 기술주 할인율을 높임.",
+    "source": "Vista Partners",
+    "url": "https://vistapglobal.com/stocks-close-mixed-on-wednesday-november-25-2026-as-hot-pce-inflation-new-tariff-plans-and-an-ai-sell-off-test-wall-street-amd-eprx-googl-modd-nvda-ser-spcx-vix/"
+   },
+   {
+    "rank": 2,
+    "title": "AI 투자 부담, 반도체 급락",
+    "summary": "엔비디아 -3.9%, 마이크론 -4.5%이며 SOX도 약세였음. 장중 낙폭은 일부 만회했으나 심리는 취약함.",
+    "impact": "하락",
+    "affects": "NASDAQ",
+    "why": "반도체 비중이 큰 나스닥을 직접 압박함.",
+    "source": "Motley Fool",
+    "url": "https://www.fool.com/coverage/stock-market-today/2026/11/25/stock-market-today-nov-25-nvidia-slides-3-9-as-the-market-considers-hot-pce-inflation-data-and-new-tariff-proposals/"
+   },
+   {
+    "rank": 3,
+    "title": "신규 관세안, 최대 20%",
+    "summary": "중국·EU 등 14개국 대상이며 반도체·자동차·철강은 제외로 보도됨. 시행은 이르면 내년 1월, 미중 휴전은 1/10 만료임.",
+    "impact": "하락",
+    "affects": "둘다",
+    "why": "무역 불확실성이 위험선호를 낮춤.",
+    "source": "Vista Partners",
+    "url": "https://vistapglobal.com/stocks-close-mixed-on-wednesday-november-25-2026-as-hot-pce-inflation-new-tariff-plans-and-an-ai-sell-off-test-wall-street-amd-eprx-googl-modd-nvda-ser-spcx-vix/"
+   },
+   {
+    "rank": 4,
+    "title": "VIX 28·유가 84달러 변동성",
+    "summary": "11/25 VIX는 28.3으로 7% 올랐고 WTI는 84달러대로 2.8% 상승함. 다우는 장중 -1,100P에서 반등함.",
+    "impact": "혼조",
+    "affects": "S&P500",
+    "why": "변동성·에너지 가격 상승이 물가 우려를 자극함.",
+    "source": "Motley Fool",
+    "url": "https://www.fool.com/coverage/stock-market-today/2026/11/25/stock-market-today-nov-25-dow-erases-1-100-point-loss-as-wall-street-stages-dramatic-late-day-comeback/"
+   },
+   {
+    "rank": 5,
+    "title": "블랙프라이데이 조기 폐장",
+    "summary": "휴일 중 아시아·유럽 반응은 확인하지 못함. 11/27은 소비 지표 해석과 얇은 거래량이 변수임.",
+    "impact": "혼조",
+    "affects": "둘다",
+    "why": "거래량이 적어 뉴스에 대한 변동성이 과장될 수 있음.",
+    "source": "Vista Partners",
+    "url": "https://vistapglobal.com/stocks-close-mixed-on-wednesday-november-25-2026-as-hot-pce-inflation-new-tariff-plans-and-an-ai-sell-off-test-wall-street-amd-eprx-googl-modd-nvda-ser-spcx-vix/"
+   }
+  ],
+  "tonight": [
+   "23:30 미국 정규장 개장(블랙프라이데이)",
+   "03:00(토) 조기 폐장(미 동부 13:00)",
+   "블랙프라이데이 소비 동향·관세 관련 헤드라인 주시"
+  ]
+ }
+}
