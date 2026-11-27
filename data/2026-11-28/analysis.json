@@ -1,0 +1,338 @@
+{
+ "meta": {
+  "model": "sonnet",
+  "mode": "daily",
+  "session_date": "2026-11-27",
+  "notes": "비상 모드: 시세는 StockTitan·Motley Fool 기사 기준(NVDA 150.49 +0.80%, MU +7.60%로 11/25 종가에서 환산). GOOGL·BE·PANW 종가 미확보, 52주 고저·목표가·의견은 11/25 기준 market.json 이월. 이동평균 없음. 웹검색 1회, 추가 검색 생략."
+ },
+ "tickers": {
+  "NVDA": {
+   "headline": "반등장서 상대적 부진(+0.80%)",
+   "move_reasons": [
+    "반도체 반등에도 상승폭 제한(+0.80%)",
+    "중국 반입 금지 블랙웰 칩 상하이 유통 보도 부담",
+    "CEO 복귀 후 급등락 뒤 조정 국면"
+   ],
+   "driver_type": "혼합",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "반도체 반등 속 규제·수출 이슈로 상대 강도가 약한 상태임. 다음 주 ISM·고용지표와 FOMC 기대가 변동성 요인 전망.",
+    "key_events": [
+     "12/1(화)~12/3(목) ISM 제조업·서비스 PMI(예정)",
+     "12/4(금) 11월 고용보고서(예정)",
+     "12/8~9 FOMC(인상 기대 반영)"
+    ],
+    "watch_points": [
+     "중국 칩 유출·수출통제 후속 보도",
+     "AI 반도체 반등 지속 여부"
+    ]
+   },
+   "analyst_take": "컨센서스 목표가 평균 약 242달러로 현재가 대비 괴리가 크며 매수 의견이 다수임. 규제·조사 이슈가 할인 요인으로 지적됨.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "CUDA 소프트웨어 생태계와 개발자 락인",
+    "status": "이상 없음",
+    "threats": [
+     {
+      "issue": "SEC 집행팀 회계 조사·캘리포니아 AG 중국 유출 소환장",
+      "type": "규제",
+      "severity": "높음",
+      "new": false,
+      "url": "https://cappnotes.substack.com/p/closing-look-friday-november-20-2026"
+     },
+     {
+      "issue": "CEO 관련 이사회 조사·의회 중국 칩 유출 압박",
+      "type": "규제",
+      "severity": "중간",
+      "new": false,
+      "url": "https://thenextweb.com/news/house-chairs-jensen-huang-briefing-megaspeed"
+     },
+     {
+      "issue": "美, AI칩 원격접속 우회 차단 규칙 강화",
+      "type": "규제",
+      "severity": "중간",
+      "new": false,
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262307685-us-stock-nasdaq-falls-nvidia-amd-drops-us-ai-chip-curbs-tradingkey"
+     }
+    ],
+    "verdict": "규제·조사 이슈는 진행 중이나 CUDA 생태계 훼손 신호는 새로 확인되지 않음"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "규제 뉴스 확인하며 비중 유지",
+    "if_up": "반도체 반등이 이어져 종가가 150달러대 위에서 안착하면 → 비중 유지, 추격 추가는 자제",
+    "if_down": "52주 저점(124.5달러)에 근접하면 → 규제 리스크 재점검 후 비중 축소 검토",
+    "levels": [
+     {
+      "label": "지지",
+      "price": 124.5,
+      "basis": "52주 저점"
+     },
+     {
+      "label": "목표",
+      "price": 242.43,
+      "basis": "증권사 평균 목표가"
+     }
+    ],
+    "risk": "수출통제·회계 조사 이슈가 확대될 경우"
+   },
+   "sources": [
+    {
+     "title": "Stock Market Today Live Nov 27 2026",
+     "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-27-2026"
+    }
+   ]
+  },
+  "GOOGL": {
+   "headline": "시세 미확보",
+   "move_reasons": [
+    "11/27 종가·등락률 기사 미확인(시세 미확보)",
+    "지수 전반 상승(S&P500 +1.60%) 흐름 참고"
+   ],
+   "driver_type": "매크로",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "개별 종목 시세는 확인하지 못했으나 시장은 기술주 중심으로 반등함. 다음 주 매크로 지표와 FOMC가 방향 변수 전망.",
+    "key_events": [
+     "12/1(화)~12/3(목) ISM 제조업·서비스 PMI(예정)",
+     "12/4(금) 11월 고용보고서(예정)",
+     "12/8~9 FOMC(인상 기대 반영)"
+    ],
+    "watch_points": [
+     "AI 인프라 투자·TPU 관련 뉴스",
+     "12월 FOMC 기대"
+    ]
+   },
+   "analyst_take": "컨센서스 목표가 평균 약 395달러, 매수 54·보유 6·매도 0으로 우호적임.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "검색 점유율·데이터와 자체 AI 인프라(TPU) 수직 통합",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(검색 중 신규 경쟁 구조 변화 기사 확인 못함)"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "시세 확인 후 판단, 기존 비중 유지",
+    "if_up": "지수 반등이 이어지면 → 비중 유지, 추격 추가는 자제",
+    "if_down": "12월 FOMC 인상 우려로 기술주가 재차 흔들리면 → 비중 점검 검토",
+    "levels": [
+     {
+      "label": "목표",
+      "price": 395.11,
+      "basis": "증권사 평균 목표가"
+     }
+    ],
+    "risk": "당일 시세 미확보로 가격 기준 판단이 제한됨"
+   },
+   "sources": []
+  },
+  "MU": {
+   "headline": "메모리 반등 주도(+7.60%)",
+   "move_reasons": [
+    "AI·반도체주 반등 매수세 유입(+7.60%)",
+    "화~수 급락 뒤 저가 매수 성격",
+    "특별한 개별 악재 없음(섹터 연동)"
+   ],
+   "driver_type": "섹터",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "급락 후 기술적 반등이 나온 구간이라 변동성은 여전히 큼. 12/18 실적 전까지 반도체 투심과 금리가 변수 전망.",
+    "key_events": [
+     "12/18(금) 실적 발표(예정)",
+     "12/1(화)~12/3(목) ISM 제조업·서비스 PMI(예정)",
+     "12/4(금) 11월 고용보고서(예정)",
+     "12/8~9 FOMC(인상 기대 반영)"
+    ],
+    "watch_points": [
+     "반등 지속 여부와 거래량",
+     "HBM 수요·경쟁 관련 뉴스"
+    ]
+   },
+   "analyst_take": "컨센서스 목표가 평균 약 1,530달러로 현재가 대비 괴리가 크며 매수 44·보유 5임.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "HBM·첨단 DRAM 공정 기술력과 3사 과점 구조",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(HBM 경쟁 관련 신규 기사 확인 못함)"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "반등에도 변동성 커 비중 유지",
+    "if_up": "반등이 이어져 고점 부담이 커지면 → 일부 차익 실현 검토, 신규 추가는 자제",
+    "if_down": "반등이 꺾여 다시 급락하면 → 12/18 실적 전 비중 점검 검토",
+    "levels": [
+     {
+      "label": "목표",
+      "price": 1529.69,
+      "basis": "증권사 평균 목표가"
+     }
+    ],
+    "risk": "반도체 급등락 변동성이 지속될 경우"
+   },
+   "sources": [
+    {
+     "title": "Stock Market Today Nov 27: S&P 500 best week in 19 months",
+     "url": "https://www.fool.com/coverage/stock-market-today/2026/11/27/stock-market-today-nov-27-s-and-p-500-posts-best-week-in-19-months-as-ai-stocks-rebound/"
+    }
+   ]
+  },
+  "BE": {
+   "headline": "시세 미확보",
+   "move_reasons": [
+    "11/27 종가·등락률 기사 미확인(시세 미확보)",
+    "AI 전력 인프라 테마는 기술주 반등 흐름 참고"
+   ],
+   "driver_type": "매크로",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "시세 확인이 안 돼 방향 판단은 보수적으로 둠. 고변동 테마주로 금리·지수 흐름 영향이 큰 구간 전망.",
+    "key_events": [
+     "12/1(화)~12/3(목) ISM 제조업·서비스 PMI(예정)",
+     "12/4(금) 11월 고용보고서(예정)",
+     "12/8~9 FOMC(인상 기대 반영)"
+    ],
+    "watch_points": [
+     "AI 데이터센터 전력 수요 뉴스",
+     "금리·FOMC 기대"
+    ]
+   },
+   "analyst_take": "컨센서스 목표가 평균 약 279달러로, 매수 17·보유 11·매도 1로 의견이 갈림.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "고체산화물 연료전지(SOFC) 기술과 데이터센터 현지발전 납품 실적",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(확인된 기사 기준)"
+   },
+   "action_plan": {
+    "stance": "보유 유지",
+    "summary": "시세 확인 후 판단, 비중 유지",
+    "if_up": "테마 반등이 이어지면 → 비중 유지, 추격 추가는 자제",
+    "if_down": "금리 상승으로 성장주가 다시 약세면 → 비중 축소 여부 점검",
+    "levels": [
+     {
+      "label": "목표",
+      "price": 279.31,
+      "basis": "증권사 평균 목표가"
+     }
+    ],
+    "risk": "당일 시세 미확보로 가격 기준 판단이 제한됨"
+   },
+   "sources": []
+  },
+  "PANW": {
+   "headline": "시세 미확보",
+   "move_reasons": [
+    "11/27 종가·등락률 기사 미확인(시세 미확보)",
+    "지수 전반 상승 흐름 참고"
+   ],
+   "driver_type": "매크로",
+   "weekly_outlook": {
+    "stance": "중립",
+    "summary": "시세는 확인하지 못했으며 보안 업종은 실적 공백기라 지수·금리 영향이 큼. 다음 실적은 2/17 예정.",
+    "key_events": [
+     "12/1(화)~12/3(목) ISM 제조업·서비스 PMI(예정)",
+     "12/4(금) 11월 고용보고서(예정)",
+     "12/8~9 FOMC(인상 기대 반영)"
+    ],
+    "watch_points": [
+     "보안주 수급",
+     "금리 흐름"
+    ]
+   },
+   "analyst_take": "컨센서스 목표가 평균 약 412달러, 매수 43·보유 10·매도 1로 우호적임.",
+   "extra_actions": [],
+   "moat_watch": {
+    "moat": "방화벽·SASE·SOC 통합 플랫폼과 고객 락인",
+    "status": "이상 없음",
+    "threats": [],
+    "verdict": "새로운 위협 이슈 없음(확인된 기사 기준)"
+   },
+   "action_plan": {
+    "stance": "관망",
+    "summary": "시세 확인 전 관망",
+    "if_up": "지수 반등이 안정되면 → 분할 진입 검토 가능",
+    "if_down": "금리 부담으로 기술주가 흔들리면 → 진입 보류 유지",
+    "levels": [
+     {
+      "label": "목표",
+      "price": 412.12,
+      "basis": "증권사 평균 목표가"
+     }
+    ],
+    "risk": "당일 시세 미확보로 가격 기준 판단이 제한됨"
+   },
+   "sources": []
+  }
+ },
+ "strategy_summary": {
+  "overview": "반도체 반등으로 위험선호가 회복됐으나 12월 FOMC 인상 기대와 규제 이슈가 남아 비중 유지 기조임. 시세 미확보 종목은 확인 후 판단하는 것이 안전함.",
+  "focus": [
+   "12/1~12/4 ISM·고용지표와 금리 반응",
+   "NVDA 중국 수출통제·조사 후속",
+   "MU 반등 지속 여부(12/18 실적 전)"
+  ]
+ },
+ "news": {
+  "market_wrap": "11/27 블랙프라이데이 단축장에서 S&P500 +1.60%(7,297.49), 나스닥 +2.31%, 다우 +1.18%로 반도체·AI주 반등이 주도함. S&P500은 약 19개월 만의 최고 주간 성과를 기록함.",
+  "mood": "위험선호",
+  "top_news": [
+   {
+    "rank": 1,
+    "title": "반도체·AI주 반등, 주간 최고 성과",
+    "summary": "화~수 급락 뒤 반도체가 급반등해 S&P500이 19개월 만의 최고 주간 상승을 기록함.",
+    "impact": "상승",
+    "affects": "둘다",
+    "why": "반도체 비중이 큰 나스닥의 지수 기여도가 큼.",
+    "source": "Motley Fool",
+    "url": "https://www.fool.com/coverage/stock-market-today/2026/11/27/stock-market-today-nov-27-s-and-p-500-posts-best-week-in-19-months-as-ai-stocks-rebound/"
+   },
+   {
+    "rank": 2,
+    "title": "12월 FOMC 인상 기대와 금리",
+    "summary": "근원 PCE 호조로 12/8~9 FOMC 인상 기대가 반영된 상태임.",
+    "impact": "하락",
+    "affects": "둘다",
+    "why": "긴축 기대가 고밸류 기술주 할인율을 높임.",
+    "source": "전일 분석 참조",
+    "url": "https://vistapglobal.com/stocks-close-mixed-on-wednesday-november-25-2026-as-hot-pce-inflation-new-tariff-plans-and-an-ai-sell-off-test-wall-street-amd-eprx-googl-modd-nvda-ser-spcx-vix/"
+   },
+   {
+    "rank": 3,
+    "title": "엔비디아 중국 반입 칩 이슈",
+    "summary": "중국 반입 금지 블랙웰 칩이 상하이 데이터센터에서 발견됐다는 보도가 나옴.",
+    "impact": "하락",
+    "affects": "NASDAQ",
+    "why": "수출통제 강화 시 AI 반도체 업종 전반에 부담임.",
+    "source": "StockTitan",
+    "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-27-2026"
+   },
+   {
+    "rank": 4,
+    "title": "중국 반도체주 사상 최대 일일 상승",
+    "summary": "중국 칩 관련주가 기록적 하루 상승을 보였다고 CNBC가 보도함.",
+    "impact": "혼조",
+    "affects": "NASDAQ",
+    "why": "글로벌 반도체 투심 개선 신호이나 경쟁 구도 변화 가능성도 있음.",
+    "source": "StockTitan(CNBC 인용)",
+    "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-27-2026"
+   },
+   {
+    "rank": 5,
+    "title": "브라질 신임 재무장관 지명 랠리",
+    "summary": "룰라 대통령이 브라질 재무장관을 지명하자 브라질 관련 자산이 급등함.",
+    "impact": "혼조",
+    "affects": "S&P500",
+    "why": "신흥국 위험선호는 글로벌 위험자산에 소폭 우호적임.",
+    "source": "StockTitan",
+    "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-27-2026"
+   }
+  ],
+  "tonight": [
+   "월요일(11/30) 개장 전 주말 뉴스·선물 확인",
+   "12/1(화) 이후 ISM PMI, 12/4(금) 고용보고서 대비"
+  ]
+ }
+}
